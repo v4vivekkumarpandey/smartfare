@@ -28,14 +28,8 @@ const DIR = "/lp/guardhouse";
 const IMAGES = {
   hero: `${DIR}/hero.gif`, // wide banner: camera on wall + phone viewing feed
   product: `${DIR}/product.webp`, // clean product shot (transparent bg) for the offer box
-  gallery: [
-    `${DIR}/gallery-1.jpg`,
-    `${DIR}/gallery-2.png`,
-    `${DIR}/gallery-3.jpg`,
-    `${DIR}/gallery-4.jpg`,
-    `${DIR}/gallery-5.jpg`,
-    `${DIR}/gallery-6.jpg`,
-  ],
+  // "See it in action" YouTube video id
+  videoId: "qUtxAdlFLrk",
   steps: [
     { img: `${DIR}/step-1.png`, title: "Download the free app", body: "Grab the GuardHouse app on iOS or Android in seconds." },
     { img: `${DIR}/step-2.png`, title: "Scan the QR code", body: "Point your phone at the code to pair the camera instantly." },
@@ -203,12 +197,18 @@ export default function GuardHouseLanding() {
           ))}
         </div>
 
-        {/* Gallery */}
+        {/* See it in action — video */}
         <h2 className="mt-10 text-2xl font-extrabold text-gray-900">See it in action</h2>
-        <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3">
-          {IMAGES.gallery.map((g, i) => (
-            <LpImage key={i} src={g} alt={`GuardHouse photo ${i + 1}`} ratio="aspect-square" />
-          ))}
+        <div className="mt-5 aspect-video w-full overflow-hidden rounded-xl bg-black">
+          <iframe
+            className="h-full w-full"
+            src={`https://www.youtube-nocookie.com/embed/${IMAGES.videoId}`}
+            title="GuardHouse in action"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          />
         </div>
 
         {/* Comparison */}
