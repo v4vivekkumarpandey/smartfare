@@ -145,12 +145,6 @@ export default async function StorePage({
                 {store.name} Promo Code · Updated {formatDate(store.updated)}
               </p>
             </div>
-            <a
-              href="#submit"
-              className="hidden shrink-0 rounded-full bg-accent-500 px-4 py-2 text-sm font-bold text-white hover:bg-accent-600 sm:inline-block"
-            >
-              + Submit a Coupon
-            </a>
           </div>
 
           <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-ink-100 pt-4">
@@ -476,26 +470,6 @@ export default async function StorePage({
             </div>
           </section>
         )}
-
-        {/* ---- Submit anchor ---- */}
-        <section
-          id="submit"
-          className="mt-10 rounded-card border border-ink-100 bg-brand-50 p-6 text-center"
-        >
-          <h2 className="text-lg font-bold text-ink-900">
-            Found a working {store.name} code?
-          </h2>
-          <p className="mx-auto mt-1 max-w-md text-sm text-ink-700">
-            Help other shoppers save — send it to us and we&apos;ll verify and
-            publish it.
-          </p>
-          <a
-            href={`mailto:support@${site.domain}?subject=New ${store.name} coupon`}
-            className="mt-4 inline-block rounded-full bg-accent-500 px-5 py-2.5 text-sm font-bold text-white hover:bg-accent-600"
-          >
-            Submit a Coupon
-          </a>
-        </section>
       </div>
     </>
   );
