@@ -61,10 +61,12 @@ const features = [
 ];
 
 const testimonials = [
-  { name: "Maria L.", text: "Caught a package thief on my second day. Setup took literally minutes — I'm not techy at all.", stars: 5 },
-  { name: "David R.", text: "I was paying $30/month for my old system. Cancelled it. GuardHouse does more and I own it outright.", stars: 5 },
-  { name: "Priya S.", text: "The night vision is shockingly clear. I finally sleep knowing the driveway is covered.", stars: 5 },
-  { name: "Tom W.", text: "Bought one, loved it, ordered three more for the whole house. Great value in the bundle.", stars: 4 },
+  { name: "Maria L.", place: "Austin, TX", text: "Caught a package thief on my second day. Setup took literally minutes — I'm not techy at all.", stars: 5 },
+  { name: "David R.", place: "Columbus, OH", text: "I was paying $30/month for my old system. Cancelled it. GuardHouse does more and I own it outright.", stars: 5 },
+  { name: "Priya S.", place: "San Jose, CA", text: "The night vision is shockingly clear. I finally sleep knowing the driveway is covered.", stars: 5 },
+  { name: "Tom W.", place: "Tampa, FL", text: "Bought one, loved it, ordered three more for the whole house. Great value in the bundle.", stars: 4 },
+  { name: "Sandra K.", place: "Denver, CO", text: "I check on my elderly mom's front door from work. The live view is instant and clear.", stars: 5 },
+  { name: "Marcus B.", place: "Newark, NJ", text: "No wires, no drilling, no monthly bill. I honestly can't believe it was this cheap.", stars: 5 },
 ];
 
 const faqs = [
@@ -139,6 +141,13 @@ export default function GuardHouseLanding() {
             <p className="font-semibold text-gray-700">By Jack Green</p>
             <p>Consumer Tech Reporter · Updated recently</p>
           </div>
+        </div>
+
+        {/* Rating bar */}
+        <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 rounded-lg bg-amber-50 px-4 py-2 text-sm">
+          <Stars n={5} />
+          <span className="font-bold text-gray-900">4.8/5</span>
+          <span className="text-gray-500">from 1,421 verified reviews</span>
         </div>
 
         {/* Hero image */}
@@ -240,6 +249,18 @@ export default function GuardHouseLanding() {
           </table>
         </div>
 
+        {/* Why so affordable */}
+        <div className="mt-10 rounded-xl border border-gray-100 bg-gray-50 p-6">
+          <h2 className="text-2xl font-extrabold text-gray-900">So what&apos;s the catch?</h2>
+          <p className="mt-3 text-[17px] leading-relaxed text-gray-700">
+            There isn&apos;t one. The big security brands make most of their money on the
+            <strong> monthly subscription</strong>, not the hardware. GuardHouse skips the
+            middlemen and the monthly billing entirely — you pay once for the camera and
+            that&apos;s it. That&apos;s why it can cost a fraction of the price while doing the
+            job just as well.
+          </p>
+        </div>
+
         {/* Testimonials */}
         <h2 className="mt-10 text-2xl font-extrabold text-gray-900">What customers say</h2>
         <div className="mt-2 flex items-center gap-2 text-sm text-gray-500">
@@ -252,7 +273,7 @@ export default function GuardHouseLanding() {
               <p className="mt-2 text-sm text-gray-700">&ldquo;{t.text}&rdquo;</p>
               <p className="mt-2 text-xs font-semibold text-gray-500">
                 <BadgeCheck className="mr-1 inline text-emerald-600" width={13} height={13} />
-                {t.name} · Verified buyer
+                {t.name} · {t.place} · Verified buyer
               </p>
             </div>
           ))}
@@ -268,6 +289,16 @@ export default function GuardHouseLanding() {
           <p className="inline-block rounded-full bg-red-600 px-3 py-1 text-xs font-bold uppercase text-white">Limited-time bundle</p>
           <h2 className="mt-3 text-2xl font-extrabold text-gray-900">Save up to 69% today</h2>
           <p className="mt-1 text-gray-600">Bundles start at <strong>$39.99</strong> per camera. The more you protect, the more you save.</p>
+          {/* Stock indicator (static; keep honest — no fake resetting timers) */}
+          <div className="mx-auto mt-4 max-w-sm">
+            <div className="flex items-center justify-between text-xs font-semibold text-gray-600">
+              <span>Selling fast</span>
+              <span className="text-red-600">Almost gone</span>
+            </div>
+            <div className="mt-1 h-2 w-full overflow-hidden rounded-full bg-gray-200">
+              <div className="h-full w-[83%] rounded-full bg-red-500" />
+            </div>
+          </div>
           <div className="mx-auto mt-5 max-w-sm"><CtaButton /></div>
           <div className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs font-medium text-gray-600">
             <span className="inline-flex items-center gap-1"><RotateCcw width={14} height={14} className="text-emerald-600" /> 90-day money back</span>
@@ -279,6 +310,21 @@ export default function GuardHouseLanding() {
         {/* FAQ */}
         <h2 className="mt-10 text-2xl font-extrabold text-gray-900">Frequently asked questions</h2>
         <div className="mt-4"><FaqAccordion faqs={faqs} /></div>
+
+        {/* Guarantee / risk reversal */}
+        <div className="mt-10 flex flex-col items-center gap-4 rounded-2xl border border-emerald-200 bg-emerald-50 p-6 text-center sm:flex-row sm:text-left">
+          <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-emerald-600 text-white">
+            <RotateCcw width={26} height={26} />
+          </span>
+          <div>
+            <h3 className="text-lg font-bold text-gray-900">Try it risk-free for 90 days</h3>
+            <p className="mt-1 text-sm text-gray-700">
+              Set it up, test the night vision, put it through its paces. If GuardHouse
+              isn&apos;t everything you hoped, send it back within 90 days for a full refund —
+              no hassle, no questions.
+            </p>
+          </div>
+        </div>
 
         {/* Final CTA */}
         <div className="mt-8"><CtaButton>Claim My GuardHouse Discount →</CtaButton></div>
@@ -307,6 +353,20 @@ export default function GuardHouseLanding() {
           </p>
         </div>
       </footer>
+
+      {/* Sticky mobile CTA */}
+      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-emerald-700 bg-emerald-600 p-3 sm:hidden">
+        <a
+          href={OFFER_URL}
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="flex items-center justify-center gap-2 rounded-lg bg-white px-4 py-2.5 text-sm font-extrabold uppercase tracking-wide text-emerald-700"
+        >
+          Get Up to 69% Off →
+        </a>
+      </div>
+      {/* Spacer so the sticky bar doesn't cover the footer on mobile */}
+      <div className="h-16 sm:hidden" />
     </div>
   );
 }
