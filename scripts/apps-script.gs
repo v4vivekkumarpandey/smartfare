@@ -16,6 +16,13 @@
  * ------------------------------------------------------------------
  */
 
+// ─── EASIEST SETUP ──────────────────────────────────────────────────────────
+// Fill these two in and you're done — no "Configure webhook…" prompts needed.
+// (If you leave them blank, the script uses whatever "Configure webhook…" saved.)
+var CONFIG_URL = '';     // e.g. 'https://www.thesmartfares.online'
+var CONFIG_SECRET = '';  // e.g. 'your-REVALIDATE_SECRET'
+// ────────────────────────────────────────────────────────────────────────────
+
 var PROP_URL = 'SITE_URL';
 var PROP_SECRET = 'REVALIDATE_SECRET';
 var PROP_AUTO = 'AUTO_PUBLISH';
@@ -64,8 +71,9 @@ function configureWebhook() {
 function getConfig_() {
   var props = PropertiesService.getDocumentProperties();
   return {
-    url: props.getProperty(PROP_URL),
-    secret: props.getProperty(PROP_SECRET),
+    // Hardcoded CONFIG_* wins; otherwise use whatever "Configure webhook…" saved.
+    url: (CONFIG_URL || props.getProperty(PROP_URL) || '').replace(/\/+$/, ''),
+    secret: CONFIG_SECRET || props.getProperty(PROP_SECRET),
   };
 }
 
