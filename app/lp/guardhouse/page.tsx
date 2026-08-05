@@ -18,8 +18,9 @@ import {
 import { FaqAccordion } from "@/components/store/FaqAccordion";
 import { LpImage } from "@/components/lp/LpImage";
 
-// Your offer / checkout / affiliate URL — every CTA points here.
-const OFFER_URL = "https://www.techmonkeypost.com/7ZFGB6Q/HH3LH49/";
+// Every CTA goes through the internal redirect (cloaks the affiliate link).
+// The real destination lives in lib/offers.ts under this slug.
+const OFFER_URL = "/go/offer/guardhouse";
 
 // Save your image files into public/lp/guardhouse/ with these names and they
 // appear automatically. Until a file exists, a clean placeholder shows.
