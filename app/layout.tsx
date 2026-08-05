@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { site } from "@/lib/site";
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
 import { Analytics } from "@/components/Analytics";
 import { ConsentBanner } from "@/components/ConsentBanner";
 import { getSettings } from "@/lib/content";
@@ -50,10 +48,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="font-sans min-h-screen flex flex-col antialiased">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+      <body className="font-sans antialiased">
+        {children}
         <ConsentBanner />
         <Analytics />
       </body>
