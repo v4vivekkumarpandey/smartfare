@@ -26,7 +26,7 @@ const OFFER_URL = "https://your-offer-url.example/order";
 // Make sure you have the right to use each image (e.g. your affiliate media kit).
 const DIR = "/lp/guardhouse";
 const IMAGES = {
-  hero: `${DIR}/hero.jpg`, // wide banner: camera on wall + phone viewing feed
+  hero: `${DIR}/hero.gif`, // wide banner: camera on wall + phone viewing feed
   product: `${DIR}/product.png`, // clean product shot (transparent bg) for the offer box
   gallery: [
     `${DIR}/gallery-1.jpg`,
