@@ -24,7 +24,7 @@ import {
   getAllStores,
   activeCoupons,
 } from "@/lib/content";
-import { outboundHref } from "@/lib/affiliate";
+import { outboundHref, goHref } from "@/lib/affiliate";
 import { toPublicCoupon } from "@/lib/coupon";
 import { storeJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 import { site } from "@/lib/site";
@@ -131,7 +131,7 @@ export default async function StorePage({
               <h1 className="flex items-center gap-2 text-2xl font-extrabold tracking-tight text-ink-900 sm:text-3xl">
                 {store.name} Promo Code &amp; Discount Code
                 <a
-                  href={`/go/${store.slug}/site`}
+                  href={goHref(store.slug, "site")}
                   target="_blank"
                   rel="noopener noreferrer sponsored"
                   aria-label={`Visit ${store.name}`}
@@ -173,7 +173,7 @@ export default async function StorePage({
             {/* Apply-all highlight */}
             {best && (
               <a
-                href={`/go/${store.slug}/${best.id}`}
+                href={goHref(store.slug, best.id)}
                 target="_blank"
                 rel="noopener noreferrer sponsored"
                 className="mb-4 flex items-center gap-4 rounded-xl border-2 border-accent-500 bg-accent-500/5 p-4 transition hover:bg-accent-500/10"
@@ -442,7 +442,7 @@ export default async function StorePage({
                     </td>
                     <td className="py-3">
                       <a
-                        href={`/go/${store.slug}/${c.id}`}
+                        href={goHref(store.slug, c.id)}
                         target="_blank"
                         rel="noopener noreferrer sponsored"
                         className="font-semibold text-brand-600 hover:text-brand-700"
@@ -605,7 +605,7 @@ function SimilarCoupon({ store, coupon }: { store: Store; coupon: Coupon }) {
         <p className="truncate text-xs text-ink-500">{coupon.title}</p>
       </div>
       <a
-        href={`/go/${store.slug}/${coupon.id}`}
+        href={goHref(store.slug, coupon.id)}
         target="_blank"
         rel="noopener noreferrer sponsored"
         className="shrink-0 rounded-lg bg-accent-500 px-3 py-2 text-xs font-bold text-white hover:bg-accent-600"

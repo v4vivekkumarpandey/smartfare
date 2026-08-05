@@ -1,12 +1,21 @@
 import type { Store, Coupon } from "./types";
 
 /**
+ * Build the internal /go redirect URL, encoding the id segment so coupon ids
+ * containing spaces or symbols (e.g. "$50 Off") still produce valid links.
+ * Next decodes the route param back to the original id on the server.
+ */
+export function goHref(storeSlug: string, couponId: string): string {
+  return `/go/${encodeURIComponent(storeSlug)}/${encodeURIComponent(couponId)}`;
+}
+
+/**
  * Internal redirect URL that cloaks + tracks the outbound affiliate click.
  * We route through /go/[store]/[id] so we can fire analytics and swap the
  * affiliate destination without touching every page.
  */
 export function outboundHref(store: Store, coupon: Coupon): string {
-  return `/go/${store.slug}/${coupon.id}`;
+  return goHref(store.slug, coupon.id);
 }
 
 /**
