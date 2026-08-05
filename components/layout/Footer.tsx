@@ -42,6 +42,7 @@ export async function Footer() {
           <div>
             <h3 className="text-sm font-semibold text-ink-900">Company</h3>
             <ul className="mt-3 space-y-2 text-sm">
+              <li><Link href="/how-it-works" className="text-ink-500 hover:text-brand-600">How It Works</Link></li>
               <li><Link href="/about" className="text-ink-500 hover:text-brand-600">About Us</Link></li>
               <li><Link href="/contact" className="text-ink-500 hover:text-brand-600">Contact</Link></li>
             </ul>
