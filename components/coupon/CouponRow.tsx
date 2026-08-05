@@ -39,9 +39,9 @@ export function CouponRow({
   return (
     <>
       <div className="rounded-xl border border-ink-100 bg-white shadow-sm transition hover:shadow-md">
-        <div className="flex items-stretch gap-3 p-3 sm:gap-4 sm:p-4">
-          <div className="flex w-20 shrink-0 flex-col items-center justify-center rounded-lg bg-accent-500/10 px-1 py-2 text-center sm:w-24">
-            <span className="text-base font-extrabold leading-tight text-accent-600 sm:text-lg">
+        <div className="flex items-stretch gap-2.5 p-2.5 sm:gap-4 sm:p-4">
+          <div className="flex w-14 shrink-0 flex-col items-center justify-center rounded-lg bg-accent-500/10 px-1 py-2 text-center sm:w-24">
+            <span className="text-sm font-extrabold leading-tight text-accent-600 sm:text-lg">
               {coupon.discount}
             </span>
           </div>
@@ -111,7 +111,7 @@ export function CouponRow({
             <button
               type="button"
               onClick={reveal}
-              className="inline-flex items-center gap-1 rounded-lg bg-accent-500 px-4 py-2.5 text-sm font-bold text-white shadow-sm transition hover:bg-accent-600 active:scale-95 sm:px-5"
+              className="inline-flex shrink-0 items-center gap-1 rounded-lg bg-accent-500 px-3 py-2.5 text-xs font-bold text-white shadow-sm transition hover:bg-accent-600 active:scale-95 sm:px-5 sm:text-sm"
             >
               {isCode ? "Get Code" : "Get Deal"}
               <ExternalLink width={14} height={14} className="hidden opacity-90 sm:block" />

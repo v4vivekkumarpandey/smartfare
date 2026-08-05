@@ -35,6 +35,11 @@ export async function Header() {
           <MobileNav stores={navStores} />
         </div>
       </div>
+
+      {/* Persistent search on mobile */}
+      <div className="border-t border-ink-100 px-4 py-2 md:hidden">
+        <SearchBox index={index} placeholder="Search stores…" />
+      </div>
     </header>
   );
 }
