@@ -31,9 +31,9 @@ const IMAGES = {
   // "See it in action" YouTube video id
   videoId: "qUtxAdlFLrk",
   steps: [
-    { img: `${DIR}/step-1.png`, title: "Download the free app", body: "Grab the GuardHouse app on iOS or Android in seconds." },
-    { img: `${DIR}/step-2.png`, title: "Scan the QR code", body: "Point your phone at the code to pair the camera instantly." },
-    { img: `${DIR}/step-3.png`, title: "Watch from anywhere", body: "See a live feed and get motion alerts wherever you are." },
+    { img: `${DIR}/step1.webp`, title: "Download the free app", body: "Grab the GuardHouse app on iOS or Android in seconds." },
+    { img: `${DIR}/step2.webp`, title: "Scan the QR code", body: "Point your phone at the code to pair the camera instantly." },
+    { img: `${DIR}/step3.webp`, title: "Watch from anywhere", body: "See a live feed and get motion alerts wherever you are." },
   ],
 };
 
