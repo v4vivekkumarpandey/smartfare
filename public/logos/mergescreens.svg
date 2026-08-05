@@ -1,6 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="MergeScreens logo">
-  <rect width="120" height="120" rx="24" fill="#1f47f5"/>
-  <rect x="30" y="34" width="44" height="34" rx="6" fill="#ffffff" opacity="0.95"/>
-  <rect x="46" y="52" width="44" height="34" rx="6" fill="#8eb8ff"/>
-  <text x="60" y="108" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">Merge</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 460" width="540" height="460" role="img" aria-label="MergeScreens logo">
+  <rect width="540" height="460" fill="#ffffff"/>
+  <g fill="#111111" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900" text-anchor="middle">
+    <text x="270" y="160" font-size="115" letter-spacing="4">MERGE</text>
+    <text x="270" y="272" font-size="104" letter-spacing="4">SCREENS</text>
+  </g>
+  <line x1="120" y1="300" x2="420" y2="300" stroke="#111111" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Car (front view) -->
+  <g fill="#111111">
+    <path d="M132 398 v-30 q0-14 14-18 l14-24 q5-9 17-9 h46 q12 0 17 9 l14 24 q14 4 14 18 v30 h-18 v8 q0 9-10 9 q-10 0-10-9 v-8 h-56 v8 q0 9-10 9 q-10 0-10-9 v-8 z"/>
+    <rect x="150" y="360" width="16" height="10" rx="3" fill="#ffffff"/>
+    <rect x="194" y="360" width="16" height="10" rx="3" fill="#ffffff"/>
+    <rect x="166" y="378" width="28" height="6" rx="3" fill="#ffffff"/>
+  </g>
+
+  <!-- Plus -->
+  <g fill="#111111">
+    <rect x="258" y="360" width="44" height="14" rx="3"/>
+    <rect x="273" y="345" width="14" height="44" rx="3"/>
+  </g>
+
+  <!-- Phone -->
+  <g>
+    <rect x="344" y="322" width="60" height="96" rx="12" fill="#111111"/>
+    <rect x="352" y="336" width="44" height="60" rx="4" fill="#ffffff"/>
+    <circle cx="374" cy="406" r="5" fill="#ffffff"/>
+  </g>
 </svg>
