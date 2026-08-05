@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getAllPosts } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { PostCard } from "@/components/blog/PostCard";
+import { Ad } from "@/components/Ad";
 
 export const revalidate = 900;
 
@@ -29,11 +30,14 @@ export default async function BlogIndexPage() {
       </header>
 
       {posts.length > 0 ? (
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {posts.map((post) => (
-            <PostCard key={post.slug} post={post} />
-          ))}
-        </div>
+        <>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {posts.map((post) => (
+              <PostCard key={post.slug} post={post} />
+            ))}
+          </div>
+          <Ad />
+        </>
       ) : (
         <p className="mt-10 rounded-card border border-ink-100 bg-white p-8 text-center text-ink-500">
           No posts yet — check back soon.

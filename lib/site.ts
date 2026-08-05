@@ -22,6 +22,10 @@ export const site = {
   adsId: process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || "",
   // Google Ads conversion label for the "Get Code" action, e.g. AbC-D_efg
   adsConversionLabel: process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_LABEL || "",
+  // Google AdSense publisher id, e.g. ca-pub-1234567890123456 (blog pages only)
+  adsenseClient: process.env.NEXT_PUBLIC_ADSENSE_CLIENT || "",
+  // AdSense ad-unit slot id used on blog pages, e.g. 1234567890
+  adsenseSlot: process.env.NEXT_PUBLIC_ADSENSE_SLOT || "",
   social: {
     twitter: "@thesmartfares",
   },

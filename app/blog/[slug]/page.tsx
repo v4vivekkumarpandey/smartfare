@@ -9,6 +9,7 @@ import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { PostBody } from "@/components/blog/PostBody";
 import { PostCard } from "@/components/blog/PostCard";
 import { JsonLd } from "@/components/JsonLd";
+import { Ad } from "@/components/Ad";
 
 export const dynamicParams = true;
 export const revalidate = 900;
@@ -109,6 +110,8 @@ export default async function BlogPostPage({
         <div className="mt-6">
           <PostBody body={post.body} />
         </div>
+
+        <Ad />
 
         {post.tags.length > 0 && (
           <div className="mt-8 flex flex-wrap gap-2">
