@@ -27,7 +27,7 @@ const OFFER_URL = "https://your-offer-url.example/order";
 const DIR = "/lp/guardhouse";
 const IMAGES = {
   hero: `${DIR}/hero.gif`, // wide banner: camera on wall + phone viewing feed
-  product: `${DIR}/product.png`, // clean product shot (transparent bg) for the offer box
+  product: `${DIR}/product.webp`, // clean product shot (transparent bg) for the offer box
   gallery: [
     `${DIR}/gallery-1.jpg`,
     `${DIR}/gallery-2.png`,
