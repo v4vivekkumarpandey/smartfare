@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="MergeScreens logo">
+  <rect width="120" height="120" rx="24" fill="#1f47f5"/>
+  <rect x="30" y="34" width="44" height="34" rx="6" fill="#ffffff" opacity="0.95"/>
+  <rect x="46" y="52" width="44" height="34" rx="6" fill="#8eb8ff"/>
+  <text x="60" y="108" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">Merge</text>
+</svg>

@@ -1,0 +1,88 @@
+{
+  "slug": "mergescreens",
+  "name": "MergeScreens",
+  "logo": "/logos/mergescreens.svg",
+  "url": "https://mergescreens.com",
+  "affiliateBase": "https://track.example-network.com/aff?u=1001&url=",
+  "category": "software",
+  "tagline": "Screen recording & sharing made effortless",
+  "rating": 4.8,
+  "reviewCount": 214,
+  "description": "MergeScreens is a screen recording and sharing platform for teams. Grab a verified MergeScreens coupon below to save on annual and team plans.",
+  "about": [
+    "MergeScreens lets you record your screen, camera and audio, then share a link in seconds — perfect for async standups, product demos and support replies.",
+    "To use a MergeScreens promo code, click \"Get Code\" to reveal it, then paste the code at checkout in the \"Promo code\" field on the billing page. Discounts apply instantly before you pay."
+  ],
+  "policies": [
+    "MergeScreens offers a 14-day money-back guarantee on all paid plans, no questions asked.",
+    "Plans renew automatically; you can cancel anytime from your account before the next billing date."
+  ],
+  "contact": {
+    "phone": "+1 (800) 555-0142",
+    "facebook": "https://facebook.com/mergescreens",
+    "instagram": "https://instagram.com/mergescreens",
+    "youtube": "https://youtube.com/@mergescreens",
+    "twitter": "https://twitter.com/mergescreens"
+  },
+  "coupons": [
+    {
+      "id": "ms-20off",
+      "title": "20% Off All Annual Plans",
+      "type": "code",
+      "code": "SMART20",
+      "discount": "20% OFF",
+      "verified": true,
+      "expires": "2026-12-31",
+      "uses": 1843,
+      "successRate": 92,
+      "featured": true
+    },
+    {
+      "id": "ms-team15",
+      "title": "15% Off Team & Business Plans",
+      "type": "code",
+      "code": "TEAM15",
+      "discount": "15% OFF",
+      "verified": true,
+      "expires": "2026-10-31",
+      "uses": 962,
+      "successRate": 88
+    },
+    {
+      "id": "ms-freetrial",
+      "title": "Start a 14-Day Free Trial — No Card Needed",
+      "type": "deal",
+      "discount": "FREE TRIAL",
+      "verified": true,
+      "uses": 5120,
+      "successRate": 100
+    },
+    {
+      "id": "ms-student",
+      "title": "Students Save 40% With Verified .edu Email",
+      "type": "code",
+      "code": "STUDENT40",
+      "discount": "40% OFF",
+      "verified": false,
+      "expires": "2026-09-15",
+      "uses": 331,
+      "successRate": 71
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I use a MergeScreens coupon code?",
+      "a": "Click \"Get Code\" to reveal the code, copy it, then paste it into the promo code field on the MergeScreens checkout page. The discount is applied before payment."
+    },
+    {
+      "q": "How often are MergeScreens codes updated?",
+      "a": "Our team verifies MergeScreens offers daily. Each working code shows a \"Verified\" badge and a success rate from real users."
+    },
+    {
+      "q": "Does MergeScreens offer a free plan?",
+      "a": "Yes — MergeScreens has a free tier plus a 14-day free trial of its paid features, available through the deal listed above."
+    }
+  ],
+  "relatedStores": ["screenpal"],
+  "updated": "2026-08-01"
+}

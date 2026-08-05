@@ -1,0 +1,8 @@
+storeSlug,id,title,type,code,discount,verified,expires,uses,successRate,dealUrl,featured
+mergescreens,ms-20off,20% Off All Annual Plans,code,SMART20,20% OFF,TRUE,2026-12-31,1843,92,,TRUE
+mergescreens,ms-team15,15% Off Team & Business Plans,code,TEAM15,15% OFF,TRUE,2026-10-31,962,88,,FALSE
+mergescreens,ms-freetrial,Start a 14-Day Free Trial — No Card Needed,deal,,FREE TRIAL,TRUE,,5120,100,,FALSE
+mergescreens,ms-student,Students Save 40% With Verified .edu Email,code,STUDENT40,40% OFF,FALSE,2026-09-15,331,71,,FALSE
+screenpal,sp-50off,50% Off Your First Year of Solo Deluxe,code,SAVE50,50% OFF,TRUE,2026-11-30,4210,95,,TRUE
+screenpal,sp-team25,25% Off Team Business Plans,code,TEAM25,25% OFF,TRUE,2026-12-15,1188,90,,FALSE
+screenpal,sp-freeplan,Record Free — No Watermark on Short Clips,deal,,FREE,TRUE,,8790,100,,FALSE

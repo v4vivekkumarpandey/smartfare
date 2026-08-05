@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "software",
+    "name": "Software & SaaS",
+    "icon": "MonitorSmartphone",
+    "description": "Discounts on the tools you use every day — productivity, design, and business software."
+  },
+  {
+    "slug": "vpn",
+    "name": "VPN & Security",
+    "icon": "ShieldCheck",
+    "description": "Save on VPNs, password managers, and online privacy tools."
+  },
+  {
+    "slug": "hosting",
+    "name": "Web Hosting",
+    "icon": "Server",
+    "description": "Coupons for web hosting, domains, and cloud infrastructure."
+  },
+  {
+    "slug": "education",
+    "name": "Online Learning",
+    "icon": "GraduationCap",
+    "description": "Deals on courses, e-learning platforms, and certifications."
+  },
+  {
+    "slug": "fashion",
+    "name": "Fashion & Apparel",
+    "icon": "Shirt",
+    "description": "Promo codes for clothing, shoes, and accessories."
+  },
+  {
+    "slug": "health",
+    "name": "Health & Beauty",
+    "icon": "HeartPulse",
+    "description": "Savings on wellness, skincare, and beauty brands."
+  }
+]

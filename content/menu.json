@@ -1,0 +1,6 @@
+[
+  { "label": "All Stores", "href": "/stores", "location": "footer", "order": 1, "external": false },
+  { "label": "Categories", "href": "/category", "location": "footer", "order": 2, "external": false },
+  { "label": "Blog", "href": "/blog", "location": "footer", "order": 3, "external": false },
+  { "label": "About Us", "href": "/about", "location": "footer", "order": 4, "external": false }
+]

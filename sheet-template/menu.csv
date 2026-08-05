@@ -1,0 +1,5 @@
+label,href,location,order
+All Stores,/stores,footer,1
+Categories,/category,footer,2
+Blog,/blog,footer,3
+About Us,/about,footer,4

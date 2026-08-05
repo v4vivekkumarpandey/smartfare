@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="ScreenPal logo">
+  <rect width="120" height="120" rx="24" fill="#ff5a1f"/>
+  <circle cx="60" cy="56" r="26" fill="#ffffff"/>
+  <polygon points="52,44 52,68 74,56" fill="#ff5a1f"/>
+  <text x="60" y="104" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">ScreenPal</text>
+</svg>
