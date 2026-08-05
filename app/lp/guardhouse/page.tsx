@@ -20,6 +20,44 @@ import { FaqAccordion } from "@/components/store/FaqAccordion";
 // ⚠️ Replace with your real offer / checkout / affiliate URL.
 const OFFER_URL = "https://your-offer-url.example/order";
 
+// Add authorized product images here (your own, or ones your affiliate/merchant
+// media kit permits). Local files go in public/lp/guardhouse/, e.g.
+// "/lp/guardhouse/hero.jpg" — or paste a full https:// URL you're allowed to use.
+// Do NOT use images copied from another company's site (copyright).
+const IMAGES = {
+  hero: "", // e.g. "/lp/guardhouse/hero.jpg"
+  product: "", // e.g. "/lp/guardhouse/product.jpg"
+};
+
+function LpImage({
+  src,
+  alt,
+  ratio = "aspect-video",
+}: {
+  src: string;
+  alt: string;
+  ratio?: string;
+}) {
+  if (!src) {
+    return (
+      <div
+        className={`flex ${ratio} w-full items-center justify-center rounded-xl bg-gradient-to-br from-gray-100 to-gray-200`}
+      >
+        <div className="flex flex-col items-center text-gray-400">
+          <Camera width={48} height={48} />
+          <span className="mt-2 text-xs">Add an authorized image here</span>
+        </div>
+      </div>
+    );
+  }
+  return (
+    <div className={`overflow-hidden rounded-xl ${ratio} w-full`}>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={src} alt={alt} loading="lazy" className="h-full w-full object-cover" />
+    </div>
+  );
+}
+
 export const metadata: Metadata = {
   title: "GuardHouse — The $39 Wireless Security Camera Everyone's Talking About",
   description:
@@ -118,12 +156,9 @@ export default function GuardHouseLanding() {
           </div>
         </div>
 
-        {/* Hero image placeholder */}
-        <div className="mt-6 flex aspect-video w-full items-center justify-center rounded-xl bg-gradient-to-br from-gray-100 to-gray-200">
-          <div className="flex flex-col items-center text-gray-400">
-            <Camera width={48} height={48} />
-            <span className="mt-2 text-xs">Add product image/video here</span>
-          </div>
+        {/* Hero image */}
+        <div className="mt-6">
+          <LpImage src={IMAGES.hero} alt="GuardHouse wireless security camera" />
         </div>
 
         {/* Hook / story */}
@@ -216,6 +251,11 @@ export default function GuardHouseLanding() {
 
         {/* Offer box */}
         <div className="mt-10 rounded-2xl border-2 border-emerald-600 bg-emerald-50 p-6 text-center">
+          {IMAGES.product && (
+            <div className="mx-auto mb-4 max-w-xs">
+              <LpImage src={IMAGES.product} alt="GuardHouse camera bundle" ratio="aspect-square" />
+            </div>
+          )}
           <p className="inline-block rounded-full bg-red-600 px-3 py-1 text-xs font-bold uppercase text-white">Limited-time bundle</p>
           <h2 className="mt-3 text-2xl font-extrabold text-gray-900">Save up to 69% today</h2>
           <p className="mt-1 text-gray-600">Bundles start at <strong>$39.99</strong> per camera. The more you protect, the more you save.</p>
