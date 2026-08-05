@@ -31,8 +31,14 @@ Create a Google Sheet with **seven tabs named exactly** (lowercase):
 
 - **logo**: a path under `public/` (e.g. `/logos/mergescreens.svg`) or a full
   `https://` image URL.
-- **affiliateBase**: your affiliate tracking prefix. Final link =
-  `affiliateBase + encodeURIComponent(destination)`. Leave blank to link direct.
+- **affiliateBase**: your affiliate link. Three supported styles:
+  - **Direct / ref link** (most common) — paste the full URL, used as-is:
+    `https://store.com/?ref=abc123`
+  - **Tracking prefix** — end it with `=` and the destination is appended:
+    `https://track.net/aff?u=1001&url=`
+  - **Template** — put `{url}` where the destination goes:
+    `https://track.net/?u=1&url={url}&x=2`
+  - Leave **blank** to link straight to the store's `url`.
 - **category**: must match a `slug` from the categories tab.
 - **about**: long text; press **Alt+Enter** inside the cell to separate
   paragraphs (each line becomes its own paragraph).
