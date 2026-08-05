@@ -18,8 +18,8 @@ import {
 import { FaqAccordion } from "@/components/store/FaqAccordion";
 import { LpImage } from "@/components/lp/LpImage";
 
-// ⚠️ Replace with your real offer / checkout / affiliate URL.
-const OFFER_URL = "https://your-offer-url.example/order";
+// Your offer / checkout / affiliate URL — every CTA points here.
+const OFFER_URL = "https://www.techmonkeypost.com/7ZFGB6Q/HH3LH49/";
 
 // Save your image files into public/lp/guardhouse/ with these names and they
 // appear automatically. Until a file exists, a clean placeholder shows.
