@@ -2,6 +2,13 @@ import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
 import { getAllStores, getCategories, getAllPosts } from "@/lib/content";
 
+/** Parse a date safely — returns undefined for blank/invalid values. */
+function safeDate(s?: string): Date | undefined {
+  if (!s) return undefined;
+  const d = new Date(s);
+  return isNaN(d.getTime()) ? undefined : d;
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const [stores, categories, posts] = await Promise.all([
     getAllStores(),
@@ -32,14 +39,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const storePages = stores.map((s) => ({
     url: `${site.url}/coupons/${s.slug}`,
-    lastModified: new Date(s.updated),
+    lastModified: safeDate(s.updated),
     changeFrequency: "daily" as const,
     priority: 0.9,
   }));
 
   const postPages = posts.map((p) => ({
     url: `${site.url}/blog/${p.slug}`,
-    lastModified: new Date(p.date),
+    lastModified: safeDate(p.date),
     changeFrequency: "monthly" as const,
     priority: 0.5,
   }));
