@@ -16,6 +16,7 @@ export function StoreCard({ store }: { store: Store }) {
       <div className="flex items-center gap-3">
         <Image
           src={store.logo}
+          unoptimized
           alt={`${store.name} logo`}
           width={48}
           height={48}

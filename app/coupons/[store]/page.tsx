@@ -121,6 +121,7 @@ export default async function StorePage({
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
             <Image
               src={store.logo}
+              unoptimized
               alt={`${store.name} logo`}
               width={72}
               height={72}
@@ -257,6 +258,7 @@ export default async function StorePage({
                       >
                         <Image
                           src={s.logo}
+                          unoptimized
                           alt={s.name}
                           width={36}
                           height={36}
@@ -590,6 +592,7 @@ function SimilarCoupon({ store, coupon }: { store: Store; coupon: Coupon }) {
     <div className="flex items-center gap-3 rounded-card border border-ink-100 bg-white p-4 shadow-sm">
       <Image
         src={store.logo}
+        unoptimized
         alt={store.name}
         width={44}
         height={44}

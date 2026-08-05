@@ -55,6 +55,7 @@ export function CouponRow({
                 {storeLogo && (
                   <Image
                     src={storeLogo}
+                    unoptimized
                     alt={storeName}
                     width={18}
                     height={18}
