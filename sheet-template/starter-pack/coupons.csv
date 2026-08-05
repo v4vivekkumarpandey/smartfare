@@ -1,0 +1,37 @@
+storeSlug,id,title,type,code,discount,verified,expires,uses,successRate,dealUrl,featured
+notion,notion-sale,Today's Best Notion Deals,deal,,SALE,TRUE,,3489,100,,TRUE
+notion,notion-ship,Notion Free Shipping / Free Trial Offer,deal,,FREE,TRUE,,2905,100,,FALSE
+notion,notion-code,Extra Savings at Notion with Code,code,REPLACEME,EXTRA % OFF,FALSE,,611,0,,FALSE
+grammarly,grammarly-sale,Today's Best Grammarly Deals,deal,,SALE,TRUE,,1975,100,,TRUE
+grammarly,grammarly-ship,Grammarly Free Shipping / Free Trial Offer,deal,,FREE,TRUE,,3527,100,,FALSE
+grammarly,grammarly-code,Extra Savings at Grammarly with Code,code,REPLACEME,EXTRA % OFF,FALSE,,835,0,,FALSE
+nordvpn,nordvpn-sale,Today's Best NordVPN Deals,deal,,SALE,TRUE,,1276,100,,TRUE
+nordvpn,nordvpn-ship,NordVPN Free Shipping / Free Trial Offer,deal,,FREE,TRUE,,3638,100,,FALSE
+nordvpn,nordvpn-code,Extra Savings at NordVPN with Code,code,REPLACEME,EXTRA % OFF,FALSE,,803,0,,FALSE
+expressvpn,expressvpn-sale,Today's Best ExpressVPN Deals,deal,,SALE,TRUE,,2990,100,,TRUE
+expressvpn,expressvpn-ship,ExpressVPN Free Shipping / Free Trial Offer,deal,,FREE,TRUE,,2450,100,,FALSE
+expressvpn,expressvpn-code,Extra Savings at ExpressVPN with Code,code,REPLACEME,EXTRA % OFF,FALSE,,355,0,,FALSE
+bluehost,bluehost-sale,Today's Best Bluehost Deals,deal,,SALE,TRUE,,2331,100,,TRUE
+bluehost,bluehost-ship,Bluehost Free Shipping / Free Trial Offer,deal,,FREE,TRUE,,1719,100,,FALSE
+bluehost,bluehost-code,Extra Savings at Bluehost with Code,code,REPLACEME,EXTRA % OFF,FALSE,,316,0,,FALSE
+hostinger,hostinger-sale,Today's Best Hostinger Deals,deal,,SALE,TRUE,,1362,100,,TRUE
+hostinger,hostinger-ship,Hostinger Free Shipping / Free Trial Offer,deal,,FREE,TRUE,,2194,100,,FALSE
+hostinger,hostinger-code,Extra Savings at Hostinger with Code,code,REPLACEME,EXTRA % OFF,FALSE,,760,0,,FALSE
+coursera,coursera-sale,Today's Best Coursera Deals,deal,,SALE,TRUE,,2543,100,,TRUE
+coursera,coursera-ship,Coursera Free Shipping / Free Trial Offer,deal,,FREE,TRUE,,1316,100,,FALSE
+coursera,coursera-code,Extra Savings at Coursera with Code,code,REPLACEME,EXTRA % OFF,FALSE,,457,0,,FALSE
+udemy,udemy-sale,Today's Best Udemy Deals,deal,,SALE,TRUE,,2181,100,,TRUE
+udemy,udemy-ship,Udemy Free Shipping / Free Trial Offer,deal,,FREE,TRUE,,816,100,,FALSE
+udemy,udemy-code,Extra Savings at Udemy with Code,code,REPLACEME,EXTRA % OFF,FALSE,,310,0,,FALSE
+asos,asos-sale,Today's Best ASOS Deals,deal,,SALE,TRUE,,5121,100,,TRUE
+asos,asos-ship,ASOS Free Shipping / Free Trial Offer,deal,,FREE,TRUE,,1011,100,,FALSE
+asos,asos-code,Extra Savings at ASOS with Code,code,REPLACEME,EXTRA % OFF,FALSE,,907,0,,FALSE
+nike,nike-sale,Today's Best Nike Deals,deal,,SALE,TRUE,,2449,100,,TRUE
+nike,nike-ship,Nike Free Shipping / Free Trial Offer,deal,,FREE,TRUE,,1230,100,,FALSE
+nike,nike-code,Extra Savings at Nike with Code,code,REPLACEME,EXTRA % OFF,FALSE,,362,0,,FALSE
+myprotein,myprotein-sale,Today's Best Myprotein Deals,deal,,SALE,TRUE,,2373,100,,TRUE
+myprotein,myprotein-ship,Myprotein Free Shipping / Free Trial Offer,deal,,FREE,TRUE,,2300,100,,FALSE
+myprotein,myprotein-code,Extra Savings at Myprotein with Code,code,REPLACEME,EXTRA % OFF,FALSE,,965,0,,FALSE
+sephora,sephora-sale,Today's Best Sephora Deals,deal,,SALE,TRUE,,2379,100,,TRUE
+sephora,sephora-ship,Sephora Free Shipping / Free Trial Offer,deal,,FREE,TRUE,,3451,100,,FALSE
+sephora,sephora-code,Extra Savings at Sephora with Code,code,REPLACEME,EXTRA % OFF,FALSE,,896,0,,FALSE

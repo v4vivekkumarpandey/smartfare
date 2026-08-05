@@ -15,8 +15,13 @@ export const site = {
   description:
     "Verified coupon codes, promo codes and deals from top brands. Hand-tested daily so you save on every order.",
   tagline: "Verified codes. Real savings. Every day.",
-  // Set NEXT_PUBLIC_GA_ID to enable Google Analytics / Ads conversion tracking
+  // Analytics / ads tracking (all optional — blank = disabled)
+  // GA4 measurement ID, e.g. G-XXXXXXXXXX
   gaId: process.env.NEXT_PUBLIC_GA_ID || "",
+  // Google Ads tag ID, e.g. AW-XXXXXXXXX
+  adsId: process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || "",
+  // Google Ads conversion label for the "Get Code" action, e.g. AbC-D_efg
+  adsConversionLabel: process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_LABEL || "",
   social: {
     twitter: "@thesmartfares",
   },

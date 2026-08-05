@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
+import { site } from "@/lib/site";
 
 declare global {
   interface Window {
@@ -33,6 +34,12 @@ export function useRevealCode(opts: {
       coupon_id: opts.couponId,
       coupon_type: opts.couponType,
     });
+    // Google Ads conversion (only if a conversion label is configured)
+    if (site.adsId && site.adsConversionLabel) {
+      window.gtag?.("event", "conversion", {
+        send_to: `${site.adsId}/${site.adsConversionLabel}`,
+      });
+    }
     // Open affiliate destination first (sync => not blocked)
     window.open(opts.outboundHref, "_blank", "noopener,noreferrer");
 
