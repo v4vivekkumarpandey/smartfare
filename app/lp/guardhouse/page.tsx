@@ -16,47 +16,32 @@ import {
   ChevronRight,
 } from "lucide-react";
 import { FaqAccordion } from "@/components/store/FaqAccordion";
+import { LpImage } from "@/components/lp/LpImage";
 
 // ⚠️ Replace with your real offer / checkout / affiliate URL.
 const OFFER_URL = "https://your-offer-url.example/order";
 
-// Add authorized product images here (your own, or ones your affiliate/merchant
-// media kit permits). Local files go in public/lp/guardhouse/, e.g.
-// "/lp/guardhouse/hero.jpg" — or paste a full https:// URL you're allowed to use.
-// Do NOT use images copied from another company's site (copyright).
+// Save your image files into public/lp/guardhouse/ with these names and they
+// appear automatically. Until a file exists, a clean placeholder shows.
+// Make sure you have the right to use each image (e.g. your affiliate media kit).
+const DIR = "/lp/guardhouse";
 const IMAGES = {
-  hero: "", // e.g. "/lp/guardhouse/hero.jpg"
-  product: "", // e.g. "/lp/guardhouse/product.jpg"
+  hero: `${DIR}/hero.jpg`, // wide banner: camera on wall + phone viewing feed
+  product: `${DIR}/product.png`, // clean product shot (transparent bg) for the offer box
+  gallery: [
+    `${DIR}/gallery-1.jpg`,
+    `${DIR}/gallery-2.png`,
+    `${DIR}/gallery-3.jpg`,
+    `${DIR}/gallery-4.jpg`,
+    `${DIR}/gallery-5.jpg`,
+    `${DIR}/gallery-6.jpg`,
+  ],
+  steps: [
+    { img: `${DIR}/step-1.png`, title: "Download the free app", body: "Grab the GuardHouse app on iOS or Android in seconds." },
+    { img: `${DIR}/step-2.png`, title: "Scan the QR code", body: "Point your phone at the code to pair the camera instantly." },
+    { img: `${DIR}/step-3.png`, title: "Watch from anywhere", body: "See a live feed and get motion alerts wherever you are." },
+  ],
 };
-
-function LpImage({
-  src,
-  alt,
-  ratio = "aspect-video",
-}: {
-  src: string;
-  alt: string;
-  ratio?: string;
-}) {
-  if (!src) {
-    return (
-      <div
-        className={`flex ${ratio} w-full items-center justify-center rounded-xl bg-gradient-to-br from-gray-100 to-gray-200`}
-      >
-        <div className="flex flex-col items-center text-gray-400">
-          <Camera width={48} height={48} />
-          <span className="mt-2 text-xs">Add an authorized image here</span>
-        </div>
-      </div>
-    );
-  }
-  return (
-    <div className={`overflow-hidden rounded-xl ${ratio} w-full`}>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={src} alt={alt} loading="lazy" className="h-full w-full object-cover" />
-    </div>
-  );
-}
 
 export const metadata: Metadata = {
   title: "GuardHouse — The $39 Wireless Security Camera Everyone's Talking About",
@@ -190,6 +175,30 @@ export default function GuardHouseLanding() {
               <h3 className="mt-3 font-bold text-gray-900">{f.title}</h3>
               <p className="mt-1 text-sm text-gray-600">{f.body}</p>
             </div>
+          ))}
+        </div>
+
+        {/* How to use — 3 steps */}
+        <h2 className="mt-10 text-2xl font-extrabold text-gray-900">Set up in under 3 minutes</h2>
+        <div className="mt-5 grid gap-6 sm:grid-cols-3">
+          {IMAGES.steps.map((s, i) => (
+            <div key={i} className="text-center">
+              <div className="mx-auto max-w-[140px]">
+                <LpImage src={s.img} alt={s.title} ratio="aspect-square" className="rounded-full" />
+              </div>
+              <h3 className="mt-3 font-bold text-gray-900">
+                <span className="mr-1 text-emerald-600">{i + 1}.</span>{s.title}
+              </h3>
+              <p className="mt-1 text-sm text-gray-600">{s.body}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Gallery */}
+        <h2 className="mt-10 text-2xl font-extrabold text-gray-900">See it in action</h2>
+        <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3">
+          {IMAGES.gallery.map((g, i) => (
+            <LpImage key={i} src={g} alt={`GuardHouse photo ${i + 1}`} ratio="aspect-square" />
           ))}
         </div>
 
