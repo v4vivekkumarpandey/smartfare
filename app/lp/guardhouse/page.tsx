@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import { FaqAccordion } from "@/components/store/FaqAccordion";
 import { LpImage } from "@/components/lp/LpImage";
+import { OfferLink } from "@/components/lp/OfferLink";
 
 // Every CTA goes through the internal redirect (cloaks the affiliate link).
 // The real destination lives in lib/offers.ts under this slug.
@@ -88,14 +89,12 @@ function Stars({ n = 5 }: { n?: number }) {
 
 function CtaButton({ children = "Get Up to 69% Off GuardHouse →" }: { children?: React.ReactNode }) {
   return (
-    <a
+    <OfferLink
       href={OFFER_URL}
-      target="_blank"
-      rel="noopener noreferrer sponsored"
       className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-emerald-600 px-6 py-4 text-center text-base font-extrabold uppercase tracking-wide text-white shadow-lg transition hover:bg-emerald-700 active:scale-[0.99] sm:text-lg"
     >
       {children}
-    </a>
+    </OfferLink>
   );
 }
 
@@ -329,9 +328,9 @@ export default function GuardHouseLanding() {
 
         {/* Final CTA */}
         <div className="mt-8"><CtaButton>Claim My GuardHouse Discount →</CtaButton></div>
-        <a href={OFFER_URL} target="_blank" rel="noopener noreferrer sponsored" className="mt-3 flex items-center justify-center gap-1 text-sm font-semibold text-emerald-700">
-          See today&apos;s price & availability <ChevronRight width={15} height={15} />
-        </a>
+        <OfferLink href={OFFER_URL} className="mt-3 flex items-center justify-center gap-1 text-sm font-semibold text-emerald-700">
+          See today&apos;s price &amp; availability <ChevronRight width={15} height={15} />
+        </OfferLink>
       </article>
 
       {/* Footer + disclosures */}
@@ -357,14 +356,12 @@ export default function GuardHouseLanding() {
 
       {/* Sticky mobile CTA */}
       <div className="fixed inset-x-0 bottom-0 z-40 border-t border-emerald-700 bg-emerald-600 p-3 sm:hidden">
-        <a
+        <OfferLink
           href={OFFER_URL}
-          target="_blank"
-          rel="noopener noreferrer sponsored"
           className="flex items-center justify-center gap-2 rounded-lg bg-white px-4 py-2.5 text-sm font-extrabold uppercase tracking-wide text-emerald-700"
         >
           Get Up to 69% Off →
-        </a>
+        </OfferLink>
       </div>
       {/* Spacer so the sticky bar doesn't cover the footer on mobile */}
       <div className="h-16 sm:hidden" />
