@@ -103,7 +103,7 @@ function CtaButton({ children = "Get Yu Sleep Tonight →" }: { children?: React
   return (
     <OfferLink
       href={OFFER_URL}
-      className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-green-500 px-6 py-4 text-center text-base font-extrabold uppercase tracking-wide text-white shadow-lg shadow-green-500/25 transition hover:bg-green-600 active:scale-[0.99] sm:text-lg"
+      className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-green-500 px-6 py-4 text-center text-base font-extrabold uppercase tracking-wide text-white shadow-lg shadow-green-500/25 transition hover:bg-green-600 active:scale-[0.99] sm:py-5 sm:text-xl md:py-6 md:text-2xl"
     >
       {children}
     </OfferLink>
