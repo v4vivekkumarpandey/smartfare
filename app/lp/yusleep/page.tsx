@@ -103,7 +103,7 @@ function CtaButton({ children = "Get Yu Sleep Tonight →" }: { children?: React
   return (
     <OfferLink
       href={OFFER_URL}
-      className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-green-500 px-6 py-4 text-center text-base font-extrabold uppercase tracking-wide text-white shadow-lg shadow-green-500/25 transition hover:bg-green-600 active:scale-[0.99] sm:py-5 sm:text-xl md:py-6 md:text-2xl"
+      className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-green-500 px-5 py-3 text-center text-sm font-extrabold uppercase tracking-wide text-white shadow-lg shadow-green-500/25 transition hover:bg-green-600 active:scale-[0.99] sm:text-base"
     >
       {children}
     </OfferLink>
@@ -170,7 +170,7 @@ export default function YuSleepLanding() {
             <CtaButton />
             <a
               href="#reviews"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-white/30 px-6 py-4 text-center text-base font-bold text-white transition hover:bg-white/10"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-white/30 px-5 py-3 text-center text-sm font-bold text-white transition hover:bg-white/10 sm:text-base"
             >
               See what customers say →
             </a>
