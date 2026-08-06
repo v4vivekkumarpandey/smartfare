@@ -14,12 +14,15 @@ export function LpImage({
   ratio = "aspect-video",
   className = "rounded-xl",
   fit = "object-cover",
+  priority = false,
 }: {
   src: string;
   alt: string;
   ratio?: string;
   className?: string;
   fit?: string;
+  /** Above-the-fold hero image: load eagerly for a faster LCP (Google Ads page experience). */
+  priority?: boolean;
 }) {
   const [failed, setFailed] = useState(false);
   const show = src && !failed;
@@ -43,7 +46,8 @@ export function LpImage({
       <img
         src={src}
         alt={alt}
-        loading="lazy"
+        loading={priority ? "eager" : "lazy"}
+        fetchPriority={priority ? "high" : "auto"}
         onError={() => setFailed(true)}
         className={`h-full w-full ${fit}`}
       />
