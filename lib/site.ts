@@ -4,7 +4,7 @@
 const resolvedUrl = (
   process.env.NEXT_PUBLIC_SITE_URL ||
   (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "") ||
-  "https://thesmartfares.com"
+  "https://thesmartfares.online"
 ).replace(/\/+$/, "");
 
 export const site = {
