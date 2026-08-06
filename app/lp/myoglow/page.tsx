@@ -37,7 +37,16 @@ export const metadata: Metadata = {
   title: "MyoGlow — At-Home Face & Neck Skincare Device",
   description:
     "MyoGlow is an easy-to-use, handheld face & neck device that combines gentle warmth, red LED light and soft massage — a simple daily skincare ritual at home.",
+  // Paid landing page: keep it out of the organic index but let the ad crawler read it.
   robots: { index: false, follow: false },
+  alternates: { canonical: `${DIR}/` },
+  openGraph: {
+    type: "website",
+    title: "MyoGlow — At-Home Face & Neck Skincare Device",
+    description:
+      "A handheld face & neck device combining gentle warmth, red LED light and soft massage — a simple daily skincare ritual at home.",
+    images: [{ url: IMAGES.hero }],
+  },
 };
 
 const features = [
@@ -233,6 +242,38 @@ export default function MyoGlowLanding() {
               return window and full terms on the offer page before purchasing.
             </p>
           </div>
+        </div>
+
+        {/* Why trust this page — transparency / about */}
+        <div className="mt-10 rounded-2xl border border-gray-200 bg-white p-6">
+          <h2 className="text-2xl font-extrabold text-gray-900">Why you can trust this page</h2>
+          <p className="mt-3 text-[17px] leading-relaxed text-gray-700">
+            We&apos;re an independent review and deals team. We put together plain,
+            no-hype summaries of products we think are worth a look, so you can decide
+            for yourself before clicking through to the seller.
+          </p>
+          <ul className="mt-4 space-y-2.5 text-[15px] text-gray-700">
+            <li className="flex items-start gap-2">
+              <Check width={18} height={18} className="mt-0.5 shrink-0 text-teal-600" />
+              <span><strong>We tell you it&apos;s an ad.</strong> This page is a paid advertisement and we may earn a commission if you buy — clearly labeled at the top and in the footer.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <Check width={18} height={18} className="mt-0.5 shrink-0 text-teal-600" />
+              <span><strong>No exaggerated claims.</strong> MyoGlow is a cosmetic personal-care device. We don&apos;t promise medical results — just what it is and how it&apos;s used.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <Check width={18} height={18} className="mt-0.5 shrink-0 text-teal-600" />
+              <span><strong>Prices &amp; terms come from the seller.</strong> Current pricing, guarantee window and shipping are always confirmed on the official offer page before you pay.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <Check width={18} height={18} className="mt-0.5 shrink-0 text-teal-600" />
+              <span><strong>Real ways to reach us.</strong> Questions? See our{" "}
+                <a href="/contact" className="font-semibold text-teal-700 underline">Contact</a>,{" "}
+                <a href="/privacy" className="font-semibold text-teal-700 underline">Privacy Policy</a> and{" "}
+                <a href="/terms" className="font-semibold text-teal-700 underline">Terms</a>.
+              </span>
+            </li>
+          </ul>
         </div>
 
         {/* FAQ */}
