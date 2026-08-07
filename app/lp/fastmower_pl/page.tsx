@@ -9,15 +9,18 @@ const OFFER_URL = "/go/offer/fastmower_pl";
 
 const DIR = "/lp/fastmower_pl";
 const IMAGES = {
-  logo: `${DIR}/logo.webp`,
-  product: `${DIR}/product.jpg`,
+  logo: `${DIR}/logo.png`,
+  product: `${DIR}/product.png`,
   hero: `${DIR}/hero.jpg`,
   feat1: `${DIR}/feat-1.jpg`,
   feat2: `${DIR}/feat-2.jpg`,
   feat3: `${DIR}/feat-3.jpg`,
   feat4: `${DIR}/feat-4.jpg`,
+  feat5: `${DIR}/feat-5.jpg`,
   kit: `${DIR}/kit.jpg`,
-  review: `${DIR}/review-1.jpg`,
+  review1: `${DIR}/review-1.png`,
+  review2: `${DIR}/review-2.jpg`,
+  review3: `${DIR}/review-3.jpg`,
 };
 
 export const metadata: Metadata = {
@@ -52,8 +55,13 @@ const features = [
   },
   {
     img: IMAGES.feat4,
-    title: "Dostosowanie do potrzeb:",
-    body: "Regulowany wysięgnik teleskopowy pozwala uzyskać wygodną pozycję pracy i dopasować urządzenie do Twojego wzrostu oraz rodzaju zadania.",
+    title: "Dostosowanie do Twoich potrzeb:",
+    body: "Regulowane kąty i wysokość cięcia, aby uzyskać idealne wykończenie na każdej powierzchni.",
+  },
+  {
+    img: IMAGES.feat5,
+    title: "Bezpieczeństwo na pierwszym miejscu:",
+    body: "Wyposażona w wyłącznik bezpieczeństwa i specjalne osłony, które zapewniają bezpieczne użytkowanie.",
   },
 ];
 
@@ -80,19 +88,19 @@ const kitItems = [
 
 const reviews = [
   {
+    name: "Damian",
+    img: IMAGES.review2,
+    body: "Kupiłem Fast Mower kilka miesięcy temu i to jedna z najlepszych inwestycji do mojego ogrodu. Uwielbiam możliwość zmiany ostrza w zależności od tego, co muszę zrobić – czy to koszenie trawy, czy przycinanie grubszych krzewów. Fakt, że jest bezprzewodowa, sprawia, że jest niezwykle wygodna: mogę swobodnie przemieszczać się po ogrodzie bez martwienia się o kable.",
+  },
+  {
+    name: "Elzbieta",
+    img: IMAGES.review3,
+    body: "Ta kosiarka 3 w 1 jest po prostu rewelacyjna. Bateria wytrzymuje wystarczająco długo, abym mogła dokończyć cały ogród za jednym razem, a do tego uwielbiam, jak jest lekka i łatwa w obsłudze. Wygodny uchwyt i regulowany wysięgnik sprawiają, że jest bardzo komfortowa w użytkowaniu, nawet dla osób, które nie mają dużo siły. Moi sąsiedzi już pytali, czego używam, bo mój ogród wygląda lepiej niż kiedykolwiek!",
+  },
+  {
     name: "Dana",
-    img: IMAGES.review,
+    img: IMAGES.review1,
     body: "Fast Mower sprawił, że pielęgnacja mojego ogrodu stała się znacznie łatwiejsza. To bardzo wszechstronny i solidny produkt. Użyłem wszystkich ostrzy i działają doskonale. Początkowo potrzebowałem kilku prób, aby przyzwyczaić się do zmiany funkcji, ale gdy już się nauczyłem, stało się to bardzo proste!",
-  },
-  {
-    name: "Marek",
-    img: IMAGES.review,
-    body: "Wreszcie jedno narzędzie zamiast trzech. Koszę trawę, podcinam krzewy i wykańczam krawędzie bez zmiany sprzętu. Bateria wytrzymuje na cały ogród, a waga jest naprawdę niewielka.",
-  },
-  {
-    name: "Katarzyna",
-    img: IMAGES.review,
-    body: "Bardzo wygodna i lekka. Regulowany wysięgnik sprawia, że pracuję bez bólu pleców. Dostawa była szybka, a jakość wykonania mnie pozytywnie zaskoczyła. Gorąco polecam!",
   },
 ];
 
@@ -220,7 +228,7 @@ export default function FastMowerLanding() {
 
             <div className="mt-6">
               <CtaButton className="w-full max-w-sm sm:w-auto">
-                Kup teraz i odkryj swój ogród!
+                Kup teraz i odkryj swój dom!
               </CtaButton>
             </div>
           </div>
@@ -258,7 +266,7 @@ export default function FastMowerLanding() {
       {/* ===================== SEKCJA CECH ===================== */}
       <section id="features" className="scroll-mt-16 bg-white">
         <div className="mx-auto max-w-6xl px-4 py-14">
-          <div className="grid gap-8 md:grid-cols-4">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
             {features.map((f) => (
               <div key={f.title}>
                 <LpImage
