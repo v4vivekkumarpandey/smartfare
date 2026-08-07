@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -8,6 +9,11 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
+// Google Ads conversion tracking — fires the "Submit lead form" conversion on
+// page load. This lives ONLY on the thank-you page (the conversion page).
+const GADS_ID = "AW-18371934800";
+const GADS_CONVERSION_LABEL = "hULSCLaZ5d0cEND0tbhE";
+
 /**
  * Shared cash-on-delivery thank-you page used by every landing page's order
  * form (OrderForm `thanksHref="/lp/thanks"`). Brand-neutral so any LP can reuse it.
@@ -15,6 +21,25 @@ export const metadata: Metadata = {
 export default function LpThanks() {
   return (
     <div className="flex min-h-screen flex-col bg-white text-gray-800">
+      {/* Google tag (gtag.js) + Submit lead form conversion — thank-you page only */}
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GADS_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script id="gads-conversion" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${GADS_ID}');
+          gtag('event', 'conversion', {
+            'send_to': '${GADS_ID}/${GADS_CONVERSION_LABEL}',
+            'value': 1.0,
+            'currency': 'USD'
+          });
+        `}
+      </Script>
+
       {/* ===================== POTWIERDZENIE ===================== */}
       <main className="flex flex-1 items-center justify-center px-4 py-16">
         <div className="mx-auto max-w-2xl text-center">
