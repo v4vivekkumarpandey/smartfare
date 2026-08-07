@@ -12,10 +12,8 @@ import { FaqAccordion } from "@/components/store/FaqAccordion";
 import { LpImage } from "@/components/lp/LpImage";
 import { OrderForm } from "@/components/lp/OrderForm";
 
-// Każde CTA przechodzi przez wewnętrzne przekierowanie (ukrywa link partnerski).
-// Prawdziwy adres docelowy znajduje się w lib/offers.ts pod tym slugiem.
-const OFFER_URL = "/go/offer/blower-pl";
-
+// CTA-y przewijają do formularza zamówienia (#order). Formularz COD wysyła
+// zamówienie bezpośrednio do islaffiliate (patrz komponent OrderForm).
 const DIR = "/lp/blower-pl";
 const IMAGES = {
   logo: `${DIR}/logo.webp`,
@@ -352,7 +350,15 @@ export default function BlowerLanding() {
 
           {/* Formularz zamówienia */}
           <div className="mx-auto mt-10 max-w-xl rounded-2xl border-2 border-green-500 bg-white p-6 shadow-sm">
-            <OrderForm offerHref={OFFER_URL} />
+            <OrderForm
+              isla={{
+                uid: "019fb28c-270f-7f36-9386-36d8b9ba93ee",
+                offer: "4097",
+                lp: "6541",
+                thankyoupage: "https://www.thesmartfares.online/lp/thanks",
+                formKey: "a1d8e19e0f3b3115f6bca5805832a00e854f0bc4",
+              }}
+            />
           </div>
         </div>
       </section>
