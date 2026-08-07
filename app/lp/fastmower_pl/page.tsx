@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
 import { Star, Check, Truck, Clock } from "lucide-react";
 import { LpImage } from "@/components/lp/LpImage";
-import { OrderForm } from "@/components/lp/OrderForm";
-
-// Każde CTA przechodzi przez wewnętrzne przekierowanie (ukrywa link partnerski).
-// Prawdziwy adres docelowy znajduje się w lib/offers.ts pod tym slugiem.
-const OFFER_URL = "/go/offer/fastmower_pl";
+import { FastMowerOrderForm } from "@/components/lp/FastMowerOrderForm";
 
 const DIR = "/lp/fastmower_pl";
 const IMAGES = {
@@ -387,7 +383,7 @@ export default function FastMowerLanding() {
           </div>
 
           <div className="rounded-b-xl border border-t-0 border-gray-200 bg-white p-6 shadow-sm">
-            <OrderForm offerHref={OFFER_URL} thanksHref="/lp/thanks" />
+            <FastMowerOrderForm />
           </div>
         </div>
       </section>
