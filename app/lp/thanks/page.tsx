@@ -1,34 +1,20 @@
 import type { Metadata } from "next";
 import { CheckCircle2 } from "lucide-react";
-import { LpImage } from "@/components/lp/LpImage";
-
-const DIR = "/lp/fastmower_pl";
 
 export const metadata: Metadata = {
-  title: "Dziękujemy za złożenie zamówienia! — Fast Mower",
+  title: "Dziękujemy za złożenie zamówienia!",
   description:
     "Twoje zamówienie zostało przyjęte. Nasz konsultant wkrótce skontaktuje się z Tobą telefonicznie, aby potwierdzić wysyłkę.",
   robots: { index: false, follow: false },
 };
 
-export default function FastMowerThanks() {
+/**
+ * Shared cash-on-delivery thank-you page used by every landing page's order
+ * form (OrderForm `thanksHref="/lp/thanks"`). Brand-neutral so any LP can reuse it.
+ */
+export default function LpThanks() {
   return (
     <div className="flex min-h-screen flex-col bg-white text-gray-800">
-      {/* ===================== NAV ===================== */}
-      <header className="border-b border-gray-100">
-        <div className="mx-auto flex max-w-5xl items-center justify-center px-4 py-3">
-          <div className="w-28 sm:w-36">
-            <LpImage
-              src={`${DIR}/logo.webp`}
-              alt="Fast Mower"
-              ratio="aspect-[240/72]"
-              fit="object-contain"
-              className=""
-            />
-          </div>
-        </div>
-      </header>
-
       {/* ===================== POTWIERDZENIE ===================== */}
       <main className="flex flex-1 items-center justify-center px-4 py-16">
         <div className="mx-auto max-w-2xl text-center">
@@ -74,8 +60,7 @@ export default function FastMowerThanks() {
       {/* ===================== STOPKA ===================== */}
       <footer className="bg-black text-gray-400">
         <div className="mx-auto max-w-5xl px-4 py-8 text-center text-xs">
-          <p>©2026 Fast Mower – Wszelkie prawa zastrzeżone</p>
-          <p className="mx-auto mt-3 max-w-2xl leading-relaxed text-gray-500">
+          <p className="mx-auto max-w-2xl leading-relaxed text-gray-500">
             Reklama · Treść sponsorowana. Ta strona jest prowadzona niezależnie i nie jest oficjalną
             witryną producenta. Ceny, rabaty, dostępność, gwarancje i specyfikacje są ustalane przez
             sprzedawcę i mogą ulec zmianie.

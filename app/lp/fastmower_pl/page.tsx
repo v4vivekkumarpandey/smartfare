@@ -379,7 +379,7 @@ export default function FastMowerLanding() {
           </div>
 
           <div className="rounded-b-xl border border-t-0 border-gray-200 bg-white p-6 shadow-sm">
-            <OrderForm offerHref={OFFER_URL} thanksHref={`${DIR}/thanks`} />
+            <OrderForm offerHref={OFFER_URL} thanksHref="/lp/thanks" />
           </div>
         </div>
       </section>
