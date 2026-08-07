@@ -1,25 +1,16 @@
 import type { Metadata } from "next";
 import {
-  Wind,
   Star,
-  Battery,
-  Gauge,
-  Wrench,
-  Zap,
-  Trash2,
-  Feather,
-  MapPin,
-  Truck,
-  RotateCcw,
-  ShieldCheck,
-  Phone,
   Check,
-  Flame,
+  CirclePlay,
+  Truck,
+  Zap,
+  BadgeCheck,
   ChevronRight,
 } from "lucide-react";
 import { FaqAccordion } from "@/components/store/FaqAccordion";
 import { LpImage } from "@/components/lp/LpImage";
-import { OfferLink } from "@/components/lp/OfferLink";
+import { OrderForm } from "@/components/lp/OrderForm";
 
 // Każde CTA przechodzi przez wewnętrzne przekierowanie (ukrywa link partnerski).
 // Prawdziwy adres docelowy znajduje się w lib/offers.ts pod tym slugiem.
@@ -27,9 +18,14 @@ const OFFER_URL = "/go/offer/blower-pl";
 
 const DIR = "/lp/blower-pl";
 const IMAGES = {
-  hero: `${DIR}/hero.webp`,
+  logo: `${DIR}/logo.webp`,
   product: `${DIR}/product.jpg`,
-  blades: `${DIR}/blades.jpg`,
+  featBattery: `${DIR}/feat-battery.jpg`,
+  featCollage: `${DIR}/feat-collage.jpg`,
+  featTurbine: `${DIR}/feat-turbine.jpg`,
+  review1: `${DIR}/review-1.jpg`,
+  review2: `${DIR}/review-2.jpg`,
+  review3: `${DIR}/review-3.jpg`,
   banner: `${DIR}/banner.png`,
 };
 
@@ -40,47 +36,68 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-const specs = [
-  { icon: Battery, title: "2 baterie 40V 4000 mAh w zestawie", body: "Do 12 godzin rzeczywistej pracy — wystarczy na całe podwórko." },
-  { icon: Gauge, title: "Przepływ powietrza 320 km/h i ssanie 1720 m³/h", body: "Wydmuchuje i zasysa mokre liście oraz ciężkie zanieczyszczenia za jednym razem." },
-  { icon: Wrench, title: "Wytrzymała tytanowa gwiazda z 32 ostrzami", body: "Rozdrabnia liście i gałązki bez zapychania się worka." },
-  { icon: Zap, title: "Szybka ładowarka w zestawie", body: "Pełne naładowanie w zaledwie 40 minut." },
-  { icon: Trash2, title: "55-litrowy worek z przezroczystym okienkiem", body: "Duża pojemność i podgląd poziomu napełnienia." },
-  { icon: Feather, title: "Tylko 3 kg wagi", body: "Lekka, dobrze wyważona i bardzo łatwa w obsłudze." },
+const heroPoints = [
+  "2 baterie 40V 4000 mAh w zestawie: 12 godzin rzeczywistej pracy",
+  "Przepływ powietrza 320 km/h i ssanie 1720 m³/h: nic nie zostaje na ziemi",
+  "Wytrzymała tytanowa gwiazda z 32 ostrzami, które kruszą kamienie, żwir i gruz bez zapychania",
+  "Szybka ładowarka w zestawie: pełne naładowanie w zaledwie 40 minut",
+  "55-litrowy worek z przezroczystym okienkiem do sprawdzania poziomu napełnienia",
+  "Tylko 3 kg wagi: można go używać godzinami bez zmęczenia",
 ];
 
-const highlights = [
-  { icon: Gauge, title: "Dmuchanie 320 km/h i zasysanie 1720 m³/h", body: "Usuwanie wszelkiego rodzaju zabrudzeń z milimetrową precyzją." },
-  { icon: Wrench, title: "Rozdrabnia kamienie, żwir i gałęzie", body: "Tytanowa gwiazda z 32 ostrzami radzi sobie z najtrudniejszymi zanieczyszczeniami." },
-  { icon: Feather, title: "Waży zaledwie 3 kg", body: "Sprzątaj dłużej bez zmęczenia rąk i pleców." },
+const offerPoints = [
+  "2 lata gwarancji",
+  "Dostępna dostawa",
+  "Bezpłatna wysyłka i dostawa w ciągu 24–48 godzin",
+  "Wsparcie telefoniczne przed i po zakupie",
+  "100% gwarancja zwrotu pieniędzy",
+];
+
+const features = [
+  {
+    img: IMAGES.featBattery,
+    caption: "Dmuchawa o prędkości 320 km/h i zasysanie 1720 m³/h",
+    body: "Potężny silnik bezszczotkowy napędza turbinę z prędkością do 180 000 obrotów na minutę, generując przepływ powietrza do 320 km/h. Wytwarza objętość ssania 1720 m³/h, zdolną do zasysania liści, gruzu, brudu, kamieni i żwiru bez wysiłku.",
+  },
+  {
+    img: IMAGES.featCollage,
+    caption: "Waży zaledwie 3 kg, dzięki czemu można go używać przez wiele godzin bez żadnego wysiłku",
+    body: "Lekki jak piórko, może być używany przez wiele godzin bez zmęczenia, idealny również dla osób starszych. Pojemny 55-litrowy worek na śmieci ma przezroczyste okienko, idealne do sprawdzania poziomu napełnienia. Utrzymuje porządek w ogrodach, na ścieżkach i gankach, szybko i łatwo zasysając liście, odpady, brud, żwir i kamienie, bez marnowania czasu.",
+  },
+  {
+    img: IMAGES.featTurbine,
+    caption: "Rozdrabnia kamienie, żwir i gałęzie bez blokowania się",
+    body: "Wytrzymała tytanowa gwiazda tnąca z 32 ostrzami skutecznie rozdrabnia i kruszy zasysany materiał. Niezniszczalna i objęta dożywotnią gwarancją – nie ulega uszkodzeniu nawet podczas zasysania dużych kamieni lub kawałków metalu. Funkcję rozdrabniania można włączyć lub wyłączyć w zależności od potrzeb.",
+  },
 ];
 
 const reviews = [
   {
     name: "Piotr Kowalski",
     date: "20-10-2025",
-    stars: 5,
-    body: "To zdecydowanie najlepsza dmuchawa, jaką używałem do sprzątania ogrodu. Duży przepływ powietrza (320 km/h) skutecznie usuwa zanieczyszczenia, a tryb ssania (1720 m³/h) świetnie zbiera liście.",
+    img: IMAGES.review1,
+    body: "To zdecydowanie najlepsza dmuchawa, jaką używałem do sprzątania ogrodu. Duży przepływ powietrza (320 km/h) skutecznie usuwa zanieczyszczenia, a tryb ssania (1720 m³/h) świetnie zbiera liście",
   },
   {
     name: "Anna Kowalczyk",
     date: "11-09-2025",
-    stars: 4,
-    body: "Używam tej dmuchawy ogrodowej od kilku tygodni i całkowicie zmieniła sposób, w jaki dbam o mój ogród. Strumień powietrza jest wystarczająco silny, aby przesuwać mokre liście i drobne zanieczyszczenia, a funkcja ssania ułatwia ich zbieranie.",
+    img: IMAGES.review2,
+    body: "Używam tej dmuchawy ogrodowej od kilku tygodni i całkowicie zmieniła sposób, w jaki dbam o mój ogród. Strumień powietrza jest wystarczająco silny, aby przesuwać mokre liście i drobne zanieczyszczenia, a funkcja ssania ułatwia ich zbieranie",
   },
   {
     name: "Paweł Zieliński",
     date: "05-09-2025",
-    stars: 5,
-    body: "To narzędzie ogrodowe przerosło moje oczekiwania. Bez problemu usuwa liście, gałązki i drobne zanieczyszczenia, a dwie baterie zapewniają wystarczający czas pracy na całym podwórku. Jest lekkie, dobrze wyważone i bardzo łatwe w obsłudze. Polecam każdemu, kto szuka wydajnego i niezawodnego pomocnika do ogrodu.",
+    img: IMAGES.review3,
+    body: "To narzędzie ogrodowe przerosło moje oczekiwania. Bez problemu usuwa liście, gałązki i drobne zanieczyszczenia, a dwie baterie zapewniają wystarczający czas pracy na całym podwórku. Jest lekkie, dobrze wyważone i bardzo łatwe w obsłudze. Jestem bardzo zadowolony z jego wydajności i polecam każdemu, kto szuka wydajnego i niezawodnego pomocnika do ogrodu",
   },
 ];
 
-const guarantees = [
-  { icon: ShieldCheck, text: "2 lata gwarancji" },
-  { icon: Truck, text: "Bezpłatna wysyłka i dostawa w ciągu 24–48 godzin" },
-  { icon: Phone, text: "Wsparcie telefoniczne przed i po zakupie" },
-  { icon: RotateCcw, text: "100% gwarancja zwrotu pieniędzy" },
+const ratingBars = [
+  { label: "5/5", pct: 92 },
+  { label: "4/5", pct: 68 },
+  { label: "3/5", pct: 40 },
+  { label: "2/5", pct: 16 },
+  { label: "1/5", pct: 8 },
 ];
 
 const faqs = [
@@ -90,14 +107,14 @@ const faqs = [
   { q: "Czy mogę zwrócić produkt?", a: "Tak! Jeśli nie będziesz zadowolony, oferujemy 100% gwarancję zwrotu pieniędzy." },
 ];
 
-function Stars({ count = 5, className = "text-amber-400" }: { count?: number; className?: string }) {
+function Stars({ count = 5, size = 16 }: { count?: number; size?: number }) {
   return (
-    <div className={`flex ${className}`}>
+    <div className="flex text-amber-400">
       {Array.from({ length: 5 }).map((_, i) => (
         <Star
           key={i}
-          width={16}
-          height={16}
+          width={size}
+          height={size}
           fill={i < count ? "currentColor" : "none"}
           strokeWidth={i < count ? 0 : 1.5}
           className={i < count ? "" : "text-gray-300"}
@@ -107,269 +124,323 @@ function Stars({ count = 5, className = "text-amber-400" }: { count?: number; cl
   );
 }
 
-function CtaButton({ children = "Kup teraz →" }: { children?: React.ReactNode }) {
+function CtaButton({ children = "Kup teraz", className = "" }: { children?: React.ReactNode; className?: string }) {
   return (
-    <OfferLink
-      href={OFFER_URL}
-      className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-green-600 px-6 py-4 text-center text-base font-extrabold uppercase tracking-wide text-white shadow-lg shadow-green-600/25 transition hover:bg-green-700 active:scale-[0.99] sm:text-lg"
+    <a
+      href="#order"
+      className={`inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-b from-orange-400 to-orange-600 px-8 py-4 text-center text-lg font-extrabold uppercase tracking-wide text-white shadow-lg shadow-orange-500/30 transition hover:from-orange-500 hover:to-orange-700 active:scale-[0.99] ${className}`}
     >
+      <CirclePlay width={22} height={22} />
       {children}
-    </OfferLink>
+    </a>
+  );
+}
+
+function PriceBlock() {
+  return (
+    <div className="text-center">
+      <div className="rounded-t-xl bg-green-600 py-2 text-center text-lg font-extrabold uppercase tracking-wide text-white">
+        Ograniczony czas
+      </div>
+      <div className="rounded-b-xl border border-t-0 border-green-200 bg-green-50 px-4 py-4">
+        <div className="flex items-end justify-center gap-3">
+          <span className="text-5xl font-extrabold text-green-600">255 zł</span>
+          <span className="pb-1 text-2xl font-semibold text-gray-400">
+            Zamiast <span className="line-through">999 zł</span>
+          </span>
+        </div>
+        <p className="mt-2 text-sm text-gray-600">
+          Ten produkt jest obecnie oglądany przez <strong>+365 osób</strong>. Pośpiesz się do wyczerpania zapasów
+        </p>
+      </div>
+    </div>
   );
 }
 
 export default function BlowerLanding() {
   return (
     <div className="bg-white text-gray-800">
-      {/* Pasek promocyjny / pilność */}
-      <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 bg-red-600 px-4 py-2 text-center text-[11px] font-bold uppercase tracking-wide text-white sm:text-xs">
-        <span className="inline-flex items-center gap-1">
-          <Flame width={14} height={14} /> Tylko dziś: 70% zniżki — darmowa wysyłka!
-        </span>
+      {/* ===================== PASEK PROMOCYJNY ===================== */}
+      <div className="sticky top-0 z-50 flex items-center justify-between gap-2 bg-gradient-to-r from-green-600 via-green-600 to-red-600 px-3 py-1.5 text-[11px] font-bold uppercase tracking-wide text-white sm:text-xs">
+        <span className="hidden sm:inline">Tylko dziś: 70% zniżki – darmowa wysyłka!</span>
+        <span className="sm:mx-auto">Płatność za pobraniem i darmowa wysyłka</span>
+        <a
+          href="#order"
+          className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-gray-900 px-4 py-1.5 text-white"
+        >
+          <CirclePlay width={15} height={15} /> Kup teraz
+        </a>
       </div>
 
       {/* ===================== HERO ===================== */}
-      <header className="border-b border-gray-100 bg-gradient-to-b from-green-50 to-white">
-        <div className="mx-auto max-w-3xl px-4 pb-10 pt-6">
-          {/* Marka */}
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-green-600 text-white">
-                <Wind width={18} height={18} />
-              </span>
-              <span className="text-lg font-extrabold tracking-tight text-gray-900">Wydajna dmuchawa</span>
-            </div>
-            <div className="flex items-center gap-2 text-sm">
+      <header className="mx-auto max-w-5xl px-4 py-8">
+        <div className="grid items-start gap-8 md:grid-cols-2">
+          {/* Lewa kolumna */}
+          <div>
+            <h1 className="text-3xl font-extrabold leading-tight text-gray-900 sm:text-4xl">
+              Wydajna dmuchawa
+            </h1>
+            <p className="mt-3 text-[15px] leading-relaxed text-gray-600">
+              Ta bezprzewodowa dmuchawa 3 w 1 o mocy 3000 W umożliwia czyszczenie ogrodów, ścieżek i patio za
+              jednym razem, usuwając mokre liście i ciężkie zanieczyszczenia bez użycia kabli i wysiłku.
+            </p>
+
+            <div className="mt-4 flex items-center gap-2">
+              <span className="text-sm font-bold text-gray-900">Ocena Klienta: 4.8/5</span>
               <Stars />
-              <span className="hidden text-gray-500 sm:inline">Zaufało nam tysiące klientów</span>
+            </div>
+
+            <div className="mt-5">
+              <LpImage
+                src={IMAGES.product}
+                alt="Bezprzewodowa dmuchawa ogrodowa 3 w 1"
+                ratio="aspect-square"
+                fit="object-contain"
+                className="rounded-2xl bg-white"
+                priority
+              />
+            </div>
+
+            <ul className="mt-5 space-y-2">
+              {[
+                "14-dniowa gwarancja satysfakcji lub zwrot pieniędzy",
+                "Zamówienie telefoniczne z operatorem",
+              ].map((t) => (
+                <li key={t} className="flex items-center gap-2 text-sm font-semibold uppercase text-gray-700">
+                  <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-green-600 text-white">
+                    <Check width={13} height={13} strokeWidth={3} />
+                  </span>
+                  {t}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Prawa kolumna */}
+          <div>
+            <PriceBlock />
+
+            <ul className="mt-5 space-y-3">
+              {heroPoints.map((t) => (
+                <li key={t} className="flex items-start gap-3 text-sm leading-relaxed text-gray-700">
+                  <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-green-600 text-white">
+                    <Check width={13} height={13} strokeWidth={3} />
+                  </span>
+                  {t}
+                </li>
+              ))}
+            </ul>
+
+            <div className="mt-6 flex justify-center">
+              <CtaButton className="w-full max-w-md" />
+            </div>
+
+            <div className="mt-6">
+              <LpImage
+                src={IMAGES.featCollage}
+                alt="Dmuchawa w akcji"
+                ratio="aspect-video"
+                fit="object-cover"
+                className="rounded-2xl"
+              />
             </div>
           </div>
-
-          {/* Zdjęcie produktu */}
-          <div className="mx-auto mt-6 max-w-md">
-            <LpImage
-              src={IMAGES.hero}
-              alt="Bezprzewodowa dmuchawa ogrodowa 3 w 1"
-              ratio="aspect-[4/3]"
-              fit="object-contain"
-              className="rounded-2xl bg-white"
-              priority
-            />
-          </div>
-
-          <h1 className="mt-6 text-center text-3xl font-extrabold leading-tight text-gray-900 sm:text-5xl">
-            Wydajna <span className="text-green-600">dmuchawa</span>
-          </h1>
-          <p className="mx-auto mt-4 max-w-xl text-center text-base leading-relaxed text-gray-600 sm:text-lg">
-            Ta bezprzewodowa dmuchawa <span className="font-semibold text-green-700">3 w 1 o mocy 3000 W</span> umożliwia
-            czyszczenie ogrodów, ścieżek i patio za jednym razem, usuwając mokre liście i ciężkie zanieczyszczenia
-            bez użycia kabli i wysiłku.
-          </p>
-
-          {/* Cena */}
-          <div className="mt-6 flex items-center justify-center gap-3">
-            <span className="text-4xl font-extrabold text-green-600">255 zł</span>
-            <span className="text-xl font-semibold text-gray-400 line-through">999 zł</span>
-            <span className="rounded-full bg-red-100 px-2.5 py-1 text-xs font-bold text-red-700">-70%</span>
-          </div>
-
-          {/* Niedobór */}
-          <div className="mx-auto mt-4 flex max-w-md flex-col items-center gap-2 text-center">
-            <p className="text-sm font-bold text-red-600">Zostało tylko 8 sztuk!</p>
-            <p className="text-xs text-gray-500">+365 osób ogląda teraz ten produkt</p>
-          </div>
-
-          {/* CTA */}
-          <div className="mx-auto mt-6 max-w-md"><CtaButton>Kup teraz →</CtaButton></div>
-          <p className="mt-2 text-center text-xs font-medium text-gray-500">
-            Płatność przy odbiorze · Darmowa wysyłka · Dostawa 24–48 h
-          </p>
         </div>
       </header>
 
-      {/* Etykieta reklamy (zgodność) */}
-      <p className="bg-white pt-6 text-center text-[10px] font-semibold uppercase tracking-widest text-gray-300">
-        Reklama · Treść sponsorowana
-      </p>
-
-      {/* ===================== SPECYFIKACJA ===================== */}
-      <section className="mx-auto max-w-3xl px-4 py-12">
-        <h2 className="text-center text-3xl font-extrabold text-gray-900">
-          Wszystko, czego potrzebujesz do{" "}
-          <span className="text-green-600">czystego ogrodu</span>
-        </h2>
-        <div className="mt-8 grid gap-4 sm:grid-cols-2">
-          {specs.map((s) => (
-            <div key={s.title} className="flex items-start gap-4 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm">
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-green-50 text-green-600">
-                <s.icon width={22} height={22} />
-              </span>
-              <div>
-                <h3 className="font-bold text-gray-900">{s.title}</h3>
-                <p className="mt-1 text-sm leading-relaxed text-gray-600">{s.body}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="mx-auto mt-8 max-w-sm"><CtaButton>Kup teraz →</CtaButton></div>
-      </section>
-
-      {/* ===================== WYRÓŻNIKI ===================== */}
-      <section className="bg-gray-900 text-white">
-        <div className="mx-auto max-w-3xl px-4 py-14">
-          <h2 className="text-center text-3xl font-extrabold">
-            Usuwanie wszelkiego rodzaju zabrudzeń z{" "}
-            <span className="text-green-400">milimetrową precyzją</span>
-          </h2>
-
-          <div className="mx-auto mt-8 max-w-md">
-            <LpImage
-              src={IMAGES.blades}
-              alt="Tytanowa gwiazda z 32 ostrzami"
-              ratio="aspect-video"
-              fit="object-cover"
-              className="rounded-2xl bg-white/5"
-            />
+      {/* ===================== SEKCJA CECH ===================== */}
+      <section className="bg-white">
+        <div className="mx-auto max-w-5xl px-4 py-10">
+          <div className="rounded-lg bg-gradient-to-r from-orange-400 to-orange-600 py-3 text-center text-xl font-extrabold uppercase tracking-wide text-white">
+            Usuwanie wszelkiego rodzaju zabrudzeń z milimetrową precyzją
           </div>
 
-          <div className="mt-10 space-y-6">
-            {highlights.map((h) => (
-              <div key={h.title} className="flex items-start gap-5 rounded-2xl bg-white/5 p-6">
-                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-green-500 text-white">
-                  <h.icon width={24} height={24} />
-                </span>
-                <div>
-                  <h3 className="text-lg font-bold">{h.title}</h3>
-                  <p className="mt-1 text-sm leading-relaxed text-gray-300">{h.body}</p>
-                </div>
+          <div className="mt-8 grid gap-8 md:grid-cols-3">
+            {features.map((f) => (
+              <div key={f.caption}>
+                <p className="mb-3 text-center text-sm font-bold text-gray-900">{f.caption}</p>
+                <LpImage src={f.img} alt={f.caption} ratio="aspect-square" fit="object-cover" className="rounded-xl" />
+                <p className="mt-3 text-sm leading-relaxed text-gray-600">{f.body}</p>
               </div>
             ))}
+          </div>
+
+          <div className="mt-8 flex justify-center">
+            <CtaButton />
           </div>
         </div>
       </section>
 
       {/* ===================== OPINIE ===================== */}
-      <section id="reviews" className="mx-auto max-w-3xl px-4 py-14">
-        <h2 className="text-center text-3xl font-extrabold text-gray-900">
-          Co mówią nasi <span className="text-green-600">klienci</span>
-        </h2>
-        <div className="mt-2 flex items-center justify-center gap-2">
-          <Stars />
-          <span className="text-sm font-semibold text-gray-600">Zweryfikowane opinie</span>
-        </div>
-
-        <div className="mt-8 space-y-5">
-          {reviews.map((r) => (
-            <div key={r.name} className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <span className="flex h-11 w-11 items-center justify-center rounded-full bg-green-100 font-bold text-green-700">
-                    {r.name.split(" ").map((w) => w[0]).join("")}
-                  </span>
-                  <div>
-                    <p className="flex items-center gap-1 font-bold text-gray-900">
-                      {r.name}
-                      <span className="inline-flex items-center gap-0.5 text-xs font-normal text-green-600">
-                        <Check width={12} height={12} /> Zweryfikowany
-                      </span>
-                    </p>
-                    <p className="text-xs text-gray-400">{r.date}</p>
-                  </div>
-                </div>
-                <Stars count={r.stars} />
-              </div>
-              <p className="mt-4 text-sm leading-relaxed text-gray-700">&ldquo;{r.body}&rdquo;</p>
-            </div>
-          ))}
-        </div>
-
-        <div className="mx-auto mt-8 max-w-sm"><CtaButton>Kup teraz →</CtaButton></div>
-      </section>
-
-      {/* ===================== GWARANCJE ===================== */}
-      <section className="bg-green-50">
-        <div className="mx-auto max-w-3xl px-4 py-12">
+      <section id="reviews" className="bg-gray-50">
+        <div className="mx-auto max-w-5xl px-4 py-12">
           <h2 className="text-center text-2xl font-extrabold text-gray-900">
-            Kupujesz bez ryzyka
+            Opinie klientów (ponad 17 250 zadowolonych klientów!)
           </h2>
-          <div className="mt-8 grid gap-4 sm:grid-cols-2">
-            {guarantees.map((g) => (
-              <div key={g.text} className="flex items-center gap-3 rounded-xl border border-green-200 bg-white p-4">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-green-100 text-green-700">
-                  <g.icon width={20} height={20} />
-                </span>
-                <p className="text-sm font-semibold text-gray-800">{g.text}</p>
+          <div className="mt-2 flex justify-center">
+            <Stars size={22} />
+          </div>
+
+          {/* Rozkład ocen */}
+          <div className="mx-auto mt-6 max-w-md space-y-1.5">
+            {ratingBars.map((r) => (
+              <div key={r.label} className="flex items-center gap-3">
+                <span className="w-8 text-xs font-semibold text-gray-500">{r.label}</span>
+                <div className="h-2.5 flex-1 overflow-hidden rounded-full bg-gray-200">
+                  <div className="h-full rounded-full bg-amber-400" style={{ width: `${r.pct}%` }} />
+                </div>
               </div>
             ))}
           </div>
+
+          {/* Karty opinii */}
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            {reviews.map((r) => (
+              <div key={r.name} className="flex flex-col rounded-2xl border border-gray-100 bg-white p-5 shadow-sm">
+                <p className="font-bold text-gray-900">{r.name}</p>
+                <div className="mt-1"><Stars size={14} /></div>
+                <div className="mt-3">
+                  <LpImage src={r.img} alt={`Opinia — ${r.name}`} ratio="aspect-square" fit="object-cover" className="rounded-xl" />
+                </div>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-gray-700">{r.body}</p>
+                <p className="mt-3 text-xs font-semibold text-green-700">Data weryfikacji: {r.date}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-8 flex justify-center">
+            <CtaButton />
+          </div>
         </div>
       </section>
 
-      {/* ===================== BOKS OFERTY ===================== */}
-      <section className="mx-auto max-w-2xl px-4 py-14">
-        <div className="rounded-2xl border-2 border-green-600 bg-green-50 p-6 text-center">
-          <div className="mx-auto mb-4 max-w-xs">
-            <LpImage src={IMAGES.product} alt="Bezprzewodowa dmuchawa 3 w 1" ratio="aspect-square" fit="object-contain" className="rounded-xl bg-white" />
+      {/* ===================== DRUGI BLOK OFERTY + FORMULARZ ===================== */}
+      <section id="order" className="scroll-mt-16 bg-white">
+        <div className="mx-auto max-w-5xl px-4 py-12">
+          <div className="grid items-center gap-8 md:grid-cols-2">
+            <div>
+              <LpImage
+                src={IMAGES.product}
+                alt="Bezprzewodowa dmuchawa 3 w 1"
+                ratio="aspect-square"
+                fit="object-contain"
+                className="rounded-2xl bg-white"
+              />
+            </div>
+            <div>
+              <div className="flex items-end gap-3">
+                <span className="text-5xl font-extrabold text-green-600">255 zł</span>
+                <span className="pb-1 text-2xl font-semibold text-gray-400">
+                  Zamiast <span className="line-through">999 zł</span>
+                </span>
+              </div>
+              <p className="mt-2 text-sm text-gray-600">
+                Ten produkt jest obecnie oglądany przez <strong>+365 osób</strong>. Pośpiesz się do wyczerpania zapasów
+              </p>
+              <ul className="mt-5 space-y-3">
+                {offerPoints.map((t) => (
+                  <li key={t} className="flex items-start gap-3 text-sm leading-relaxed text-gray-700">
+                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-green-600 text-white">
+                      <Check width={13} height={13} strokeWidth={3} />
+                    </span>
+                    {t}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <span className="inline-flex items-center gap-1 rounded-full bg-red-100 px-3 py-1 text-xs font-bold text-red-700">
-            <Flame width={13} height={13} /> Tylko dziś: 70% zniżki
-          </span>
-          <h2 className="mt-3 text-2xl font-extrabold text-gray-900">Wydajna dmuchawa 3 w 1</h2>
-          <div className="mt-2 flex items-center justify-center gap-3">
-            <span className="text-3xl font-extrabold text-green-600">255 zł</span>
-            <span className="text-lg font-semibold text-gray-400 line-through">999 zł</span>
-          </div>
-          <p className="mt-2 text-sm text-gray-600">Płatność za pobraniem i darmowa wysyłka. Zostało tylko 8 sztuk!</p>
-          <div className="mx-auto mt-5 max-w-sm"><CtaButton>Kup teraz →</CtaButton></div>
-          <div className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs font-medium text-gray-600">
-            <span className="inline-flex items-center gap-1"><RotateCcw width={14} height={14} className="text-green-600" /> 100% gwarancja zwrotu pieniędzy</span>
-            <span className="inline-flex items-center gap-1"><Truck width={14} height={14} className="text-green-600" /> Dostawa 24–48 h</span>
-            <span className="inline-flex items-center gap-1"><ShieldCheck width={14} height={14} className="text-green-600" /> 2 lata gwarancji</span>
+
+          {/* Formularz zamówienia */}
+          <div className="mx-auto mt-10 max-w-xl rounded-2xl border-2 border-green-500 bg-white p-6 shadow-sm">
+            <OrderForm offerHref={OFFER_URL} />
           </div>
         </div>
+      </section>
+
+      {/* ===================== BANER DOSTAWY ===================== */}
+      <section className="mx-auto max-w-5xl px-4 pb-4">
+        <LpImage src={IMAGES.banner} alt="Szybka i darmowa dostawa — dostawa w ciągu 24/48 godzin" ratio="aspect-[1280/520]" fit="object-cover" className="rounded-xl" />
       </section>
 
       {/* ===================== FAQ ===================== */}
-      <section className="mx-auto max-w-2xl px-4 pb-10">
-        <h2 className="text-2xl font-extrabold text-gray-900">Najczęściej zadawane pytania</h2>
-        <div className="mt-4"><FaqAccordion faqs={faqs} /></div>
-
-        <div className="mt-8"><CtaButton>Kup teraz →</CtaButton></div>
-        <OfferLink href={OFFER_URL} className="mt-3 flex items-center justify-center gap-1 text-sm font-semibold text-green-700">
-          Sprawdź cenę i dostępność <ChevronRight width={15} height={15} />
-        </OfferLink>
+      <section className="mx-auto max-w-3xl px-4 py-10">
+        <div className="[&_button]:text-base">
+          <FaqAccordion faqs={faqs} />
+        </div>
       </section>
 
-      {/* ===================== STOPKA + INFORMACJE ===================== */}
-      <footer className="border-t border-gray-200 bg-gray-50">
-        <div className="mx-auto max-w-2xl px-4 py-8 text-xs leading-relaxed text-gray-500">
-          <p className="font-semibold text-gray-600">Informacja o reklamie</p>
-          <p className="mt-2">
-            To jest reklama, a nie artykuł prasowy ani materiał redakcyjny. Ta strona jest prowadzona niezależnie
-            i nie jest oficjalną witryną producenta. Wszelkie znaki towarowe są własnością ich właścicieli i są
-            używane wyłącznie w celach identyfikacyjnych. Możemy otrzymać prowizję, jeśli dokonasz zakupu za
-            pośrednictwem linków na tej stronie, bez dodatkowych kosztów dla Ciebie. Ceny, rabaty, dostępność,
-            gwarancje i specyfikacje są ustalane przez sprzedawcę i widoczne na stronie zamówienia — zawsze
-            potwierdź aktualne szczegóły przed zakupem. Opinie odzwierciedlają indywidualne doświadczenia
-            klientów, a wyniki mogą się różnić.
-          </p>
-          <p className="mt-4">
-            © {new Date().getFullYear()} · Strona promocyjna ·{" "}
-            <a href="/privacy" className="underline">Polityka prywatności</a> ·{" "}
-            <a href="/terms" className="underline">Regulamin</a> ·{" "}
-            <a href="/contact" className="underline">Kontakt</a>
-          </p>
+      {/* ===================== TRZY IKONY ===================== */}
+      <section className="border-y border-gray-100 bg-gray-50">
+        <div className="mx-auto grid max-w-4xl gap-8 px-4 py-12 text-center sm:grid-cols-3">
+          {[
+            { icon: Truck, text: "Bezpłatna dostawa w ciągu 24–48 godzin." },
+            { icon: Zap, text: "Możliwa jest dostawa ekspresowa." },
+            { icon: BadgeCheck, text: "Gwarancja satysfakcji lub zwrotu pieniędzy." },
+          ].map((c) => (
+            <div key={c.text} className="flex flex-col items-center">
+              <c.icon width={40} height={40} className="text-gray-800" strokeWidth={1.5} />
+              <p className="mt-3 max-w-[200px] text-sm font-semibold text-gray-700">{c.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ===================== KOŃCOWE CTA ===================== */}
+      <section className="mx-auto max-w-5xl px-4 py-10 text-center">
+        <a
+          href="#order"
+          className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-b from-orange-400 to-orange-600 px-10 py-4 text-lg font-extrabold uppercase tracking-wide text-white shadow-lg shadow-orange-500/30 transition hover:from-orange-500 hover:to-orange-700 active:scale-[0.99]"
+        >
+          <CirclePlay width={22} height={22} /> Płatność przy odbiorze
+        </a>
+      </section>
+
+      {/* ===================== STOPKA ===================== */}
+      <footer className="bg-[#0b2b6b] text-blue-100">
+        <div className="mx-auto grid max-w-5xl gap-8 px-4 py-10 sm:grid-cols-3">
+          <div>
+            <div className="mb-3 max-w-[180px]">
+              <LpImage src={IMAGES.logo} alt="Dealz4europe" ratio="aspect-[1128/300]" fit="object-contain" className="bg-white/95 p-2 rounded" />
+            </div>
+            <p className="text-xs leading-relaxed text-blue-200">
+              Your trusted destination for quality products, unbeatable prices, and a seamless online shopping
+              experience across Europe.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-sm font-bold text-white">Quick Links</h3>
+            <ul className="mt-3 space-y-2 text-xs">
+              <li><a href="#order" className="hover:underline">Form</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-sm font-bold text-white">Policies</h3>
+            <ul className="mt-3 space-y-2 text-xs">
+              <li><a href="/privacy" className="hover:underline">Privacy Policy</a></li>
+              <li><a href="/terms" className="hover:underline">Terms &amp; Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div className="border-t border-white/10">
+          <div className="mx-auto max-w-5xl px-4 py-5 text-[11px] leading-relaxed text-blue-300">
+            <p>
+              Reklama · Treść sponsorowana. Ta strona jest prowadzona niezależnie i nie jest oficjalną witryną
+              producenta. Ceny, rabaty, dostępność, gwarancje i specyfikacje są ustalane przez sprzedawcę i mogą
+              ulec zmianie. Możemy otrzymać prowizję od zakupów dokonanych za pośrednictwem tej strony.
+            </p>
+            <p className="mt-2">© {new Date().getFullYear()} Dealz4europe</p>
+          </div>
         </div>
       </footer>
 
       {/* Przyklejone CTA na mobile */}
-      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-green-700 bg-green-600 p-3 sm:hidden">
-        <OfferLink
-          href={OFFER_URL}
-          className="flex items-center justify-center gap-2 rounded-lg bg-white px-4 py-2.5 text-sm font-extrabold uppercase tracking-wide text-green-700"
+      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-orange-700 bg-white p-2.5 shadow-[0_-4px_12px_rgba(0,0,0,0.08)] sm:hidden">
+        <a
+          href="#order"
+          className="flex items-center justify-center gap-2 rounded-full bg-gradient-to-b from-orange-400 to-orange-600 px-4 py-3 text-sm font-extrabold uppercase tracking-wide text-white"
         >
-          Kup teraz · 255 zł →
-        </OfferLink>
+          <CirclePlay width={18} height={18} /> Kup teraz · 255 zł
+        </a>
       </div>
       <div className="h-16 sm:hidden" />
     </div>
