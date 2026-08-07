@@ -15,8 +15,11 @@ declare global {
  * forwards the buyer to the offer's real destination (from lib/offers.ts via the
  * cloaked /go/offer/[slug] redirect). Swap the redirect for a POST to your
  * fulfilment endpoint when you have one.
+ *
+ * Pass `thanksHref` to send the buyer to an on-site thank-you page after submit
+ * instead of straight to the offer (used by the Fast Mower cash-on-delivery flow).
  */
-export function OrderForm({ offerHref }: { offerHref: string }) {
+export function OrderForm({ offerHref, thanksHref }: { offerHref: string; thanksHref?: string }) {
   const [submitting, setSubmitting] = useState(false);
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -28,7 +31,7 @@ export function OrderForm({ offerHref }: { offerHref: string }) {
       });
     }
     window.gtag?.("event", "offer_click", { offer: offerHref });
-    window.location.href = offerHref;
+    window.location.href = thanksHref ?? offerHref;
   }
 
   return (
