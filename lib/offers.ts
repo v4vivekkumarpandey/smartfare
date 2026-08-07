@@ -5,6 +5,8 @@
  */
 export const OFFERS: Record<string, string> = {
   guardhouse: "https://www.techmonkeypost.com/7ZFGB6Q/HH3LH49/",
+  // TODO: replace with the real affiliate / cash-on-delivery order-form URL for the blower offer.
+  "blower-pl": "https://hoteurodeals.com/blower-pl2/",
   yusleep: "https://getyusleep.com?&shield=40a0efpjq4r-qrfq9dp1lm6ley&traffic_source=google&traffic_type=paid",
   myoglow: "https://sale.mydermadream.com/cc170-myoglow-of2?affId=&c1=&c2=5&_ef_transaction_id=&oid=66&affid2=5&_ef_transaction_id=&lpid=2903&uid=2903&guoid=1138&guaffid=11538",
 };
