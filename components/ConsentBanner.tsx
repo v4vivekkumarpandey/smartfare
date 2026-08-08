@@ -1,20 +1,29 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 const KEY = "sf_consent";
 
+// Paid landing pages run their own funnel (own footer + privacy link); the
+// consent banner is suppressed there so it doesn't overlap the sticky CTA.
+function isLandingPage(pathname: string | null) {
+  return !!pathname && (pathname.startsWith("/lp/") || pathname.startsWith("/pl/"));
+}
+
 export function ConsentBanner() {
+  const pathname = usePathname();
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
+    if (isLandingPage(pathname)) return;
     try {
       if (!localStorage.getItem(KEY)) setVisible(true);
     } catch {
       /* storage blocked — don't show */
     }
-  }, []);
+  }, [pathname]);
 
   function decide(value: "accepted" | "declined") {
     try {
@@ -33,7 +42,7 @@ export function ConsentBanner() {
     setVisible(false);
   }
 
-  if (!visible) return null;
+  if (!visible || isLandingPage(pathname)) return null;
 
   return (
     <div className="fixed inset-x-0 bottom-0 z-50 p-3 sm:p-4">
