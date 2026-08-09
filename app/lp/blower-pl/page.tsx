@@ -449,6 +449,17 @@ export default function BlowerLanding() {
         </a>
       </div>
       <div className="h-16 sm:hidden" />
+
+      {/* Pixel konwersji islaffiliate */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="https://offers.islaffiliate.com/pixel/?offer=4097&uid=019fb28c-270f-7f36-9386-36d8b9ba93ee&subid2=thesmartfares&utm_source=google&utm_medium=cpc&utm_campaign={campaignid}&utm_content={creative}lp=6541&"
+        width={1}
+        height={1}
+        alt=""
+        aria-hidden="true"
+        style={{ position: "absolute", left: "-9999px" }}
+      />
     </div>
   );
 }
