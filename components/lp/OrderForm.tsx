@@ -27,6 +27,24 @@ export type IslaConfig = {
 const ISLA_ACTION = "https://offers.islaffiliate.com/forms/html/";
 const ISLA_SCRIPT = "https://offers.islaffiliate.com/forms/html/js-v2/";
 
+/** Field labels/placeholders, so one form serves LPs in different languages. */
+export type OrderFormLabels = {
+  name: string;
+  phone: string;
+  address: string;
+  submit: string;
+  /** Button text while the fallback form redirects. */
+  submitting: string;
+};
+
+const PL_LABELS: OrderFormLabels = {
+  name: "Imię i nazwisko",
+  phone: "Telefon",
+  address: "Adres",
+  submit: "Kup teraz",
+  submitting: "Przetwarzanie…",
+};
+
 const inputClass =
   "mt-1 w-full rounded-lg border border-gray-300 px-4 py-3 text-sm outline-none focus:border-green-500 focus:ring-2 focus:ring-green-200";
 const labelClass = "block text-sm font-bold text-gray-800";
@@ -58,12 +76,15 @@ export function OrderForm({
   offerHref,
   thanksHref,
   product,
+  labels = PL_LABELS,
 }: {
   isla?: IslaConfig;
   offerHref?: string;
   thanksHref?: string;
   /** Product name recorded with the lead in our Google Form backup. */
   product?: string;
+  /** Override for non-Polish landing pages (defaults to Polish). */
+  labels?: OrderFormLabels;
 }) {
   const [submitting, setSubmitting] = useState(false);
 
@@ -82,21 +103,21 @@ export function OrderForm({
         >
           <div>
             <label htmlFor="name" className={labelClass}>
-              Imię i nazwisko<span className="text-red-600">*</span>
+              {labels.name}<span className="text-red-600">*</span>
             </label>
-            <input id="name" type="text" name="name" autoComplete="name" placeholder="Imię i nazwisko" required className={inputClass} />
+            <input id="name" type="text" name="name" autoComplete="name" placeholder={labels.name} required className={inputClass} />
           </div>
           <div>
             <label htmlFor="tel" className={labelClass}>
-              Telefon<span className="text-red-600">*</span>
+              {labels.phone}<span className="text-red-600">*</span>
             </label>
-            <input id="tel" type="tel" name="tel" autoComplete="tel" placeholder="Telefon" required className={inputClass} />
+            <input id="tel" type="tel" name="tel" autoComplete="tel" placeholder={labels.phone} required className={inputClass} />
           </div>
           <div>
             <label htmlFor="street-address" className={labelClass}>
-              Adres<span className="text-red-600">*</span>
+              {labels.address}<span className="text-red-600">*</span>
             </label>
-            <input id="street-address" type="text" name="street-address" autoComplete="street-address" placeholder="Adres" required className={inputClass} />
+            <input id="street-address" type="text" name="street-address" autoComplete="street-address" placeholder={labels.address} required className={inputClass} />
           </div>
 
           <input name="uid" type="hidden" value={isla.uid} />
@@ -107,7 +128,7 @@ export function OrderForm({
 
           <div className="pt-1 text-center">
             <button name="submit" type="submit" className={buttonClass}>
-              Kup teraz
+              {labels.submit}
             </button>
           </div>
         </form>
@@ -129,24 +150,24 @@ export function OrderForm({
     <form onSubmit={handleSubmit} className="space-y-4 text-left">
       <div>
         <label htmlFor="of-name" className={labelClass}>
-          Imię i nazwisko<span className="text-red-600">*</span>
+          {labels.name}<span className="text-red-600">*</span>
         </label>
-        <input id="of-name" name="name" type="text" required autoComplete="name" placeholder="Imię i nazwisko" className={inputClass} />
+        <input id="of-name" name="name" type="text" required autoComplete="name" placeholder={labels.name} className={inputClass} />
       </div>
       <div>
         <label htmlFor="of-phone" className={labelClass}>
-          Telefon<span className="text-red-600">*</span>
+          {labels.phone}<span className="text-red-600">*</span>
         </label>
-        <input id="of-phone" name="phone" type="tel" required autoComplete="tel" placeholder="Telefon" className={inputClass} />
+        <input id="of-phone" name="phone" type="tel" required autoComplete="tel" placeholder={labels.phone} className={inputClass} />
       </div>
       <div>
         <label htmlFor="of-address" className={labelClass}>
-          Adres<span className="text-red-600">*</span>
+          {labels.address}<span className="text-red-600">*</span>
         </label>
-        <input id="of-address" name="address" type="text" required autoComplete="street-address" placeholder="Adres" className={inputClass} />
+        <input id="of-address" name="address" type="text" required autoComplete="street-address" placeholder={labels.address} className={inputClass} />
       </div>
       <button type="submit" disabled={submitting} className={buttonClass}>
-        {submitting ? "Przetwarzanie…" : "Kup teraz"}
+        {submitting ? labels.submitting : labels.submit}
       </button>
     </form>
   );
