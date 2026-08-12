@@ -35,6 +35,8 @@ export type OrderFormLabels = {
   submit: string;
   /** Button text while the fallback form redirects. */
   submitting: string;
+  /** Set only on offers whose form asks for an e-mail (rendered optional). */
+  email?: string;
 };
 
 const PL_LABELS: OrderFormLabels = {
@@ -119,6 +121,14 @@ export function OrderForm({
             </label>
             <input id="street-address" type="text" name="street-address" autoComplete="street-address" placeholder={labels.address} required className={inputClass} />
           </div>
+          {labels.email ? (
+            <div>
+              <label htmlFor="email" className={labelClass}>
+                {labels.email}
+              </label>
+              <input id="email" type="email" name="email" autoComplete="email" placeholder={labels.email} className={inputClass} />
+            </div>
+          ) : null}
 
           <input name="uid" type="hidden" value={isla.uid} />
           <input name="offer" type="hidden" value={isla.offer} />
