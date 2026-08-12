@@ -30,8 +30,12 @@ const IMAGES = {
 /** Small strip of shots under the hero product image. */
 const thumbs = [`${DIR}/thumb-1.jpg`, `${DIR}/thumb-2.jpg`, `${DIR}/thumb-3.jpg`, `${DIR}/thumb-4.jpg`];
 
-/** Vimeo id of the product clip. Empty = video section + nav link hidden. */
-const VIDEO_ID: string = "";
+/**
+ * Vimeo id of the campaign's clip — a square (1:1) creative, so the embed is
+ * rendered 1:1. Empty = video section + nav link hidden, with the wide poster
+ * shot standing in.
+ */
+const VIDEO_ID: string = "1214337433";
 
 const PRICE = "424,99 PLN";
 const PRICE_OLD = "509,99 PLN";
@@ -365,9 +369,21 @@ export default function SecurityCamLanding() {
 
       {/* ===================== WIDEO ===================== */}
       {VIDEO_ID ? (
-        <section id="video" className="scroll-mt-16 bg-black">
-          <div className="mx-auto max-w-4xl px-4 py-14">
-            <div className="aspect-video w-full overflow-hidden rounded-2xl">
+        <section id="video" className="relative scroll-mt-16 overflow-hidden bg-black">
+          {/* Szeroki kadr kamery jako tło — zamiast pustego czarnego pasa. */}
+          <div className="absolute inset-0">
+            <LpImage
+              src={IMAGES.videoPoster}
+              alt=""
+              ratio="h-full"
+              fit="object-cover"
+              className="h-full"
+            />
+            <div className="absolute inset-0 bg-gray-900/85" />
+          </div>
+
+          <div className="relative mx-auto max-w-4xl px-4 py-14">
+            <div className="mx-auto aspect-square w-full max-w-xl overflow-hidden rounded-2xl">
               <iframe
                 src={`https://player.vimeo.com/video/${VIDEO_ID}?dnt=1`}
                 title={PRODUCT_NAME}
