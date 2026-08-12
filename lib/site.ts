@@ -17,7 +17,7 @@ export const site = {
   tagline: "Verified codes. Real savings. Every day.",
   // Analytics / ads tracking (all optional — blank = disabled)
   // GA4 measurement ID, e.g. G-XXXXXXXXXX
-  gaId: process.env.NEXT_PUBLIC_GA_ID || "",
+  gaId: process.env.NEXT_PUBLIC_GA_ID || "G-J4BLR61KWY",
   // Google Ads tag ID, e.g. AW-XXXXXXXXX
   adsId: process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || "AW-18371934800",
   // Google Ads conversion label for the "Get Code" action, e.g. AbC-D_efg
