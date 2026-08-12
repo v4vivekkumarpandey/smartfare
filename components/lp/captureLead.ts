@@ -30,6 +30,8 @@ const FIELDS = {
   phone: "entry.990646571",
   address: "entry.831433790",
   product: "entry.146538455",
+  /** Only some offers ask for an e-mail; the column stays blank for the rest. */
+  email: "entry.1851623794",
 };
 
 /** Reads a form field by any of the names used across our LPs. */
@@ -55,6 +57,7 @@ export function captureLead(form: HTMLFormElement, product?: string): void {
       phone: field(data, "tel", "phone"),
       address: field(data, "street-address", "address"),
       product: product || window.location.pathname,
+      email: field(data, "email"),
     };
 
     const params = new URLSearchParams();
