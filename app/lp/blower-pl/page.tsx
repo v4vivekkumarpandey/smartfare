@@ -351,6 +351,7 @@ export default function BlowerLanding() {
           {/* Formularz zamówienia */}
           <div className="mx-auto mt-10 max-w-xl rounded-2xl border-2 border-green-500 bg-white p-6 shadow-sm">
             <OrderForm
+              product="Dmuchawa 3 w 1"
               isla={{
                 uid: "019fb28c-270f-7f36-9386-36d8b9ba93ee",
                 offer: "4097",

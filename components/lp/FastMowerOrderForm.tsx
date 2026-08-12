@@ -1,11 +1,15 @@
+"use client";
+
 import Script from "next/script";
+import { captureLead } from "./captureLead";
 
 /**
  * Cash-on-delivery order form for the Fast Mower landing page. It POSTs directly
  * to the islaffiliate lead-form endpoint with the campaign's hidden fields; that
  * backend records the lead and forwards the buyer to `thankyoupage`
  * (/lp/thanks), where the Google Ads conversion snippet fires. The async
- * js-v2 script enhances/validates the submit client-side.
+ * js-v2 script enhances/validates the submit client-side. On submit we also
+ * post a duplicate of the lead to our own Google Form (see `captureLead`).
  *
  * Field names/ids (name, tel, street-address) and the hidden uid/offer/lp/_key
  * values must stay exactly as provided by the affiliate — the endpoint keys off
@@ -17,6 +21,7 @@ export function FastMowerOrderForm() {
       className="tm-order-form space-y-4 text-left"
       action="https://offers.islaffiliate.com/forms/html/"
       method="post"
+      onSubmit={(e) => captureLead(e.currentTarget, "Fast Mower")}
     >
       <div>
         <label htmlFor="name" className="block text-sm font-bold text-gray-800">

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Script from "next/script";
 import { site } from "@/lib/site";
+import { captureLead } from "./captureLead";
 
 declare global {
   interface Window {
@@ -56,10 +57,13 @@ export function OrderForm({
   isla,
   offerHref,
   thanksHref,
+  product,
 }: {
   isla?: IslaConfig;
   offerHref?: string;
   thanksHref?: string;
+  /** Product name recorded with the lead in our Google Form backup. */
+  product?: string;
 }) {
   const [submitting, setSubmitting] = useState(false);
 
@@ -71,7 +75,10 @@ export function OrderForm({
           className="tm-order-form space-y-4 text-left"
           action={isla.action ?? ISLA_ACTION}
           method="post"
-          onSubmit={() => fireConversion(`isla:${isla.offer}`)}
+          onSubmit={(e) => {
+            captureLead(e.currentTarget, product);
+            fireConversion(`isla:${isla.offer}`);
+          }}
         >
           <div>
             <label htmlFor="name" className={labelClass}>
@@ -112,6 +119,7 @@ export function OrderForm({
   // ---- Fallback: JS-redirect form -----------------------------------------
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    captureLead(e.currentTarget, product);
     setSubmitting(true);
     fireConversion(offerHref ?? "");
     window.location.href = thanksHref ?? offerHref ?? "/";

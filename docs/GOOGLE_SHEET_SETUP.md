@@ -195,3 +195,31 @@ checkboxes).
 
 Under the hood this calls `GET /api/revalidate?secret=…`, which clears the
 cached sheet data so your edits appear within seconds.
+
+---
+
+## 5. Landing-page leads (order forms → your own sheet)
+
+LP order forms post the real order to islaffiliate. In parallel, every submit
+also sends a copy of the lead to a **Google Form** you own, whose responses land
+in a linked Google Sheet — a backup record to check against what the network
+reports. No backend, no service account, no Apps Script.
+
+It's already wired to the **"Offer From Leads"** form (questions: Name,
+Telephone No, Address, Product) in
+[`components/lp/captureLead.ts`](../components/lp/captureLead.ts). Each landing
+page passes its own product label — `<OrderForm product="…" />`, or the
+hard-coded name in `FastMowerOrderForm`.
+
+To point it at a different form:
+
+1. Create the form, then in **Responses** click **Link to Sheets**.
+2. In the form editor: ⋮ → **Get pre-filled link** → fill dummy answers → **Get
+   link**. The copied URL contains an `entry.123456789` id per question — those
+   go in `FIELDS`.
+3. `ACTION` is that same URL with `/viewform…` replaced by `/formResponse`.
+4. Leave `ACTION` empty to turn lead capture off.
+
+Keep the form accepting responses and **do not** require sign-in, or the posts
+are rejected. Nothing here can break an order: the copy is fire-and-forget and
+any failure is ignored.
