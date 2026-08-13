@@ -20,6 +20,7 @@ import {
 import { FaqAccordion } from "@/components/store/FaqAccordion";
 import { LpImage } from "@/components/lp/LpImage";
 import { OfferLink } from "@/components/lp/OfferLink";
+import { CookieGate } from "@/components/lp/CookieGate";
 
 // Every CTA goes through the internal redirect (cloaks the affiliate link).
 // The real destination lives in lib/offers.ts under this slug.
@@ -448,6 +449,9 @@ export default function YuSleepLanding() {
         </OfferLink>
       </div>
       <div className="h-16 sm:hidden" />
+
+      {/* Cookie notice on first visit — both buttons continue to the offer */}
+      <CookieGate offerUrl={OFFER_URL} storageKey="sf_lp_gate_yusleep" />
     </div>
   );
 }
