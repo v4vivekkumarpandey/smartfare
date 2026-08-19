@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 
 // Google Ads conversion tracking — fires the "Submit lead form" conversion on
 // page load. This lives ONLY on the thank-you page (the conversion page).
-const GADS_ID = "AW-18371934800";
-const GADS_CONVERSION_LABEL = "hULSCLaZ5d0cEND0tbhE";
+const GADS_ID = "AW-17863778548";
+const GADS_CONVERSION_LABEL = "U5z6CMjDmcscEPTBjsZC";
 
 /**
  * Czech cash-on-delivery thank-you page — same conversion tracking as

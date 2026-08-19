@@ -19,7 +19,7 @@ export const site = {
   // GA4 measurement ID, e.g. G-XXXXXXXXXX
   gaId: process.env.NEXT_PUBLIC_GA_ID || "G-J4BLR61KWY",
   // Google Ads tag ID, e.g. AW-XXXXXXXXX
-  adsId: process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || "AW-18371934800",
+  adsId: process.env.NEXT_PUBLIC_GOOGLE_ADS_ID || "AW-17863778548",
   // Google Ads conversion label for the "Get Code" action, e.g. AbC-D_efg
   adsConversionLabel: process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_LABEL || "",
   // Google AdSense publisher id, e.g. ca-pub-1234567890123456 (blog pages only)
