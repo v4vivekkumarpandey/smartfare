@@ -62,6 +62,29 @@ function fireConversion(label: string) {
   window.gtag?.("event", "offer_click", { offer: label });
 }
 
+/** sessionStorage key holding the buyer's details for one-click cross-sell reuse. */
+export const SF_ORDER_KEY = "sf_order";
+
+/**
+ * Persist the buyer's details (read straight off the submitting form) so the
+ * thank-you page can offer one-click reorders without retyping. Same-origin, so
+ * it survives the islaffiliate redirect round-trip in the same tab.
+ */
+function persistBuyer(form: HTMLFormElement, offer: string) {
+  try {
+    const data = new FormData(form);
+    const payload = {
+      name: String(data.get("name") ?? ""),
+      tel: String(data.get("tel") ?? ""),
+      address: String(data.get("street-address") ?? ""),
+      offer,
+    };
+    sessionStorage.setItem(SF_ORDER_KEY, JSON.stringify(payload));
+  } catch {
+    // sessionStorage may be unavailable (private mode / blocked) — non-fatal.
+  }
+}
+
 /**
  * Cash-on-delivery order form.
  *
@@ -99,6 +122,7 @@ export function OrderForm({
           action={isla.action ?? ISLA_ACTION}
           method="post"
           onSubmit={(e) => {
+            persistBuyer(e.currentTarget, isla.offer);
             captureLead(e.currentTarget, product);
             fireConversion(`isla:${isla.offer}`);
           }}

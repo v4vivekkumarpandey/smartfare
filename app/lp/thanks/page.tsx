@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { CheckCircle2 } from "lucide-react";
+import { CrossSell } from "@/components/lp/CrossSell";
 
 export const metadata: Metadata = {
   title: "Dziękujemy za złożenie zamówienia!",
@@ -81,6 +82,10 @@ export default function LpThanks() {
           <hr className="mt-10 border-gray-200" />
         </div>
       </main>
+
+      {/* ===================== SPRZEDAŻ KRZYŻOWA (1 KLIK) ===================== */}
+      <CrossSell />
+      <div className="h-12" />
 
       {/* ===================== STOPKA ===================== */}
       <footer className="bg-black text-gray-400">
