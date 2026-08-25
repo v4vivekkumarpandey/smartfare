@@ -5,6 +5,7 @@ import { Check, CirclePlay } from "lucide-react";
 import { site } from "@/lib/site";
 import { LpImage } from "@/components/lp/LpImage";
 import { SF_ORDER_KEY } from "@/components/lp/OrderForm";
+import { captureLeadValues } from "@/components/lp/captureLead";
 import { CROSS_SELL, type CrossSellProduct } from "@/lib/crossSell";
 
 const ISLA_ACTION = "https://offers.islaffiliate.com/forms/html/";
@@ -85,6 +86,12 @@ export function CrossSell() {
     if (!buyer || pending.current[product.slug] || ordered[product.slug]) return;
     pending.current[product.slug] = true;
     fireConversion(`crosssell:${product.isla.offer}`);
+    captureLeadValues({
+      name: buyer.name,
+      phone: buyer.tel,
+      address: buyer.address,
+      product: product.name,
+    });
     submitOrder(product, buyer);
     setOrdered((prev) => ({ ...prev, [product.slug]: true }));
   }

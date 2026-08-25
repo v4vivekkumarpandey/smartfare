@@ -43,23 +43,18 @@ function field(data: FormData, ...names: string[]): string {
   return "";
 }
 
+/** A lead's values, keyed the same as {@link FIELDS}. */
+type LeadValues = Partial<Record<keyof typeof FIELDS, string>>;
+
 /**
- * @param product Which offer the lead is for — falls back to the LP's path, so
- *   an LP that forgets to pass one is still identifiable in the sheet.
+ * Posts one lead to the Google Form. Shared by {@link captureLead} (form-based,
+ * the LP order forms) and {@link captureLeadValues} (plain values, the
+ * thank-you-page cross-sell). Fire-and-forget: never throws.
  */
-export function captureLead(form: HTMLFormElement, product?: string): void {
+function postLead(values: LeadValues): void {
   if (!ACTION) return;
 
   try {
-    const data = new FormData(form);
-    const values: Record<keyof typeof FIELDS, string> = {
-      name: field(data, "name"),
-      phone: field(data, "tel", "phone"),
-      address: field(data, "street-address", "address"),
-      product: product || window.location.pathname,
-      email: field(data, "email"),
-    };
-
     const params = new URLSearchParams();
     for (const [key, entry] of Object.entries(FIELDS)) {
       const value = values[key as keyof typeof FIELDS];
@@ -85,4 +80,34 @@ export function captureLead(form: HTMLFormElement, product?: string): void {
   } catch {
     /* recording a lead must never break the actual order */
   }
+}
+
+/**
+ * @param product Which offer the lead is for — falls back to the LP's path, so
+ *   an LP that forgets to pass one is still identifiable in the sheet.
+ */
+export function captureLead(form: HTMLFormElement, product?: string): void {
+  if (!ACTION) return;
+
+  try {
+    const data = new FormData(form);
+    postLead({
+      name: field(data, "name"),
+      phone: field(data, "tel", "phone"),
+      address: field(data, "street-address", "address"),
+      product: product || window.location.pathname,
+      email: field(data, "email"),
+    });
+  } catch {
+    /* recording a lead must never break the actual order */
+  }
+}
+
+/**
+ * Same as {@link captureLead} but from values already in hand rather than a
+ * form — used by the thank-you page's one-click cross-sell, which reorders from
+ * the buyer details it stashed in sessionStorage (no form to read).
+ */
+export function captureLeadValues(values: LeadValues): void {
+  postLead(values);
 }
