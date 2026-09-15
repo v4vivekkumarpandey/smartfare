@@ -38,7 +38,7 @@ export function CouponRow({
 
   return (
     <>
-      <div className="rounded-xl border border-ink-100 bg-white shadow-sm transition hover:shadow-md">
+      <div className="overflow-hidden rounded-xl border border-ink-100 bg-white shadow-sm transition hover:shadow-md">
         <div className="flex items-stretch gap-2.5 p-2.5 sm:gap-4 sm:p-4">
           <div className="flex w-16 shrink-0 flex-col items-center justify-center rounded-lg bg-accent-500/10 px-1 py-2 text-center sm:w-24">
             <span className="text-sm font-extrabold leading-tight text-accent-600 sm:text-lg">

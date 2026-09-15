@@ -129,14 +129,14 @@ export default async function StorePage({
               priority
             />
             <div className="flex-1">
-              <h1 className="flex flex-wrap items-center gap-x-2 gap-y-1 text-2xl font-extrabold tracking-tight text-ink-900 sm:text-3xl">
-                <span>{store.name} Promo Code &amp; Discount Code</span>
+              <h1 className="text-2xl font-extrabold tracking-tight text-ink-900 sm:text-3xl">
+                {store.name} Promo Code &amp; Discount Code
                 <a
                   href={goHref(store.slug, "site")}
                   target="_blank"
                   rel="noopener noreferrer sponsored"
                   aria-label={`Visit ${store.name}`}
-                  className="text-ink-300 hover:text-brand-600"
+                  className="ml-1.5 inline-flex align-middle text-ink-300 hover:text-brand-600"
                 >
                   <ExternalLink width={18} height={18} />
                 </a>
@@ -186,7 +186,7 @@ export default async function StorePage({
                     Automatically test every code — save up to {bestDiscount}.
                   </p>
                 </div>
-                <span className="shrink-0 rounded-lg bg-accent-500 px-3 py-2 text-sm font-bold text-white sm:px-4">
+                <span className="shrink-0 whitespace-nowrap rounded-lg bg-accent-500 px-3 py-2 text-sm font-bold text-white sm:px-4">
                   Get Code
                 </span>
               </a>
