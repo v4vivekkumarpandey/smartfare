@@ -129,8 +129,8 @@ export default async function StorePage({
               priority
             />
             <div className="flex-1">
-              <h1 className="flex items-center gap-2 text-2xl font-extrabold tracking-tight text-ink-900 sm:text-3xl">
-                {store.name} Promo Code &amp; Discount Code
+              <h1 className="flex flex-wrap items-center gap-x-2 gap-y-1 text-2xl font-extrabold tracking-tight text-ink-900 sm:text-3xl">
+                <span>{store.name} Promo Code &amp; Discount Code</span>
                 <a
                   href={goHref(store.slug, "site")}
                   target="_blank"
@@ -147,17 +147,19 @@ export default async function StorePage({
             </div>
           </div>
 
-          <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-ink-100 pt-4">
-            <span className="rounded-full bg-accent-500/10 px-3 py-1 text-sm font-bold text-accent-600">
-              {coupons.length} Offers
-            </span>
-            <span className="text-sm font-semibold text-ink-900">
+          <div className="mt-4 border-t border-ink-100 pt-4">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5">
+              <span className="rounded-full bg-accent-500/10 px-3 py-1 text-sm font-bold text-accent-600">
+                {coupons.length} Offers
+              </span>
+              <span className="inline-flex items-center gap-1.5 text-xs text-ink-500">
+                <ShieldCheck width={14} height={14} className="text-success" />
+                Trusted by {formatNumber(store.reviewCount * 3 + 200)}+ users
+              </span>
+            </div>
+            <p className="mt-1.5 text-sm font-semibold text-ink-900">
               Save Up to {bestDiscount} on {store.name} — All Codes Applied in One Tap
-            </span>
-            <span className="ml-auto inline-flex items-center gap-1.5 text-xs text-ink-500">
-              <ShieldCheck width={14} height={14} className="text-success" />
-              Trusted by {formatNumber(store.reviewCount * 3 + 200)}+ users
-            </span>
+            </p>
           </div>
         </section>
 
@@ -171,20 +173,20 @@ export default async function StorePage({
                 href={goHref(store.slug, best.id)}
                 target="_blank"
                 rel="noopener noreferrer sponsored"
-                className="mb-4 flex items-center gap-4 rounded-xl border-2 border-accent-500 bg-accent-500/5 p-4 transition hover:bg-accent-500/10"
+                className="mb-4 flex items-center gap-3 rounded-xl border-2 border-accent-500 bg-accent-500/5 p-3 transition hover:bg-accent-500/10 sm:gap-4 sm:p-4"
               >
-                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent-500 text-white">
-                  <Ticket width={22} height={22} />
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent-500 text-white sm:h-12 sm:w-12">
+                  <Ticket width={20} height={20} />
                 </span>
-                <div className="flex-1">
+                <div className="min-w-0 flex-1">
                   <p className="text-sm font-bold text-ink-900">
                     Apply All {store.name} Codes in One Tap
                   </p>
-                  <p className="text-xs text-ink-500">
+                  <p className="hidden text-xs text-ink-500 sm:block">
                     Automatically test every code — save up to {bestDiscount}.
                   </p>
                 </div>
-                <span className="rounded-lg bg-accent-500 px-4 py-2 text-sm font-bold text-white">
+                <span className="shrink-0 rounded-lg bg-accent-500 px-3 py-2 text-sm font-bold text-white sm:px-4">
                   Get Code
                 </span>
               </a>
@@ -356,7 +358,7 @@ export default async function StorePage({
               <Metric label="Success Rate" value={`${best.successRate}%`} />
               <Metric label="Used" value={`${formatNumber(best.uses)}x`} />
             </div>
-            <div className="mt-4 max-w-md">
+            <div className="mt-4 sm:max-w-md">
               <CopyCodeBox
                 coupon={toPublicCoupon(best)}
                 storeName={store.name}
@@ -413,6 +415,7 @@ export default async function StorePage({
             Browse {store.name} Promo Codes &amp; Offers Today
           </h2>
           <div className="mt-4 overflow-x-auto">
+            <p className="mb-2 text-xs text-ink-500 sm:hidden">Scroll right to see all columns →</p>
             <table className="w-full min-w-[560px] text-left text-sm">
               <thead>
                 <tr className="border-b border-ink-100 text-xs uppercase tracking-wide text-ink-500">
