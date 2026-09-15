@@ -5,6 +5,19 @@ import { LpImage } from "@/components/lp/LpImage";
 const OFFER_URL = "https://www.djpcraze.com/B9JC5ZS/H7KX3ZL/?uid=44423";
 const DIR = "/lp/ryoko-pro";
 
+// Image filenames as dropped into public/lp/ryoko-pro/
+const IMG = {
+  hero:     `${DIR}/24w05-a-basic-advertorial-43-c-us-en-at-inuse-191x1-img-h-0-t-0-bg-cl-d-no.webp`,
+  bench:    `${DIR}/24w05-a-basic-advertorial-2-c-us-en-at-inuse-191x1-img-h-0-t-0-bg-cl-d-no.webp`,
+  sale:     `${DIR}/image-1.webp`,
+  outdoor:  `${DIR}/ryoko-pro-forest.webp`,
+  features: `${DIR}/screenshot-2024-01-29-at-132701.webp`,
+  box:      `${DIR}/screenshot-2024-02-05-at-175213.webp`,
+  unbox:    `${DIR}/screenshot-2024-02-05-at-175313.webp`,
+  desk:     `${DIR}/screenshot-2024-02-05-at-184449.webp`,
+  payments: `${DIR}/without-background.webp`,
+};
+
 export const metadata: Metadata = {
   title: "Telecom Companies Tried to Get This BANNED and FAILED — Save Money and Improve Internet Speed Worldwide",
   description:
@@ -40,14 +53,7 @@ export default function RyokoProLanding() {
       {/* ── HEADER ─────────────────────────────────────────── */}
       <header className="border-b border-gray-200 bg-white px-4 py-3">
         <div className="mx-auto flex max-w-2xl items-center justify-between">
-          <div className="w-28">
-            <LpImage
-              src={`${DIR}/logo.png`}
-              alt="Ryoko"
-              ratio="aspect-[3/1]"
-              fit="object-contain"
-            />
-          </div>
+          <span className="text-2xl font-black tracking-widest text-gray-900">RYOKO</span>
           <div className="flex items-center gap-3">
             <span className="text-xl">🇬🇧</span>
             <a
@@ -63,7 +69,7 @@ export default function RyokoProLanding() {
       </header>
 
       {/* ── URGENT BANNER ──────────────────────────────────── */}
-      <div className="bg-amber-50 px-4 py-2 text-center text-sm text-gray-700 border-b border-amber-200">
+      <div className="border-b border-amber-200 bg-amber-50 px-4 py-2 text-center text-sm text-gray-700">
         <strong>URGENT UPDATE</strong> – Ryoko Pro is currently on a MASSIVE SALE, however, it may not be available on the{" "}
         <a href={OFFER_URL} target="_blank" rel="nofollow noopener" className="font-bold text-blue-700 underline">
           website HERE
@@ -93,7 +99,7 @@ export default function RyokoProLanding() {
         {/* Hero — woman at beach */}
         <div className="mt-4">
           <LpImage
-            src={`${DIR}/hero.jpg`}
+            src={IMG.hero}
             alt="Woman holding Ryoko Pro at the beach"
             ratio="aspect-video"
             fit="object-cover"
@@ -118,12 +124,12 @@ export default function RyokoProLanding() {
           When you're away from home, are you tired of having to connect to public Wi-Fi that's slow, unreliable or insecure? The Ryoko portable Wi-Fi can deliver a strong, fast and secure online connection just about wherever you go.
         </p>
 
-        {/* ── FEATURE BOXES GRAPHIC ──────────────────────────── */}
+        {/* ── FEATURE BOXES GRAPHIC ─────────────────────────── */}
         <h2 className="mt-8 text-xl font-extrabold text-gray-900">Why do people use this Portable Wi-Fi?</h2>
 
         <div className="mt-4">
           <LpImage
-            src={`${DIR}/features.png`}
+            src={IMG.features}
             alt="No contract · SIM card pre-installed · Superfast 150Mbs WiFi Speed"
             ratio="aspect-[3/1]"
             fit="object-contain"
@@ -131,12 +137,12 @@ export default function RyokoProLanding() {
           />
         </div>
 
-        {/* Unbox image */}
+        {/* Flat-lay unbox */}
         <div className="mt-6">
           <LpImage
-            src={`${DIR}/unbox.jpg`}
-            alt="Ryoko Pro unboxed — device, charging case and cable"
-            ratio="aspect-video"
+            src={IMG.unbox}
+            alt="Ryoko Pro — device, charging case and cable"
+            ratio="aspect-[4/3]"
             fit="object-cover"
             className="rounded-lg"
           />
@@ -147,10 +153,10 @@ export default function RyokoProLanding() {
           <em className="font-semibold">David B.</em>
         </p>
 
-        {/* Box / muama unboxing image */}
+        {/* Full muama box unboxing */}
         <div className="mt-5">
           <LpImage
-            src={`${DIR}/box.jpg`}
+            src={IMG.box}
             alt="Ryoko Pro (Muama Ryoko) in original box"
             ratio="aspect-video"
             fit="object-cover"
@@ -167,10 +173,10 @@ export default function RyokoProLanding() {
           <em className="font-semibold">Charles T.</em>
         </p>
 
-        {/* Desk review image */}
+        {/* Desk / laptop overhead */}
         <div className="mt-5">
           <LpImage
-            src={`${DIR}/review1.jpg`}
+            src={IMG.desk}
             alt="Using Ryoko Pro at a desk with laptop"
             ratio="aspect-video"
             fit="object-cover"
@@ -191,10 +197,10 @@ export default function RyokoProLanding() {
           <CtaLink>Get Muama Ryoko with your FREE SIM card now!</CtaLink>
         </p>
 
-        {/* Outdoor review image */}
+        {/* Man on bench / outdoor review */}
         <div className="mt-6">
           <LpImage
-            src={`${DIR}/review2.jpg`}
+            src={IMG.bench}
             alt="Man working on laptop outdoors with Ryoko Pro"
             ratio="aspect-video"
             fit="object-cover"
@@ -211,10 +217,10 @@ export default function RyokoProLanding() {
           I love its portable design. It is very light, smart and stylish, and easy to hold in my pocket. Battery worked for about 10 hours — that's exactly what I need when I'm on the road.
         </p>
 
-        {/* Outdoor / car / jacket use image */}
+        {/* Car + jacket outdoor use */}
         <div className="mt-5">
           <LpImage
-            src={`${DIR}/outdoor.jpg`}
+            src={IMG.outdoor}
             alt="Ryoko Pro in the car and outdoors in jacket pocket"
             ratio="aspect-video"
             fit="object-cover"
@@ -239,7 +245,7 @@ export default function RyokoProLanding() {
           </li>
           <li>
             <strong className="text-gray-900">→ Stay productive.</strong> With your Ryoko share Wi-Fi internet access with{" "}
-            <strong>up to 10 devices</strong>. Connect your laptop, mobile phone, tablet, gaming handheld and many more. Share a secure connection with your friends and family! Reaches up to 150Mbps download speed — enjoy HD video without buffering, make video calls, browse smoothly no matter where you are.
+            <strong>up to 10 devices</strong>. Connect your laptop, mobile phone, tablet, gaming handheld and many more. Reaches up to 150Mbps download speed — enjoy HD video without buffering, make video calls, browse smoothly no matter where you are.
           </li>
           <li>
             <strong className="text-gray-900">→ It Won't Suck The Life Out Of Your Battery.</strong> Never suffer from a drained battery. 3G, 4G, LTE hotspots drain your phone battery almost instantly. The Ryoko portable Wi-Fi lasts up to 10 hours.
@@ -286,11 +292,11 @@ export default function RyokoProLanding() {
           <strong>special 70% discount</strong> for our readers — but stock is limited.
         </p>
 
-        {/* Sale product image with badge */}
+        {/* Sale product with -70% badge */}
         <div className="mt-5 flex justify-center">
-          <div className="w-48">
+          <div className="w-52">
             <LpImage
-              src={`${DIR}/sale.png`}
+              src={IMG.sale}
               alt="Ryoko Pro — 70% off"
               ratio="aspect-square"
               fit="object-contain"
@@ -323,7 +329,7 @@ export default function RyokoProLanding() {
         {/* Payment logos */}
         <div className="mt-4 flex justify-center">
           <LpImage
-            src={`${DIR}/payments.png`}
+            src={IMG.payments}
             alt="Visa, Mastercard, PayPal, Klarna, American Express accepted"
             ratio="aspect-[6/1]"
             fit="object-contain"
@@ -343,7 +349,7 @@ export default function RyokoProLanding() {
           </div>
           <div className="mt-3 flex justify-center">
             <LpImage
-              src={`${DIR}/payments.png`}
+              src={IMG.payments}
               alt="Payment methods"
               ratio="aspect-[6/1]"
               fit="object-contain"
