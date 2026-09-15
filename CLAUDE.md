@@ -61,6 +61,11 @@ Instant cache bust: `POST /api/revalidate?secret=<REVALIDATE_SECRET>` — wire t
 
 New stores added to the sheet appear after first request with no redeploy needed (`dynamicParams = true`).
 
+**Gotcha — stale build cache:** `unstable_cache` persists in `.next/` across local builds. If sheet changes don't appear after `npm run build`, delete `.next` first:
+```bash
+rm -rf .next && npm run build
+```
+
 ## Key config files
 
 | File | What to change |
@@ -97,6 +102,19 @@ NEXT_PUBLIC_ADSENSE_CLIENT # ca-pub-… (blog pages only)
 
 AdSense Auto Ads must stay off — enabling it would serve ads on paid Google Ads LP pages (policy violation).
 
+## Apps Script setup
+
+`scripts/apps-script.gs` has two constants at the top — fill them in before pasting into the sheet's Apps Script editor:
+
+```js
+var CONFIG_URL = 'https://your-domain.com';
+var CONFIG_SECRET = 'your-REVALIDATE_SECRET';
+```
+
+This wires **🌐 Website → Publish now** so edits go live instantly without using the configure-webhook prompts.
+
 ## Deploy
 
 Push to GitHub → import into Vercel (zero-config). Set env vars in Vercel dashboard. The `NEXT_PUBLIC_SITE_URL` var must match your actual domain for canonicals and JSON-LD to be correct.
+
+**Vercel build cache:** Vercel also persists the Next.js build cache between deployments. If a newly-added store is missing after a deploy, trigger a redeploy with **"Use existing Build Cache" unchecked** from the Vercel dashboard.

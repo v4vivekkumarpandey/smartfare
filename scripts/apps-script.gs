@@ -19,8 +19,8 @@
 // ─── EASIEST SETUP ──────────────────────────────────────────────────────────
 // Fill these two in and you're done — no "Configure webhook…" prompts needed.
 // (If you leave them blank, the script uses whatever "Configure webhook…" saved.)
-var CONFIG_URL = '';     // e.g. 'https://www.thesmartfares.online'
-var CONFIG_SECRET = '';  // e.g. 'your-REVALIDATE_SECRET'
+var CONFIG_URL = 'https://www.thesmartfares.online';     // e.g. 'https://www.thesmartfares.online'
+var CONFIG_SECRET = 'a7d6c67662754621ee454d00a13ab7f56d9ebd32a65134195536b279a6a25e9a';  // e.g. 'your-REVALIDATE_SECRET'
 // ────────────────────────────────────────────────────────────────────────────
 
 var PROP_URL = 'SITE_URL';
