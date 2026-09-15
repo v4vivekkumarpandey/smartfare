@@ -4,6 +4,7 @@
  * can change it in one place.
  */
 export const OFFERS: Record<string, string> = {
+  "ryoko-pro": "https://www.djpcraze.com/B9JC5ZS/H7KX3ZL/?uid=44423",
   guardhouse: "https://www.techmonkeypost.com/7ZFGB6Q/HH3LH49/",
   // TODO: replace with the real affiliate / cash-on-delivery order-form URL for the blower offer.
   "blower-pl": "https://hoteurodeals.com/blower-pl2/",

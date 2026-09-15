@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import { Check, Shield, RotateCcw, Smile, Truck } from "lucide-react";
+import { Check } from "lucide-react";
 import { LpImage } from "@/components/lp/LpImage";
 
-const OFFER_URL = "https://www.djpcraze.com/B9JC5ZS/H7KX3ZL/?uid=44423";
+const OFFER_URL = "/out/ryoko-pro";
 const DIR = "/lp/ryoko-pro";
 
-// Image filenames as dropped into public/lp/ryoko-pro/
 const IMG = {
   hero:     `${DIR}/24w05-a-basic-advertorial-43-c-us-en-at-inuse-191x1-img-h-0-t-0-bg-cl-d-no.webp`,
   bench:    `${DIR}/24w05-a-basic-advertorial-2-c-us-en-at-inuse-191x1-img-h-0-t-0-bg-cl-d-no.webp`,
@@ -25,13 +24,11 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-function CtaButton({ children }: { children: React.ReactNode }) {
+function CtaButton({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return (
     <a
       href={OFFER_URL}
-      target="_blank"
-      rel="nofollow noopener"
-      className="block w-full rounded-lg bg-green-600 px-6 py-5 text-center text-lg font-extrabold uppercase tracking-wide text-white shadow-lg transition hover:bg-green-700 active:scale-[0.99]"
+      className={`block w-full rounded-lg bg-green-600 px-6 py-4 text-center text-base font-extrabold uppercase tracking-wide text-white shadow-lg transition hover:bg-green-700 active:scale-[0.99] sm:py-5 sm:text-lg ${className}`}
     >
       {children}
     </a>
@@ -40,7 +37,15 @@ function CtaButton({ children }: { children: React.ReactNode }) {
 
 function CtaLink({ children }: { children: React.ReactNode }) {
   return (
-    <a href={OFFER_URL} target="_blank" rel="nofollow noopener" className="font-bold text-green-700 underline hover:text-green-900">
+    <a href={OFFER_URL} className="font-bold text-green-700 underline hover:text-green-900">
+      {children}
+    </a>
+  );
+}
+
+function BlueLink({ children }: { children: React.ReactNode }) {
+  return (
+    <a href={OFFER_URL} className="font-bold text-blue-700 underline hover:text-blue-900">
       {children}
     </a>
   );
@@ -51,16 +56,14 @@ export default function RyokoProLanding() {
     <div className="min-h-screen bg-white text-gray-800 pb-20 sm:pb-0">
 
       {/* ── HEADER ─────────────────────────────────────────── */}
-      <header className="border-b border-gray-200 bg-white px-4 py-3">
+      <header className="sticky top-0 z-40 border-b border-gray-200 bg-white px-4 py-3">
         <div className="mx-auto flex max-w-2xl items-center justify-between">
-          <span className="text-2xl font-black tracking-widest text-gray-900">RYOKO</span>
-          <div className="flex items-center gap-3">
-            <span className="text-xl">🇬🇧</span>
+          <span className="text-xl font-black tracking-widest text-gray-900 sm:text-2xl">RYOKO</span>
+          <div className="flex items-center gap-2 sm:gap-3">
+            <span className="text-lg sm:text-xl">🇬🇧</span>
             <a
               href={OFFER_URL}
-              target="_blank"
-              rel="nofollow noopener"
-              className="rounded bg-amber-400 px-4 py-2 text-sm font-extrabold uppercase tracking-wide text-gray-900 hover:bg-amber-500"
+              className="rounded bg-amber-400 px-3 py-1.5 text-xs font-extrabold uppercase tracking-wide text-gray-900 hover:bg-amber-500 sm:px-4 sm:py-2 sm:text-sm"
             >
               ORDER NOW
             </a>
@@ -69,297 +72,267 @@ export default function RyokoProLanding() {
       </header>
 
       {/* ── URGENT BANNER ──────────────────────────────────── */}
-      <div className="border-b border-amber-200 bg-amber-50 px-4 py-2 text-center text-xs leading-snug text-gray-700 sm:text-sm">
+      <div className="border-b border-green-200 bg-green-50 px-4 py-2 text-center text-xs leading-snug text-gray-700 sm:text-sm">
         <strong>URGENT UPDATE</strong> – Ryoko Pro is currently on a MASSIVE SALE, however, it may not be available on the{" "}
-        <a href={OFFER_URL} target="_blank" rel="nofollow noopener" className="font-bold text-blue-700 underline">
-          website HERE
-        </a>
-        .
+        <a href={OFFER_URL} className="font-bold text-blue-700 underline">website HERE</a>.
       </div>
 
       {/* ── ARTICLE ────────────────────────────────────────── */}
-      <main className="mx-auto max-w-2xl px-4 py-6">
+      <main className="mx-auto max-w-2xl px-4 py-5">
 
-        {/* Stars + headline */}
+        {/* Stars */}
         <div className="flex items-center gap-2">
-          <div className="flex gap-0.5 text-amber-400">
-            {"★★★★★".split("").map((s, i) => <span key={i} className="text-lg">{s}</span>)}
-          </div>
-          <span className="text-sm text-gray-500">4,821 likes</span>
+          <span className="text-base text-amber-400 sm:text-lg">★★★★★</span>
+          <span className="text-xs text-gray-500 sm:text-sm">4,821 likes</span>
         </div>
 
-        <h1 className="mt-3 text-xl font-extrabold leading-tight text-gray-900 sm:text-3xl">
+        {/* Headline */}
+        <h1 className="mt-2 text-xl font-extrabold leading-tight text-gray-900 sm:text-3xl">
           Telecom Companies Tried to Get This BANNED and FAILED. Save Money and Improve Internet Speed Worldwide
         </h1>
 
-        <div className="mt-3 inline-block rounded bg-red-600 px-3 py-1 text-sm font-extrabold uppercase tracking-wide text-white">
+        <div className="mt-3 inline-block rounded bg-red-600 px-3 py-1 text-xs font-extrabold uppercase tracking-wide text-white sm:text-sm">
           SALE: 70% OFF! Until Stock Runs Out
         </div>
 
-        {/* Hero — woman at beach */}
-        <div className="mt-4">
+        {/* Hero */}
+        <div className="mt-4 overflow-hidden rounded-lg">
           <LpImage
             src={IMG.hero}
             alt="Woman holding Ryoko Pro at the beach"
             ratio="aspect-video"
             fit="object-cover"
-            className="rounded-lg"
             priority
           />
         </div>
 
         {/* Intro */}
-        <p className="mt-5 leading-relaxed text-gray-700">
-          <a href={OFFER_URL} target="_blank" rel="nofollow noopener" className="font-bold text-blue-700 underline">
-            Ryoko Pro
-          </a>{" "}
-          is a pocket-size wireless modem, which creates a Wi-Fi network around itself for up to 10 devices.{" "}
-          <a href={OFFER_URL} target="_blank" rel="nofollow noopener" className="font-bold text-blue-700 underline">
-            And you can have your own internet anywhere, anytime.
-          </a>{" "}
-          Difficulties caused by searching free Wi-Fi Network in a cafe or during travelling or at home will soon be a thing of the past!
+        <p className="mt-4 text-sm leading-relaxed text-gray-700 sm:text-base">
+          <BlueLink>Ryoko Pro</BlueLink> is a pocket-size wireless modem, which creates a Wi-Fi network around itself for up to 10 devices.{" "}
+          <BlueLink>And you can have your own internet anywhere, anytime.</BlueLink>{" "}
+          Difficulties caused by searching free Wi-Fi Network in cafe or during traveling or at home will soon be a thing of the past! What could be better than this?
         </p>
 
-        <p className="mt-4 leading-relaxed text-gray-700">
-          When you're away from home, are you tired of having to connect to public Wi-Fi that's slow, unreliable or insecure? The Ryoko portable Wi-Fi can deliver a strong, fast and secure online connection just about wherever you go.
+        <p className="mt-3 text-sm leading-relaxed text-gray-700 sm:text-base">
+          When you're away from Home, are you tired of having to connect to public Wi-Fi that's slow, unreliable or insecure? The Ryoko portable Wi-Fi can deliver a strong, fast and secure online connection just about wherever you go.
         </p>
 
-        {/* ── FEATURE BOXES GRAPHIC ─────────────────────────── */}
-        <h2 className="mt-8 text-xl font-extrabold text-gray-900">Why do people use this Portable Wi-Fi?</h2>
+        {/* ── WHY DO PEOPLE USE ─────────────────────────────── */}
+        <h2 className="mt-7 text-lg font-extrabold text-gray-900 sm:text-xl">
+          Why do people use this Portable Wi-Fi?
+        </h2>
 
-        <div className="mt-4">
+        <div className="mt-3 overflow-hidden rounded-lg border border-gray-100">
           <LpImage
             src={IMG.features}
             alt="No contract · SIM card pre-installed · Superfast 150Mbs WiFi Speed"
             ratio="aspect-[3/2] sm:aspect-[3/1]"
             fit="object-contain"
-            className="rounded-lg border border-gray-100"
           />
         </div>
 
-        {/* Flat-lay unbox */}
-        <div className="mt-6">
+        {/* Unbox flat lay */}
+        <div className="mt-5 overflow-hidden rounded-lg">
           <LpImage
             src={IMG.unbox}
-            alt="Ryoko Pro — device, charging case and cable"
+            alt="Ryoko Pro device, charging case and cable"
             ratio="aspect-[4/3]"
             fit="object-cover"
-            className="rounded-lg"
           />
         </div>
 
-        <p className="mt-5 leading-relaxed text-gray-700">
-          It was even smaller than I expected. Fits in my hand. Internet is stable and fast — so fast you can also use it for Skype calls. —{" "}
-          <em className="font-semibold">David B.</em>
+        <p className="mt-4 text-sm leading-relaxed text-gray-700 sm:text-base">
+          It was even smaller than I expected. Fits in my hand, Internet is stable and fast. It's so fast you can also use it for skype calls. — <em className="font-semibold">David B.</em>
         </p>
 
-        {/* Full muama box unboxing */}
-        <div className="mt-5">
+        {/* Muama box unboxing */}
+        <div className="mt-5 overflow-hidden rounded-lg">
           <LpImage
             src={IMG.box}
-            alt="Ryoko Pro (Muama Ryoko) in original box"
+            alt="Ryoko Pro in original Muama box"
             ratio="aspect-video"
             fit="object-cover"
-            className="rounded-lg"
           />
         </div>
 
-        <p className="mt-5 leading-relaxed text-gray-700">
-          Ryoko Pro has come to me ready to use with a SIM card pre-installed. So all I have to do is turn it on and use it! Ryoko covers more than 100+ countries, so I can forget about using a network abroad. What's more, with Ryoko I can stop worrying about the safety of my personal data — it protects my connection.
+        <p className="mt-4 text-sm leading-relaxed text-gray-700 sm:text-base">
+          Ryoko Pro has come to me ready to use <strong>with a SIM card pre-installed</strong>. So all I have to do is just turn it on and use it! Ryoko covers more than 100+ countries, so I can forget about using a network abroad. Also I'm not paying for the Ryoko portable Wi-Fi. What's more, With Ryoko I can stop worrying about the safety of my personal data, as it protects my data with secured connection.
         </p>
 
-        <p className="mt-4 leading-relaxed text-gray-700">
-          The parcel came in time. Excellent quality. Very fast. I am very satisfied with my purchase. —{" "}
-          <em className="font-semibold">Charles T.</em>
+        <p className="mt-3 text-sm leading-relaxed text-gray-700 sm:text-base">
+          The parcel came in time. Excellent quality. We're super fast. I am very satisfied with my purchase. — <em className="font-semibold">Charles T.</em>
         </p>
 
-        {/* Desk / laptop overhead */}
-        <div className="mt-5">
+        {/* Desk overhead */}
+        <div className="mt-5 overflow-hidden rounded-lg">
           <LpImage
             src={IMG.desk}
             alt="Using Ryoko Pro at a desk with laptop"
             ratio="aspect-video"
             fit="object-cover"
-            className="rounded-lg"
           />
         </div>
 
-        <p className="mt-5 leading-relaxed text-gray-700">
-          I am always on the move and don't have a constant workplace. I no longer need to go to coffee shops and ask for Wi-Fi passwords. This device keeps me online wherever I go. Very convenient to use.
+        <p className="mt-4 text-sm leading-relaxed text-gray-700 sm:text-base">
+          I am always on the move and don't have a constant work place. I no longer need to go to the coffee shops and ask for Wi-Fi passwords. This device keeps me online whenever I go. Very convenient to use.
         </p>
 
-        <p className="mt-4 leading-relaxed text-gray-700">
-          I can connect my phone, my laptop and my tablet at once, and everyone gets high-speed internet! It allows connecting up to 10 devices — which saves a lot of money compared to paying for mobile data on each device separately.
+        <p className="mt-3 text-sm leading-relaxed text-gray-700 sm:text-base">
+          I can connect my phone, my laptop and my safety cables and phone at once, and thanks to all get high-speed Internet! Actually, it allows to connect up to 10 devices, which will save us a lot of money! Even paying for a mobile data plan for each of those devices. This thing is a life-saver.
         </p>
 
-        {/* CTA text link */}
-        <p className="mt-6 text-center text-base font-bold">
-          <CtaLink>Get Muama Ryoko with your FREE SIM card now!</CtaLink>
+        {/* Green CTA text link */}
+        <p className="mt-5 text-center text-sm font-bold sm:text-base">
+          <CtaLink>Get Myoko Ryoko with your FREE SIM card now!</CtaLink>
         </p>
 
-        {/* Man on bench / outdoor review */}
-        <div className="mt-6">
+        {/* Man on bench */}
+        <div className="mt-5 overflow-hidden rounded-lg">
           <LpImage
             src={IMG.bench}
-            alt="Man working on laptop outdoors with Ryoko Pro"
+            alt="Man working on laptop outdoors holding Ryoko Pro"
             ratio="aspect-video"
             fit="object-cover"
-            className="rounded-lg"
           />
         </div>
 
-        <p className="mt-5 leading-relaxed text-gray-700">
-          I love it. I'm using it when going to my summer house or on short road trips. Everywhere, the connection is fast and great! —{" "}
-          <em className="font-semibold">Nick D.</em>
+        <p className="mt-4 text-sm leading-relaxed text-gray-700 sm:text-base">
+          I love it. I'm using it when going to my summer house or short road trips. Everywhere connection is fast and great! — <em className="font-semibold">Nick D.</em>
         </p>
 
-        <p className="mt-4 leading-relaxed text-gray-700">
-          I love its portable design. It is very light, smart and stylish, and easy to hold in my pocket. Battery worked for about 10 hours — that's exactly what I need when I'm on the road.
+        <p className="mt-3 text-sm leading-relaxed text-gray-700 sm:text-base">
+          I love it's portable design. It is very light, smart and stylish, and easy to hold in my pocket. Battery worked for about 10 hours, that's what I need when I am on the road.
         </p>
 
-        {/* Car + jacket outdoor use */}
-        <div className="mt-5">
-          <LpImage
-            src={IMG.outdoor}
-            alt="Ryoko Pro in the car and outdoors in jacket pocket"
-            ratio="aspect-video"
-            fit="object-cover"
-            className="rounded-lg"
-          />
-        </div>
-
-        <p className="mt-5 leading-relaxed text-gray-700">
-          A strong internet connection in the most remote places — woods, beach, countryside. With Ryoko I can enjoy watching my favourite sports channel on my phone while I'm away from home.
+        <p className="mt-3 text-sm leading-relaxed text-gray-700 sm:text-base">
+          A strong internet in the most remote places, woods, beach. With Ryoko I can enjoy watching my favorite sports channel on my phone while I'm away.
         </p>
 
         {/* ── WHY IS THIS GADGET SPECIAL ─────────────────────── */}
-        <h2 className="mt-10 text-xl font-extrabold text-gray-900">Why Is This Little Gadget So Special?</h2>
+        <h2 className="mt-8 text-lg font-extrabold text-gray-900 sm:text-xl">
+          Why Is This Little Gadget So Special?
+        </h2>
 
-        <p className="mt-2 leading-relaxed text-gray-700">
+        <p className="mt-1 text-sm leading-relaxed text-gray-700 sm:text-base">
           The smart solution to always have your own secured internet connection anywhere, anytime!
         </p>
 
-        <ul className="mt-6 space-y-4 text-sm leading-relaxed text-gray-700">
+        {/* Outdoor / forest image */}
+        <div className="mt-4 overflow-hidden rounded-lg">
+          <LpImage
+            src={IMG.outdoor}
+            alt="Ryoko Pro in the car and outdoors"
+            ratio="aspect-video"
+            fit="object-cover"
+          />
+        </div>
+
+        <ul className="mt-5 space-y-3 text-sm leading-relaxed text-gray-700 sm:text-base">
           <li>
-            <strong className="text-gray-900">→ Connected and PROTECTED anywhere.</strong> Create your own secure Wi-Fi and share it with others when travelling for business or on holiday, when outdoors, or to replace your home DSL coverage. It also gives you the ability to block unwanted web content and limit social media time via the Ryoko Pro app.
+            <strong className="text-gray-900">→ Connected and PROTECTED anywhere.</strong> Create your own secure Wi-Fi and share it with others when travelling for business or on holiday, when outdoors, or to replace your home DSL coverage. It also gives you the ability to block unwanted web content, limit social media time, and a lot more with the Ryoko Pro app.
           </li>
           <li>
-            <strong className="text-gray-900">→ Stay productive.</strong> With your Ryoko share Wi-Fi internet access with{" "}
-            <strong>up to 10 devices</strong>. Connect your laptop, mobile phone, tablet, gaming handheld and many more. Reaches up to 150Mbps download speed — enjoy HD video without buffering, make video calls, browse smoothly no matter where you are.
+            <strong className="text-gray-900">→ Stay productive.</strong> With your Ryoko share Wi-Fi internet access with <strong>up to 10 devices.</strong> You will be able to connect to your laptop, mobile phone, handheld gaming console, laptop and many more. It reaches up to 150Mbps download speed to enjoy HD video without buffering, make video calls, browse the internet smoothly.
           </li>
           <li>
-            <strong className="text-gray-900">→ It Won't Suck The Life Out Of Your Battery.</strong> Never suffer from a drained battery. 3G, 4G, LTE hotspots drain your phone battery almost instantly. The Ryoko portable Wi-Fi lasts up to 10 hours.
+            <strong className="text-gray-900">→ It Won't Suck The Life Out Of Your Battery.</strong> Never suffer from a drained battery. 3G, 4G, LTE, and hotspots suck the power out of your battery almost instantaneously. The Ryoko portable Wi-Fi lasts up to 10 hours.
           </li>
           <li>
-            <strong className="text-gray-900">→ Improve the way you travel or work on-the-go.</strong> Stop paying roaming charges and struggling with unreliable public Wi-Fi. Connect all your devices through the{" "}
-            <CtaLink>Ryoko Pro</CtaLink>.
+            <strong className="text-gray-900">→ Improve the way you travel or work on-the-go.</strong> Reduce roaming charges and stop struggling again with public Wi-Fi. Connect them all on the <CtaLink>Ryoko Pro</CtaLink>.
           </li>
           <li>
-            <strong className="text-gray-900">→ Save your Money & your Time.</strong> Your Ryoko Pro arrives ready to use with a SIM card already pre-installed. Turn it on and enjoy cheap, safe, high-speed 4G connections in more than 100+ countries.
+            <strong className="text-gray-900">→ Save your Money & your Time.</strong> Your Ryoko Pro arrives ready to use with a SIM card already pre-installed. Sum up it on and use! Enjoy cheap, safe, high-speed 4G connections in more than 100+ countries.
           </li>
         </ul>
 
         {/* Checklist */}
-        <div className="mt-8 space-y-3">
+        <div className="mt-6 space-y-2.5">
           {["No contract", "No hidden charges", "Top-up your data online, anytime"].map((item) => (
             <div key={item} className="flex items-center gap-3">
-              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-green-600 text-white">
-                <Check width={14} height={14} strokeWidth={3} />
+              <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-green-600 text-white sm:h-6 sm:w-6">
+                <Check width={12} height={12} strokeWidth={3} />
               </span>
-              <span className="font-semibold text-gray-800">{item}</span>
+              <span className="text-sm font-semibold text-gray-800 sm:text-base">{item}</span>
             </div>
           ))}
         </div>
 
-        {/* Don't Wait CTA block */}
-        <div className="mt-10 rounded-xl border-2 border-green-600 bg-green-50 p-6 text-center">
-          <p className="text-lg font-extrabold text-gray-900">Don't Wait — Get Your Own Portable Wi-Fi!</p>
-          <div className="mt-4">
-            <CtaButton>Get Ryoko Pro Now →</CtaButton>
-          </div>
-        </div>
+        {/* Don't Wait */}
+        <h2 className="mt-8 text-lg font-extrabold text-gray-900 sm:text-xl">
+          Don't Wait - Get Your Own Portable Wi-Fi!
+        </h2>
 
-        {/* ── WHERE CAN I GET RYOKO PRO ──────────────────────── */}
-        <h2 className="mt-12 text-xl font-extrabold text-gray-900">Where Can I Get Ryoko Pro?</h2>
+        {/* ── WHERE CAN I GET ────────────────────────────────── */}
+        <h2 className="mt-8 text-lg font-extrabold text-gray-900 sm:text-xl">
+          Where Can I Get Ryoko Pro?
+        </h2>
 
-        <div className="mt-2 inline-block rounded-full bg-orange-500 px-4 py-1 text-xs font-extrabold uppercase tracking-wide text-white">
+        <div className="mt-2 inline-block rounded-full bg-orange-500 px-3 py-1 text-xs font-extrabold uppercase tracking-wide text-white">
           Limited time offer
         </div>
 
-        <p className="mt-4 leading-relaxed text-gray-700">
-          Ryoko Pro is not sold in regular stores. You can only get it from the{" "}
-          <CtaLink>official website here</CtaLink>. Right now they're running a{" "}
-          <strong>special 70% discount</strong> for our readers — but stock is limited.
-        </p>
+        {/* Risk-Free + Sale side by side (matches original layout) */}
+        <div className="mt-4 flex flex-col gap-4 sm:flex-row sm:items-start">
 
-        {/* Sale product with -70% badge */}
-        <div className="mt-5 flex justify-center">
-          <div className="w-52">
-            <LpImage
-              src={IMG.sale}
-              alt="Ryoko Pro — 70% off"
-              ratio="aspect-square"
-              fit="object-contain"
-            />
+          {/* Risk-Free box */}
+          <div className="flex-1 rounded-lg border border-gray-200 p-4">
+            <p className="text-center text-sm font-extrabold uppercase text-gray-900 sm:text-base">
+              Make it Risk-Free
+            </p>
+            <div className="mt-3 grid grid-cols-2 gap-3">
+              {[
+                { emoji: "💰", label: "100% Money-Back Guarantee" },
+                { emoji: "🛡️", label: "90-Day Warranty" },
+                { emoji: "😊", label: "Satisfaction Customer Guaranteed" },
+                { emoji: "🚚", label: "Free Worldwide Shipping" },
+              ].map(({ emoji, label }) => (
+                <div key={label} className="flex flex-col items-center rounded-md bg-gray-50 p-2 text-center">
+                  <span className="text-2xl">{emoji}</span>
+                  <p className="mt-1 text-[11px] font-semibold leading-tight text-gray-700">{label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Sale badge box */}
+          <div className="flex w-full flex-col items-center rounded-lg border-2 border-orange-400 bg-orange-50 p-4 text-center sm:w-44 sm:shrink-0">
+            <div className="inline-block rounded bg-red-600 px-2 py-0.5 text-xs font-extrabold uppercase text-white">
+              SALE!
+            </div>
+            <div className="mt-2 w-full">
+              <LpImage
+                src={IMG.sale}
+                alt="Ryoko Pro 70% off"
+                ratio="aspect-square"
+                fit="object-contain"
+              />
+            </div>
+            <p className="mt-2 text-sm font-extrabold text-gray-900">Yours At</p>
+            <p className="text-2xl font-black text-red-600">70% OFF</p>
+            <p className="mt-1 text-xs font-bold text-orange-700">While Supplies Last!</p>
           </div>
         </div>
 
-        {/* Risk-free badges */}
-        <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4">
-          {[
-            { icon: RotateCcw, label: "100% Money-Back Guarantee" },
-            { icon: Shield, label: "90-Day Warranty" },
-            { icon: Smile, label: "Satisfaction Guaranteed" },
-            { icon: Truck, label: "Free Worldwide Shipping" },
-          ].map(({ icon: Icon, label }) => (
-            <div key={label} className="flex flex-col items-center rounded-lg border border-gray-200 p-3 text-center shadow-sm">
-              <Icon width={32} height={32} className="text-green-600" strokeWidth={1.5} />
-              <p className="mt-2 text-xs font-bold text-gray-700">{label}</p>
-            </div>
-          ))}
-        </div>
-
-        {/* Main CTA button */}
-        <div className="mt-6">
+        {/* Main CTA */}
+        <div className="mt-5">
           <CtaButton>
             Click Here To Get A Special 70% Off Deal We've Secured For Our Readers
           </CtaButton>
         </div>
 
         {/* Payment logos */}
-        <div className="mt-4 flex justify-center">
+        <div className="mt-3 flex justify-center">
           <LpImage
             src={IMG.payments}
-            alt="Visa, Mastercard, PayPal, Klarna, American Express accepted"
+            alt="Visa, Mastercard, PayPal, Klarna, American Express"
             ratio="aspect-[6/1]"
             fit="object-contain"
             className="w-full max-w-xs"
           />
         </div>
 
-        {/* Sale section */}
-        <div className="mt-8 rounded-xl border-2 border-orange-400 bg-orange-50 p-5 text-center">
-          <div className="inline-block rounded bg-red-600 px-3 py-1 text-sm font-extrabold uppercase tracking-wide text-white">
-            SALE!
-          </div>
-          <p className="mt-3 text-2xl font-extrabold text-gray-900">At Least 70% OFF</p>
-          <p className="mt-1 text-base font-bold text-orange-700">You're Saving — While Supplies Last!</p>
-          <div className="mt-4">
-            <CtaButton>Claim Your 70% Discount Now</CtaButton>
-          </div>
-          <div className="mt-3 flex justify-center">
-            <LpImage
-              src={IMG.payments}
-              alt="Payment methods"
-              ratio="aspect-[6/1]"
-              fit="object-contain"
-              className="w-full max-w-[256px]"
-            />
-          </div>
-        </div>
-
         {/* Disclosure */}
-        <p className="mt-8 pb-8 text-xs leading-relaxed text-gray-400">
+        <p className="mt-8 pb-6 text-xs leading-relaxed text-gray-400">
           Advertising · Sponsored content. This page is independently operated and is not the official manufacturer website. Prices, discounts, availability, warranties and specifications are set by the seller and may change. We may receive a commission from purchases made through this page.
         </p>
       </main>
@@ -368,8 +341,6 @@ export default function RyokoProLanding() {
       <div className="fixed inset-x-0 bottom-0 z-50 border-t border-green-700 bg-white p-3 shadow-[0_-4px_12px_rgba(0,0,0,0.10)] sm:hidden">
         <a
           href={OFFER_URL}
-          target="_blank"
-          rel="nofollow noopener"
           className="flex items-center justify-center gap-2 rounded-lg bg-green-600 px-4 py-3.5 text-sm font-extrabold uppercase tracking-wide text-white active:scale-[0.99]"
         >
           🔥 Get 70% Off — Order Now
