@@ -48,7 +48,7 @@ function CtaLink({ children }: { children: React.ReactNode }) {
 
 export default function RyokoProLanding() {
   return (
-    <div className="min-h-screen bg-white text-gray-800">
+    <div className="min-h-screen bg-white text-gray-800 pb-20 sm:pb-0">
 
       {/* ── HEADER ─────────────────────────────────────────── */}
       <header className="border-b border-gray-200 bg-white px-4 py-3">
@@ -69,7 +69,7 @@ export default function RyokoProLanding() {
       </header>
 
       {/* ── URGENT BANNER ──────────────────────────────────── */}
-      <div className="border-b border-amber-200 bg-amber-50 px-4 py-2 text-center text-sm text-gray-700">
+      <div className="border-b border-amber-200 bg-amber-50 px-4 py-2 text-center text-xs leading-snug text-gray-700 sm:text-sm">
         <strong>URGENT UPDATE</strong> – Ryoko Pro is currently on a MASSIVE SALE, however, it may not be available on the{" "}
         <a href={OFFER_URL} target="_blank" rel="nofollow noopener" className="font-bold text-blue-700 underline">
           website HERE
@@ -88,7 +88,7 @@ export default function RyokoProLanding() {
           <span className="text-sm text-gray-500">4,821 likes</span>
         </div>
 
-        <h1 className="mt-3 text-2xl font-extrabold leading-tight text-gray-900 sm:text-3xl">
+        <h1 className="mt-3 text-xl font-extrabold leading-tight text-gray-900 sm:text-3xl">
           Telecom Companies Tried to Get This BANNED and FAILED. Save Money and Improve Internet Speed Worldwide
         </h1>
 
@@ -131,7 +131,7 @@ export default function RyokoProLanding() {
           <LpImage
             src={IMG.features}
             alt="No contract · SIM card pre-installed · Superfast 150Mbs WiFi Speed"
-            ratio="aspect-[3/1]"
+            ratio="aspect-[3/2] sm:aspect-[3/1]"
             fit="object-contain"
             className="rounded-lg border border-gray-100"
           />
@@ -333,7 +333,7 @@ export default function RyokoProLanding() {
             alt="Visa, Mastercard, PayPal, Klarna, American Express accepted"
             ratio="aspect-[6/1]"
             fit="object-contain"
-            className="w-72"
+            className="w-full max-w-xs"
           />
         </div>
 
@@ -353,7 +353,7 @@ export default function RyokoProLanding() {
               alt="Payment methods"
               ratio="aspect-[6/1]"
               fit="object-contain"
-              className="w-64"
+              className="w-full max-w-[256px]"
             />
           </div>
         </div>
@@ -363,6 +363,18 @@ export default function RyokoProLanding() {
           Advertising · Sponsored content. This page is independently operated and is not the official manufacturer website. Prices, discounts, availability, warranties and specifications are set by the seller and may change. We may receive a commission from purchases made through this page.
         </p>
       </main>
+
+      {/* ── STICKY MOBILE CTA ──────────────────────────────── */}
+      <div className="fixed inset-x-0 bottom-0 z-50 border-t border-green-700 bg-white p-3 shadow-[0_-4px_12px_rgba(0,0,0,0.10)] sm:hidden">
+        <a
+          href={OFFER_URL}
+          target="_blank"
+          rel="nofollow noopener"
+          className="flex items-center justify-center gap-2 rounded-lg bg-green-600 px-4 py-3.5 text-sm font-extrabold uppercase tracking-wide text-white active:scale-[0.99]"
+        >
+          🔥 Get 70% Off — Order Now
+        </a>
+      </div>
     </div>
   );
 }
