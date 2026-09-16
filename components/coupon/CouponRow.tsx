@@ -8,7 +8,7 @@ import { cn, formatNumber, formatDate } from "@/lib/cn";
 import { useRevealCode } from "./useRevealCode";
 import type { PublicCoupon } from "@/lib/types";
 
-/** Split "60% OFF", "20%", "$10 OFF" into a primary+secondary pair for the badge. */
+/** Split "60% OFF", "20%", "$10 OFF" into primary + secondary for two-line badge. */
 function parseDiscount(d: string): { primary: string; secondary: string } {
   const pct = d.match(/^(\d+(?:\.\d+)?%)/);
   if (pct) return { primary: pct[1], secondary: "OFF" };
@@ -49,26 +49,25 @@ export function CouponRow({
   return (
     <>
       <div className="overflow-hidden rounded-xl border border-ink-100 bg-white shadow-sm transition hover:shadow-md">
-        {/* Info row */}
-        <div className="flex items-center gap-3 p-3 sm:gap-4 sm:p-4">
+        <div className="flex items-center gap-2.5 p-2.5 sm:gap-4 sm:p-4">
 
-          {/* Discount badge — two-line for percentages/dollar, single line otherwise */}
-          <div className="flex w-16 shrink-0 flex-col items-center justify-center rounded-lg bg-accent-500/10 px-1 py-3 text-center lg:w-20">
+          {/* Discount badge — two-line for %, single-line for text */}
+          <div className="flex w-14 shrink-0 flex-col items-center justify-center rounded-lg bg-accent-500/10 px-1 py-3 text-center sm:w-24">
             <span className={cn(
               "font-black leading-none text-accent-600",
-              secondary ? "text-base lg:text-xl" : "text-sm lg:text-base"
+              secondary ? "text-sm sm:text-xl" : "text-xs sm:text-base"
             )}>
               {primary}
             </span>
             {secondary && (
-              <span className="mt-0.5 text-[10px] font-bold uppercase tracking-wider text-accent-500 lg:text-xs">
+              <span className="mt-0.5 text-[9px] font-bold uppercase tracking-wider text-accent-500 sm:text-[11px]">
                 {secondary}
               </span>
             )}
           </div>
 
           {/* Coupon info */}
-          <div className="flex min-w-0 flex-1 flex-col">
+          <div className="flex min-w-0 flex-1 flex-col justify-center">
             {showStore && (
               <Link
                 href={`/coupons/${storeSlug}`}
@@ -87,20 +86,20 @@ export function CouponRow({
                 <span className="text-xs font-semibold">{storeName}</span>
               </Link>
             )}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1.5">
               <span className="rounded bg-accent-500/10 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-accent-600">
                 {isCode ? "Code" : "Deal"}
               </span>
               {coupon.verified && (
-                <span className="inline-flex items-center gap-0.5 text-xs font-semibold text-success">
-                  <BadgeCheck width={13} height={13} /> Verified
+                <span className="inline-flex items-center gap-0.5 text-[10px] font-semibold text-success sm:text-xs">
+                  <BadgeCheck width={11} height={11} /> Verified
                 </span>
               )}
             </div>
-            <h3 className="mt-1 truncate text-sm font-semibold text-ink-900 sm:text-base">
+            <h3 className="mt-0.5 truncate text-xs font-semibold text-ink-900 sm:mt-1 sm:text-base">
               {coupon.title}
             </h3>
-            <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-0.5 text-xs text-ink-500">
+            <div className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[10px] text-ink-500 sm:mt-1 sm:gap-x-3 sm:text-xs">
               {isCode && <span className="font-mono tracking-widest">Code: &#8226;&#8226;&#8226;&#8226;&#8226;&#8226;</span>}
               {coupon.expires && <span>Ends {formatDate(coupon.expires)}</span>}
               <button
@@ -111,14 +110,14 @@ export function CouponRow({
               >
                 Details
                 <ChevronDown
-                  width={12}
-                  height={12}
+                  width={10}
+                  height={10}
                   className={cn("transition-transform", details && "rotate-180")}
                 />
               </button>
             </div>
             {details && (
-              <p className="mt-2 text-xs leading-relaxed text-ink-500">
+              <p className="mt-2 text-[10px] leading-relaxed text-ink-500 sm:text-xs">
                 Tap &ldquo;{label}&rdquo; to {isCode ? "reveal this code and " : ""}
                 open {storeName}, then apply your {coupon.discount} discount at
                 checkout. Used {formatNumber(coupon.uses)} times &middot; {coupon.successRate}% success rate.
@@ -126,26 +125,16 @@ export function CouponRow({
             )}
           </div>
 
-          {/* Side button — desktop (lg+) only */}
+          {/* CTA button — always inline; no icon on mobile to save space */}
           <button
             type="button"
             onClick={reveal}
-            className="hidden shrink-0 items-center gap-1 rounded-lg bg-accent-500 px-5 py-2.5 text-sm font-bold text-white shadow-sm transition hover:bg-accent-600 active:scale-95 lg:inline-flex"
+            className="inline-flex shrink-0 items-center rounded-lg bg-accent-500 px-2.5 py-2 text-[11px] font-bold text-white shadow-sm transition hover:bg-accent-600 active:scale-95 sm:gap-1 sm:px-5 sm:py-2.5 sm:text-sm"
           >
             {label}
-            <ExternalLink width={14} height={14} className="opacity-90" />
+            <ExternalLink width={14} height={14} className="hidden opacity-90 sm:block" />
           </button>
         </div>
-
-        {/* Full-width CTA button — mobile + tablet (below lg) */}
-        <button
-          type="button"
-          onClick={reveal}
-          className="flex w-full items-center justify-center gap-2 border-t border-ink-100 bg-accent-500 py-3 text-sm font-bold text-white transition hover:bg-accent-600 active:scale-[0.98] lg:hidden"
-        >
-          {label}
-          <ExternalLink width={15} height={15} className="opacity-90" />
-        </button>
       </div>
 
       {open && isCode && (
