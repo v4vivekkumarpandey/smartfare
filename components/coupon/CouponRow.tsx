@@ -8,6 +8,15 @@ import { cn, formatNumber, formatDate } from "@/lib/cn";
 import { useRevealCode } from "./useRevealCode";
 import type { PublicCoupon } from "@/lib/types";
 
+/** Split "60% OFF", "20%", "$10 OFF" into a primary+secondary pair for the badge. */
+function parseDiscount(d: string): { primary: string; secondary: string } {
+  const pct = d.match(/^(\d+(?:\.\d+)?%)/);
+  if (pct) return { primary: pct[1], secondary: "OFF" };
+  const dollar = d.match(/^(\$\d+(?:\.\d+)?)/);
+  if (dollar) return { primary: dollar[1], secondary: "OFF" };
+  return { primary: d, secondary: "" };
+}
+
 export function CouponRow({
   coupon,
   storeName,
@@ -35,17 +44,27 @@ export function CouponRow({
   });
 
   const label = isCode ? "Get Code" : "Get Deal";
+  const { primary, secondary } = parseDiscount(coupon.discount);
 
   return (
     <>
       <div className="overflow-hidden rounded-xl border border-ink-100 bg-white shadow-sm transition hover:shadow-md">
         {/* Info row */}
         <div className="flex items-center gap-3 p-3 sm:gap-4 sm:p-4">
-          {/* Discount badge */}
-          <div className="flex w-14 shrink-0 flex-col items-center justify-center rounded-lg bg-accent-500/10 px-1 py-3 text-center sm:w-24">
-            <span className="text-sm font-extrabold leading-tight text-accent-600 sm:text-lg">
-              {coupon.discount}
+
+          {/* Discount badge — two-line for percentages/dollar, single line otherwise */}
+          <div className="flex w-16 shrink-0 flex-col items-center justify-center rounded-lg bg-accent-500/10 px-1 py-3 text-center lg:w-20">
+            <span className={cn(
+              "font-black leading-none text-accent-600",
+              secondary ? "text-base lg:text-xl" : "text-sm lg:text-base"
+            )}>
+              {primary}
             </span>
+            {secondary && (
+              <span className="mt-0.5 text-[10px] font-bold uppercase tracking-wider text-accent-500 lg:text-xs">
+                {secondary}
+              </span>
+            )}
           </div>
 
           {/* Coupon info */}

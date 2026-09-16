@@ -7,6 +7,7 @@ import {
   ExternalLink,
   Tag,
   ShieldCheck,
+  Bell,
   Phone,
   Facebook,
   Instagram,
@@ -85,7 +86,12 @@ export default async function StorePage({
   ]);
 
   const codeCount = coupons.filter((c) => c.type === "code").length;
+  const dealCount = coupons.filter((c) => c.type === "deal").length;
   const verifiedCount = coupons.filter((c) => c.verified).length;
+  const freeShippingCount = coupons.filter((c) =>
+    c.discount.toLowerCase().includes("free shipping") ||
+    c.title.toLowerCase().includes("free shipping")
+  ).length;
   const best =
     coupons.find((c) => c.featured) ??
     [...coupons].sort((a, b) => b.uses - a.uses)[0];
@@ -148,17 +154,28 @@ export default async function StorePage({
           </div>
 
           <div className="mt-4 border-t border-ink-100 pt-4">
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5">
-              <span className="rounded-full bg-accent-500/10 px-3 py-1 text-sm font-bold text-accent-600">
-                {coupons.length} Offers
-              </span>
-              <span className="inline-flex items-center gap-1.5 text-xs text-ink-500">
-                <ShieldCheck width={14} height={14} className="text-success" />
-                Trusted by {formatNumber(store.reviewCount * 3 + 200)}+ users
-              </span>
+            <div className="flex flex-wrap items-center gap-y-1 text-sm">
+              {(
+                [
+                  { label: "All Coupons", value: `${coupons.length}+` },
+                  { label: "Verified", value: String(verifiedCount) },
+                  { label: "Deals", value: String(dealCount) },
+                  ...(freeShippingCount > 0
+                    ? [{ label: "Free Shipping", value: String(freeShippingCount) }]
+                    : []),
+                ] as { label: string; value: string }[]
+              ).map((stat, i) => (
+                <span key={i} className="flex items-center">
+                  {i > 0 && <span className="mx-2 select-none text-ink-200">|</span>}
+                  <span className="text-ink-500">
+                    {stat.label}:{" "}
+                    <strong className="font-semibold text-ink-900">{stat.value}</strong>
+                  </span>
+                </span>
+              ))}
             </div>
-            <p className="mt-1.5 text-sm font-semibold text-ink-900">
-              Save Up to {bestDiscount} on {store.name} — All Codes Applied in One Tap
+            <p className="mt-2 text-sm font-medium text-ink-700">
+              Save Up to {bestDiscount} on {store.name} &mdash; All Codes Applied in One Tap
             </p>
           </div>
         </section>
@@ -167,34 +184,28 @@ export default async function StorePage({
         <div className="mt-6 grid gap-8 lg:grid-cols-[1fr_20rem]">
           {/* Left: coupon list */}
           <div>
-            {/* Apply-all highlight */}
+            {/* Apply-all highlight — solid orange (Valueon style) */}
             {best && (
               <a
                 href={goHref(store.slug, best.id)}
                 target="_blank"
                 rel="noopener noreferrer sponsored"
-                className="mb-4 overflow-hidden rounded-xl border-2 border-accent-500 bg-accent-500/5 transition hover:bg-accent-500/10"
+                className="mb-4 overflow-hidden rounded-xl bg-accent-500 transition hover:bg-accent-600"
               >
-                {/* Top row: icon + text */}
-                <div className="flex items-center gap-3 p-3 sm:gap-4 sm:p-4">
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent-500 text-white sm:h-12 sm:w-12">
+                <div className="flex items-center gap-3 p-3 lg:gap-4 lg:p-4">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/20 text-white lg:h-12 lg:w-12">
                     <Ticket width={20} height={20} />
                   </span>
-                  <div className="min-w-0 flex-1">
-                    <p className="text-sm font-bold text-ink-900">
-                      Apply All {store.name} Codes in One Tap
-                    </p>
-                    <p className="text-xs text-ink-500">
-                      Automatically test every code &mdash; save up to {bestDiscount}.
+                  <div className="min-w-0 flex-1 text-white">
+                    <p className="text-sm font-bold">
+                      Apply All {store.name} Codes in One Tap &mdash; Save Up to {bestDiscount}
                     </p>
                   </div>
-                  {/* Side button — desktop (lg+) only */}
-                  <span className="hidden shrink-0 whitespace-nowrap rounded-lg bg-accent-500 px-4 py-2 text-sm font-bold text-white lg:inline-block">
+                  <span className="hidden shrink-0 whitespace-nowrap rounded-lg bg-white/20 px-4 py-2 text-sm font-bold text-white lg:inline-block">
                     Get Code
                   </span>
                 </div>
-                {/* Full-width button — mobile + tablet (below lg) */}
-                <div className="border-t border-accent-500/20 bg-accent-500 py-2.5 text-center text-sm font-bold text-white lg:hidden">
+                <div className="border-t border-white/20 py-2.5 text-center text-sm font-bold text-white lg:hidden">
                   Get Code &rarr;
                 </div>
               </a>
@@ -205,6 +216,25 @@ export default async function StorePage({
               <h2 className="text-lg font-bold text-ink-900">
                 {store.name} Coupons &amp; Promo Codes
               </h2>
+            </div>
+
+            {/* New codes notification */}
+            <div className="mb-4 flex items-center gap-3 rounded-xl border border-success/20 bg-success/5 p-3 sm:p-4">
+              <Bell width={18} height={18} className="shrink-0 text-success" />
+              <div className="min-w-0 flex-1">
+                <p className="text-sm font-bold text-ink-900">New codes for {store.name}</p>
+                <p className="hidden text-xs text-ink-500 sm:block">
+                  Join our mailing list for new {store.name} codes
+                </p>
+              </div>
+              <a
+                href={goHref(store.slug, "site")}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="shrink-0 rounded-lg bg-success px-3 py-2 text-xs font-bold text-white transition hover:opacity-90"
+              >
+                Get New Codes
+              </a>
             </div>
 
             <div className="space-y-3">
@@ -236,17 +266,30 @@ export default async function StorePage({
 
           {/* Right: sidebar */}
           <aside className="space-y-6">
-            {/* Save stats */}
+            {/* Save stats — with store logo (Valueon style) */}
             <div className="rounded-card border border-ink-100 bg-white p-5 shadow-sm">
-              <h3 className="text-sm font-bold text-ink-900">
-                Is now a good time to save?
-              </h3>
-              <dl className="mt-4 space-y-3 text-sm">
-                <Row label="All Discounts" value={String(coupons.length)} />
+              <div className="mb-4 flex items-center gap-2.5">
+                <Image
+                  src={store.logo}
+                  unoptimized
+                  alt={store.name}
+                  width={28}
+                  height={28}
+                  className="h-7 w-7 rounded-md object-contain"
+                />
+                <h3 className="text-sm font-bold text-ink-900">
+                  Is now a good time to save?
+                </h3>
+              </div>
+              <dl className="space-y-3 text-sm">
+                <Row label="Total Coupons" value={`${coupons.length}+`} />
+                <Row label="Total Deals" value={String(dealCount)} />
                 <Row label="Promo Codes" value={String(codeCount)} />
-                <Row label={`Verified ${store.name}`} value={String(verifiedCount)} />
+                {freeShippingCount > 0 && (
+                  <Row label="Free Shipping" value={String(freeShippingCount)} />
+                )}
                 <Row label="Maximum Discount" value={bestDiscount} />
-                <Row label="Total Redemptions" value={formatNumber(totalUses)} />
+                <Row label="Last Updated" value={formatDate(store.updated) ?? "—"} />
               </dl>
             </div>
 
