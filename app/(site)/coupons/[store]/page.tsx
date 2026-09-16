@@ -188,13 +188,13 @@ export default async function StorePage({
                       Automatically test every code &mdash; save up to {bestDiscount}.
                     </p>
                   </div>
-                  {/* Side button — sm+ only */}
-                  <span className="hidden shrink-0 whitespace-nowrap rounded-lg bg-accent-500 px-4 py-2 text-sm font-bold text-white sm:inline-block">
+                  {/* Side button — desktop (lg+) only */}
+                  <span className="hidden shrink-0 whitespace-nowrap rounded-lg bg-accent-500 px-4 py-2 text-sm font-bold text-white lg:inline-block">
                     Get Code
                   </span>
                 </div>
-                {/* Full-width button — mobile only */}
-                <div className="border-t border-accent-500/20 bg-accent-500 py-2.5 text-center text-sm font-bold text-white sm:hidden">
+                {/* Full-width button — mobile + tablet (below lg) */}
+                <div className="border-t border-accent-500/20 bg-accent-500 py-2.5 text-center text-sm font-bold text-white lg:hidden">
                   Get Code &rarr;
                 </div>
               </a>

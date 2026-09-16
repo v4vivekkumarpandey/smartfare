@@ -107,22 +107,22 @@ export function CouponRow({
             )}
           </div>
 
-          {/* Side button — sm+ only */}
+          {/* Side button — desktop (lg+) only */}
           <button
             type="button"
             onClick={reveal}
-            className="hidden shrink-0 items-center gap-1 rounded-lg bg-accent-500 px-3 py-2.5 text-xs font-bold text-white shadow-sm transition hover:bg-accent-600 active:scale-95 sm:inline-flex lg:px-5 lg:text-sm"
+            className="hidden shrink-0 items-center gap-1 rounded-lg bg-accent-500 px-5 py-2.5 text-sm font-bold text-white shadow-sm transition hover:bg-accent-600 active:scale-95 lg:inline-flex"
           >
             {label}
             <ExternalLink width={14} height={14} className="opacity-90" />
           </button>
         </div>
 
-        {/* Full-width CTA button — mobile only */}
+        {/* Full-width CTA button — mobile + tablet (below lg) */}
         <button
           type="button"
           onClick={reveal}
-          className="flex w-full items-center justify-center gap-2 border-t border-ink-100 bg-accent-500 py-3 text-sm font-bold text-white transition hover:bg-accent-600 active:scale-[0.98] sm:hidden"
+          className="flex w-full items-center justify-center gap-2 border-t border-ink-100 bg-accent-500 py-3 text-sm font-bold text-white transition hover:bg-accent-600 active:scale-[0.98] lg:hidden"
         >
           {label}
           <ExternalLink width={15} height={15} className="opacity-90" />
