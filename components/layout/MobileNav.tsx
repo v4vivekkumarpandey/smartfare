@@ -74,12 +74,6 @@ export function MobileNav({ stores }: { stores: NavStore[] }) {
             <Link href="/blog" onClick={close} className={itemCls}>
               Blog
             </Link>
-            <Link href="/sale-calendar" onClick={close} className={itemCls}>
-              Sale Calendar
-            </Link>
-            <Link href="/gift-guides" onClick={close} className={itemCls}>
-              Gift Guides
-            </Link>
             <Link href="/how-it-works" onClick={close} className={itemCls}>
               How It Works
             </Link>

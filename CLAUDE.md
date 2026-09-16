@@ -30,9 +30,7 @@ A Google-Ads-ready coupon website. All pages are SSG/ISR. Routes:
 | `/category/[slug]` | Category listing |
 | `/go/[store]/[id]` | Tracked affiliate redirect (302, noindex) |
 | `/go/offer/[slug]` | Simple offer redirect; destinations are in `lib/offers.ts` |
-| `/blog`, `/blog/[slug]` | Blog with AdSense display ads |
-| `/sale-calendar`, `/sale-calendar/[slug]` | Upcoming shopping events, cross-linked to participating stores |
-| `/gift-guides`, `/gift-guides/[slug]` | Curated gift guides, cross-linked to featured stores |
+| `/blog`, `/blog/[slug]` | Blog with AdSense display ads — also covers sale-calendar entries and gift guides (see below) |
 | `/api/reveal` | Returns the coupon code server-side (code hidden from HTML) |
 | `/api/revalidate` | Webhook that calls `revalidateTag("content")` to bust ISR cache |
 
@@ -59,13 +57,14 @@ Content is loaded by [lib/content.ts](lib/content.ts) via `unstable_cache` (ISR,
 1. **Google Sheets** (when `GOOGLE_SHEET_ID` + service-account env vars are set) — see `lib/sheets.ts`
 2. **Local JSON fallback** (`content/stores/*.json`, `content/categories.json`, etc.) — always works in dev without any secrets
 
-Content types: `stores`, `categories`, `menu`, `settings`, `posts` (blog), `saleCalendar`, `giftGuides` — each is a sheet tab (see the tab list documented at the top of `lib/sheets.ts`) with a matching local JSON fallback file in `content/`.
+Content types: `stores`, `categories`, `menu`, `settings`, `posts` (blog — see below) — each is a sheet tab (see the tab list documented at the top of `lib/sheets.ts`) with a matching local JSON fallback file in `content/`.
 
-**To add a sale-calendar entry:** add a row to the `salecalendar` sheet tab (or an object to `content/sale-calendar.json` in dev) with `slug`, `name`, `startDate`, `endDate`, `description`, `cover` (optional feature-image path/URL), `storeSlugs` (comma-separated store slugs), `category`, `featured`, `published`. It appears at `/sale-calendar/<slug>` and is cross-linked from participating stores' pages automatically via `storeSlugs`.
+**Blog posts, sale-calendar entries, and gift guides are one content type** (`BlogPost` in `lib/types.ts`), all living at `/blog/[slug]` and stored together in `content/blog.json` (or the `blog` sheet tab). An optional `postType` field (`"post"` | `"sale-calendar"` | `"gift-guide"`, defaults to `"post"`) controls rendering:
+- `"sale-calendar"` posts additionally use `startDate`/`endDate` (ISO dates, rendered as a date range and used for `Event` JSON-LD) and `storeSlugs` (comma-separated store slugs, cross-linked as `StoreCard`s on the page).
+- `"gift-guide"` posts additionally use `occasion` (freeform label) and `storeSlugs` (same cross-linking as above).
+- Plain `"post"` entries ignore all of the above.
 
-**To add a gift guide:** add a row to the `giftguides` sheet tab (or an object to `content/gift-guides.json` in dev) with `slug`, `title`, `excerpt`, `cover`, `author`, `date`, `occasion`, `storeSlugs`, `tags`, `body` (same minimal-markdown subset as blog posts), `published`. It appears at `/gift-guides/<slug>`.
-
-**Sheet templates:** `scripts/sheet-templates/salecalendar.csv` and `scripts/sheet-templates/giftguides.csv` are ready-to-import CSVs with the correct headers (and one example row) for creating the `salecalendar`/`giftguides` tabs in Google Sheets — see the file for import instructions.
+**To add any of the three:** use `/new-post` (see `.claude/commands/new-post.md`) or add a row/object directly — see `scripts/sheet-templates/blog.csv` for the full column set including the extra fields.
 
 Instant cache bust: `POST /api/revalidate?secret=<REVALIDATE_SECRET>` — wire this as a Google Apps Script publish webhook (see `scripts/apps-script.gs`).
 

@@ -1,5 +1,5 @@
 ---
-description: Run a codebase-grounded SEO audit on a page (store, blog post, gift guide, sale-calendar entry, or LP)
+description: Run a codebase-grounded SEO audit on a page (store, blog post — including sale-calendar/gift-guide posts, or LP)
 argument-hint: <path or content slug>
 ---
 

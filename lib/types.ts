@@ -65,6 +65,13 @@ export interface Category {
   description: string;
 }
 
+/**
+ * "post" is a regular blog article. "sale-calendar" and "gift-guide" are the
+ * same content shape with a couple of extra optional fields used only by
+ * that type (see below) — all three live together at /blog/[slug].
+ */
+export type PostType = "post" | "sale-calendar" | "gift-guide";
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -80,43 +87,16 @@ export interface BlogPost {
   /** Body text; supports a small markdown subset (## / ### / - / paragraphs) */
   body: string;
   published: boolean;
-}
-
-export interface SaleCalendarEntry {
-  slug: string;
-  name: string;
-  /** ISO date, e.g. "2026-11-27" */
-  startDate: string;
-  /** ISO date, e.g. "2026-12-01" */
-  endDate: string;
-  description: string;
-  /** Cover image path/URL (optional) */
-  cover: string;
-  /** Store slugs participating in this sale */
-  storeSlugs: string[];
-  /** Category slug or label (optional) */
-  category: string;
-  featured: boolean;
-  published: boolean;
-}
-
-export interface GiftGuide {
-  slug: string;
-  title: string;
-  excerpt: string;
-  /** Cover image path/URL (optional) */
-  cover: string;
-  author: string;
-  /** ISO date, e.g. "2026-08-01" */
-  date: string;
-  /** e.g. "christmas", "valentines", "mothers-day" (freeform) */
-  occasion: string;
-  /** Store slugs featured in this guide */
-  storeSlugs: string[];
-  tags: string[];
-  /** Body text; supports a small markdown subset (## / ### / - / paragraphs) */
-  body: string;
-  published: boolean;
+  /** Defaults to "post" when absent. */
+  postType?: PostType;
+  /** sale-calendar only — ISO date the sale starts, e.g. "2026-11-27" */
+  startDate?: string;
+  /** sale-calendar only — ISO date the sale ends */
+  endDate?: string;
+  /** gift-guide only — freeform occasion label, e.g. "christmas" */
+  occasion?: string;
+  /** sale-calendar / gift-guide only — store slugs to cross-link as StoreCards */
+  storeSlugs?: string[];
 }
 
 export type MenuLocation = "header" | "footer" | "both";

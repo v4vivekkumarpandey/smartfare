@@ -8,8 +8,7 @@ import type {
   MenuItem,
   MenuLocation,
   BlogPost,
-  SaleCalendarEntry,
-  GiftGuide,
+  PostType,
 } from "./types";
 import { parseSettings, type SiteSettings } from "./settings";
 
@@ -26,11 +25,13 @@ import { parseSettings, type SiteSettings } from "./settings";
  *   menu       : label | href | location | order
  *   settings   : key | value   (site name/logo, hero copy, trust badges)
  *   blog       : slug | title | excerpt | cover | author | date | category |
- *                tags | body | published
- *   salecalendar : slug | name | startDate | endDate | description | cover |
- *                  storeSlugs | category | featured | published
- *   giftguides   : slug | title | excerpt | cover | author | date | occasion |
- *                  storeSlugs | tags | body | published
+ *                tags | body | published | postType | startDate | endDate |
+ *                occasion | storeSlugs
+ *
+ *   `postType` is one of "post" (default), "sale-calendar", or "gift-guide" —
+ *   all three live together at /blog/[slug]. `startDate`/`endDate` are used
+ *   by sale-calendar rows, `occasion` by gift-guide rows, and `storeSlugs`
+ *   (comma-separated store slugs) by both, to cross-link StoreCards.
  */
 
 const SHEET_ID = process.env.GOOGLE_SHEET_ID || "";
@@ -48,8 +49,6 @@ const TABS = [
   "menu",
   "settings",
   "blog",
-  "salecalendar",
-  "giftguides",
 ] as const;
 
 export function sheetsConfigured(): boolean {
@@ -142,8 +141,6 @@ export async function loadFromSheets(): Promise<{
   menu: MenuItem[];
   settings: SiteSettings;
   posts: BlogPost[];
-  saleCalendar: SaleCalendarEntry[];
-  giftGuides: GiftGuide[];
 }> {
   const tabs = await fetchAllTabs();
 
@@ -252,51 +249,31 @@ export async function loadFromSheets(): Promise<{
       };
     });
 
+  const validPostTypes: PostType[] = ["post", "sale-calendar", "gift-guide"];
   const posts: BlogPost[] = rowsToObjects(tabs.blog)
     .filter((r) => r.slug && r.title)
-    .map((r) => ({
-      slug: r.slug.toLowerCase(),
-      title: r.title,
-      excerpt: r.excerpt || "",
-      cover: r.cover || "",
-      author: r.author || "Editorial Team",
-      date: r.date || new Date().toISOString().slice(0, 10),
-      category: (r.category || "").toLowerCase(),
-      tags: splitList(r.tags),
-      body: r.body || "",
-      published: r.published ? toBool(r.published) : true,
-    }));
+    .map((r) => {
+      const postType = validPostTypes.includes(r.posttype as PostType)
+        ? (r.posttype as PostType)
+        : "post";
+      return {
+        slug: r.slug.toLowerCase(),
+        title: r.title,
+        excerpt: r.excerpt || "",
+        cover: r.cover || "",
+        author: r.author || "Editorial Team",
+        date: r.date || today,
+        category: (r.category || "").toLowerCase(),
+        tags: splitList(r.tags),
+        body: r.body || "",
+        published: r.published ? toBool(r.published) : true,
+        postType,
+        startDate: r.startdate || undefined,
+        endDate: r.enddate || undefined,
+        occasion: r.occasion ? r.occasion.toLowerCase() : undefined,
+        storeSlugs: r.storeslugs ? splitList(r.storeslugs) : undefined,
+      };
+    });
 
-  const saleCalendar: SaleCalendarEntry[] = rowsToObjects(tabs.salecalendar)
-    .filter((r) => r.slug && r.name)
-    .map((r) => ({
-      slug: r.slug.toLowerCase(),
-      name: r.name,
-      startDate: r.startdate || today,
-      endDate: r.enddate || today,
-      description: r.description || "",
-      cover: r.cover || "",
-      storeSlugs: splitList(r.storeslugs),
-      category: (r.category || "").toLowerCase(),
-      featured: toBool(r.featured),
-      published: r.published ? toBool(r.published) : true,
-    }));
-
-  const giftGuides: GiftGuide[] = rowsToObjects(tabs.giftguides)
-    .filter((r) => r.slug && r.title)
-    .map((r) => ({
-      slug: r.slug.toLowerCase(),
-      title: r.title,
-      excerpt: r.excerpt || "",
-      cover: r.cover || "",
-      author: r.author || "Editorial Team",
-      date: r.date || today,
-      occasion: (r.occasion || "").toLowerCase(),
-      storeSlugs: splitList(r.storeslugs),
-      tags: splitList(r.tags),
-      body: r.body || "",
-      published: r.published ? toBool(r.published) : true,
-    }));
-
-  return { stores, categories, menu, settings, posts, saleCalendar, giftGuides };
+  return { stores, categories, menu, settings, posts };
 }

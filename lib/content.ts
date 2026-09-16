@@ -1,15 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { unstable_cache } from "next/cache";
-import type {
-  Store,
-  Category,
-  Coupon,
-  MenuItem,
-  BlogPost,
-  SaleCalendarEntry,
-  GiftGuide,
-} from "./types";
+import type { Store, Category, Coupon, MenuItem, BlogPost } from "./types";
 import { sheetsConfigured, loadFromSheets } from "./sheets";
 import {
   parseSettings,
@@ -41,8 +33,6 @@ function loadFromDisk(): {
   menu: MenuItem[];
   settings: SiteSettings;
   posts: BlogPost[];
-  saleCalendar: SaleCalendarEntry[];
-  giftGuides: GiftGuide[];
 } {
   const files = fs.existsSync(STORES_DIR)
     ? fs.readdirSync(STORES_DIR).filter((f) => f.endsWith(".json"))
@@ -59,12 +49,7 @@ function loadFromDisk(): {
   );
   const settings = parseSettings(lowerKeys(settingsRaw));
   const posts = readJsonIfExists<BlogPost[]>("blog.json", []);
-  const saleCalendar = readJsonIfExists<SaleCalendarEntry[]>(
-    "sale-calendar.json",
-    []
-  );
-  const giftGuides = readJsonIfExists<GiftGuide[]>("gift-guides.json", []);
-  return { stores, categories, menu, settings, posts, saleCalendar, giftGuides };
+  return { stores, categories, menu, settings, posts };
 }
 
 async function loadContentUncached(): Promise<{
@@ -73,8 +58,6 @@ async function loadContentUncached(): Promise<{
   menu: MenuItem[];
   settings: SiteSettings;
   posts: BlogPost[];
-  saleCalendar: SaleCalendarEntry[];
-  giftGuides: GiftGuide[];
 }> {
   if (sheetsConfigured()) {
     try {
@@ -130,7 +113,7 @@ export async function getSettings(): Promise<SiteSettings> {
   return settings;
 }
 
-/* --- Blog --- */
+/* --- Blog (also covers sale-calendar and gift-guide posts, via postType) --- */
 
 export async function getAllPosts(): Promise<BlogPost[]> {
   const { posts } = await loadContent();
@@ -149,51 +132,20 @@ export async function getPostSlugs(): Promise<string[]> {
   return posts.map((p) => p.slug);
 }
 
-/* --- Sale calendar --- */
-
-export async function getSaleCalendar(): Promise<SaleCalendarEntry[]> {
-  const { saleCalendar } = await loadContent();
-  return saleCalendar
-    .filter((e) => e.published)
-    .sort((a, b) => (a.startDate < b.startDate ? -1 : 1));
+export async function getPostsByType(
+  postType: "post" | "sale-calendar" | "gift-guide"
+): Promise<BlogPost[]> {
+  const posts = await getAllPosts();
+  return posts.filter((p) => (p.postType ?? "post") === postType);
 }
 
-export async function getSaleCalendarEntry(
-  slug: string
-): Promise<SaleCalendarEntry | undefined> {
-  const { saleCalendar } = await loadContent();
-  return saleCalendar.find((e) => e.slug === slug && e.published);
-}
-
-export async function getSaleCalendarSlugs(): Promise<string[]> {
-  const entries = await getSaleCalendar();
-  return entries.map((e) => e.slug);
-}
-
-/** Sale entries that haven't ended yet, soonest first. */
-export async function getUpcomingSales(): Promise<SaleCalendarEntry[]> {
+/** Sale-calendar posts that haven't ended yet, soonest-starting first. */
+export async function getUpcomingSales(): Promise<BlogPost[]> {
   const today = new Date().toISOString().slice(0, 10);
-  const entries = await getSaleCalendar();
-  return entries.filter((e) => e.endDate >= today);
-}
-
-/* --- Gift guides --- */
-
-export async function getAllGiftGuides(): Promise<GiftGuide[]> {
-  const { giftGuides } = await loadContent();
-  return giftGuides
-    .filter((g) => g.published)
-    .sort((a, b) => (a.date < b.date ? 1 : -1));
-}
-
-export async function getGiftGuide(slug: string): Promise<GiftGuide | undefined> {
-  const { giftGuides } = await loadContent();
-  return giftGuides.find((g) => g.slug === slug && g.published);
-}
-
-export async function getGiftGuideSlugs(): Promise<string[]> {
-  const guides = await getAllGiftGuides();
-  return guides.map((g) => g.slug);
+  const sales = await getPostsByType("sale-calendar");
+  return sales
+    .filter((p) => !p.endDate || p.endDate >= today)
+    .sort((a, b) => ((a.startDate ?? a.date) < (b.startDate ?? b.date) ? -1 : 1));
 }
 
 export async function getCategory(slug: string): Promise<Category | undefined> {

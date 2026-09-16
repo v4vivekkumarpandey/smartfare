@@ -4,7 +4,18 @@ import { CalendarDays } from "lucide-react";
 import { formatDate } from "@/lib/cn";
 import type { BlogPost } from "@/lib/types";
 
+const TYPE_LABEL: Record<string, string> = {
+  "sale-calendar": "Sale",
+  "gift-guide": "Gift Guide",
+};
+
 export function PostCard({ post }: { post: BlogPost }) {
+  const badge = TYPE_LABEL[post.postType ?? "post"] ?? post.tags[0];
+  const dateLabel =
+    post.postType === "sale-calendar" && post.startDate && post.endDate
+      ? `${formatDate(post.startDate)} – ${formatDate(post.endDate)}`
+      : formatDate(post.date);
+
   return (
     <Link
       href={`/blog/${post.slug}`}
@@ -28,9 +39,9 @@ export function PostCard({ post }: { post: BlogPost }) {
         )}
       </div>
       <div className="flex flex-1 flex-col p-5">
-        {post.tags.length > 0 && (
+        {badge && (
           <span className="mb-2 w-fit rounded-full bg-ink-100 px-2 py-0.5 text-xs font-semibold uppercase tracking-wide text-ink-500">
-            {post.tags[0]}
+            {badge}
           </span>
         )}
         <h3 className="font-bold text-ink-900 group-hover:text-brand-600">
@@ -39,7 +50,7 @@ export function PostCard({ post }: { post: BlogPost }) {
         <p className="mt-2 line-clamp-2 text-sm text-ink-500">{post.excerpt}</p>
         <div className="mt-4 flex items-center gap-1.5 text-xs text-ink-500">
           <CalendarDays width={13} height={13} />
-          {formatDate(post.date)} · {post.author}
+          {dateLabel} · {post.author}
         </div>
       </div>
     </Link>

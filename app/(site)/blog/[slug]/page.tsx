@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { CalendarDays, User } from "lucide-react";
-import { getPost, getPostSlugs, getAllPosts } from "@/lib/content";
+import { getPost, getPostSlugs, getAllPosts, getStore } from "@/lib/content";
 import { site } from "@/lib/site";
 import { formatDate } from "@/lib/cn";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { PostBody } from "@/components/blog/PostBody";
 import { PostCard } from "@/components/blog/PostCard";
+import { StoreCard } from "@/components/store/StoreCard";
 import { JsonLd } from "@/components/JsonLd";
 import { Ad } from "@/components/Ad";
 
@@ -51,22 +52,48 @@ export default async function BlogPostPage({
   const post = await getPost(slug);
   if (!post) notFound();
 
+  const postType = post.postType ?? "post";
+
   const related = (await getAllPosts())
     .filter((p) => p.slug !== post.slug)
     .slice(0, 3);
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: post.title,
-    description: post.excerpt,
-    datePublished: post.date,
-    dateModified: post.date,
-    author: { "@type": "Organization", name: post.author },
-    publisher: { "@type": "Organization", name: site.name },
-    mainEntityOfPage: `${site.url}/blog/${post.slug}`,
-    image: post.cover ? `${site.url}${post.cover}` : undefined,
-  };
+  const stores = post.storeSlugs
+    ? (await Promise.all(post.storeSlugs.map((s) => getStore(s)))).filter(
+        (s): s is NonNullable<typeof s> => Boolean(s)
+      )
+    : [];
+
+  const jsonLd =
+    postType === "sale-calendar"
+      ? {
+          "@context": "https://schema.org",
+          "@type": "Event",
+          name: post.title,
+          description: post.excerpt,
+          startDate: post.startDate ?? post.date,
+          endDate: post.endDate ?? post.date,
+          eventAttendanceMode: "https://schema.org/OnlineEventAttendanceMode",
+          eventStatus: "https://schema.org/EventScheduled",
+          location: {
+            "@type": "VirtualLocation",
+            url: `${site.url}/blog/${post.slug}`,
+          },
+          organizer: { "@type": "Organization", name: site.name, url: site.url },
+          image: post.cover ? `${site.url}${post.cover}` : undefined,
+        }
+      : {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          headline: post.title,
+          description: post.excerpt,
+          datePublished: post.date,
+          dateModified: post.date,
+          author: { "@type": "Organization", name: post.author },
+          publisher: { "@type": "Organization", name: site.name },
+          mainEntityOfPage: `${site.url}/blog/${post.slug}`,
+          image: post.cover ? `${site.url}${post.cover}` : undefined,
+        };
 
   return (
     <>
@@ -85,12 +112,21 @@ export default async function BlogPostPage({
             {post.title}
           </h1>
           <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-ink-500">
-            <span className="inline-flex items-center gap-1.5">
-              <User width={14} height={14} /> {post.author}
-            </span>
-            <span className="inline-flex items-center gap-1.5">
-              <CalendarDays width={14} height={14} /> {formatDate(post.date)}
-            </span>
+            {postType === "sale-calendar" && post.startDate && post.endDate ? (
+              <span className="inline-flex items-center gap-1.5">
+                <CalendarDays width={14} height={14} />
+                {formatDate(post.startDate)} – {formatDate(post.endDate)}
+              </span>
+            ) : (
+              <>
+                <span className="inline-flex items-center gap-1.5">
+                  <User width={14} height={14} /> {post.author}
+                </span>
+                <span className="inline-flex items-center gap-1.5">
+                  <CalendarDays width={14} height={14} /> {formatDate(post.date)}
+                </span>
+              </>
+            )}
           </div>
         </header>
 
@@ -126,6 +162,19 @@ export default async function BlogPostPage({
           </div>
         )}
       </article>
+
+      {stores.length > 0 && (
+        <section className="mx-auto max-w-6xl px-4 py-10">
+          <h2 className="mb-4 text-lg font-bold text-ink-900">
+            {postType === "sale-calendar" ? "Stores in this sale" : "Featured in this guide"}
+          </h2>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {stores.map((store) => (
+              <StoreCard key={store.slug} store={store} />
+            ))}
+          </div>
+        </section>
+      )}
 
       {related.length > 0 && (
         <section className="mx-auto max-w-6xl px-4 py-10">

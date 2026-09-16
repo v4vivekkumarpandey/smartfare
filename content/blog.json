@@ -22,5 +22,36 @@
     "tags": ["roundup", "software"],
     "body": "## Why a good screen recorder matters\nScreen recording tools power demos, tutorials, async standups and support replies. The right one saves hours every week.\n\n## Top picks and current offers\n- MergeScreens — up to 20% off annual plans with a verified code.\n- ScreenPal — 50% off your first year of Solo Deluxe.\n\n## How to choose\nThink about who's recording, whether you need editing, and how you'll share. Then head to the store page and apply the best current coupon before you buy.",
     "published": true
+  },
+  {
+    "slug": "best-gifts-for-remote-workers-2026",
+    "title": "The Best Gifts for Remote Workers in 2026",
+    "excerpt": "Practical software and tool picks that make working from home easier — with verified discounts on each.",
+    "cover": "",
+    "author": "Editorial Team",
+    "date": "2026-11-01",
+    "category": "software",
+    "tags": ["gift-guide", "remote-work"],
+    "body": "## Why these picks\nRemote workers rely on a handful of tools every day. These are the ones worth gifting — or buying for yourself — while a verified discount is live.\n\n## Our picks\n- MergeScreens — a screen recorder for quick async updates.\n- ScreenPal — simple recording and editing for tutorials.\n\n## How to redeem\nOpen the store page, reveal the code, and apply it at checkout before the offer expires.",
+    "published": true,
+    "postType": "gift-guide",
+    "occasion": "christmas",
+    "storeSlugs": ["mergescreens", "screenpal"]
+  },
+  {
+    "slug": "black-friday-2026",
+    "title": "Black Friday 2026",
+    "excerpt": "The biggest discounts of the year across software, subscriptions and tools — updated as new codes go live.",
+    "cover": "",
+    "author": "Editorial Team",
+    "date": "2026-11-27",
+    "category": "software",
+    "tags": ["sale", "software"],
+    "body": "## What's included\nWe're tracking verified codes across software and subscriptions for the full Black Friday weekend — check back as new offers go live.\n\n## Stores in this sale\nSee the participating stores below, each with a verified code you can reveal and apply at checkout.",
+    "published": true,
+    "postType": "sale-calendar",
+    "startDate": "2026-11-27",
+    "endDate": "2026-11-30",
+    "storeSlugs": ["mergescreens", "screenpal"]
   }
 ]
