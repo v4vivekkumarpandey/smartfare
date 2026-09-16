@@ -1,6 +1,12 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
-import { getAllStores, getCategories, getAllPosts } from "@/lib/content";
+import {
+  getAllStores,
+  getCategories,
+  getAllPosts,
+  getSaleCalendar,
+  getAllGiftGuides,
+} from "@/lib/content";
 
 /** Parse a date safely — returns undefined for blank/invalid values. */
 function safeDate(s?: string): Date | undefined {
@@ -10,10 +16,12 @@ function safeDate(s?: string): Date | undefined {
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const [stores, categories, posts] = await Promise.all([
+  const [stores, categories, posts, saleCalendar, giftGuides] = await Promise.all([
     getAllStores(),
     getCategories(),
     getAllPosts(),
+    getSaleCalendar(),
+    getAllGiftGuides(),
   ]);
 
   const staticPages = [
@@ -21,6 +29,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/stores",
     "/category",
     "/blog",
+    "/sale-calendar",
+    "/gift-guides",
     "/how-it-works",
     "/about",
     "/contact",
@@ -52,5 +62,26 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.5,
   }));
 
-  return [...staticPages, ...categoryPages, ...storePages, ...postPages];
+  const saleCalendarPages = saleCalendar.map((s) => ({
+    url: `${site.url}/sale-calendar/${s.slug}`,
+    lastModified: safeDate(s.startDate),
+    changeFrequency: "weekly" as const,
+    priority: 0.6,
+  }));
+
+  const giftGuidePages = giftGuides.map((g) => ({
+    url: `${site.url}/gift-guides/${g.slug}`,
+    lastModified: safeDate(g.date),
+    changeFrequency: "monthly" as const,
+    priority: 0.5,
+  }));
+
+  return [
+    ...staticPages,
+    ...categoryPages,
+    ...storePages,
+    ...postPages,
+    ...saleCalendarPages,
+    ...giftGuidePages,
+  ];
 }

@@ -8,6 +8,8 @@ import type {
   MenuItem,
   MenuLocation,
   BlogPost,
+  SaleCalendarEntry,
+  GiftGuide,
 } from "./types";
 import { parseSettings, type SiteSettings } from "./settings";
 
@@ -25,6 +27,10 @@ import { parseSettings, type SiteSettings } from "./settings";
  *   settings   : key | value   (site name/logo, hero copy, trust badges)
  *   blog       : slug | title | excerpt | cover | author | date | category |
  *                tags | body | published
+ *   salecalendar : slug | name | startDate | endDate | description | cover |
+ *                  storeSlugs | category | featured | published
+ *   giftguides   : slug | title | excerpt | cover | author | date | occasion |
+ *                  storeSlugs | tags | body | published
  */
 
 const SHEET_ID = process.env.GOOGLE_SHEET_ID || "";
@@ -42,6 +48,8 @@ const TABS = [
   "menu",
   "settings",
   "blog",
+  "salecalendar",
+  "giftguides",
 ] as const;
 
 export function sheetsConfigured(): boolean {
@@ -134,6 +142,8 @@ export async function loadFromSheets(): Promise<{
   menu: MenuItem[];
   settings: SiteSettings;
   posts: BlogPost[];
+  saleCalendar: SaleCalendarEntry[];
+  giftGuides: GiftGuide[];
 }> {
   const tabs = await fetchAllTabs();
 
@@ -257,5 +267,36 @@ export async function loadFromSheets(): Promise<{
       published: r.published ? toBool(r.published) : true,
     }));
 
-  return { stores, categories, menu, settings, posts };
+  const saleCalendar: SaleCalendarEntry[] = rowsToObjects(tabs.salecalendar)
+    .filter((r) => r.slug && r.name)
+    .map((r) => ({
+      slug: r.slug.toLowerCase(),
+      name: r.name,
+      startDate: r.startdate || today,
+      endDate: r.enddate || today,
+      description: r.description || "",
+      cover: r.cover || "",
+      storeSlugs: splitList(r.storeslugs),
+      category: (r.category || "").toLowerCase(),
+      featured: toBool(r.featured),
+      published: r.published ? toBool(r.published) : true,
+    }));
+
+  const giftGuides: GiftGuide[] = rowsToObjects(tabs.giftguides)
+    .filter((r) => r.slug && r.title)
+    .map((r) => ({
+      slug: r.slug.toLowerCase(),
+      title: r.title,
+      excerpt: r.excerpt || "",
+      cover: r.cover || "",
+      author: r.author || "Editorial Team",
+      date: r.date || today,
+      occasion: (r.occasion || "").toLowerCase(),
+      storeSlugs: splitList(r.storeslugs),
+      tags: splitList(r.tags),
+      body: r.body || "",
+      published: r.published ? toBool(r.published) : true,
+    }));
+
+  return { stores, categories, menu, settings, posts, saleCalendar, giftGuides };
 }

@@ -14,6 +14,8 @@ export interface NavStore {
  *   Coupons ▾  (dropdown of featured stores + "All stores")
  *   Categories (link to the category index)
  *   Blog       (link to the blog index)
+ *   Sale Calendar (link to the sale-calendar index)
+ *   Gift Guides   (link to the gift-guides index)
  */
 export function PrimaryNav({ stores }: { stores: NavStore[] }) {
   const [open, setOpen] = useState(false);
@@ -89,6 +91,12 @@ export function PrimaryNav({ stores }: { stores: NavStore[] }) {
       </Link>
       <Link href="/blog" className={linkCls}>
         Blog
+      </Link>
+      <Link href="/sale-calendar" className={linkCls}>
+        Sale Calendar
+      </Link>
+      <Link href="/gift-guides" className={linkCls}>
+        Gift Guides
       </Link>
     </nav>
   );

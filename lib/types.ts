@@ -82,6 +82,43 @@ export interface BlogPost {
   published: boolean;
 }
 
+export interface SaleCalendarEntry {
+  slug: string;
+  name: string;
+  /** ISO date, e.g. "2026-11-27" */
+  startDate: string;
+  /** ISO date, e.g. "2026-12-01" */
+  endDate: string;
+  description: string;
+  /** Cover image path/URL (optional) */
+  cover: string;
+  /** Store slugs participating in this sale */
+  storeSlugs: string[];
+  /** Category slug or label (optional) */
+  category: string;
+  featured: boolean;
+  published: boolean;
+}
+
+export interface GiftGuide {
+  slug: string;
+  title: string;
+  excerpt: string;
+  /** Cover image path/URL (optional) */
+  cover: string;
+  author: string;
+  /** ISO date, e.g. "2026-08-01" */
+  date: string;
+  /** e.g. "christmas", "valentines", "mothers-day" (freeform) */
+  occasion: string;
+  /** Store slugs featured in this guide */
+  storeSlugs: string[];
+  tags: string[];
+  /** Body text; supports a small markdown subset (## / ### / - / paragraphs) */
+  body: string;
+  published: boolean;
+}
+
 export type MenuLocation = "header" | "footer" | "both";
 
 export interface MenuItem {

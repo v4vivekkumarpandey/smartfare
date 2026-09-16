@@ -31,6 +31,8 @@ A Google-Ads-ready coupon website. All pages are SSG/ISR. Routes:
 | `/go/[store]/[id]` | Tracked affiliate redirect (302, noindex) |
 | `/go/offer/[slug]` | Simple offer redirect; destinations are in `lib/offers.ts` |
 | `/blog`, `/blog/[slug]` | Blog with AdSense display ads |
+| `/sale-calendar`, `/sale-calendar/[slug]` | Upcoming shopping events, cross-linked to participating stores |
+| `/gift-guides`, `/gift-guides/[slug]` | Curated gift guides, cross-linked to featured stores |
 | `/api/reveal` | Returns the coupon code server-side (code hidden from HTML) |
 | `/api/revalidate` | Webhook that calls `revalidateTag("content")` to bust ISR cache |
 
@@ -56,6 +58,14 @@ Content is loaded by [lib/content.ts](lib/content.ts) via `unstable_cache` (ISR,
 **Priority:**
 1. **Google Sheets** (when `GOOGLE_SHEET_ID` + service-account env vars are set) — see `lib/sheets.ts`
 2. **Local JSON fallback** (`content/stores/*.json`, `content/categories.json`, etc.) — always works in dev without any secrets
+
+Content types: `stores`, `categories`, `menu`, `settings`, `posts` (blog), `saleCalendar`, `giftGuides` — each is a sheet tab (see the tab list documented at the top of `lib/sheets.ts`) with a matching local JSON fallback file in `content/`.
+
+**To add a sale-calendar entry:** add a row to the `salecalendar` sheet tab (or an object to `content/sale-calendar.json` in dev) with `slug`, `name`, `startDate`, `endDate`, `description`, `cover` (optional feature-image path/URL), `storeSlugs` (comma-separated store slugs), `category`, `featured`, `published`. It appears at `/sale-calendar/<slug>` and is cross-linked from participating stores' pages automatically via `storeSlugs`.
+
+**To add a gift guide:** add a row to the `giftguides` sheet tab (or an object to `content/gift-guides.json` in dev) with `slug`, `title`, `excerpt`, `cover`, `author`, `date`, `occasion`, `storeSlugs`, `tags`, `body` (same minimal-markdown subset as blog posts), `published`. It appears at `/gift-guides/<slug>`.
+
+**Sheet templates:** `scripts/sheet-templates/salecalendar.csv` and `scripts/sheet-templates/giftguides.csv` are ready-to-import CSVs with the correct headers (and one example row) for creating the `salecalendar`/`giftguides` tabs in Google Sheets — see the file for import instructions.
 
 Instant cache bust: `POST /api/revalidate?secret=<REVALIDATE_SECRET>` — wire this as a Google Apps Script publish webhook (see `scripts/apps-script.gs`).
 
