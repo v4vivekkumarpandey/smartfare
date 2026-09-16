@@ -14,7 +14,7 @@ const inter = Inter({
 
 export async function generateMetadata(): Promise<Metadata> {
   const settings = await getSettings();
-  const defaultTitle = `${settings.siteName} — Verified Coupons & Promo Codes`;
+  const defaultTitle = `${settings.siteName} — Verified Coupons, Promo Codes & Deals`;
   return {
     metadataBase: new URL(site.url),
     title: {
@@ -22,6 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
       template: `%s | ${settings.siteName}`,
     },
     description: settings.description,
+    alternates: { canonical: "/" },
     openGraph: {
       type: "website",
       siteName: settings.siteName,

@@ -64,7 +64,7 @@ Content types: `stores`, `categories`, `menu`, `settings`, `posts` (blog — see
 - `"gift-guide"` posts additionally use `occasion` (freeform label) and `storeSlugs` (same cross-linking as above).
 - Plain `"post"` entries ignore all of the above.
 
-**To add any of the three:** use `/new-post` (see `.claude/commands/new-post.md`) or add a row/object directly — see `scripts/sheet-templates/blog.csv` for the full column set including the extra fields.
+**To add any of the three:** use `/new-post` (see `.claude/commands/new-post.md`) or add a row/object directly — see `scripts/sheet-templates/blog.csv` (or `blog.xlsx`, same data, spreadsheet-ready) for the full column set including the extra fields. Both are pre-filled with the current `content/blog.json` posts, ready to import as the sheet's `blog` tab.
 
 Instant cache bust: `POST /api/revalidate?secret=<REVALIDATE_SECRET>` — wire this as a Google Apps Script publish webhook (see `scripts/apps-script.gs`).
 
@@ -85,6 +85,20 @@ rm -rf .next && npm run build
 | [components/lp/captureLead.ts](components/lp/captureLead.ts) | Google Form lead-backup endpoint (`ACTION`) and field IDs |
 | [app/globals.css](app/globals.css) | Tailwind v4 `@theme` brand color tokens |
 | `.env.local` (copy from `.env.local.example`) | All secrets; site runs without any set |
+
+## SEO guideline
+
+Every indexable page in this repo follows the same conventions, enforced by the `seo-auditor` subagent (`.claude/agents/seo-auditor.md`, run via `/seo-audit`). When adding or editing a page or content entry, match these rules:
+
+1. **Title**: ~50–60 characters. Set via `generateMetadata`'s `title` (or the root layout's `template` for the homepage). Don't leave a bare product/entry name as the whole title — pad with a few descriptive/keyword-relevant words (e.g. `"Black Friday 2026 Software Deals — Codes, Sales & Savings"`, not just `"Black Friday 2026"`).
+2. **Meta description**: ~120–158 characters, used for both `<meta description>` and Open Graph. If it's built from variable-length content data (e.g. a store's own `description` field), truncate with `truncate()` from `lib/cn.ts` rather than letting it run long — see `app/(site)/coupons/[store]/page.tsx`'s `generateMetadata` for the pattern.
+3. **Canonical**: every page must set `alternates: { canonical: "/some/path" }` (relative path — resolved against `metadataBase`/`site.url` from `lib/site.ts`). This includes the homepage (`app/layout.tsx`'s `generateMetadata`), not just nested routes.
+4. **JSON-LD** (`components/JsonLd.tsx`): match the existing `@type` convention per content kind — `Store`/`Offer`/`FAQPage` graph for coupon pages (`lib/schema.ts`), `BlogPosting` for regular blog posts, `Event` (with `startDate`/`endDate`) for `postType: "sale-calendar"` posts. Don't invent a new schema type without checking what the rest of the site already uses for that content kind.
+5. **Internal linking**: cross-link real content, not orphan pages — store pages need `relatedStores` populated, blog/guide posts need `storeSlugs` resolving to real store slugs (`content/stores/*.json`) and `category`/`tags` matching real category slugs (`content/categories.json`).
+6. **`noindex` correctness**: everything under `app/lp/` and `app/pl/` MUST stay `robots: { index: false }` (paid-ads-only pages). Everything else that's real content (coupon pages, blog/sale-calendar/gift-guide posts, category pages) must NOT be noindex.
+7. **Sitemap** (`app/sitemap.ts`): every indexable route must appear here; noindex/LP/redirect routes must NOT.
+
+To audit any page against this list, run `/seo-audit <path or slug>`.
 
 ## Affiliate redirect logic
 

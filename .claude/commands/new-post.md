@@ -23,6 +23,7 @@ Steps:
 10. Append the new object to `content/blog.json` (don't reformat unrelated entries).
 
 Notes:
+- Full SEO conventions (title/description length, canonical, JSON-LD, internal linking, noindex) are documented in `CLAUDE.md`'s "SEO guideline" section — steps 3–4 and 6 above already cover what's relevant to a new post; canonical and JSON-LD are handled automatically by `app/(site)/blog/[slug]/page.tsx` based on `postType`, no extra action needed. Run `/seo-audit /blog/<slug>` after publishing to double-check.
 - If `GOOGLE_SHEET_ID` + service-account env vars are configured, Sheets content takes priority in production — mention the user should also add a row to the `blog` sheet tab (see `scripts/sheet-templates/blog.csv` for the full column set including `postType`/`startDate`/`endDate`/`occasion`/`storeSlugs`) if Sheets is their source of truth. Editing `content/blog.json` is safe for local dev regardless.
 - No other file needs to change — `app/(site)/blog/page.tsx`, `app/(site)/blog/[slug]/page.tsx`, and `app/sitemap.ts` all read through `lib/content.ts` accessors, so the new entry appears automatically at `/blog/<slug>`.
 - After editing, mention that a running dev server will need `unstable_cache` to expire (up to 900s) or the user can restart `npm run dev` to see it immediately.

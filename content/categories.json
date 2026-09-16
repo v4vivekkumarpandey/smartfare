@@ -3,36 +3,36 @@
     "slug": "software",
     "name": "Software & SaaS",
     "icon": "MonitorSmartphone",
-    "description": "Discounts on the tools you use every day — productivity, design, and business software."
+    "description": "Discounts on the software and SaaS tools you use every day — productivity, design, and business apps, hand-tested daily."
   },
   {
     "slug": "vpn",
     "name": "VPN & Security",
     "icon": "ShieldCheck",
-    "description": "Save on VPNs, password managers, and online privacy tools."
+    "description": "Save on VPNs, password managers, antivirus and online privacy tools with verified, hand-tested discount codes."
   },
   {
     "slug": "hosting",
     "name": "Web Hosting",
     "icon": "Server",
-    "description": "Coupons for web hosting, domains, and cloud infrastructure."
+    "description": "Verified coupons for web hosting, domain registration and cloud infrastructure providers, updated and tested daily."
   },
   {
     "slug": "education",
     "name": "Online Learning",
     "icon": "GraduationCap",
-    "description": "Deals on courses, e-learning platforms, and certifications."
+    "description": "Deals and discount codes on online courses, e-learning platforms and professional certifications, hand-tested daily."
   },
   {
     "slug": "fashion",
     "name": "Fashion & Apparel",
     "icon": "Shirt",
-    "description": "Promo codes for clothing, shoes, and accessories."
+    "description": "Promo codes for clothing, shoes and accessories from top fashion brands, verified and updated every day."
   },
   {
     "slug": "health",
     "name": "Health & Beauty",
     "icon": "HeartPulse",
-    "description": "Savings on wellness, skincare, and beauty brands."
+    "description": "Savings on wellness, skincare, supplements and beauty brands with verified, hand-tested discount codes."
   }
 ]

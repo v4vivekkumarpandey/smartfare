@@ -28,7 +28,7 @@ import { outboundHref, goHref } from "@/lib/affiliate";
 import { toPublicCoupon } from "@/lib/coupon";
 import { storeJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 import { site } from "@/lib/site";
-import { formatDate, formatNumber } from "@/lib/cn";
+import { formatDate, formatNumber, truncate } from "@/lib/cn";
 import { CouponRow } from "@/components/coupon/CouponRow";
 import { CopyCodeBox } from "@/components/coupon/CopyCodeBox";
 import { FaqAccordion } from "@/components/store/FaqAccordion";
@@ -54,9 +54,13 @@ export async function generateMetadata({
   if (!store) return {};
   const count = activeCoupons(store).length;
   const title = `${store.name} Promo Code & Discount Code — ${count} Verified Offers`;
+  const description = truncate(
+    `${count} verified ${store.name} coupon codes and deals for ${new Date().getFullYear()}. ${store.description}`,
+    158
+  );
   return {
     title,
-    description: `${count} verified ${store.name} coupon codes and deals for ${new Date().getFullYear()}. ${store.description}`,
+    description,
     alternates: { canonical: `/coupons/${store.slug}` },
     openGraph: {
       title,

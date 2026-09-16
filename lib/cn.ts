@@ -16,3 +16,11 @@ export function formatDate(iso?: string): string | null {
     year: "numeric",
   });
 }
+
+/** Truncate to `max` chars at a word boundary, adding an ellipsis if cut. Used to keep meta descriptions within SEO length limits regardless of source content length. */
+export function truncate(s: string, max: number): string {
+  if (s.length <= max) return s;
+  const cut = s.slice(0, max - 1);
+  const lastSpace = cut.lastIndexOf(" ");
+  return `${cut.slice(0, lastSpace > 0 ? lastSpace : max - 1)}…`;
+}
