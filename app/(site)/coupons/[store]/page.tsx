@@ -173,22 +173,30 @@ export default async function StorePage({
                 href={goHref(store.slug, best.id)}
                 target="_blank"
                 rel="noopener noreferrer sponsored"
-                className="mb-4 flex items-center gap-3 rounded-xl border-2 border-accent-500 bg-accent-500/5 p-3 transition hover:bg-accent-500/10 sm:gap-4 sm:p-4"
+                className="mb-4 overflow-hidden rounded-xl border-2 border-accent-500 bg-accent-500/5 transition hover:bg-accent-500/10"
               >
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent-500 text-white sm:h-12 sm:w-12">
-                  <Ticket width={20} height={20} />
-                </span>
-                <div className="min-w-0 flex-1">
-                  <p className="text-sm font-bold text-ink-900">
-                    Apply All {store.name} Codes in One Tap
-                  </p>
-                  <p className="hidden text-xs text-ink-500 sm:block">
-                    Automatically test every code — save up to {bestDiscount}.
-                  </p>
+                {/* Top row: icon + text */}
+                <div className="flex items-center gap-3 p-3 sm:gap-4 sm:p-4">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent-500 text-white sm:h-12 sm:w-12">
+                    <Ticket width={20} height={20} />
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <p className="text-sm font-bold text-ink-900">
+                      Apply All {store.name} Codes in One Tap
+                    </p>
+                    <p className="text-xs text-ink-500">
+                      Automatically test every code &mdash; save up to {bestDiscount}.
+                    </p>
+                  </div>
+                  {/* Side button — sm+ only */}
+                  <span className="hidden shrink-0 whitespace-nowrap rounded-lg bg-accent-500 px-4 py-2 text-sm font-bold text-white sm:inline-block">
+                    Get Code
+                  </span>
                 </div>
-                <span className="shrink-0 whitespace-nowrap rounded-lg bg-accent-500 px-3 py-2 text-sm font-bold text-white sm:px-4">
-                  Get Code
-                </span>
+                {/* Full-width button — mobile only */}
+                <div className="border-t border-accent-500/20 bg-accent-500 py-2.5 text-center text-sm font-bold text-white sm:hidden">
+                  Get Code &rarr;
+                </div>
               </a>
             )}
 

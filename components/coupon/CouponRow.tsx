@@ -20,9 +20,7 @@ export function CouponRow({
   storeName: string;
   storeSlug: string;
   outboundHref: string;
-  /** Store logo — shown as a small store header when `showStore` is set. */
   storeLogo?: string;
-  /** Show the store logo + name (used on mixed lists like the homepage). */
   showStore?: boolean;
 }) {
   const [details, setDetails] = useState(false);
@@ -36,17 +34,22 @@ export function CouponRow({
     outboundHref,
   });
 
+  const label = isCode ? "Get Code" : "Get Deal";
+
   return (
     <>
       <div className="overflow-hidden rounded-xl border border-ink-100 bg-white shadow-sm transition hover:shadow-md">
-        <div className="flex items-stretch gap-2.5 p-2.5 sm:gap-4 sm:p-4">
-          <div className="flex w-16 shrink-0 flex-col items-center justify-center rounded-lg bg-accent-500/10 px-1 py-2 text-center sm:w-24">
+        {/* Info row */}
+        <div className="flex items-center gap-3 p-3 sm:gap-4 sm:p-4">
+          {/* Discount badge */}
+          <div className="flex w-14 shrink-0 flex-col items-center justify-center rounded-lg bg-accent-500/10 px-1 py-3 text-center sm:w-24">
             <span className="text-sm font-extrabold leading-tight text-accent-600 sm:text-lg">
               {coupon.discount}
             </span>
           </div>
 
-          <div className="flex min-w-0 flex-1 flex-col justify-center">
+          {/* Coupon info */}
+          <div className="flex min-w-0 flex-1 flex-col">
             {showStore && (
               <Link
                 href={`/coupons/${storeSlug}`}
@@ -75,13 +78,11 @@ export function CouponRow({
                 </span>
               )}
             </div>
-
             <h3 className="mt-1 truncate text-sm font-semibold text-ink-900 sm:text-base">
               {coupon.title}
             </h3>
-
             <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-0.5 text-xs text-ink-500">
-              {isCode && <span className="font-mono tracking-widest">Code: ••••••</span>}
+              {isCode && <span className="font-mono tracking-widest">Code: &#8226;&#8226;&#8226;&#8226;&#8226;&#8226;</span>}
               {coupon.expires && <span>Ends {formatDate(coupon.expires)}</span>}
               <button
                 type="button"
@@ -97,27 +98,35 @@ export function CouponRow({
                 />
               </button>
             </div>
-
             {details && (
               <p className="mt-2 text-xs leading-relaxed text-ink-500">
-                Click “{isCode ? "Get Code" : "Get Deal"}” to {isCode ? "reveal this code and " : ""}
+                Tap &ldquo;{label}&rdquo; to {isCode ? "reveal this code and " : ""}
                 open {storeName}, then apply your {coupon.discount} discount at
-                checkout. Used {formatNumber(coupon.uses)} times · {coupon.successRate}% success rate.
+                checkout. Used {formatNumber(coupon.uses)} times &middot; {coupon.successRate}% success rate.
               </p>
             )}
           </div>
 
-          <div className="flex items-center">
-            <button
-              type="button"
-              onClick={reveal}
-              className="inline-flex shrink-0 items-center gap-1 rounded-lg bg-accent-500 px-3 py-3 text-xs font-bold text-white shadow-sm transition hover:bg-accent-600 active:scale-95 sm:px-5 sm:py-2.5 sm:text-sm"
-            >
-              {isCode ? "Get Code" : "Get Deal"}
-              <ExternalLink width={14} height={14} className="hidden opacity-90 sm:block" />
-            </button>
-          </div>
+          {/* Side button — sm+ only */}
+          <button
+            type="button"
+            onClick={reveal}
+            className="hidden shrink-0 items-center gap-1 rounded-lg bg-accent-500 px-3 py-2.5 text-xs font-bold text-white shadow-sm transition hover:bg-accent-600 active:scale-95 sm:inline-flex lg:px-5 lg:text-sm"
+          >
+            {label}
+            <ExternalLink width={14} height={14} className="opacity-90" />
+          </button>
         </div>
+
+        {/* Full-width CTA button — mobile only */}
+        <button
+          type="button"
+          onClick={reveal}
+          className="flex w-full items-center justify-center gap-2 border-t border-ink-100 bg-accent-500 py-3 text-sm font-bold text-white transition hover:bg-accent-600 active:scale-[0.98] sm:hidden"
+        >
+          {label}
+          <ExternalLink width={15} height={15} className="opacity-90" />
+        </button>
       </div>
 
       {open && isCode && (
