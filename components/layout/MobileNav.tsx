@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import type { NavStore } from "./PrimaryNav";
@@ -26,60 +27,62 @@ export function MobileNav({ stores }: { stores: NavStore[] }) {
         <Menu width={22} height={22} />
       </button>
 
-      {open && (
-        <div className="fixed inset-0 z-50 overflow-y-auto bg-white">
-          <div className="flex items-center justify-between border-b border-ink-100 px-4 py-4">
-            <span className="text-lg font-bold text-ink-900">Menu</span>
-            <button
-              type="button"
-              aria-label="Close menu"
-              onClick={close}
-              className="rounded-lg p-2 text-ink-700 hover:bg-ink-100"
-            >
-              <X width={22} height={22} />
-            </button>
-          </div>
-          <nav className="px-4 py-2 pb-10">
-            <Link
-              href="/"
-              onClick={close}
-              className="block rounded-lg px-3 py-3 text-base font-medium text-ink-900 hover:bg-ink-100"
-            >
-              Home
-            </Link>
-
-            <p className={headingCls}>Coupons</p>
-            {stores.map((s) => (
-              <Link
-                key={s.slug}
-                href={`/coupons/${s.slug}`}
+      {open &&
+        createPortal(
+          <div className="fixed inset-0 z-50 overflow-y-auto bg-white">
+            <div className="flex items-center justify-between border-b border-ink-100 px-4 py-4">
+              <span className="text-lg font-bold text-ink-900">Menu</span>
+              <button
+                type="button"
+                aria-label="Close menu"
                 onClick={close}
-                className={itemCls}
+                className="rounded-lg p-2 text-ink-700 hover:bg-ink-100"
               >
-                {s.name}
+                <X width={22} height={22} />
+              </button>
+            </div>
+            <nav className="px-4 py-2 pb-10">
+              <Link
+                href="/"
+                onClick={close}
+                className="block rounded-lg px-3 py-3 text-base font-medium text-ink-900 hover:bg-ink-100"
+              >
+                Home
               </Link>
-            ))}
-            <Link
-              href="/stores"
-              onClick={close}
-              className="block rounded-lg px-3 py-3 text-base font-semibold text-brand-700 hover:bg-ink-100"
-            >
-              View all stores →
-            </Link>
 
-            <p className={headingCls}>More</p>
-            <Link href="/category" onClick={close} className={itemCls}>
-              Categories
-            </Link>
-            <Link href="/blog" onClick={close} className={itemCls}>
-              Blog
-            </Link>
-            <Link href="/how-it-works" onClick={close} className={itemCls}>
-              How It Works
-            </Link>
-          </nav>
-        </div>
-      )}
+              <p className={headingCls}>Coupons</p>
+              {stores.map((s) => (
+                <Link
+                  key={s.slug}
+                  href={`/coupons/${s.slug}`}
+                  onClick={close}
+                  className={itemCls}
+                >
+                  {s.name}
+                </Link>
+              ))}
+              <Link
+                href="/stores"
+                onClick={close}
+                className="block rounded-lg px-3 py-3 text-base font-semibold text-brand-700 hover:bg-ink-100"
+              >
+                View all stores →
+              </Link>
+
+              <p className={headingCls}>More</p>
+              <Link href="/category" onClick={close} className={itemCls}>
+                Categories
+              </Link>
+              <Link href="/blog" onClick={close} className={itemCls}>
+                Blog
+              </Link>
+              <Link href="/how-it-works" onClick={close} className={itemCls}>
+                How It Works
+              </Link>
+            </nav>
+          </div>,
+          document.body
+        )}
     </div>
   );
 }
