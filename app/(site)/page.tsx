@@ -5,6 +5,7 @@ import {
   getCategories,
   getTopCoupons,
   getSettings,
+  getAllPosts,
 } from "@/lib/content";
 import { outboundHref } from "@/lib/affiliate";
 import { toPublicCoupon } from "@/lib/coupon";
@@ -13,16 +14,19 @@ import { SearchBox, type SearchItem } from "@/components/layout/SearchBox";
 import { CategoryIcon } from "@/components/ui/CategoryIcon";
 import { StoreCard } from "@/components/store/StoreCard";
 import { CouponRow } from "@/components/coupon/CouponRow";
+import { LatestPostCard } from "@/components/blog/LatestPostCard";
 
 export const revalidate = 900;
 
 export default async function HomePage() {
-  const [stores, categories, topCoupons, settings] = await Promise.all([
+  const [stores, categories, topCoupons, settings, posts] = await Promise.all([
     getAllStores(),
     getCategories(),
     getTopCoupons(6),
     getSettings(),
+    getAllPosts(),
   ]);
+  const latestPosts = posts.slice(0, 3);
   const index: SearchItem[] = stores.map((s) => ({
     slug: s.slug,
     name: s.name,
@@ -132,6 +136,26 @@ export default async function HomePage() {
             ))}
           </div>
         </section>
+
+        {/* Latest posts */}
+        {latestPosts.length > 0 && (
+          <section className="py-10">
+            <div className="flex items-center justify-between">
+              <h2 className="text-xl font-bold text-ink-900">Latest Posts</h2>
+              <Link
+                href="/blog"
+                className="rounded-full border border-ink-200 px-4 py-2 text-sm font-semibold text-ink-900 transition hover:border-brand-300 hover:text-brand-600"
+              >
+                View all posts
+              </Link>
+            </div>
+            <div className="mt-6 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              {latestPosts.map((post) => (
+                <LatestPostCard key={post.slug} post={post} />
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Trust band */}
         <section className="my-10 rounded-card border border-ink-100 bg-white p-8">
