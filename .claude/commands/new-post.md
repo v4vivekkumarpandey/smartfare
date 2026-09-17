@@ -12,7 +12,7 @@ Steps:
 2. Generate a kebab-case `slug` from the title (lowercase, no special characters).
 3. Write `excerpt` as a meta-description-ready summary, roughly 120–158 characters — used directly in `generateMetadata` for `<meta description>` and Open Graph.
 4. Keep `title` roughly 50–60 characters so it renders well as a `<title>` tag without truncation.
-5. Write `body` as substantive, in-depth content — target **4,000–10,000 characters** total (count the raw markdown string, including headings/bullets/table syntax). If the topic can't naturally support 4,000 characters, expand coverage (more sections, examples, FAQs, comparisons) rather than padding filler text; don't pad past 10,000 by repeating points.
+5. Write `body` as substantive, in-depth content — target **6,000–10,000 characters** total (count the raw markdown string, including headings/bullets/table syntax). If the topic can't naturally support 6,000 characters, expand coverage (more sections, examples, FAQs, comparisons) rather than padding filler text; don't pad past 10,000 by repeating points.
 
    Use ONLY the markdown subset `components/blog/PostBody.tsx` supports: `##`/`###` headings, `- ` bullet lines, `**bold**`, blank-line-separated paragraphs, `[text](url)` links (open in a new tab automatically), `![alt](src)` images (must be alone on their own line — an image inline with other text will not render as an image), and pipe tables (a header row, a `| --- | --- |` separator row, then data rows). Anything outside this subset (nested formatting, raw HTML, footnotes) renders as literal text or is dropped.
 
