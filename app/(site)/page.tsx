@@ -28,7 +28,7 @@ export default async function HomePage() {
     getSettings(),
     getAllPosts(),
   ]);
-  const latestPosts = posts.slice(0, 3);
+  const latestPosts = posts.slice(0, 6);
   const index: SearchItem[] = stores.map((s) => ({
     slug: s.slug,
     name: s.name,
