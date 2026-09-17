@@ -1,0 +1,36 @@
+{
+  "slug": "namecheap",
+  "name": "Namecheap",
+  "logo": "",
+  "url": "https://www.namecheap.com",
+  "category": "hosting",
+  "tagline": "Budget shared hosting with cPanel, a free domain, and 24/7 live chat",
+  "rating": 4.2,
+  "reviewCount": 21859,
+  "description": "Namecheap is a budget web hosting and domain registrar offering three shared hosting tiers — Stellar, Stellar Plus and Stellar Business — built on the industry-standard cPanel control panel, with a free domain on annual plans and 24/7 live chat support.",
+  "about": [
+    "Namecheap's shared hosting comes in three tiers: Stellar (3 websites, 20GB SSD storage), Stellar Plus (unlimited websites, unmetered SSD storage), and Stellar Business (unlimited websites, 50GB SSD storage, higher-performance resources). All three run on cPanel rather than a custom control panel, include unmetered bandwidth, free SSL, and a free domain on longer-term plans.",
+    "Namecheap raised its shared hosting renewal prices starting May 19, 2026, citing rising costs — renewal rates now run $5.88/month (Stellar), $7.88/month (Stellar Plus) and $11.88/month (Stellar Business) on monthly billing, with lower effective rates on annual and two-year terms. Introductory promotional pricing is typically well below these renewal rates on the first term; check Namecheap's current pricing page for the live promotional rate before buying, since it changes periodically."
+  ],
+  "policies": [
+    "Namecheap backs shared hosting plans with a 30-day money-back guarantee (extended from its previous 14-day window)."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does Namecheap use cPanel?",
+      "a": "Yes — Namecheap's shared hosting plans run on the industry-standard cPanel control panel, unlike some budget hosts that build their own custom dashboard."
+    },
+    {
+      "q": "Is Namecheap's advertised price what I'll pay on renewal?",
+      "a": "No. Namecheap's lowest prices are introductory/promotional for the first term; shared hosting renewal prices increased as of May 19, 2026 to $5.88-$11.88/month depending on plan and billing term — check the current renewal rate for your specific plan before buying."
+    },
+    {
+      "q": "Does Namecheap offer a free domain?",
+      "a": "Yes, on longer-term (typically annual or longer) shared hosting plans — check the specific plan's terms for eligibility."
+    }
+  ],
+  "relatedStores": ["hostinger"],
+  "updated": "2026-09-18"
+}
