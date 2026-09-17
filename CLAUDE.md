@@ -72,6 +72,8 @@ Content types: `stores`, `categories`, `menu`, `settings`, `posts` (blog — see
 
 **Cover images** (the `cover` field) can be auto-generated via the Vercel AI Gateway instead of sourced manually: `node scripts/generate-blog-cover.mjs <slug>` (or `--all` to backfill every post with an empty `cover`) generates a 16:9 illustration from the post's title/excerpt, saves it to `public/blog/<slug>.png`, and writes the path back into `content/blog.json`. Requires `AI_GATEWAY_API_KEY` (see `.env.local.example`). `/new-post` calls this automatically when no cover is supplied.
 
+**Writing directly to the live Sheet:** `node scripts/sheet-append.mjs <tabName> <rowsJsonFile>` appends rows to any tab of the live Google Sheet, using the same service-account credentials `lib/sheets.ts` uses to read — `rowsJsonFile` is a JSON file containing an array of rows (each row an array of cell values in that tab's exact column order). Requires the service account to have **Editor** access on the Sheet (read-only, which is all the app itself needs, isn't enough for this). This is how new stores/posts/faqs can be pushed live without manually editing the Sheet in a browser.
+
 Instant cache bust: `POST /api/revalidate?secret=<REVALIDATE_SECRET>` — wire this as a Google Apps Script publish webhook (see `scripts/apps-script.gs`).
 
 New stores added to the sheet appear after first request with no redeploy needed (`dynamicParams = true`).
