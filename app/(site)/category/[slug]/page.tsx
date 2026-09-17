@@ -8,6 +8,9 @@ import {
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { CategoryIcon } from "@/components/ui/CategoryIcon";
 import { StoreCard } from "@/components/store/StoreCard";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbJsonLd, categoryJsonLd } from "@/lib/schema";
+import { truncate } from "@/lib/cn";
 
 export const dynamicParams = true;
 export const revalidate = 900;
@@ -26,8 +29,8 @@ export async function generateMetadata({
   const category = await getCategory(slug);
   if (!category) return {};
   return {
-    title: `${category.name} Coupons & Promo Codes`,
-    description: category.description,
+    title: `${category.name} Coupons & Promo Codes — Verified Deals`,
+    description: truncate(category.description, 158),
     alternates: { canonical: `/category/${category.slug}` },
   };
 }
@@ -45,6 +48,13 @@ export default async function CategoryPage({
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-6">
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { label: "Home", href: "/" },
+          { label: category.name, href: `/category/${category.slug}` },
+        ])}
+      />
+      <JsonLd data={categoryJsonLd(category, stores)} />
       <Breadcrumbs
         items={[{ label: "Home", href: "/" }, { label: category.name }]}
       />

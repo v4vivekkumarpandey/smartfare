@@ -15,6 +15,8 @@ import { CategoryIcon } from "@/components/ui/CategoryIcon";
 import { StoreCard } from "@/components/store/StoreCard";
 import { CouponRow } from "@/components/coupon/CouponRow";
 import { LatestPostCard } from "@/components/blog/LatestPostCard";
+import { JsonLd } from "@/components/JsonLd";
+import { siteJsonLd } from "@/lib/schema";
 
 export const revalidate = 900;
 
@@ -45,6 +47,8 @@ export default async function HomePage() {
 
   return (
     <div>
+      <JsonLd data={siteJsonLd()} />
+
       {/* Hero */}
       <section className="bg-gradient-to-b from-brand-50 to-transparent">
         <div className="mx-auto max-w-4xl px-4 py-14 text-center sm:py-20">

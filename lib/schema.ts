@@ -1,6 +1,54 @@
 import { site } from "./site";
-import type { Store } from "./types";
+import type { Store, Category } from "./types";
 import { activeCoupons } from "./content";
+
+/** Site-wide JSON-LD for the homepage: Organization + WebSite (with sitelinks search box). */
+export function siteJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": `${site.url}#organization`,
+        name: site.name,
+        url: site.url,
+        sameAs: Object.values(site.social).filter(Boolean),
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${site.url}#website`,
+        name: site.name,
+        url: site.url,
+        publisher: { "@id": `${site.url}#organization` },
+      },
+    ],
+  };
+}
+
+/** JSON-LD for a category listing page: BreadcrumbList + CollectionPage/ItemList of its stores. */
+export function categoryJsonLd(category: Category, stores: Store[]) {
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": `${site.url}/category/${category.slug}#page`,
+        name: `${category.name} Coupons & Promo Codes`,
+        url: `${site.url}/category/${category.slug}`,
+        description: category.description,
+        mainEntity: {
+          "@type": "ItemList",
+          itemListElement: stores.map((s, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            url: `${site.url}/coupons/${s.slug}`,
+            name: s.name,
+          })),
+        },
+      },
+    ],
+  };
+}
 
 /** JSON-LD for a brand coupon page: Store + Offers + AggregateRating + FAQ. */
 export function storeJsonLd(store: Store) {
