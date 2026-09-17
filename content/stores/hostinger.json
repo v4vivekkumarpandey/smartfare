@@ -1,0 +1,32 @@
+{
+  "slug": "hostinger",
+  "name": "Hostinger",
+  "logo": "",
+  "url": "https://www.hostinger.com",
+  "category": "hosting",
+  "tagline": "Affordable web hosting with a custom, beginner-friendly dashboard",
+  "rating": 4.5,
+  "reviewCount": 96,
+  "description": "Hostinger is a budget-friendly web hosting provider known for its custom hPanel dashboard, long-term promotional pricing, and beginner-friendly setup.",
+  "about": [
+    "Hostinger offers shared, cloud and VPS hosting plans, built around its own hPanel control panel rather than the industry-standard cPanel — a cleaner, simpler interface aimed at beginners.",
+    "Promotional pricing requires a long upfront commitment (typically 24-48 months) and renews at a noticeably higher rate — factor that into the real long-term cost before committing."
+  ],
+  "policies": [
+    "Hostinger backs its hosting plans with a 30-day money-back guarantee."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does Hostinger use cPanel?",
+      "a": "No — Hostinger built its own control panel called hPanel instead of the industry-standard cPanel. It's generally considered cleaner and easier for beginners, though it has a different learning curve if you're used to cPanel."
+    },
+    {
+      "q": "Is Hostinger's promotional price the price I'll always pay?",
+      "a": "No. Hostinger's lowest advertised prices require a long upfront term (often 24-48 months) and the plan renews at a higher rate afterward — check the renewal price before committing, not just the introductory offer."
+    }
+  ],
+  "relatedStores": [],
+  "updated": "2026-09-17"
+}

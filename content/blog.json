@@ -125,5 +125,21 @@
     "storeSlugs": [
       "amazon"
     ]
+  },
+  {
+    "slug": "hostinger-review",
+    "title": "Hostinger Review 2026: Pricing, Features and Verdict",
+    "excerpt": "An honest look at Hostinger's hosting plans, pricing structure, hPanel dashboard and support — plus who it's actually worth choosing for.",
+    "cover": "/blog/hostinger-review.jpg",
+    "author": "Editorial Team",
+    "date": "2026-09-17",
+    "category": "hosting",
+    "tags": [
+      "hosting",
+      "review",
+      "website"
+    ],
+    "body": "## What Hostinger actually is\nHostinger is a budget web hosting provider offering shared, cloud and VPS plans, built around hPanel, a control panel the company designed in-house instead of using the industry-standard cPanel. That's the first thing to know going in: if you've used cPanel elsewhere, hPanel looks and feels different, though most reviewers find it cleaner and easier for beginners once you get past the switch.\n\n## Pricing: read the renewal price, not just the intro offer\nHostinger's lowest advertised prices look attractive, but they come with a catch worth understanding before you buy: those rates require a long upfront commitment, typically 24 to 48 months, paid in one charge. When that term ends, the plan renews at a noticeably higher monthly rate. This isn't unique to Hostinger, most budget hosts use the same model, but it means the sticker price you see in an ad isn't what you'll pay long-term. Before checking out, look up the renewal price for your specific plan so there's no surprise at year two.\n\n## What you get on the paid plans\n- **Free domain and SSL** on longer-term subscriptions (12 months or more).\n- **Tiered plans** — Premium for smaller sites, Business and Cloud Startup as you scale up in traffic and resources.\n- **hPanel dashboard** — a simplified, modern alternative to cPanel with built-in tools for backups, file management and site setup.\n- **30-day money-back guarantee** on hosting plans, giving you a real window to test the service before it's a sunk cost.\n\n## Where it's a strong fit\nHostinger tends to work best for personal sites, blogs, small business sites and beginners who want a straightforward setup without a steep learning curve. The custom dashboard and guided onboarding make it approachable if you've never managed hosting before.\n\n## Where to think twice\nIf you're already comfortable with cPanel from another host, switching to hPanel is a real adjustment, not just a re-skin. And if you're not ready to commit to a multi-year term upfront, the entry pricing won't look as good on a shorter or month-to-month basis. Read the renewal terms for your exact plan before you buy, since they vary and change over time.\n\n## Bottom line\nHostinger is a solid, budget-friendly option for beginners and small sites, especially if you're comfortable prepaying for a longer term to lock in the lower rate. Just go in with clear eyes on what you'll pay after that term ends, and confirm hPanel's workflow suits you if you're coming from cPanel elsewhere.",
+    "published": true
   }
 ]
