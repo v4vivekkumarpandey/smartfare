@@ -1,0 +1,31 @@
+{
+  "slug": "amazon",
+  "name": "Amazon",
+  "logo": "",
+  "url": "https://www.amazon.com",
+  "category": "education",
+  "tagline": "Everything you're looking for, shipped fast",
+  "rating": 4.6,
+  "reviewCount": 128,
+  "description": "Shop books, comics, toys and more on Amazon — including staff-picked gift ideas curated by our editorial team.",
+  "about": [
+    "Amazon is the world's largest online marketplace, offering fast shipping, easy returns and a massive catalog spanning books, electronics, home goods and more.",
+    "Links below go straight to the specific product page for the featured pick — no promo code needed, just click through and buy."
+  ],
+  "contact": {},
+  "coupons": [
+    {
+      "id": "amazon-tinkle-gold-02",
+      "title": "Tinkle Gold – Collector's Edition #2 on Amazon",
+      "type": "deal",
+      "discount": "FEATURED PICK",
+      "verified": true,
+      "uses": 0,
+      "successRate": 100,
+      "dealUrl": "https://link.amazon/B0g0Pdwmh"
+    }
+  ],
+  "faqs": [],
+  "relatedStores": [],
+  "updated": "2026-09-17"
+}
