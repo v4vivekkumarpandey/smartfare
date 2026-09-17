@@ -84,7 +84,13 @@ export interface BlogPost {
   /** Category slug or label (optional) */
   category: string;
   tags: string[];
-  /** Body text; supports a small markdown subset (## / ### / - / paragraphs) */
+  /**
+   * Body text; supports a small markdown subset rendered by
+   * components/blog/PostBody.tsx: ## / ### headings, - bullet lists,
+   * blank-line paragraphs, **bold**, [text](url) links, standalone
+   * ![alt](src) image lines, and | a | b | pipe tables (header row +
+   * |---|---| separator row required).
+   */
   body: string;
   published: boolean;
   /** Defaults to "post" when absent. */
