@@ -4,6 +4,7 @@ import Image from "next/image";
 import { CalendarDays, User } from "lucide-react";
 import { getPost, getPostSlugs, getAllPosts, getStore } from "@/lib/content";
 import { site } from "@/lib/site";
+import { toAbsoluteUrl } from "@/lib/schema";
 import { formatDate } from "@/lib/cn";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { PostBody } from "@/components/blog/PostBody";
@@ -80,7 +81,7 @@ export default async function BlogPostPage({
             url: `${site.url}/blog/${post.slug}`,
           },
           organizer: { "@type": "Organization", name: site.name, url: site.url },
-          image: post.cover ? `${site.url}${post.cover}` : undefined,
+          image: post.cover ? toAbsoluteUrl(post.cover) : undefined,
         }
       : {
           "@context": "https://schema.org",
@@ -92,7 +93,7 @@ export default async function BlogPostPage({
           author: { "@type": "Organization", name: post.author },
           publisher: { "@type": "Organization", name: site.name },
           mainEntityOfPage: `${site.url}/blog/${post.slug}`,
-          image: post.cover ? `${site.url}${post.cover}` : undefined,
+          image: post.cover ? toAbsoluteUrl(post.cover) : undefined,
         };
 
   return (

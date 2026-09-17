@@ -66,7 +66,9 @@ export async function generateMetadata({
       title,
       description: store.description,
       url: `${site.url}/coupons/${store.slug}`,
-      images: [store.logo],
+      // The generated 1200x630 branded card reads far better than the raw
+      // store.logo (often a favicon-sized auto-fallback image).
+      images: [`${site.url}/coupons/${store.slug}/opengraph-image`],
     },
   };
 }

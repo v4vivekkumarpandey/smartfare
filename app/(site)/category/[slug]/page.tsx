@@ -11,6 +11,7 @@ import { StoreCard } from "@/components/store/StoreCard";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbJsonLd, categoryJsonLd } from "@/lib/schema";
 import { truncate } from "@/lib/cn";
+import { site } from "@/lib/site";
 
 export const dynamicParams = true;
 export const revalidate = 900;
@@ -33,6 +34,9 @@ export async function generateMetadata({
     title: `${category.name} Coupons & Promo Codes — Verified Deals`,
     description: truncate(category.description, 158),
     alternates: { canonical: `/category/${category.slug}` },
+    openGraph: {
+      images: [`${site.url}/category/${category.slug}/opengraph-image`],
+    },
     // Keep an empty category out of the index until it has real stores —
     // an indexed page with no content is a thin-content signal to Google.
     ...(stores.length === 0 ? { robots: { index: false, follow: true } } : {}),

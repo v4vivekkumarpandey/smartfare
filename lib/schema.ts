@@ -2,6 +2,15 @@ import { site } from "./site";
 import type { Store, Category } from "./types";
 import { activeCoupons } from "./content";
 
+/** A store's logo or a post's cover may already be an absolute URL (the
+ * Google-favicon auto-fallback from lib/logo.ts, or a user-supplied https
+ * cover) — only prepend site.url when it's actually relative, otherwise
+ * naive concatenation produces a malformed URL like
+ * "https://site.comhttps://other.com/img.png". */
+export function toAbsoluteUrl(path: string): string {
+  return /^https?:\/\//.test(path) ? path : `${site.url}${path}`;
+}
+
 /** Site-wide JSON-LD for the homepage: Organization + WebSite (with sitelinks search box). */
 export function siteJsonLd() {
   return {
@@ -70,7 +79,11 @@ export function storeJsonLd(store: Store) {
       "@id": `${site.url}/coupons/${store.slug}#store`,
       name: store.name,
       url: `${site.url}/coupons/${store.slug}`,
-      image: `${site.url}${store.logo}`,
+      // The generated 1200x630 branded card (app/(site)/coupons/[store]/opengraph-image.tsx)
+      // reads far better in Rich Results / social previews than the raw
+      // (often favicon-sized) store.logo.
+      image: `${site.url}/coupons/${store.slug}/opengraph-image`,
+      logo: toAbsoluteUrl(store.logo),
       description: store.description,
       aggregateRating: {
         "@type": "AggregateRating",

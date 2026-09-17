@@ -3,6 +3,7 @@ import { getAllPosts } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { PostCard } from "@/components/blog/PostCard";
 import { Ad } from "@/components/Ad";
+import { site } from "@/lib/site";
 
 export const revalidate = 900;
 
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
   description:
     "Money-saving guides, coupon how-tos and deal roundups from our editorial team.",
   alternates: { canonical: "/blog" },
+  openGraph: { images: [`${site.url}/blog/opengraph-image`] },
 };
 
 export default async function BlogIndexPage() {

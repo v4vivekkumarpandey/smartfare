@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getAllStores } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { StoreCard } from "@/components/store/StoreCard";
+import { site } from "@/lib/site";
 
 export const revalidate = 900;
 
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
   description:
     "Every store we track, with verified coupon codes and deals updated daily.",
   alternates: { canonical: "/stores" },
+  openGraph: { images: [`${site.url}/stores/opengraph-image`] },
 };
 
 export default async function StoresIndexPage() {
