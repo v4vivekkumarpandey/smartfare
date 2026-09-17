@@ -23,7 +23,6 @@ export function StoreLogo({
   return (
     <Image
       src={failed ? "/logos/placeholder.svg" : src}
-      unoptimized
       alt={alt}
       width={width}
       height={height}

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Generate a blog post cover image via the Vercel AI Gateway and save it to
- * public/blog/<slug>.png. Requires AI_GATEWAY_API_KEY (see .env.local.example).
+ * public/blog/<slug>.jpg. Requires AI_GATEWAY_API_KEY (see .env.local.example).
  *
  * Usage:
  *   node scripts/generate-blog-cover.mjs <slug>
@@ -11,6 +11,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { generateImage } from "ai";
+import sharp from "sharp";
 
 const ROOT = process.cwd();
 const BLOG_JSON = path.join(ROOT, "content", "blog.json");
@@ -33,11 +34,11 @@ async function generateCover(post, prompt) {
     aspectRatio: "16:9",
   });
   fs.mkdirSync(BLOG_DIR, { recursive: true });
-  fs.writeFileSync(
-    path.join(BLOG_DIR, `${post.slug}.png`),
-    Buffer.from(image.uint8Array)
-  );
-  return `/blog/${post.slug}.png`;
+  const jpeg = await sharp(Buffer.from(image.uint8Array))
+    .jpeg({ quality: 82 })
+    .toBuffer();
+  fs.writeFileSync(path.join(BLOG_DIR, `${post.slug}.jpg`), jpeg);
+  return `/blog/${post.slug}.jpg`;
 }
 
 async function main() {
