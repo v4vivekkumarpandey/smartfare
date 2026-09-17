@@ -70,11 +70,9 @@ async function main() {
   for (const post of targets) {
     console.log(`Generating cover for "${post.slug}"...`);
     post.cover = await generateCover(post, customPrompt);
+    fs.writeFileSync(BLOG_JSON, JSON.stringify(posts, null, 2) + "\n");
     console.log(`  saved ${post.cover}`);
   }
-
-  fs.writeFileSync(BLOG_JSON, JSON.stringify(posts, null, 2) + "\n");
-  console.log("Updated content/blog.json.");
 }
 
 main().catch((err) => {

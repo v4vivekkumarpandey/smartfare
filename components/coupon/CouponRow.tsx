@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { Check, Copy, ExternalLink, X, ChevronDown, BadgeCheck, Loader2 } from "lucide-react";
 import { cn, formatNumber, formatDate } from "@/lib/cn";
 import { useRevealCode } from "./useRevealCode";
+import { StoreLogo } from "@/components/store/StoreLogo";
 import type { PublicCoupon } from "@/lib/types";
 
 /** Split "60% OFF", "20%", "$10 OFF" into primary + secondary for two-line badge. */
@@ -74,9 +74,8 @@ export function CouponRow({
                 className="mb-1 flex w-fit items-center gap-1.5 text-ink-500 hover:text-brand-600"
               >
                 {storeLogo && (
-                  <Image
+                  <StoreLogo
                     src={storeLogo}
-                    unoptimized
                     alt={storeName}
                     width={18}
                     height={18}
