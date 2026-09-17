@@ -26,6 +26,9 @@ export const site = {
   adsenseClient: process.env.NEXT_PUBLIC_ADSENSE_CLIENT || "",
   // AdSense ad-unit slot id used on blog pages, e.g. 1234567890
   adsenseSlot: process.env.NEXT_PUBLIC_ADSENSE_SLOT || "",
+  // Google Search Console HTML-tag verification code (the "content" value
+  // from the meta tag Search Console gives you) — blank = tag omitted.
+  googleSiteVerification: process.env.GOOGLE_SITE_VERIFICATION || "",
   social: {
     twitter: "@thesmartfares",
   },

@@ -133,6 +133,7 @@ NEXT_PUBLIC_SITE_URL       # canonical domain (no trailing slash)
 NEXT_PUBLIC_GA_ID          # GA4 (e.g. G-XXXXXXXXXX)
 NEXT_PUBLIC_GOOGLE_ADS_ID  # Google Ads tag (e.g. AW-XXXXXXXXX)
 NEXT_PUBLIC_ADSENSE_CLIENT # ca-pub-… (blog pages only)
+GOOGLE_SITE_VERIFICATION   # Search Console HTML-tag verification content value
 AI_GATEWAY_API_KEY         # Vercel AI Gateway key — used by scripts/generate-blog-cover.mjs
 ```
 

@@ -28,10 +28,14 @@ export async function generateMetadata({
   const { slug } = await params;
   const category = await getCategory(slug);
   if (!category) return {};
+  const stores = await getStoresByCategory(category.slug);
   return {
     title: `${category.name} Coupons & Promo Codes — Verified Deals`,
     description: truncate(category.description, 158),
     alternates: { canonical: `/category/${category.slug}` },
+    // Keep an empty category out of the index until it has real stores —
+    // an indexed page with no content is a thin-content signal to Google.
+    ...(stores.length === 0 ? { robots: { index: false, follow: true } } : {}),
   };
 }
 

@@ -32,11 +32,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: p === "" ? 1 : 0.5,
   }));
 
-  const categoryPages = categories.map((c) => ({
-    url: `${site.url}/category/${c.slug}`,
-    changeFrequency: "weekly" as const,
-    priority: 0.6,
-  }));
+  // Skip categories with no stores yet — they're noindexed (thin content)
+  // until real stores are added, so they shouldn't be in the sitemap either.
+  const storeCountByCategory = new Map<string, number>();
+  for (const s of stores) {
+    storeCountByCategory.set(s.category, (storeCountByCategory.get(s.category) ?? 0) + 1);
+  }
+  const categoryPages = categories
+    .filter((c) => (storeCountByCategory.get(c.slug) ?? 0) > 0)
+    .map((c) => ({
+      url: `${site.url}/category/${c.slug}`,
+      changeFrequency: "weekly" as const,
+      priority: 0.6,
+    }));
 
   const storePages = stores.map((s) => ({
     url: `${site.url}/coupons/${s.slug}`,

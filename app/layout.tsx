@@ -35,6 +35,10 @@ export async function generateMetadata(): Promise<Metadata> {
       site: site.social.twitter,
     },
     robots: { index: true, follow: true },
+    // Google Search Console HTML-tag verification
+    ...(site.googleSiteVerification
+      ? { verification: { google: site.googleSiteVerification } }
+      : {}),
     // AdSense site verification (no ads served by this tag — ad units live on blog pages only)
     ...(site.adsenseClient
       ? { other: { "google-adsense-account": site.adsenseClient } }
