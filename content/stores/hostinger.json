@@ -10,7 +10,8 @@
   "description": "Hostinger is a budget-friendly web hosting provider known for its custom hPanel dashboard, long-term promotional pricing, and beginner-friendly setup.",
   "about": [
     "Hostinger offers shared, cloud and VPS hosting plans, built around its own hPanel control panel rather than the industry-standard cPanel — a cleaner, simpler interface aimed at beginners.",
-    "Promotional pricing requires a long upfront commitment (typically 24-48 months) and renews at a noticeably higher rate — factor that into the real long-term cost before committing."
+    "Shared hosting comes in three tiers: Premium (3 websites, 20GB SSD storage), Unlimited (unlimited websites, 50GB NVMe storage), and Cloud Startup (unlimited websites, 100GB NVMe storage). All three include a free domain for the first year, free SSL, a CDN and ecommerce capability.",
+    "Introductory pricing on the lowest 48-month term runs $2.99/month (Premium), $3.99/month (Unlimited) or $7.99/month (Cloud Startup) — but renews at $10.99, $16.99 and $25.99 per month respectively once the initial term ends. Factor the renewal rate into the real long-term cost before committing to the longest term for the lowest headline price."
   ],
   "policies": [
     "Hostinger backs its hosting plans with a 30-day money-back guarantee."
