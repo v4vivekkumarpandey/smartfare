@@ -11,6 +11,7 @@ import type {
   PostType,
 } from "./types";
 import { parseSettings, type SiteSettings } from "./settings";
+import { autoLogoUrl } from "./logo";
 
 /**
  * Reads content from a private Google Sheet via a service account.
@@ -225,7 +226,7 @@ export async function loadFromSheets(): Promise<{
       return {
         slug,
         name: r.name,
-        logo: r.logo || "/logos/placeholder.svg",
+        logo: r.logo || (r.url && autoLogoUrl(r.url)) || "/logos/placeholder.svg",
         url: r.url,
         affiliateBase: r.affiliatebase || undefined,
         category: (r.category || "").toLowerCase(),

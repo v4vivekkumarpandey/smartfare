@@ -14,7 +14,7 @@ Steps:
 4. Keep `title` roughly 50–60 characters so it renders well as a `<title>` tag without truncation.
 5. Write `body` using ONLY the minimal markdown subset `components/blog/PostBody.tsx` supports: `##`/`###` headings, `- ` bullet lines, `**bold**`, blank-line-separated paragraphs. No tables, images, or links — they will not render.
 6. Choose `category` from an existing category slug (check `content/categories.json`) and 2–4 relevant `tags`.
-7. `cover` is the feature image shown on the post card and detail-page hero — a path under `public/` or an https URL (see `next.config.ts`; remote images from any https host are allowed). Leave `""` if the user has no image yet; don't fabricate one.
+7. `cover` is the feature image shown on the post card and detail-page hero — a path under `public/` or an https URL (see `next.config.ts`; remote images from any https host are allowed). If the user supplies one, use it as-is. Otherwise, after the post is appended in step 10, auto-generate one: run `node scripts/generate-blog-cover.mjs <slug>` (requires `AI_GATEWAY_API_KEY` in `.env.local` — see `.env.local.example`; if it's missing, tell the user and leave `cover: ""` instead of fabricating a path). The script saves `public/blog/<slug>.png`, sets `cover` on the post in `content/blog.json` itself, and prints the result.
 8. Set `author` to `"Editorial Team"` unless told otherwise, and `published: true` unless the user asks to stage it as a draft.
 9. Set `postType` based on the kind requested:
    - `"post"` (or omit it) for a regular article — no extra fields needed.

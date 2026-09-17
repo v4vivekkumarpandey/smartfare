@@ -7,13 +7,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 ```bash
-npm run dev      # start dev server at http://localhost:3000
-npm run build    # production build
-npm start        # serve the production build
-npm run lint     # ESLint via next lint
+npm run dev        # start dev server at http://localhost:3000
+npm run build      # production build
+npm start          # serve the production build
+npx tsc --noEmit   # type-check (closest thing to a test in this repo)
 ```
 
 There are no tests. No test runner is configured.
+
+**`npm run lint` (`next lint`) is currently broken** — there's no `eslint.config.*` in the repo, and Next.js 16 removed the legacy `next lint` shim's auto-setup, so it errors out immediately. Use `npx tsc --noEmit` to catch type errors instead until ESLint is reconfigured.
 
 ## Architecture overview
 
@@ -57,6 +59,8 @@ Content is loaded by [lib/content.ts](lib/content.ts) via `unstable_cache` (ISR,
 1. **Google Sheets** (when `GOOGLE_SHEET_ID` + service-account env vars are set) — see `lib/sheets.ts`
 2. **Local JSON fallback** (`content/stores/*.json`, `content/categories.json`, etc.) — always works in dev without any secrets
 
+Full Sheets setup walkthrough (tab template, service-account steps, publish webhook): [docs/GOOGLE_SHEET_SETUP.md](docs/GOOGLE_SHEET_SETUP.md).
+
 Content types: `stores`, `categories`, `menu`, `settings`, `posts` (blog — see below) — each is a sheet tab (see the tab list documented at the top of `lib/sheets.ts`) with a matching local JSON fallback file in `content/`.
 
 **Blog posts, sale-calendar entries, and gift guides are one content type** (`BlogPost` in `lib/types.ts`), all living at `/blog/[slug]` and stored together in `content/blog.json` (or the `blog` sheet tab). An optional `postType` field (`"post"` | `"sale-calendar"` | `"gift-guide"`, defaults to `"post"`) controls rendering:
@@ -65,6 +69,8 @@ Content types: `stores`, `categories`, `menu`, `settings`, `posts` (blog — see
 - Plain `"post"` entries ignore all of the above.
 
 **To add any of the three:** use `/new-post` (see `.claude/commands/new-post.md`) or add a row/object directly — see `scripts/sheet-templates/blog.csv` (or `blog.xlsx`, same data, spreadsheet-ready) for the full column set including the extra fields. Both are pre-filled with the current `content/blog.json` posts, ready to import as the sheet's `blog` tab.
+
+**Cover images** (the `cover` field) can be auto-generated via the Vercel AI Gateway instead of sourced manually: `node scripts/generate-blog-cover.mjs <slug>` (or `--all` to backfill every post with an empty `cover`) generates a 16:9 illustration from the post's title/excerpt, saves it to `public/blog/<slug>.png`, and writes the path back into `content/blog.json`. Requires `AI_GATEWAY_API_KEY` (see `.env.local.example`). `/new-post` calls this automatically when no cover is supplied.
 
 Instant cache bust: `POST /api/revalidate?secret=<REVALIDATE_SECRET>` — wire this as a Google Apps Script publish webhook (see `scripts/apps-script.gs`).
 
@@ -110,6 +116,8 @@ To audit any page against this list, run `/seo-audit <path or slug>`.
 
 Coupon codes are stripped from page HTML; they're only returned by `/api/reveal` on click (`PublicCoupon` type omits `code`).
 
+[components/coupon/useRevealCode.ts](components/coupon/useRevealCode.ts) drives the "Get Code" flow (open affiliate link → fetch real code from `/api/reveal` → copy to clipboard) and fires a `reveal_coupon` GA4 event via `window.gtag` — mark this as a conversion in GA4/Google Ads if wiring up ad conversion tracking.
+
 ## Environment variables
 
 See `.env.local.example` for the full list. The most important:
@@ -121,6 +129,7 @@ NEXT_PUBLIC_SITE_URL       # canonical domain (no trailing slash)
 NEXT_PUBLIC_GA_ID          # GA4 (e.g. G-XXXXXXXXXX)
 NEXT_PUBLIC_GOOGLE_ADS_ID  # Google Ads tag (e.g. AW-XXXXXXXXX)
 NEXT_PUBLIC_ADSENSE_CLIENT # ca-pub-… (blog pages only)
+AI_GATEWAY_API_KEY         # Vercel AI Gateway key — used by scripts/generate-blog-cover.mjs
 ```
 
 AdSense Auto Ads must stay off — enabling it would serve ads on paid Google Ads LP pages (policy violation).

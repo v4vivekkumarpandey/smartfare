@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Rating } from "@/components/ui/Rating";
+import { StoreLogo } from "@/components/store/StoreLogo";
 import { activeCoupons } from "@/lib/content";
 import type { Store } from "@/lib/types";
 
@@ -14,9 +14,8 @@ export function StoreCard({ store }: { store: Store }) {
       className="group flex flex-col rounded-card border border-ink-100 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
     >
       <div className="flex items-center gap-3">
-        <Image
+        <StoreLogo
           src={store.logo}
-          unoptimized
           alt={`${store.name} logo`}
           width={48}
           height={48}

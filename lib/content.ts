@@ -3,6 +3,7 @@ import path from "node:path";
 import { unstable_cache } from "next/cache";
 import type { Store, Category, Coupon, MenuItem, BlogPost } from "./types";
 import { sheetsConfigured, loadFromSheets } from "./sheets";
+import { autoLogoUrl } from "./logo";
 import {
   parseSettings,
   lowerKeys,
@@ -37,10 +38,15 @@ function loadFromDisk(): {
   const files = fs.existsSync(STORES_DIR)
     ? fs.readdirSync(STORES_DIR).filter((f) => f.endsWith(".json"))
     : [];
-  const stores = files.map(
-    (file) =>
-      JSON.parse(fs.readFileSync(path.join(STORES_DIR, file), "utf-8")) as Store
-  );
+  const stores = files.map((file) => {
+    const store = JSON.parse(
+      fs.readFileSync(path.join(STORES_DIR, file), "utf-8")
+    ) as Store;
+    if (!store.logo && store.url) {
+      store.logo = autoLogoUrl(store.url) || "/logos/placeholder.svg";
+    }
+    return store;
+  });
   const categories = readJsonIfExists<Category[]>("categories.json", []);
   const menu = readJsonIfExists<MenuItem[]>("menu.json", []);
   const settingsRaw = readJsonIfExists<Record<string, unknown>>(

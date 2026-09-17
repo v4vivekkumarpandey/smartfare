@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import Link from "next/link";
+import { StoreLogo } from "@/components/store/StoreLogo";
 import {
   BadgeCheck,
   ExternalLink,
@@ -123,9 +123,8 @@ export default async function StorePage({
         {/* ---- Hero header ---- */}
         <section className="mt-4 rounded-card border border-ink-100 bg-white p-5 shadow-sm sm:p-6">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
-            <Image
+            <StoreLogo
               src={store.logo}
-              unoptimized
               alt={`${store.name} logo`}
               width={72}
               height={72}
@@ -256,9 +255,8 @@ export default async function StorePage({
                         href={`/coupons/${s.slug}`}
                         className="flex items-center gap-3 group"
                       >
-                        <Image
+                        <StoreLogo
                           src={s.logo}
-                          unoptimized
                           alt={s.name}
                           width={36}
                           height={36}
@@ -571,9 +569,8 @@ function Step({ n, title, body }: { n: number; title: string; body: string }) {
 function SimilarCoupon({ store, coupon }: { store: Store; coupon: Coupon }) {
   return (
     <div className="flex items-center gap-3 rounded-card border border-ink-100 bg-white p-4 shadow-sm">
-      <Image
+      <StoreLogo
         src={store.logo}
-        unoptimized
         alt={store.name}
         width={44}
         height={44}

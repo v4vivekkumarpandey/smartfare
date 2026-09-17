@@ -7,7 +7,10 @@
     "author": "Editorial Team",
     "date": "2026-08-03",
     "category": "software",
-    "tags": ["guide", "savings"],
+    "tags": [
+      "guide",
+      "savings"
+    ],
     "body": "## Finding a working code\nStart by searching the store on TheSmartFares. We test codes daily and show a success rate on each one, so you can pick the offer most likely to work.\n\n## Revealing and copying\nClick \"Get Code\" to reveal the code. It's copied with one tap and the store opens in a new tab, so you can paste it straight into the checkout.\n\n## Applying at checkout\nLook for a field labelled \"Promo code\", \"Coupon\" or \"Discount\". Paste your code and apply it before you pay — the total should drop instantly.\n\n## Tips to save more\n- Try more than one code; keep the biggest discount.\n- Stack a coupon with a seasonal sale where allowed.\n- Check the expiry date and terms on the store's site.",
     "published": true
   },
@@ -19,7 +22,10 @@
     "author": "Editorial Team",
     "date": "2026-08-04",
     "category": "software",
-    "tags": ["roundup", "software"],
+    "tags": [
+      "roundup",
+      "software"
+    ],
     "body": "## Why a good screen recorder matters\nScreen recording tools power demos, tutorials, async standups and support replies. The right one saves hours every week.\n\n## Top picks and current offers\n- MergeScreens — up to 20% off annual plans with a verified code.\n- ScreenPal — 50% off your first year of Solo Deluxe.\n\n## How to choose\nThink about who's recording, whether you need editing, and how you'll share. Then head to the store page and apply the best current coupon before you buy.",
     "published": true
   },
@@ -31,12 +37,18 @@
     "author": "Editorial Team",
     "date": "2026-11-01",
     "category": "software",
-    "tags": ["gift-guide", "remote-work"],
+    "tags": [
+      "gift-guide",
+      "remote-work"
+    ],
     "body": "## Why these picks\nRemote workers rely on a handful of tools every day. These are the ones worth gifting — or buying for yourself — while a verified discount is live.\n\n## Our picks\n- MergeScreens — a screen recorder for quick async updates.\n- ScreenPal — simple recording and editing for tutorials.\n\n## How to redeem\nOpen the store page, reveal the code, and apply it at checkout before the offer expires.",
     "published": true,
     "postType": "gift-guide",
     "occasion": "christmas",
-    "storeSlugs": ["mergescreens", "screenpal"]
+    "storeSlugs": [
+      "mergescreens",
+      "screenpal"
+    ]
   },
   {
     "slug": "black-friday-2026",
@@ -46,23 +58,33 @@
     "author": "Editorial Team",
     "date": "2026-11-27",
     "category": "software",
-    "tags": ["sale", "software"],
+    "tags": [
+      "sale",
+      "software"
+    ],
     "body": "## What's included\nWe're tracking verified codes across software and subscriptions for the full Black Friday weekend — check back as new offers go live. Each participating store below has a verified code you can reveal and apply at checkout.",
     "published": true,
     "postType": "sale-calendar",
     "startDate": "2026-11-27",
     "endDate": "2026-11-30",
-    "storeSlugs": ["mergescreens", "screenpal"]
+    "storeSlugs": [
+      "mergescreens",
+      "screenpal"
+    ]
   },
   {
     "slug": "10-money-saving-beauty-hacks-that-will-transform-your-routine",
     "title": "10 Money-Saving Beauty Hacks That Will Transform Your Routine",
     "excerpt": "Simple, practical beauty hacks that cut your spending without cutting corners — stretch products further and save on every purchase.",
-    "cover": "",
+    "cover": "/blog/10-money-saving-beauty-hacks-that-will-transform-your-routine.png",
     "author": "Editorial Team",
     "date": "2026-09-16",
     "category": "health",
-    "tags": ["beauty", "money-saving", "skincare"],
+    "tags": [
+      "beauty",
+      "money-saving",
+      "skincare"
+    ],
     "body": "## Why your beauty routine costs more than it should\nBetween skincare, makeup and haircare, small purchases add up fast. The good news: most of that spending is avoidable without giving up the products you love.\n\n## 10 hacks that actually save money\n- **Water down thick formulas.** Shampoo, body wash and liquid foundation often work just as well diluted with a little water — stretching each bottle further.\n- **Double-duty products win.** A tinted moisturizer with SPF replaces three steps with one, cutting both cost and clutter.\n- **Buy travel sizes to test first.** Skip the full-size gamble on new products; a travel size confirms it works before you commit.\n- **Use the \"upside down\" trick.** Store bottles cap-down between uses so every last bit reaches the opening instead of sitting unused.\n- **Repurpose old products.** Dry lipstick becomes a cream blush; leftover conditioner works as a shaving cream substitute.\n- **Shop off-season.** Sunscreen, self-tanner and heavy moisturizers are marked down when demand drops.\n- **Master multi-masking with one product.** Use a single clay mask on oily zones and a hydrating one on dry zones — no need for two full products.\n- **Set a price-per-use mindset.** A $40 product used daily for a year costs about 11 cents a day — often cheaper than a $12 product you'll toss half-used.\n- **Sign up before you buy.** Many beauty retailers offer a first-order discount just for creating an account.\n- **Always check for a code before checkout.** A quick look for a verified promo code can shave 10-30% off an order in seconds.\n\n## Where to find the codes\nBefore you check out at any beauty or wellness retailer, search the store on TheSmartFares — verified codes are hand-tested daily, so you're not stuck with an expired one at checkout.",
     "published": true
   }
