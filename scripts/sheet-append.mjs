@@ -12,6 +12,7 @@
  * <rowsJsonFile> is a JSON file containing an array of rows, each row an
  * array of cell values in the exact column order of that tab's header row.
  */
+import "./lib/load-env.mjs";
 import fs from "node:fs";
 import { JWT } from "google-auth-library";
 

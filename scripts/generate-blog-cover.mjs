@@ -8,6 +8,7 @@
  *   node scripts/generate-blog-cover.mjs <slug> --prompt "custom art direction"
  *   node scripts/generate-blog-cover.mjs --all   (backfill every post with an empty cover)
  */
+import "./lib/load-env.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { generateImage } from "ai";

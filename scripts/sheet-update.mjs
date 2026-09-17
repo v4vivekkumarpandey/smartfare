@@ -16,6 +16,7 @@
  * array of cell values in the exact column order of that tab's header row,
  * with the first cell being the match key (e.g. slug).
  */
+import "./lib/load-env.mjs";
 import fs from "node:fs";
 import { JWT } from "google-auth-library";
 
