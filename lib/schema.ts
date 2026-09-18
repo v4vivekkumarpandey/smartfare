@@ -85,13 +85,6 @@ export function storeJsonLd(store: Store) {
       image: `${site.url}/coupons/${store.slug}/opengraph-image`,
       logo: toAbsoluteUrl(store.logo),
       description: store.description,
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: store.rating,
-        reviewCount: store.reviewCount,
-        bestRating: 5,
-        worstRating: 1,
-      },
       makesOffer: offers,
     },
   ];

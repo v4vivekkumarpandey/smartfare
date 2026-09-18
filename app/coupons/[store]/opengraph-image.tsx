@@ -22,7 +22,7 @@ export default async function Image({
         title={store ? `${store.name} Promo Codes & Deals` : "Store Coupons"}
         subtitle={
           store
-            ? `${count} verified offer${count === 1 ? "" : "s"} — ${store.rating.toFixed(1)}★ (${store.reviewCount} reviews)`
+            ? `${count} verified offer${count === 1 ? "" : "s"} — ${store.rating.toFixed(1)}★ Editorial Rating`
             : undefined
         }
       />

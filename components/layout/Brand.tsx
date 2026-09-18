@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Ticket } from "lucide-react";
 import type { SiteSettings } from "@/lib/settings";
 
@@ -15,11 +16,14 @@ export function Brand({
   return (
     <Link href="/" className="flex shrink-0 items-center gap-2">
       {settings.logoUrl ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
+        <Image
           src={settings.logoUrl}
           alt={settings.siteName}
-          className={`${iconClassName} w-auto object-contain`}
+          width={0}
+          height={0}
+          sizes="200px"
+          style={{ width: "auto", height: "100%" }}
+          className={iconClassName}
         />
       ) : (
         <>

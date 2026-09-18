@@ -25,7 +25,7 @@ export function StoreCard({ store }: { store: Store }) {
           <h3 className="truncate font-bold text-ink-900 group-hover:text-brand-600">
             {store.name}
           </h3>
-          <Rating value={store.rating} reviewCount={store.reviewCount} size={13} />
+          <Rating value={store.rating} size={13} />
         </div>
       </div>
 

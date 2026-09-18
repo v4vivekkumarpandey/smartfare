@@ -6,7 +6,6 @@ import {
   BadgeCheck,
   ExternalLink,
   Tag,
-  ShieldCheck,
   Phone,
   Facebook,
   Instagram,
@@ -159,10 +158,6 @@ export default async function StorePage({
             <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5">
               <span className="rounded-full bg-accent-500/10 px-3 py-1 text-sm font-bold text-accent-600">
                 {coupons.length} Offers
-              </span>
-              <span className="inline-flex items-center gap-1.5 text-xs text-ink-500">
-                <ShieldCheck width={14} height={14} className="text-success" />
-                Trusted by {formatNumber(store.reviewCount * 3 + 200)}+ users
               </span>
             </div>
             <p className="mt-1.5 text-sm font-semibold text-ink-900">

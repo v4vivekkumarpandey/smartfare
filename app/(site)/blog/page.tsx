@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { getAllPosts } from "@/lib/content";
+import { getPostsPage } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { PostCard } from "@/components/blog/PostCard";
+import { BlogPagination } from "@/components/blog/BlogPagination";
 import { Ad } from "@/components/Ad";
 import { site } from "@/lib/site";
 
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
 };
 
 export default async function BlogIndexPage() {
-  const posts = await getAllPosts();
+  const { posts, totalPages } = await getPostsPage(1);
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-6">
@@ -38,6 +39,7 @@ export default async function BlogIndexPage() {
               <PostCard key={post.slug} post={post} />
             ))}
           </div>
+          <BlogPagination page={1} totalPages={totalPages} />
           <Ad />
         </>
       ) : (

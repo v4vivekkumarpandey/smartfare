@@ -138,6 +138,18 @@ export async function getPostSlugs(): Promise<string[]> {
   return posts.map((p) => p.slug);
 }
 
+export const BLOG_PAGE_SIZE = 24;
+
+/** Paginated slice of getAllPosts() for the /blog index (24 posts per page). */
+export async function getPostsPage(
+  page: number
+): Promise<{ posts: BlogPost[]; totalPages: number }> {
+  const all = await getAllPosts();
+  const totalPages = Math.max(1, Math.ceil(all.length / BLOG_PAGE_SIZE));
+  const start = (page - 1) * BLOG_PAGE_SIZE;
+  return { posts: all.slice(start, start + BLOG_PAGE_SIZE), totalPages };
+}
+
 export async function getPostsByType(
   postType: "post" | "sale-calendar" | "gift-guide"
 ): Promise<BlogPost[]> {
