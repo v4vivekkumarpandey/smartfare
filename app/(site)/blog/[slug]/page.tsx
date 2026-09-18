@@ -97,7 +97,11 @@ export default async function BlogPostPage({
           description: post.excerpt,
           datePublished: post.date,
           dateModified: post.updatedDate ?? post.date,
-          author: { "@type": "Organization", name: post.author },
+          author: {
+            "@type": "Organization",
+            name: post.author,
+            url: `${site.url}/editorial-process`,
+          },
           publisher: { "@type": "Organization", name: site.name },
           mainEntityOfPage: `${site.url}/blog/${post.slug}`,
           image: post.cover ? toAbsoluteUrl(post.cover) : undefined,
@@ -135,7 +139,10 @@ export default async function BlogPostPage({
             ) : (
               <>
                 <span className="inline-flex items-center gap-1.5">
-                  <User width={14} height={14} /> {post.author}
+                  <User width={14} height={14} />{" "}
+                  <a href="/editorial-process" className="hover:text-brand-600">
+                    {post.author}
+                  </a>
                 </span>
                 <span className="inline-flex items-center gap-1.5">
                   <CalendarDays width={14} height={14} /> {formatDate(post.date)}
@@ -157,6 +164,18 @@ export default async function BlogPostPage({
             />
           </div>
         )}
+
+        {postType === "post" &&
+          (post.category === "hosting" || post.category === "software") && (
+            <p className="mt-6 rounded-card border border-ink-100 bg-ink-100/40 p-4 text-sm text-ink-500">
+              This review is researched from each provider&apos;s official
+              pricing, plans and public user feedback — see our{" "}
+              <a href="/editorial-process" className="font-semibold text-brand-600 hover:underline">
+                editorial process
+              </a>{" "}
+              for how we keep it accurate.
+            </p>
+          )}
 
         <div className="mt-6">
           <PostBody body={post.body} />
