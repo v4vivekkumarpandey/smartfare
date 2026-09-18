@@ -1,0 +1,36 @@
+{
+  "slug": "wpengine",
+  "name": "WP Engine",
+  "logo": "",
+  "url": "https://wpengine.com",
+  "category": "hosting",
+  "tagline": "Premium managed WordPress hosting with a proprietary dashboard and visit-based tiers",
+  "rating": 4.3,
+  "reviewCount": 1776,
+  "description": "WP Engine is a managed WordPress-only hosting platform priced per plan tier with monthly visit and storage caps, built around its own proprietary User Portal rather than cPanel.",
+  "about": [
+    "WP Engine's plans run Essential, Core and Enterprise. Essential is the self-service entry tier, listed from $28/month on annual billing, and covers 1-30 WordPress installs, 25,000-400,000 monthly visits and 10-50GB storage depending on how far up the tier you sit; WP Engine also runs a 20% first-year discount for new customers on Essential, so double-check the live plans page for the current rate before buying. Core and Enterprise move to isolated resources, higher visit/storage ceilings, and custom pricing quoted only after contacting sales.",
+    "Because Essential, Core and higher tiers are priced around a monthly visit allowance rather than unlimited traffic, exceeding that allowance triggers an overage charge of $2 per 1,000 extra monthly visitors rather than a hard suspension — worth budgeting for if traffic is seasonal or spikes unpredictably. There's also no cPanel here: site management runs through WP Engine's own web-based User Portal, which is a different workflow than a typical shared-hosting cPanel migration."
+  ],
+  "policies": [
+    "WP Engine offers a 60-day money-back guarantee on annual billing plans; domain fees, add-ons and custom development work are excluded, and refund requests must be made within that 60-day window."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does WP Engine use cPanel?",
+      "a": "No. WP Engine runs its own proprietary web-based User Portal for managing sites, backups, staging and domains instead of cPanel, so the workflow differs from a typical shared host if you're used to cPanel."
+    },
+    {
+      "q": "What happens if I exceed my monthly visit limit on WP Engine?",
+      "a": "WP Engine doesn't suspend the site — instead it charges an overage fee of $2 per 1,000 extra monthly visitors above your plan's included allowance."
+    },
+    {
+      "q": "Is WP Engine's advertised price what I'll pay long-term?",
+      "a": "The Essential plan is listed from $28/month on annual billing, and WP Engine also runs a 20% first-year new-customer discount on top of that, so confirm the current rate on WP Engine's own plans page before purchasing since promotional pricing changes."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

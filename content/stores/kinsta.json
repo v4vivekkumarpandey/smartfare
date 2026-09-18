@@ -1,0 +1,40 @@
+{
+  "slug": "kinsta",
+  "name": "Kinsta",
+  "logo": "",
+  "url": "https://kinsta.com",
+  "category": "hosting",
+  "tagline": "Premium managed WordPress hosting on Google Cloud Platform",
+  "rating": 4.8,
+  "reviewCount": 1142,
+  "description": "Kinsta is a premium managed WordPress hosting provider built entirely on Google Cloud Platform infrastructure, priced per site with monthly-visit and PHP-worker-based tiers rather than the budget cPanel-shared-hosting model.",
+  "about": [
+    "Kinsta's entry-level Single Site plan starts at $35/month billed monthly (or roughly $30/month billed annually), including one WordPress site, 35,000 monthly visits and 10GB storage. Multi-site Business plans scale from $70/month (2 sites, 70,000 visits) up through $450/month (40 sites, 750,000 visits), and Agency and Enterprise tiers run further above that. Unlike promo-driven shared hosts, Kinsta's pricing is largely flat year over year — annual billing saves about two months' cost rather than functioning as a low-then-high renewal trap.",
+    "Every plan is metered on monthly visits, storage and CDN bandwidth, and going over any of them triggers real overage charges rather than a hard cutoff: $0.50 per 1,000 extra visits, $2 per GB per month of extra disk space (prorated daily), and $0.05 per GB of extra CDN bandwidth. There's no cPanel here — everything runs through Kinsta's own MyKinsta dashboard — and traffic-spiky or high-PHP-worker-demand sites can outgrow a tier's resources faster than the sticker price suggests, so it's worth checking MyKinsta's usage analytics before assuming the next renewal will match the first bill."
+  ],
+  "policies": [
+    "Kinsta offers a 30-day money-back guarantee for first-time customers on Managed WordPress Hosting plans. It doesn't reset if you switch plans mid-period, and any overage fees or add-ons incurred are deducted from the refund rather than returned in full."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does Kinsta use cPanel?",
+      "a": "No. Kinsta runs its own proprietary dashboard, MyKinsta, for site management, backups, staging and analytics — there's no cPanel option, which is a deliberate trade-off for a more streamlined, WordPress-specific interface."
+    },
+    {
+      "q": "What happens if I exceed my plan's visit limit on Kinsta?",
+      "a": "Kinsta doesn't take your site offline for going over — it bills an overage fee of $0.50 per 1,000 extra monthly visits, plus separate overage rates for disk space ($2/GB/month) and CDN bandwidth ($0.05/GB) if those limits are also exceeded."
+    },
+    {
+      "q": "Does Kinsta include free site migrations?",
+      "a": "Yes — Kinsta includes unlimited free WordPress site migrations on every plan, handled by its migration team rather than a self-service plugin only."
+    },
+    {
+      "q": "Is Kinsta a budget hosting option?",
+      "a": "No. Kinsta is positioned as premium managed WordPress hosting starting around $35/month for a single low-traffic site, built on Google Cloud Platform — it's priced well above budget cPanel shared hosts like Hostinger or Namecheap in exchange for managed infrastructure, daily backups and WordPress-specialized support."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

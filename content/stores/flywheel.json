@@ -1,0 +1,40 @@
+{
+  "slug": "flywheel",
+  "name": "Flywheel",
+  "logo": "",
+  "url": "https://getflywheel.com",
+  "category": "hosting",
+  "tagline": "Managed WordPress hosting for designers and agencies, owned by WP Engine",
+  "rating": 1.6,
+  "reviewCount": 70,
+  "description": "Flywheel is a managed WordPress-only hosting provider owned by WP Engine, built around a proprietary dashboard (not cPanel) and agency-focused tools like client billing transfer and collaborator site access rather than budget shared-hosting features.",
+  "about": [
+    "Flywheel runs three standard plans plus a Custom tier: Starter (1 site, 10GB storage, 25,000 monthly visits) at $30/month billed monthly or $25/month billed annually ($300/year); Freelance (up to 10 sites, 20GB storage, 100,000 monthly visits) around $115/month billed monthly or $96/month billed annually ($1,150/year); and Agency (up to 30 sites, 50GB storage, 400,000 monthly visits) around $290/month billed monthly or $242/month billed annually ($2,900/year). Extra sites can be added to any plan for $20/month ($200/year). Every plan includes free site migrations and runs on Flywheel's own proprietary hosting dashboard rather than cPanel.",
+    "The 60-day money-back guarantee only covers new Starter plans and Freelance plans without custom onboarding — Agency and Custom plans, plus any upgrade or renewal, are excluded from it. Flywheel is also WordPress-only (no generic shared hosting for other platforms), so it's a fit specifically for agencies and freelancers managing client WordPress sites rather than a general-purpose budget host."
+  ],
+  "policies": [
+    "Flywheel backs new Starter and qualifying Freelance plans (without custom onboarding) with a 60-day money-back guarantee. Agency plans, Custom plans, upgrades and renewals are not covered."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does Flywheel use cPanel?",
+      "a": "No. Flywheel runs its own proprietary hosting dashboard built specifically for managing WordPress sites, rather than the industry-standard cPanel used by many budget hosts."
+    },
+    {
+      "q": "Is Flywheel's money-back guarantee available on every plan?",
+      "a": "No. The 60-day money-back guarantee applies to new Starter plans and Freelance plans without custom onboarding. Agency plans, Custom plans, and any upgrade or renewal are excluded."
+    },
+    {
+      "q": "Who is Flywheel's hosting designed for?",
+      "a": "Flywheel is a WordPress-only managed host aimed at designers, freelancers and agencies. It includes agency-oriented tools like Collaborators (secure single-site access for clients or teammates), Billing Transfer (handing a finished site's billing to a client), and Blueprints (reusable site configurations) rather than budget shared-hosting features for other platforms."
+    },
+    {
+      "q": "Does Flywheel migrate existing WordPress sites for free?",
+      "a": "Yes — Flywheel's team migrates every site on a new plan for free."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "rocketnet",
+  "name": "Rocket.net",
+  "logo": "",
+  "url": "https://rocket.net",
+  "category": "hosting",
+  "tagline": "Managed WordPress hosting built on Cloudflare Enterprise CDN for speed and security",
+  "rating": 4.8,
+  "reviewCount": 272,
+  "description": "Rocket.net is a managed WordPress-only hosting provider built entirely on the Cloudflare Enterprise network, giving every plan a global CDN, enterprise WAF and edge caching by default rather than as an upsell.",
+  "about": [
+    "Rocket.net's Managed plans start at Starter (1 WordPress site, 10GB storage, unmetered visits) and step up through Pro (3 sites, 20GB), Business (10 sites, 40GB) and Expert (25 sites, 50GB), with separate higher-volume Agency and custom Enterprise tiers above that. Every tier — including Starter — ships with the same Cloudflare Enterprise CDN, web application firewall, daily backups and staging environment rather than gating those behind pricier plans. There's no cPanel here; site management runs through Rocket.net's own purpose-built control panel, designed specifically around WordPress rather than general-purpose hosting.",
+    "List price on Starter is $30/month billed monthly or $300 billed annually, with promotional annual pricing (often advertised around $1 for the first year plus a reduced ongoing rate) available at signup — Rocket.net advertises no price increases at renewal once you're on a plan, which is a genuine point of difference from hosts that hike renewal rates after an intro term. The tradeoff is that this is priced as premium managed WordPress hosting, not budget shared hosting: Starter's $30/month list price is well above entry-level shared-hosting plans, and it only covers a single WordPress site."
+  ],
+  "policies": [
+    "Rocket.net backs its Managed and Agency hosting plans with a 30-day money-back guarantee; Enterprise plans are excluded from this guarantee."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does Rocket.net use cPanel?",
+      "a": "No. Rocket.net runs its own purpose-built control panel instead of cPanel, designed specifically for managing WordPress sites rather than general-purpose hosting."
+    },
+    {
+      "q": "What does the Cloudflare Enterprise CDN actually include?",
+      "a": "Every Rocket.net plan, including the entry-level Starter tier, includes the Cloudflare Enterprise CDN, an enterprise-grade web application firewall (WAF), and edge caching served from Cloudflare's global network — these aren't upsells reserved for higher tiers."
+    },
+    {
+      "q": "Does Rocket.net offer free site migrations?",
+      "a": "Yes — Rocket.net advertises unlimited free migrations for moving existing WordPress sites onto its platform."
+    },
+    {
+      "q": "Is Rocket.net's pricing beginner-budget or premium?",
+      "a": "Premium. Starter lists at $30/month for a single WordPress site, which is significantly higher than entry-level shared hosting — Rocket.net is positioned around managed WordPress performance and security rather than the lowest possible price."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

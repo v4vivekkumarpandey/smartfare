@@ -1,0 +1,42 @@
+{
+  "slug": "kamatera",
+  "name": "Kamatera",
+  "logo": "",
+  "url": "https://www.kamatera.com",
+  "category": "hosting",
+  "tagline": "Fully customizable cloud VPS hosting billed by the resources you actually pick",
+  "rating": 4.2,
+  "reviewCount": 384,
+  "description": "Kamatera is a cloud VPS provider that lets you configure CPU, RAM, storage and bandwidth independently rather than picking from fixed bundles, with hourly or monthly billing and a 30-day free trial.",
+  "about": [
+    "Kamatera prices by component instead of bundling a fixed set of specs into a plan name. The entry Availability-tier server starts at $4/month for 1 vCPU, 1GB RAM, 20GB NVMe SSD storage and 5TB of traffic, and every one of those numbers can be dialed up independently — extra storage runs about $0.05/GB per month and extra bandwidth about $0.01/GB. Servers can be billed monthly (prepaid, prorated on mid-month changes) or hourly (billed by the minute, only while powered on), with no long-term contract required either way.",
+    "There's no bundled control panel here — Kamatera ships a bare Linux or Windows server image and leaves panel software (cPanel, Plesk, or none at all) up to you to install, which makes it a fit for developers and sysadmins rather than someone wanting a one-click WordPress dashboard out of the box. New accounts get a 30-day free trial worth up to $100 in usage on one server, which is enough to build and load-test a real configuration before paying anything, but the trial converts to standard billing automatically once it ends or the credit runs out, so it's worth setting a calendar reminder to cancel or downgrade if you don't intend to keep the server."
+  ],
+  "policies": [
+    "Kamatera offers a 30-day free trial worth up to $100 of usage on one server for new accounts.",
+    "Monthly servers are billed with proration for mid-month changes; hourly servers are billed by the minute only while running.",
+    "Cancellation charges apply only through the current billing month — no charges are incurred after the month in which you cancel."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does Kamatera include cPanel or another control panel?",
+      "a": "No. Kamatera provisions a bare server image and leaves control-panel software up to you — you can install cPanel, Plesk, or nothing at all, but it isn't bundled or pre-installed by default. This is a self-managed, developer-oriented platform rather than a beginner control-panel host."
+    },
+    {
+      "q": "How much does Kamatera cost to start?",
+      "a": "The entry Availability-tier server starts at $4/month (or an equivalent hourly rate) for 1 vCPU, 1GB RAM, 20GB NVMe SSD storage and 5TB of traffic. Every resource — CPU, RAM, storage, bandwidth — is priced and scaled independently rather than bundled into fixed plan tiers, so actual cost depends on the configuration you choose."
+    },
+    {
+      "q": "What does Kamatera's free trial actually include?",
+      "a": "New accounts get a 30-day free trial covering up to $100 of usage on one server. It's enough to spin up and test a real configuration, but billing starts automatically once the trial period ends or the $100 credit is used, so cancel or downgrade before then if you don't plan to keep paying."
+    },
+    {
+      "q": "Is Kamatera billed monthly or hourly?",
+      "a": "Both options are available. Monthly servers are prepaid with prorated charges for mid-month upgrades, while hourly servers bill by the minute and only charge while the server is powered on. Neither option requires a long-term contract."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

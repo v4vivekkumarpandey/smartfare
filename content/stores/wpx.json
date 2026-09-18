@@ -1,0 +1,40 @@
+{
+  "slug": "wpx",
+  "name": "WPX Hosting",
+  "logo": "",
+  "url": "https://www.wpx.net",
+  "category": "hosting",
+  "tagline": "Managed WordPress hosting built around fast support and a custom control panel",
+  "rating": 4.6,
+  "reviewCount": 3624,
+  "description": "WPX is a managed WordPress hosting provider that runs its own proprietary control panel instead of cPanel, and markets itself heavily on fast support response times and page-load speed.",
+  "about": [
+    "WPX's WordPress hosting comes in five tiers: Starter (1 website, 10GB storage, 100GB bandwidth), Business (up to 5 websites, 20GB storage, 200GB bandwidth), Professional (up to 15 websites, 40GB storage, 400GB bandwidth), Elite (up to 35 websites, 80GB storage, unlimited bandwidth) and Agency (up to 200 websites, 300GB storage, unlimited bandwidth). All tiers include unlimited visitors, free migration, and a free custom CDN (XDN) with 43 global endpoints. Starter runs $17.99/month on monthly billing or $14.99/month paid annually; Business is $29.99/month monthly or $24.99/month annually.",
+    "WPX doesn't use cPanel — it built its own proprietary WPX Control Panel instead, which the company says trades some of cPanel's depth for a faster, simpler interface with built-in domain management. Unlike many budget hosts, WPX's renewal rate generally matches whatever billing-term rate was chosen upfront rather than jumping sharply at renewal, but its entry-level pricing sits well above bargain shared-hosting providers, so it's a better fit for sites that value support and speed over the lowest possible sticker price."
+  ],
+  "policies": [
+    "WPX backs its hosting plans with a 30-day money-back guarantee."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does WPX Hosting use cPanel?",
+      "a": "No — WPX built its own proprietary WPX Control Panel rather than using cPanel. It covers core hosting management (domains, backups, staging, email, CDN toggles) in a simplified interface, but it isn't a like-for-like cPanel replacement, so cPanel-specific workflows or plugins won't carry over."
+    },
+    {
+      "q": "How fast is WPX's support?",
+      "a": "WPX advertises a 30-second average live-chat response time and a 15-minute average case resolution time. Actual results vary by issue complexity, but fast support is WPX's core marketing differentiator."
+    },
+    {
+      "q": "Does WPX's price jump at renewal like other hosts?",
+      "a": "Not in the way many budget hosts do. WPX's renewal rate generally matches the rate for the billing term you originally chose (monthly, annual, etc.) rather than reverting to a much higher default price — but the entry price itself is higher than budget shared hosts to begin with."
+    },
+    {
+      "q": "Does WPX offer free site migration?",
+      "a": "Yes, WPX includes free migration of existing WordPress sites when you sign up."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

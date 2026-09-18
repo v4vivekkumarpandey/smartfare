@@ -1,0 +1,36 @@
+{
+  "slug": "ovhcloud",
+  "name": "OVHcloud",
+  "logo": "",
+  "url": "https://www.ovhcloud.com",
+  "category": "hosting",
+  "tagline": "French cloud giant with shared hosting, VPS, dedicated and cloud servers",
+  "rating": 3.9,
+  "reviewCount": 8578,
+  "description": "OVHcloud is a French infrastructure provider spanning budget shared web hosting, VPS, dedicated servers and public cloud, run through its own OVHcloud Control Panel (Manager) rather than cPanel by default.",
+  "about": [
+    "OVHcloud isn't just a raw-compute company — it runs three separate hosting product lines under one account: Eco/Business/Agencies shared web hosting (starting around $1.89-3.59/month intro), VPS (from about $4.54/month for 2 vCores/4GB RAM), and dedicated/cloud servers for larger workloads. Shared hosting and VPS both run on OVHcloud's own Manager control panel by default; cPanel and Plesk exist only as paid add-ons on VPS and dedicated plans, not as the standard interface.",
+    "As with most budget-tier hosts, the advertised entry price is a first-term promotional rate that jumps sharply on renewal — Business-range plans intro around $2.39-8.29/month but renew at roughly $7.09-23.59/month, and the discount tends to be steeper the longer the commitment. Check the renewal price for your specific plan and term before buying on the headline number alone."
+  ],
+  "policies": [
+    "OVHcloud offers a 30-day money-back guarantee on most hosting and VPS plans."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does OVHcloud use cPanel?",
+      "a": "Not by default. OVHcloud's shared hosting and VPS plans run on its own OVHcloud Control Panel (also called the Manager). cPanel and Plesk are available only as paid add-ons on VPS and dedicated server plans."
+    },
+    {
+      "q": "Is OVHcloud only for VPS and dedicated servers, or does it have cheap shared hosting too?",
+      "a": "Both. OVHcloud runs three separate lines: budget shared web hosting (Eco/Business/Agencies ranges), VPS, and dedicated/cloud servers — so it competes with both budget shared hosts and raw-compute providers depending on which product you pick."
+    },
+    {
+      "q": "Will my OVHcloud price go up after the first term?",
+      "a": "Yes. Like most budget hosts, OVHcloud's advertised prices are first-term promotional rates. Business-range shared hosting plans that intro at roughly $2.39-8.29/month can renew at $7.09-23.59/month depending on the plan and commitment length — check the renewal rate on the pricing page before buying."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

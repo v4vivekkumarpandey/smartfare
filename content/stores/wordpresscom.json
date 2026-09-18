@@ -1,0 +1,40 @@
+{
+  "slug": "wordpresscom",
+  "name": "WordPress.com",
+  "logo": "",
+  "url": "https://wordpress.com",
+  "category": "hosting",
+  "tagline": "Hosted website platform from Automattic — free tier plus Personal, Premium, Business and Commerce plans",
+  "rating": 3.7,
+  "reviewCount": 4156,
+  "description": "WordPress.com is a hosted blogging and website platform run by Automattic, offering a free tier plus paid Personal, Premium, Business and Commerce plans — not traditional self-managed hosting, but a managed platform that runs WordPress for you.",
+  "about": [
+    "WordPress.com's free plan gives you a WordPress.com subdomain, 1GB of storage, and no custom domain, plugins or ad removal. Paid plans start with Personal (free domain for the first year, 6GB storage, ad-free, unlimited pages/posts/users), then Premium (13GB storage, premium themes, video hosting, PayPal/Stripe payment buttons), Business (50GB storage, priority 24/7 support, staging sites, SFTP/database access), and Commerce (50GB storage, full WooCommerce integration with 0% transaction fees, selling in 60+ countries).",
+    "The biggest gotcha for anyone coming from self-hosted WordPress.org: WordPress.com is a managed platform, not a hosting account you administer yourself. Plugin installation is available starting on the Personal plan and up (the free plan allows none), but you're choosing from WordPress.com's own plugin directory rather than uploading arbitrary third-party plugin files the way you would on a cPanel or VPS host running self-hosted WordPress.org. If you need full server-level control, custom code execution, or a specific plugin outside that ecosystem, self-hosted WordPress on a regular host is the better fit."
+  ],
+  "policies": [
+    "WordPress.com annual, two-year and three-year plans are refundable within 14 days of purchase or renewal; monthly plans are refundable within 7 days. Refunds are not prorated — you get a full refund inside the window or none outside it. Domain purchases must be canceled within 96 hours due to registration rules."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Is WordPress.com the same as WordPress.org?",
+      "a": "No. WordPress.org is free, open-source software you install on hosting of your choice (with full server control). WordPress.com is a hosted platform run by Automattic that runs WordPress for you — you trade some control for zero server management, with a free tier and paid plans from Personal up to Commerce."
+    },
+    {
+      "q": "Can I install any plugin on WordPress.com?",
+      "a": "Plugin installation is available on the Personal plan and up, but only from WordPress.com's own plugin directory — not arbitrary third-party plugin files. The free plan doesn't support plugins at all. If you need to upload a specific custom plugin file, self-hosted WordPress.org on a regular host gives you that flexibility."
+    },
+    {
+      "q": "What's WordPress.com's refund policy?",
+      "a": "Annual, two-year and three-year plans can be refunded within 14 days of purchase or renewal; monthly plans within 7 days. Refunds aren't prorated, so you either get a full refund inside the window or none after it."
+    },
+    {
+      "q": "Do I need the Commerce plan to sell products?",
+      "a": "The Commerce plan is WordPress.com's dedicated ecommerce tier, bundling full WooCommerce integration with 0% WordPress.com transaction fees and support for selling in 60+ countries. The Premium plan only supports simple PayPal/Stripe payment buttons, not a full store."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

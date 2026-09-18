@@ -1,0 +1,36 @@
+{
+  "slug": "digitalocean",
+  "name": "DigitalOcean",
+  "logo": "",
+  "url": "https://www.digitalocean.com",
+  "category": "hosting",
+  "tagline": "Developer-focused cloud VPS hosting billed by the hour, with no bundled control panel",
+  "rating": 4.6,
+  "reviewCount": 2566,
+  "description": "DigitalOcean is a cloud infrastructure provider offering \"Droplets\" — virtual private servers billed hourly or monthly by RAM, CPU and storage — aimed at developers who manage their own server rather than beginners looking for a shared-hosting control panel.",
+  "about": [
+    "DigitalOcean's entry-level Basic Droplets start at $4/month (512 MiB RAM, 1 vCPU, 10 GB SSD, 500 GiB transfer), scaling up to $6/month (1 GiB RAM, 25 GB SSD, 1,000 GiB transfer), $12/month (2 GiB RAM, 50 GB SSD, 2,000 GiB transfer) and $18/month (2 GiB RAM, 2 vCPUs, 60 GB SSD, 3,000 GiB transfer). Billing is per-second (a 60-second minimum or $0.01, whichever is higher) with hourly rates from $0.00595, so a Droplet only costs for the time it actually runs. New accounts typically get an introductory credit toward the first couple of months of usage — check the signup flow for the current amount, since promotional credit offers change.",
+    "Unlike shared hosts, a Droplet is a raw server: there's no cPanel or bundled website dashboard included by default. You get root access and are expected to install and manage your own web server, database and security updates yourself — DigitalOcean does provide one-click app images (WordPress, LAMP, Docker, etc.) to speed up initial setup, but ongoing server administration is on you. This makes it a strong fit for developers comfortable with the command line and a poor fit for anyone wanting a beginner control panel out of the box."
+  ],
+  "policies": [
+    "New signups commonly receive an introductory usage credit for their first weeks on the platform — the exact amount and duration are shown during signup and can change over time. DigitalOcean does not advertise a blanket money-back guarantee on Droplet usage the way shared hosts do; billing is consumption-based and you only pay for the hours a Droplet runs."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does DigitalOcean include cPanel or a control panel?",
+      "a": "No. Droplets are raw cloud servers with no bundled control panel like cPanel or hPanel. DigitalOcean offers one-click app images (including some with panels pre-installed) to speed up setup, but by default you manage the server yourself via SSH."
+    },
+    {
+      "q": "How is DigitalOcean billed — hourly or monthly?",
+      "a": "Both. Droplets are billed per-second (60-second minimum, or $0.01, whichever is higher) up to a monthly cap, so running a Droplet for part of a month costs less than the full monthly price, and running it the whole month costs the advertised monthly rate."
+    },
+    {
+      "q": "Is DigitalOcean good for beginners?",
+      "a": "It's built for developers comfortable with a command line and basic server administration, not for someone who wants a plug-and-play shared-hosting dashboard. Non-technical beginners are usually better served by a managed shared host."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

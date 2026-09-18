@@ -1,0 +1,41 @@
+{
+  "slug": "hetzner",
+  "name": "Hetzner",
+  "logo": "",
+  "url": "https://www.hetzner.com",
+  "category": "hosting",
+  "tagline": "German cloud and dedicated servers with some of the lowest per-spec prices in the industry",
+  "rating": 3.0,
+  "reviewCount": 2965,
+  "description": "Hetzner is a German cloud and dedicated server provider known for offering far more RAM, CPU and storage per dollar than mainstream US clouds — aimed at developers and self-managed setups rather than beginners looking for a control panel.",
+  "about": [
+    "Hetzner's entry Cloud plan (CX23) runs 2 vCPUs, 4GB RAM and 40GB NVMe storage with 20TB of monthly traffic for €3.99/month, billed hourly with no long-term contract required. Mid-tier plans scale up from there — CX33 (4 vCPU/8GB RAM/80GB) at €6.49/month, CX43 (8 vCPU/16GB RAM/160GB) at €11.99/month, and CX53 (16 vCPU/32GB RAM/320GB) at €22.49/month — with an ARM-based CAX line also available at similar price points. A primary IPv4 address costs an extra €0.50/month (unbundled since 2024); IPv6 is free. Pricing is in euros and quoted for the German/Finnish data centers — US locations run roughly 20% higher.",
+    "Hetzner does not bundle cPanel, hPanel or any control panel with its cloud servers — you're provisioning raw compute (choose your own OS image) and are expected to manage the server yourself via SSH, or install your own panel software separately. That makes it a poor fit for someone who wants a beginner shared-hosting experience, but a strong one for developers comfortable with server administration. Data centers are concentrated in Germany (Falkenstein, Nuremberg) and Finland (Helsinki), with additional US locations in Ashburn, Virginia and Hillsboro, Oregon, plus Singapore for Asia-Pacific — a much thinner global footprint than hyperscale clouds, so latency-sensitive audiences outside the EU/US East/West and Southeast Asia should factor that in."
+  ],
+  "policies": [
+    "Cloud servers bill hourly and can be cancelled instantly at any time from the Cloud Console — you only pay for the hours the server existed, with no early-termination fee.",
+    "New customers in the EU also have the statutory 14-day right of withdrawal on new contracts, with a full refund of payments received."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does Hetzner include cPanel or another control panel?",
+      "a": "No. Hetzner Cloud servers ship as raw compute with your chosen OS image — there's no bundled cPanel, hPanel or Plesk. You manage the server yourself via SSH or install a control panel separately, which is why Hetzner suits developers more than beginners wanting a point-and-click dashboard."
+    },
+    {
+      "q": "How much does Hetzner's cheapest cloud server cost?",
+      "a": "The entry CX23 plan (2 vCPU, 4GB RAM, 40GB NVMe storage, 20TB traffic) is €3.99/month, billed hourly. A primary IPv4 address adds €0.50/month on top; IPv6 is included free. Pricing was accurate as of September 2026 and can change."
+    },
+    {
+      "q": "Where are Hetzner's data centers located?",
+      "a": "Primarily Germany (Falkenstein, Nuremberg) and Finland (Helsinki), with additional locations in Ashburn, Virginia and Hillsboro, Oregon in the US, and Singapore for Asia-Pacific. Coverage outside the EU and US is limited, so check latency from your target audience's region before committing."
+    },
+    {
+      "q": "Can I cancel a Hetzner Cloud server anytime?",
+      "a": "Yes. Cloud servers can be deleted immediately from the Cloud Console and are billed hourly, so there's no long-term lock-in — you only pay for the time the server actually existed."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

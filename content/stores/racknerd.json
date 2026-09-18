@@ -1,0 +1,34 @@
+{
+  "slug": "racknerd",
+  "name": "RackNerd",
+  "logo": "",
+  "url": "https://www.racknerd.com",
+  "category": "hosting",
+  "tagline": "Budget KVM VPS hosting with frequent flash-sale pricing",
+  "rating": 4.1,
+  "reviewCount": 377,
+  "description": "RackNerd is a budget VPS host built around rotating flash-sale pricing rather than fixed plan tiers, offering KVM VPS, dedicated servers and colocation across roughly 20 data center locations worldwide.",
+  "about": [
+    "RackNerd's headline pricing isn't a fixed rate card — it runs frequent time-limited VPS specials (often countdown-timer deals on its own specials page) where the same RAM/CPU/storage tier can be priced differently from one promo to the next. As of this writing, its published KVM VPS tiers on annual billing start around $21.99/year for 1GB RAM, 1 vCPU, 20GB SSD and 3TB bandwidth, scaling up to roughly $119.99/year for 8GB RAM, 7 vCPUs, 150GB SSD and 20TB bandwidth — but treat any specific number as a snapshot, not a guaranteed rate, since deal pricing rotates.",
+    "Every plan ships with SolusVM as the VPS management interface, not cPanel — RackNerd does not bundle a web-hosting control panel by default. cPanel (or similar panels) shows up occasionally as a paid add-on or bundled option on specific deals rather than a standard inclusion, so anyone expecting a one-click cPanel experience out of the box should budget for that separately or plan to manage the server via SSH/SolusVM instead."
+  ],
+  "policies": [],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does RackNerd include cPanel with its VPS plans?",
+      "a": "Not by default. RackNerd's standard VPS plans use SolusVM for management, not cPanel. cPanel is sometimes available as a paid add-on or bundled into specific promotional deals, but it's not a built-in feature of the base plans — check the exact deal's terms before assuming it's included."
+    },
+    {
+      "q": "Is RackNerd's advertised VPS price fixed?",
+      "a": "No. RackNerd relies heavily on rotating, time-limited flash-sale pricing (often shown with a countdown timer on its specials page), so the price for a given RAM/CPU/storage tier can change from one promotion to the next. Always check the live specials page for the current rate rather than relying on a number seen elsewhere."
+    },
+    {
+      "q": "Where are RackNerd's data centers located?",
+      "a": "RackNerd operates VPS and dedicated server locations across roughly 20 cities, including Los Angeles, Dallas, New York, Chicago, Atlanta, Ashburn, Amsterdam, London, Frankfurt, Dublin and Singapore, letting customers pick a region closer to their audience."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

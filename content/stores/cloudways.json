@@ -1,0 +1,36 @@
+{
+  "slug": "cloudways",
+  "name": "Cloudways",
+  "logo": "",
+  "url": "https://www.cloudways.com",
+  "category": "hosting",
+  "tagline": "Managed cloud hosting on DigitalOcean, Vultr, Linode, AWS or GCE — usage-based pricing, no cPanel",
+  "rating": 4.6,
+  "reviewCount": 3746,
+  "description": "Cloudways is a managed cloud hosting platform that provisions and manages servers on top of DigitalOcean, Vultr, Linode, AWS or Google Compute Engine, using its own proprietary dashboard instead of cPanel and billing on usage rather than flat plan tiers.",
+  "about": [
+    "Cloudways doesn't run its own data centers — it layers managed hosting (server setup, security patching, caching, backups, one-click app installs for WordPress, WooCommerce, Magento and Laravel) on top of five infrastructure providers you pick from at signup. Entry-level pricing starts around $11/month on a DigitalOcean server (roughly 2GB RAM, 1 vCPU, 50GB storage, 2TB transfer at that tier), with Vultr and Linode starting a bit higher, and AWS or Google Compute Engine running noticeably more for comparable specs since those providers charge more for the underlying compute. There's no cPanel here — everything is managed through Cloudways' own web dashboard.",
+    "Because billing is usage-based rather than a flat monthly plan, the number on the pricing page is a starting point, not a cap — bandwidth overages, additional storage, backups retention, and add-ons (dedicated IPs, extra staging environments, CloudwaysCDN) can push the actual monthly bill above the advertised entry price. There's no traditional money-back guarantee; instead Cloudways offers a short free trial (no credit card required) to test the platform before committing, so budget-test your actual expected traffic and app footprint during that window rather than assuming the $11 headline figure is what you'll be charged."
+  ],
+  "policies": [
+    "Cloudways offers a free trial (no credit card required) instead of a traditional money-back guarantee — test your app's real resource usage during the trial before committing, since billing afterward is usage-based rather than a fixed monthly fee."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does Cloudways use cPanel?",
+      "a": "No. Cloudways runs its own proprietary web dashboard for server and app management instead of cPanel or Plesk — it handles one-click app installs, backups, staging, caching and team access through that custom interface."
+    },
+    {
+      "q": "Is Cloudways pricing a flat monthly fee?",
+      "a": "No. Cloudways bills on usage (hourly, rolled up monthly) rather than a fixed plan tier, so your actual bill depends on the server size and infrastructure provider you choose plus any bandwidth, storage or add-on usage beyond the base allowance — the advertised starting price (around $11/month on DigitalOcean) is a floor, not a guaranteed ceiling."
+    },
+    {
+      "q": "Which infrastructure provider should I pick on Cloudways?",
+      "a": "DigitalOcean is the cheapest entry point and the most common choice for small-to-mid sites. Vultr and Linode are similarly priced alternatives. AWS and Google Compute Engine cost more for comparable specs but suit teams that already standardize on those clouds or need their specific regions/compliance features."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

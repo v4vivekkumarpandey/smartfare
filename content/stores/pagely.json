@@ -1,0 +1,40 @@
+{
+  "slug": "pagely",
+  "name": "Pagely",
+  "logo": "",
+  "url": "https://pagely.com",
+  "category": "hosting",
+  "tagline": "Premium managed WordPress hosting on AWS for high-traffic, enterprise sites",
+  "rating": 4.5,
+  "reviewCount": 15,
+  "description": "Pagely is a premium managed WordPress hosting provider built on Amazon Web Services, aimed at enterprise and high-traffic sites rather than budget shoppers — plans run through its proprietary Atomic control panel with no cPanel option.",
+  "about": [
+    "Pagely's plans run in two tiers: Performance (StartPress $99/mo, DevPress $199/mo, LitePress $299/mo) and Pro (ProPress $499/mo, PowerPress $999/mo), with a custom-priced Enterprise tier (ScalePress) for large-scale deployments. Site allowances scale from 5 sites on StartPress up to 60 on PowerPress, storage runs 30-50GB SSD depending on tier, and none of the plans cap visitors or pageviews — bandwidth and CDN allowances scale by tier instead. All plans run on AWS infrastructure through Pagely's own Atomic control panel rather than cPanel, and include PressCACHE, a global WordPress CDN and free site migrations.",
+    "This is not a budget host: the entry-level StartPress plan runs $99/month (list price $199, with promotional pricing sometimes bringing it down), several multiples of what mainstream shared hosts charge. Some features are tier-gated rather than universal — PressTHUMB image optimization and WordPress Multisite support are absent on LitePress and below, and Elasticsearch is only available on Pro-tier plans and above, so check the specific plan's feature list before assuming a lower tier covers everything a larger site needs."
+  ],
+  "policies": [
+    "Pagely does not publish a standard money-back guarantee window on its pricing page — confirm current refund terms directly with Pagely sales before purchasing, since this varies from the 30-day guarantees common at budget hosts."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does Pagely use cPanel?",
+      "a": "No — Pagely runs its own proprietary control panel called Atomic instead of cPanel. It's built specifically for managing WordPress sites on Pagely's AWS infrastructure rather than general-purpose hosting management."
+    },
+    {
+      "q": "Does Pagely cap visitors or pageviews?",
+      "a": "No — Pagely doesn't cap visitors or pageviews on any plan. Instead, plans are differentiated by number of sites allowed, storage, bandwidth and CDN allowance, which is a different model from hosts that throttle traffic past a visitor limit."
+    },
+    {
+      "q": "How much does Pagely cost to start?",
+      "a": "Pagely's entry-level Performance-tier plan, StartPress, starts at $99/month (list price $199/month) for up to 5 WordPress sites, 30GB SSD storage and 50GB bandwidth. Pricing scales up through DevPress ($199/mo) and LitePress ($299/mo) before reaching the Pro tier at $499+/month."
+    },
+    {
+      "q": "Is Pagely a good fit for small, low-budget sites?",
+      "a": "Generally no — Pagely is positioned for enterprise and high-traffic sites, with pricing several times higher than mainstream shared hosts. Small sites with modest budgets are typically better served by a budget host and should only consider Pagely if they specifically need AWS-backed managed WordPress infrastructure at scale."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "hostwinds",
+  "name": "Hostwinds",
+  "logo": "",
+  "url": "https://www.hostwinds.com",
+  "category": "hosting",
+  "tagline": "cPanel shared hosting alongside managed and unmanaged VPS/dedicated servers",
+  "rating": 2.1,
+  "reviewCount": 727,
+  "description": "Hostwinds is a Seattle-based host offering cPanel shared hosting plans priced by domain limit, plus a separate line of managed and unmanaged Linux/Windows VPS and dedicated servers for users who need more control than shared hosting allows.",
+  "about": [
+    "Hostwinds' shared hosting comes in three cPanel-based tiers: Basic (1 domain), Advanced (up to 6 domains) and Ultimate (unlimited domains) — all three advertise unlimited SSD storage and bandwidth, free SSL, a free dedicated IP and unlimited email accounts. Introductory pricing on the longest term runs $3.24/month (Basic), $4.54/month (Advanced) and $5.84/month (Ultimate), renewing at $6.99, $8.99 and $10.99 per month respectively — a smaller gap between intro and renewal than many budget hosts, but still worth planning for. A free domain is not included; it's purchased separately. Beyond shared hosting, Hostwinds also runs a full VPS lineup (Linux and Windows, managed or unmanaged) starting around $4.99-$7.14/month for an entry 1 CPU/1GB RAM/30GB SSD configuration, plus dedicated servers for higher-traffic sites — worth knowing since Hostwinds isn't purely a shared-hosting shop.",
+    "The biggest gotcha is the refund policy: Hostwinds' money-back window is only 72 hours from the payment transaction, not the 30 days common elsewhere, and even within that window the refund is pro-rated for the unused portion rather than a full refund. Software licenses, domains, SSL certificates, IP addresses, and any hourly-billed or crypto-paid services are non-refundable outright. Read the refund terms before committing to a long promotional term, since the short window means you can't fully evaluate a plan on Hostwinds' dime the way you can with hosts offering a 30-day guarantee."
+  ],
+  "policies": [
+    "Hostwinds offers only a 72-hour pro-rated refund window (not a full 30-day money-back guarantee) — refunds are limited to the unused portion of eligible services and must be requested within 72 hours of the payment transaction. Domains, SSL certificates, IP addresses, software licenses, hourly-billed services and crypto payments are non-refundable."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does Hostwinds use cPanel?",
+      "a": "Yes, for shared hosting — Hostwinds' Basic, Advanced and Ultimate shared plans all run on the industry-standard cPanel control panel, unlike hosts that build a custom dashboard."
+    },
+    {
+      "q": "Does Hostwinds offer a 30-day money-back guarantee?",
+      "a": "No. Hostwinds' refund window is only 72 hours from the payment transaction, and refunds are pro-rated for the unused portion rather than a full refund — considerably shorter than the 30-day guarantee common at many other hosts."
+    },
+    {
+      "q": "Does Hostwinds offer more than shared hosting?",
+      "a": "Yes — alongside cPanel shared hosting, Hostwinds runs a separate lineup of managed and unmanaged Linux and Windows VPS plans, plus dedicated servers, for sites that outgrow shared resources."
+    },
+    {
+      "q": "Is Hostwinds' advertised shared hosting price what renews?",
+      "a": "No. The lowest advertised rates ($3.24-$5.84/month depending on tier) require the longest signup term and renew higher afterward ($6.99-$10.99/month) — check the renewal rate for your specific term before buying."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

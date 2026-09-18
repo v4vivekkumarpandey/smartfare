@@ -1,0 +1,40 @@
+{
+  "slug": "vultr",
+  "name": "Vultr",
+  "logo": "",
+  "url": "https://www.vultr.com",
+  "category": "hosting",
+  "tagline": "Developer-focused cloud VPS with hourly billing and 30+ global data centers",
+  "rating": 1.6,
+  "reviewCount": 581,
+  "description": "Vultr is a cloud infrastructure provider offering on-demand VPS instances billed by the hour or month, with a large global footprint of data center regions and no bundled control panel — built for developers who manage their own server stack.",
+  "about": [
+    "Vultr's Cloud Compute lineup starts with Regular Performance plans at $2.50/month (1 vCPU, 512MB RAM, 10GB SSD, 0.5TB bandwidth, IPv6-only) or $3.50/month for the same specs with an IPv4 address included. Its more common High Frequency tier runs $6/month for 1 vCPU, 1GB RAM, 25GB NVMe storage and 2TB bandwidth, stepping up to $12/month for 2GB RAM, 50GB NVMe and 3TB bandwidth. Every plan is billed hourly and capped at that plan's monthly rate, so spinning an instance up and down mid-month costs only the hours actually used rather than a full month.",
+    "Unlike a typical shared host, Vultr does not bundle cPanel, hPanel or any website control panel — you get root access to a bare Linux (or Windows) instance and are expected to install and manage your own stack, or add a panel like cPanel/Plesk yourself for an extra license fee. There's no one-click WordPress-with-support experience here; provisioning, security patching, backups and application setup are the account holder's responsibility unless a managed add-on is purchased. This makes Vultr a strong fit for developers and agencies comfortable with SSH and server administration, not beginners wanting a hands-off website host."
+  ],
+  "policies": [
+    "Vultr does not offer a blanket money-back guarantee on Cloud Compute usage; billing is hourly/on-demand, so unused account credit is generally the main recourse rather than a fixed refund window. Check current account/billing terms before funding a large credit balance."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does Vultr include cPanel or a control panel?",
+      "a": "No. Vultr provisions raw VPS/cloud compute instances without a bundled control panel. You manage the server yourself via SSH, or install a panel like cPanel or Plesk separately (these carry their own license cost)."
+    },
+    {
+      "q": "Is Vultr billed hourly or monthly?",
+      "a": "Both — Vultr charges an hourly rate for Cloud Compute usage, but that hourly billing is capped once it reaches the plan's listed monthly price, so running an instance 24/7 for a full month never costs more than the advertised monthly figure."
+    },
+    {
+      "q": "What happens if I go over my bandwidth allowance?",
+      "a": "Vultr charges a bandwidth overage rate on top of your plan's included allowance — $0.01 per GB in most North American and Western European locations, with higher rates ($0.025-$0.05/GB) in some Asia-Pacific regions like Singapore, Tokyo and Sydney."
+    },
+    {
+      "q": "How many data center locations does Vultr have?",
+      "a": "Vultr operates cloud data center regions across roughly 20 countries and 33 cities worldwide as of its Milan region launch in May 2026, one of the broader global footprints among independent cloud/VPS providers."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "pressable",
+  "name": "Pressable",
+  "logo": "",
+  "url": "https://pressable.com",
+  "category": "hosting",
+  "tagline": "Managed WordPress hosting from Automattic, priced by monthly visits",
+  "rating": 4.6,
+  "reviewCount": 302,
+  "description": "Pressable is a managed WordPress hosting provider owned by Automattic (the company behind WordPress.com and Jetpack), with plans priced by monthly visits and site count rather than shared-hosting-style storage tiers.",
+  "about": [
+    "Pressable sells eight Signature plan tiers built entirely around WordPress rather than general-purpose shared hosting. Signature 1, the entry tier, includes 1 site, 30,000 monthly visits and 20GB of storage for $250/year ($20.83/month billed annually) or $25/month on monthly billing. Higher tiers scale both visit allowance and site count together — Signature 3 covers 5 sites and 75,000 visits, Signature 5 covers 20 sites and 400,000 visits, up to Signature 8 at 100 sites and 2 million visits. There's no cPanel here; management runs through Pressable's own custom dashboard, and every plan includes unlimited free WordPress site migrations.",
+    "Because plans are metered by visits and storage rather than sold as flat unlimited tiers, going over your plan's monthly visit or storage allowance triggers overage charges — Pressable bills roughly $1.20 per extra 1,000 visits and $1.00 per extra GB of storage. That makes it a poor fit for a site with unpredictable traffic spikes on a low tier; budget for the plan that comfortably covers your typical traffic rather than picking the cheapest one and hoping you stay under the cap."
+  ],
+  "policies": [
+    "Pressable backs its hosting plans with a 30-day money-back guarantee."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does Pressable use cPanel?",
+      "a": "No. Pressable runs its own custom dashboard built specifically for managing WordPress sites, not the industry-standard cPanel — expect a different (WordPress-focused) workflow than a typical shared host."
+    },
+    {
+      "q": "What happens if I go over my plan's visit or storage limit?",
+      "a": "Pressable charges overage fees — about $1.20 per extra 1,000 monthly visits and $1.00 per extra GB of storage — rather than throttling or suspending the site. Pick a plan sized for your typical traffic to avoid recurring overage charges."
+    },
+    {
+      "q": "Is migration to Pressable free?",
+      "a": "Yes — every Signature plan includes unlimited free WordPress site migrations, handled by Pressable's team rather than left to the customer to do manually."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

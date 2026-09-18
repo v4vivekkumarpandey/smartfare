@@ -1,0 +1,40 @@
+{
+  "slug": "knownhost",
+  "name": "KnownHost",
+  "logo": "",
+  "url": "https://www.knownhost.com",
+  "category": "hosting",
+  "tagline": "cPanel shared and VPS hosting built around a 99.9% uptime SLA and 24/7 support",
+  "rating": 4.3,
+  "reviewCount": 96,
+  "description": "KnownHost is a shared and VPS web host running on cPanel and LiteSpeed, backed by a formal 99.9% uptime SLA with credit tiers and a 30-day money-back guarantee.",
+  "about": [
+    "KnownHost's shared hosting comes in four cPanel-based tiers: Basic (1 website, 10GB NVMe storage), Standard (5 websites, 25GB NVMe storage), Professional (unlimited websites, unlimited NVMe storage) and Premium (unlimited websites, unlimited NVMe storage with higher resource allocations). All four run on LiteSpeed with LSCache and include free SSL and Imunify360 security. Introductory pricing on a 3-year term runs $6.71/month (Basic), $9.71/month (Standard), $14.96/month (Professional) and $29.96/month (Premium) — renewing at $8.95, $12.95, $19.95 and $39.95 per month respectively once the initial term ends. KnownHost also sells managed VPS (from roughly $43/month) and unmanaged VPS with root access (from roughly $5/month) for site owners who outgrow shared hosting.",
+    "KnownHost backs its hosting with a formal SLA promising 99.9% uptime, with service credits (90% of the monthly renewal price at 99.1% uptime, 100% at 99.0% or below) if it's missed — a more explicit, credit-backed guarantee than the vague 'guaranteed uptime' language many budget hosts use. The lowest advertised shared-hosting prices require the longest (3-year) upfront commitment; shorter terms are typically available at a higher effective monthly rate, and the 30-day money-back guarantee is voided if you exceed your plan's bandwidth allowance in that window or if you're refunding a second/third package rather than your first."
+  ],
+  "policies": [
+    "KnownHost backs shared hosting plans with a 30-day money-back guarantee for new customers (excludes dedicated servers; voided by exceeding bandwidth limits in the first 30 days or on additional packages beyond your first)."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does KnownHost use cPanel?",
+      "a": "Yes — all of KnownHost's shared hosting plans run on the industry-standard cPanel control panel, paired with a LiteSpeed web server and LSCache for performance."
+    },
+    {
+      "q": "What is KnownHost's uptime guarantee?",
+      "a": "KnownHost's SLA guarantees 99.9% network uptime. If that's missed in a given month, accounts qualify for service credits on a sliding scale — for example, a 90% credit on the monthly renewal price at 99.1% uptime, rising to a full 100% credit at 99.0% or below."
+    },
+    {
+      "q": "Is KnownHost's advertised shared-hosting price what I'll pay on renewal?",
+      "a": "No. The lowest advertised prices ($6.71-$29.96/month depending on tier) require a 3-year upfront term and renew higher afterward ($8.95-$39.95/month) — factor the renewal rate in before committing to the longest term just for the lowest headline price."
+    },
+    {
+      "q": "Does KnownHost offer VPS hosting too?",
+      "a": "Yes — beyond shared hosting, KnownHost sells both fully managed VPS (roughly from $43/month, with KnownHost handling server maintenance and security) and unmanaged VPS with root access (roughly from $5/month) for users who want to manage the server themselves."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

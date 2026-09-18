@@ -1,0 +1,36 @@
+{
+  "slug": "linode",
+  "name": "Linode",
+  "logo": "",
+  "url": "https://www.linode.com",
+  "category": "hosting",
+  "tagline": "Developer-focused cloud VPS from Akamai, billed hourly with a monthly cap",
+  "rating": 2.5,
+  "reviewCount": 207,
+  "description": "Linode (now part of Akamai as \"Akamai Connected Cloud\") is a cloud infrastructure provider offering raw virtual private servers billed by the hour, aimed at developers who configure their own server stack rather than shoppers looking for managed shared hosting.",
+  "about": [
+    "Linode's entry-level Shared CPU compute instance starts at $5/month (1 vCPU, 1 GB RAM, 25 GB SSD storage), scaling up through roughly $12/month for 2 GB RAM, $24/month for 4 GB RAM, and $48/month for 8 GB RAM tiers. Pricing is calculated hourly and capped at the monthly rate — if a server only runs part of the month, the bill is prorated down to that usage instead of charging the full month upfront.",
+    "Linode does not bundle cPanel, hPanel, or any website control panel by default — a plan is a bare Linux VPS that the customer provisions themselves (or via one-click app deployments and StackScripts), so it suits developers and technical teams rather than someone wanting a beginner dashboard. Linode was acquired by Akamai in 2022 and now operates under the \"Akamai Connected Cloud\" brand, though the Linode name and Cloud Manager interface are still in active use for the compute product line."
+  ],
+  "policies": [
+    "Linode offers a limited-time free credit for new accounts on sign-up (amount and terms vary by promotion); beyond that, billing is usage-based hourly-capped-at-monthly, not a traditional refund-window model like shared hosting."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does Linode include cPanel or a control panel?",
+      "a": "No. Linode ships a bare virtual private server — there's no bundled cPanel, hPanel, or website dashboard. You manage the server yourself via SSH and the Linode/Akamai Cloud Manager, or install a control panel separately if you want one."
+    },
+    {
+      "q": "Is Linode the same company as Akamai?",
+      "a": "Akamai acquired Linode in 2022 and now markets its cloud division as \"Akamai Connected Cloud.\" The Linode brand, Cloud Manager and compute products are still operated under that umbrella."
+    },
+    {
+      "q": "How is Linode billed?",
+      "a": "Hourly, capped at a monthly rate — the entry Shared CPU plan starts at $5/month (1 GB RAM, 1 vCPU, 25 GB SSD). Run an instance for part of a month and you're charged only for the hours used, up to that plan's monthly cap."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

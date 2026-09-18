@@ -1,0 +1,40 @@
+{
+  "slug": "pantheon",
+  "name": "Pantheon",
+  "logo": "",
+  "url": "https://pantheon.io",
+  "category": "hosting",
+  "tagline": "Managed WebOps platform for WordPress and Drupal, built for developers and agencies",
+  "rating": 2.5,
+  "reviewCount": 18,
+  "description": "Pantheon is a managed WebOps hosting platform for WordPress and Drupal aimed at developers and agencies, built around a structured Dev/Test/Live environment workflow rather than a traditional cPanel-style shared hosting setup.",
+  "about": [
+    "Pantheon's entry-level Basic plan runs $41/month on an annual prepay (or a higher monthly-billed rate), with a 25K-35K monthly visit allowance depending on billing term, 20GB of SSD storage and 125K pages served. Above that sit tiered Performance plans (Small, Medium, Large, XL), which add a 99.9% uptime SLA, New Relic Pro performance monitoring, Solr search and traffic-overage protection, scaling from roughly $200/month up to over $1,000/month for the largest tier. Elite plans are custom-quoted for enterprise workloads with dedicated infrastructure. Every tier includes the same Dev/Test/Live environment workflow — separate containers for development, testing and production with built-in Git version control — which is Pantheon's core differentiator rather than an add-on feature.",
+    "Pantheon doesn't publish a traditional money-back guarantee; instead it uses a free-trial model where you can build and test a site at no charge and only start paying once you connect a custom domain and go live. That makes it low-risk to evaluate, but it also means the pricing is meaningfully higher than budget shared hosting once a site is live — this is infrastructure built for teams managing client sites or complex builds, not a cheap option for a single small brochure site."
+  ],
+  "policies": [
+    "No traditional money-back guarantee is published; Pantheon instead offers a free trial where sites can be built and tested at no cost, with billing starting only once a custom domain is connected and the site goes live."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does Pantheon use cPanel?",
+      "a": "No. Pantheon runs its own proprietary dashboard built around a Dev/Test/Live environment workflow with integrated Git version control, rather than cPanel or a similar shared-hosting control panel. It's aimed at developers and agencies comfortable with a code-driven deployment workflow."
+    },
+    {
+      "q": "What is Pantheon's Dev/Test/Live workflow?",
+      "a": "Every site on Pantheon gets three separate environments — Dev, Test and Live — each running in its own container. Code moves up from Dev to Test to Live, while content can be pulled down from Live to Test to Dev, so changes can be built and QA'd without touching the live site."
+    },
+    {
+      "q": "Does Pantheon offer a free trial or money-back guarantee?",
+      "a": "Pantheon doesn't advertise a conventional money-back guarantee. Instead, you can sign up and build/test a site for free, and you're only charged once you connect a custom domain and take the site live."
+    },
+    {
+      "q": "Is Pantheon cheap hosting for a small personal site?",
+      "a": "Not really. Pantheon's Basic plan starts around $41-55/month, and Performance plans for higher-traffic sites start around $200/month and scale into the thousands for the largest tiers — it's priced for agencies and businesses running WordPress or Drupal sites professionally, not budget shared hosting."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}
