@@ -34,5 +34,41 @@
     "name": "Health & Beauty",
     "icon": "HeartPulse",
     "description": "Savings on wellness, skincare, supplements and beauty brands with verified, hand-tested discount codes."
+  },
+  {
+    "slug": "travel",
+    "name": "Travel & Flights",
+    "icon": "Plane",
+    "description": "Discount codes for flights, hotels and travel booking sites, verified and updated every day."
+  },
+  {
+    "slug": "electronics",
+    "name": "Electronics & Gadgets",
+    "icon": "Cpu",
+    "description": "Deals on laptops, phones, accessories and gadgets from trusted electronics retailers."
+  },
+  {
+    "slug": "food-delivery",
+    "name": "Food & Delivery",
+    "icon": "UtensilsCrossed",
+    "description": "Promo codes for food delivery, restaurant apps and grocery delivery services."
+  },
+  {
+    "slug": "finance",
+    "name": "Finance & Banking",
+    "icon": "Wallet",
+    "description": "Offers on banking, investing, budgeting and fintech apps, hand-tested for you."
+  },
+  {
+    "slug": "entertainment",
+    "name": "Entertainment & Streaming",
+    "icon": "Clapperboard",
+    "description": "Discounts on streaming services, gaming and entertainment subscriptions."
+  },
+  {
+    "slug": "home-garden",
+    "name": "Home & Garden",
+    "icon": "Home",
+    "description": "Savings on furniture, decor, gardening supplies and home improvement brands."
   }
 ]

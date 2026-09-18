@@ -102,7 +102,7 @@ export default async function HomePage() {
         <section className="py-10">
           <h2 className="text-xl font-bold text-ink-900">Browse by Category</h2>
           <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-            {categories.map((c) => (
+            {categories.slice(0, 12).map((c) => (
               <Link
                 key={c.slug}
                 href={`/category/${c.slug}`}
