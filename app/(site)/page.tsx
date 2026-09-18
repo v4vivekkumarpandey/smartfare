@@ -122,12 +122,17 @@ export default async function HomePage() {
         {/* Top coupons */}
         <section className="py-6">
           <div className="flex items-end justify-between">
-            <h2 className="text-xl font-bold text-ink-900">
-              Today&apos;s Top Coupons
-            </h2>
+            <div>
+              <h2 className="text-xl font-bold text-ink-900">
+                🔥 Trending Coupons
+              </h2>
+              <p className="mt-0.5 text-sm text-ink-500">
+                Most used codes right now, ranked live
+              </p>
+            </div>
           </div>
           <div className="mt-5 grid gap-4 lg:grid-cols-2">
-            {topCoupons.map(({ store, coupon }) => (
+            {topCoupons.map(({ store, coupon }, i) => (
               <CouponRow
                 key={`${store.slug}-${coupon.id}`}
                 coupon={toPublicCoupon(coupon)}
@@ -136,6 +141,7 @@ export default async function HomePage() {
                 storeLogo={store.logo}
                 outboundHref={outboundHref(store, coupon)}
                 showStore
+                rank={i + 1}
               />
             ))}
           </div>

@@ -32,6 +32,7 @@ import { storeJsonLd, breadcrumbJsonLd } from "@/lib/schema";
 import { site } from "@/lib/site";
 import { formatDate, formatNumber, truncate } from "@/lib/cn";
 import { CouponRow } from "@/components/coupon/CouponRow";
+import { StickyGetCodeBar } from "@/components/coupon/StickyGetCodeBar";
 import { CopyCodeBox } from "@/components/coupon/CopyCodeBox";
 import { FaqAccordion } from "@/components/store/FaqAccordion";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
@@ -173,6 +174,7 @@ export default async function StorePage({
             {/* Apply-all highlight */}
             {best && (
               <a
+                id="store-hero-cta"
                 href={goHref(store.slug, best.id)}
                 target="_blank"
                 rel="noopener noreferrer sponsored"
@@ -539,6 +541,20 @@ export default async function StorePage({
           </section>
         )}
       </div>
+
+      {best && (
+        <StickyGetCodeBar
+          storeName={store.name}
+          storeSlug={store.slug}
+          storeLogo={store.logo}
+          discount={bestDiscount}
+          couponTitle={best.title}
+          couponId={best.id}
+          couponType={best.type}
+          hasCode={best.type === "code"}
+          outboundHref={outboundHref(store, best)}
+        />
+      )}
     </>
   );
 }
