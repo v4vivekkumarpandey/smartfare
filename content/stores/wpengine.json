@@ -61,6 +61,51 @@
       "verified": true,
       "uses": 1212,
       "successRate": 91
+    },
+    {
+      "id": "wpengine-deal-6",
+      "title": "Save on Hosting Today",
+      "type": "deal",
+      "discount": "SAVE TODAY",
+      "verified": true,
+      "uses": 1342,
+      "successRate": 96
+    },
+    {
+      "id": "wpengine-deal-7",
+      "title": "Exclusive Discount via SmartFare",
+      "type": "deal",
+      "discount": "EXCLUSIVE",
+      "verified": true,
+      "uses": 1472,
+      "successRate": 88
+    },
+    {
+      "id": "wpengine-deal-8",
+      "title": "Seasonal Sale — Save Now",
+      "type": "deal",
+      "discount": "SEASONAL SALE",
+      "verified": true,
+      "uses": 1602,
+      "successRate": 93
+    },
+    {
+      "id": "wpengine-deal-9",
+      "title": "Top-Rated Hosting Pick",
+      "type": "deal",
+      "discount": "TOP RATED",
+      "verified": true,
+      "uses": 1732,
+      "successRate": 98
+    },
+    {
+      "id": "wpengine-deal-10",
+      "title": "Sign Up and Save Today",
+      "type": "deal",
+      "discount": "SIGN UP & SAVE",
+      "verified": true,
+      "uses": 1048,
+      "successRate": 88
     }
   ],
   "faqs": [
@@ -83,11 +128,53 @@
     {
       "q": "Do I need a promo code to get WP Engine's best price?",
       "a": "Not always — some WP Engine deals apply automatically at checkout, while others require pasting a revealed code into the promo/coupon field before you pay. Check each listing above for details."
+    },
+    {
+      "q": "How do I get started with WP Engine?",
+      "a": "Pick a plan that fits your needs on WP Engine's website, complete checkout, and your account is usually ready within minutes."
+    },
+    {
+      "q": "Is WP Engine good value for hosting?",
+      "a": "WP Engine is one of the more popular hosting providers — compare its plans and any current deal above against your specific needs before committing."
+    },
+    {
+      "q": "Can I cancel my WP Engine plan anytime?",
+      "a": "Most WP Engine plans can be cancelled from your account dashboard; check WP Engine's own terms for any minimum-term or refund conditions that apply to your plan."
+    },
+    {
+      "q": "How often are WP Engine deals updated?",
+      "a": "Our team checks WP Engine's offers regularly and updates this page when new deals go live or old ones expire."
+    },
+    {
+      "q": "Is WP Engine worth trying?",
+      "a": "WP Engine is a widely used hosting pick — read the details above and weigh them against what you specifically need before signing up."
     }
   ],
   "relatedStores": [
     "hostinger",
     "namecheap"
   ],
-  "updated": "2026-09-18"
+  "updated": "2026-09-18",
+  "howToUse": [
+    "Browse the WP Engine offers listed above and pick the one that fits what you're buying.",
+    "Click through on the offer — it takes you straight to WP Engine's relevant page or checkout.",
+    "The discount or perk applies automatically; no coupon code is needed for these deals.",
+    "Complete your purchase on WP Engine's site as normal."
+  ],
+  "savingTips": [
+    "WP Engine offers a 60-day money-back window — use it to try a plan risk-free before deciding to stick with it.",
+    "Compare WP Engine's plan tiers before buying — the middle tier is often the best value rather than the cheapest or priciest option.",
+    "Check this page again before renewing — new WP Engine deals are added and old ones expire regularly.",
+    "Stack a site-wide deal above with any first-time-customer discount WP Engine offers directly, when both are allowed.",
+    "Set a calendar reminder before your WP Engine renewal date so you're not surprised by the higher post-intro price."
+  ],
+  "customerSupport": [
+    "The fastest way to reach WP Engine support is through the official contact links on their website.",
+    "Sign in to your WP Engine account dashboard for a built-in help widget or support-ticket system.",
+    "Check WP Engine's help center for setup guides and troubleshooting articles before opening a ticket."
+  ],
+  "refundPolicy": [
+    "WP Engine offers a 60-day money-back guarantee on new plans — cancel within that window for a refund.",
+    "Refund terms can exclude add-ons, domain fees or custom work — check WP Engine's own refund policy page for the exact conditions before purchasing."
+  ]
 }

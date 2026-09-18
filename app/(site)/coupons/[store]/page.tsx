@@ -14,6 +14,9 @@ import {
   Twitter,
   Ticket,
   Truck,
+  Lightbulb,
+  LifeBuoy,
+  RotateCcw,
 } from "lucide-react";
 import {
   getStore,
@@ -229,6 +232,24 @@ export default async function StorePage({
                 </div>
               </section>
             )}
+
+            {/* Saving tips */}
+            {store.savingTips && store.savingTips.length > 0 && (
+              <section className="mt-8 rounded-card border border-ink-100 bg-white p-6 shadow-sm">
+                <h2 className="flex items-center gap-2 text-lg font-bold text-ink-900">
+                  <Lightbulb width={18} height={18} className="text-accent-500" />
+                  {store.name} Saving Tips &amp; Tricks
+                </h2>
+                <ul className="mt-3 space-y-2 text-sm text-ink-700">
+                  {store.savingTips.map((tip, i) => (
+                    <li key={i} className="flex gap-2">
+                      <BadgeCheck width={16} height={16} className="mt-0.5 shrink-0 text-success" />
+                      {tip}
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
           </div>
 
           {/* Right: sidebar */}
@@ -304,6 +325,20 @@ export default async function StorePage({
               </SidebarCard>
             )}
 
+            {/* Customer support */}
+            {store.customerSupport && store.customerSupport.length > 0 && (
+              <SidebarCard title={`${store.name} Customer Support`}>
+                <ul className="space-y-2 text-sm text-ink-700">
+                  {store.customerSupport.map((s, i) => (
+                    <li key={i} className="flex gap-2">
+                      <LifeBuoy width={15} height={15} className="mt-0.5 shrink-0 text-ink-500" />
+                      {s}
+                    </li>
+                  ))}
+                </ul>
+              </SidebarCard>
+            )}
+
             {/* Why trust us */}
             <SidebarCard title="Why Trust Us?">
               <p className="text-sm leading-relaxed text-ink-700">
@@ -373,16 +408,29 @@ export default async function StorePage({
           </section>
         )}
 
-        {/* ---- How to apply ---- */}
+        {/* ---- How to use ---- */}
         <section className="mt-8 rounded-card border border-ink-100 bg-white p-6 shadow-sm">
           <h2 className="text-lg font-bold text-ink-900">
-            How to apply {store.name} codes at checkout
+            How to Use {store.name} Coupons &amp; Deals
           </h2>
-          <ol className="mt-4 grid gap-4 sm:grid-cols-3">
-            <Step n={1} title="Find your code" body={`Browse the verified ${store.name} codes above and click "Get Code".`} />
-            <Step n={2} title="Copy the code" body={`The code is copied for you and ${store.name} opens in a new tab.`} />
-            <Step n={3} title="Apply & save" body="Paste it into the promo/coupon box at checkout before you pay." />
-          </ol>
+          {store.howToUse && store.howToUse.length > 0 ? (
+            <ol className="mt-4 space-y-3 text-sm text-ink-700">
+              {store.howToUse.map((step, i) => (
+                <li key={i} className="flex gap-3">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent-100 text-xs font-bold text-accent-700">
+                    {i + 1}
+                  </span>
+                  {step}
+                </li>
+              ))}
+            </ol>
+          ) : (
+            <ol className="mt-4 grid gap-4 sm:grid-cols-3">
+              <Step n={1} title="Find your code" body={`Browse the verified ${store.name} codes above and click "Get Code".`} />
+              <Step n={2} title="Copy the code" body={`The code is copied for you and ${store.name} opens in a new tab.`} />
+              <Step n={3} title="Apply & save" body="Paste it into the promo/coupon box at checkout before you pay." />
+            </ol>
+          )}
         </section>
 
         {/* ---- Key shopper policies ---- */}
@@ -394,6 +442,24 @@ export default async function StorePage({
             </h2>
             <ul className="mt-3 space-y-2 text-sm text-ink-700">
               {store.policies.map((p, i) => (
+                <li key={i} className="flex gap-2">
+                  <BadgeCheck width={16} height={16} className="mt-0.5 shrink-0 text-success" />
+                  {p}
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {/* ---- Refund policy ---- */}
+        {store.refundPolicy && store.refundPolicy.length > 0 && (
+          <section className="mt-8 rounded-card border border-ink-100 bg-white p-6 shadow-sm">
+            <h2 className="flex items-center gap-2 text-lg font-bold text-ink-900">
+              <RotateCcw width={18} height={18} className="text-brand-600" />
+              {store.name} Refund Policy
+            </h2>
+            <ul className="mt-3 space-y-2 text-sm text-ink-700">
+              {store.refundPolicy.map((p, i) => (
                 <li key={i} className="flex gap-2">
                   <BadgeCheck width={16} height={16} className="mt-0.5 shrink-0 text-success" />
                   {p}

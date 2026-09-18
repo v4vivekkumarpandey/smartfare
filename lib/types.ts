@@ -51,6 +51,14 @@ export interface Store {
   about?: string[];
   /** Optional shipping / returns / shopper-policy paragraphs */
   policies?: string[];
+  /** Step-by-step coupon/deal redemption instructions */
+  howToUse?: string[];
+  /** Generic money-saving tips & tricks for this store */
+  savingTips?: string[];
+  /** How to reach/get help from this store (kept generic unless `contact` has real details) */
+  customerSupport?: string[];
+  /** Refund / money-back terms, split out from the generic `policies` list */
+  refundPolicy?: string[];
   contact?: StoreContact;
   coupons: Coupon[];
   faqs: Faq[];

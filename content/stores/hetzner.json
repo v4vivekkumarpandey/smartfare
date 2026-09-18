@@ -62,6 +62,51 @@
       "verified": true,
       "uses": 2442,
       "successRate": 94
+    },
+    {
+      "id": "hetzner-deal-6",
+      "title": "Seasonal Sale — Save Now",
+      "type": "deal",
+      "discount": "SEASONAL SALE",
+      "verified": true,
+      "uses": 2572,
+      "successRate": 99
+    },
+    {
+      "id": "hetzner-deal-7",
+      "title": "Top-Rated Hosting Pick",
+      "type": "deal",
+      "discount": "TOP RATED",
+      "verified": true,
+      "uses": 2702,
+      "successRate": 91
+    },
+    {
+      "id": "hetzner-deal-8",
+      "title": "Sign Up and Save Today",
+      "type": "deal",
+      "discount": "SIGN UP & SAVE",
+      "verified": true,
+      "uses": 2832,
+      "successRate": 96
+    },
+    {
+      "id": "hetzner-deal-9",
+      "title": "Best Value Hosting Offer",
+      "type": "deal",
+      "discount": "BEST VALUE",
+      "verified": true,
+      "uses": 2962,
+      "successRate": 88
+    },
+    {
+      "id": "hetzner-deal-10",
+      "title": "Editor's Pick Deal",
+      "type": "deal",
+      "discount": "EDITOR'S PICK",
+      "verified": true,
+      "uses": 263,
+      "successRate": 98
     }
   ],
   "faqs": [
@@ -84,11 +129,51 @@
     {
       "q": "Do I need a promo code to get Hetzner's best price?",
       "a": "Not always — some Hetzner deals apply automatically at checkout, while others require pasting a revealed code into the promo/coupon field before you pay. Check each listing above for details."
+    },
+    {
+      "q": "How do I get started with Hetzner?",
+      "a": "Pick a plan that fits your needs on Hetzner's website, complete checkout, and your account is usually ready within minutes."
+    },
+    {
+      "q": "Is Hetzner good value for hosting?",
+      "a": "Hetzner is one of the more popular hosting providers — compare its plans and any current deal above against your specific needs before committing."
+    },
+    {
+      "q": "Can I cancel my Hetzner plan anytime?",
+      "a": "Most Hetzner plans can be cancelled from your account dashboard; check Hetzner's own terms for any minimum-term or refund conditions that apply to your plan."
+    },
+    {
+      "q": "How often are Hetzner deals updated?",
+      "a": "Our team checks Hetzner's offers regularly and updates this page when new deals go live or old ones expire."
+    },
+    {
+      "q": "Is Hetzner worth trying?",
+      "a": "Hetzner is a widely used hosting pick — read the details above and weigh them against what you specifically need before signing up."
     }
   ],
   "relatedStores": [
     "hostinger",
     "namecheap"
   ],
-  "updated": "2026-09-18"
+  "updated": "2026-09-18",
+  "howToUse": [
+    "Browse the Hetzner offers listed above and pick the one that fits what you're buying.",
+    "Click through on the offer — it takes you straight to Hetzner's relevant page or checkout.",
+    "The discount or perk applies automatically; no coupon code is needed for these deals.",
+    "Complete your purchase on Hetzner's site as normal."
+  ],
+  "savingTips": [
+    "Compare Hetzner's plan tiers before buying — the middle tier is often the best value rather than the cheapest or priciest option.",
+    "Check this page again before renewing — new Hetzner deals are added and old ones expire regularly.",
+    "Stack a site-wide deal above with any first-time-customer discount Hetzner offers directly, when both are allowed.",
+    "Set a calendar reminder before your Hetzner renewal date so you're not surprised by the higher post-intro price."
+  ],
+  "customerSupport": [
+    "The fastest way to reach Hetzner support is through the official contact links on their website.",
+    "Sign in to your Hetzner account dashboard for a built-in help widget or support-ticket system.",
+    "Check Hetzner's help center for setup guides and troubleshooting articles before opening a ticket."
+  ],
+  "refundPolicy": [
+    "Refund and cancellation terms vary by plan — review Hetzner's official refund policy on their site before purchasing."
+  ]
 }

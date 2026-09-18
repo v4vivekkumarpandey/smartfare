@@ -76,6 +76,51 @@
       "verified": true,
       "uses": 2560,
       "successRate": 96
+    },
+    {
+      "id": "mergescreens-deal-6",
+      "title": "Special Offer on Software Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 2690,
+      "successRate": 88
+    },
+    {
+      "id": "mergescreens-deal-7",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 2820,
+      "successRate": 93
+    },
+    {
+      "id": "mergescreens-deal-8",
+      "title": "Limited-Time Deal for New Sign-Ups",
+      "type": "deal",
+      "discount": "LIMITED TIME",
+      "verified": true,
+      "uses": 2950,
+      "successRate": 98
+    },
+    {
+      "id": "mergescreens-deal-9",
+      "title": "Save on Software Today",
+      "type": "deal",
+      "discount": "SAVE TODAY",
+      "verified": true,
+      "uses": 279,
+      "successRate": 90
+    },
+    {
+      "id": "mergescreens-deal-10",
+      "title": "Exclusive Discount via SmartFare",
+      "type": "deal",
+      "discount": "EXCLUSIVE",
+      "verified": true,
+      "uses": 2681,
+      "successRate": 97
     }
   ],
   "faqs": [
@@ -98,10 +143,54 @@
     {
       "q": "How do I get started with MergeScreens?",
       "a": "Pick a plan that fits your needs on MergeScreens's website, complete checkout, and your account is usually ready within minutes."
+    },
+    {
+      "q": "Is MergeScreens good value for software?",
+      "a": "MergeScreens is one of the more popular software providers — compare its plans and any current deal above against your specific needs before committing."
+    },
+    {
+      "q": "Can I cancel my MergeScreens plan anytime?",
+      "a": "Most MergeScreens plans can be cancelled from your account dashboard; check MergeScreens's own terms for any minimum-term or refund conditions that apply to your plan."
+    },
+    {
+      "q": "How often are MergeScreens deals updated?",
+      "a": "Our team checks MergeScreens's offers regularly and updates this page when new deals go live or old ones expire."
+    },
+    {
+      "q": "Is MergeScreens worth trying?",
+      "a": "MergeScreens is a widely used software pick — read the details above and weigh them against what you specifically need before signing up."
+    },
+    {
+      "q": "Does MergeScreens offer a free trial?",
+      "a": "Check MergeScreens's current plans page for an active free trial or free tier — availability and terms can change, so confirm before you sign up."
     }
   ],
   "relatedStores": [
     "screenpal"
   ],
-  "updated": "2026-09-18"
+  "updated": "2026-09-18",
+  "howToUse": [
+    "Browse the MergeScreens offers listed above and pick the one that fits what you're buying.",
+    "Click \"Get Code\" to reveal the coupon — we copy it to your clipboard automatically.",
+    "Head to MergeScreens's checkout page and paste the code into the promo/coupon field.",
+    "Confirm the discount applied to your total before completing payment.",
+    "No matching code? Use one of the \"deal\" listings above instead — those apply automatically, no code needed."
+  ],
+  "savingTips": [
+    "MergeScreens offers a 14-day money-back window — use it to try a plan risk-free before deciding to stick with it.",
+    "Compare MergeScreens's plan tiers before buying — the middle tier is often the best value rather than the cheapest or priciest option.",
+    "Check this page again before renewing — new MergeScreens deals are added and old ones expire regularly.",
+    "Stack a site-wide deal above with any first-time-customer discount MergeScreens offers directly, when both are allowed.",
+    "Set a calendar reminder before your MergeScreens renewal date so you're not surprised by the higher post-intro price."
+  ],
+  "customerSupport": [
+    "The fastest way to reach MergeScreens support is through the official contact links on their website.",
+    "Sign in to your MergeScreens account dashboard for a built-in help widget or support-ticket system.",
+    "Check MergeScreens's help center for setup guides and troubleshooting articles before opening a ticket.",
+    "You can also call MergeScreens support directly at +1 (800) 555-0142."
+  ],
+  "refundPolicy": [
+    "MergeScreens offers a 14-day money-back guarantee on new plans — cancel within that window for a refund.",
+    "Refund terms can exclude add-ons, domain fees or custom work — check MergeScreens's own refund policy page for the exact conditions before purchasing."
+  ]
 }

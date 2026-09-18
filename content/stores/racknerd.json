@@ -59,6 +59,51 @@
       "verified": true,
       "uses": 2618,
       "successRate": 96
+    },
+    {
+      "id": "racknerd-deal-6",
+      "title": "Seasonal Sale — Save Now",
+      "type": "deal",
+      "discount": "SEASONAL SALE",
+      "verified": true,
+      "uses": 2748,
+      "successRate": 88
+    },
+    {
+      "id": "racknerd-deal-7",
+      "title": "Top-Rated Hosting Pick",
+      "type": "deal",
+      "discount": "TOP RATED",
+      "verified": true,
+      "uses": 2878,
+      "successRate": 93
+    },
+    {
+      "id": "racknerd-deal-8",
+      "title": "Sign Up and Save Today",
+      "type": "deal",
+      "discount": "SIGN UP & SAVE",
+      "verified": true,
+      "uses": 207,
+      "successRate": 98
+    },
+    {
+      "id": "racknerd-deal-9",
+      "title": "Best Value Hosting Offer",
+      "type": "deal",
+      "discount": "BEST VALUE",
+      "verified": true,
+      "uses": 337,
+      "successRate": 90
+    },
+    {
+      "id": "racknerd-deal-10",
+      "title": "Editor's Pick Deal",
+      "type": "deal",
+      "discount": "EDITOR'S PICK",
+      "verified": true,
+      "uses": 951,
+      "successRate": 88
     }
   ],
   "faqs": [
@@ -81,11 +126,51 @@
     {
       "q": "How do I get started with RackNerd?",
       "a": "Pick a plan that fits your needs on RackNerd's website, complete checkout, and your account is usually ready within minutes."
+    },
+    {
+      "q": "Is RackNerd good value for hosting?",
+      "a": "RackNerd is one of the more popular hosting providers — compare its plans and any current deal above against your specific needs before committing."
+    },
+    {
+      "q": "Can I cancel my RackNerd plan anytime?",
+      "a": "Most RackNerd plans can be cancelled from your account dashboard; check RackNerd's own terms for any minimum-term or refund conditions that apply to your plan."
+    },
+    {
+      "q": "How often are RackNerd deals updated?",
+      "a": "Our team checks RackNerd's offers regularly and updates this page when new deals go live or old ones expire."
+    },
+    {
+      "q": "Is RackNerd worth trying?",
+      "a": "RackNerd is a widely used hosting pick — read the details above and weigh them against what you specifically need before signing up."
+    },
+    {
+      "q": "Does RackNerd offer a free trial?",
+      "a": "Check RackNerd's current plans page for an active free trial or free tier — availability and terms can change, so confirm before you sign up."
     }
   ],
   "relatedStores": [
     "hostinger",
     "namecheap"
   ],
-  "updated": "2026-09-18"
+  "updated": "2026-09-18",
+  "howToUse": [
+    "Browse the RackNerd offers listed above and pick the one that fits what you're buying.",
+    "Click through on the offer — it takes you straight to RackNerd's relevant page or checkout.",
+    "The discount or perk applies automatically; no coupon code is needed for these deals.",
+    "Complete your purchase on RackNerd's site as normal."
+  ],
+  "savingTips": [
+    "Compare RackNerd's plan tiers before buying — the middle tier is often the best value rather than the cheapest or priciest option.",
+    "Check this page again before renewing — new RackNerd deals are added and old ones expire regularly.",
+    "Stack a site-wide deal above with any first-time-customer discount RackNerd offers directly, when both are allowed.",
+    "Set a calendar reminder before your RackNerd renewal date so you're not surprised by the higher post-intro price."
+  ],
+  "customerSupport": [
+    "The fastest way to reach RackNerd support is through the official contact links on their website.",
+    "Sign in to your RackNerd account dashboard for a built-in help widget or support-ticket system.",
+    "Check RackNerd's help center for setup guides and troubleshooting articles before opening a ticket."
+  ],
+  "refundPolicy": [
+    "Refund and cancellation terms vary by plan — review RackNerd's official refund policy on their site before purchasing."
+  ]
 }

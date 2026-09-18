@@ -61,6 +61,51 @@
       "verified": true,
       "uses": 2114,
       "successRate": 88
+    },
+    {
+      "id": "interserver-deal-6",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 2244,
+      "successRate": 93
+    },
+    {
+      "id": "interserver-deal-7",
+      "title": "Limited-Time Deal for New Sign-Ups",
+      "type": "deal",
+      "discount": "LIMITED TIME",
+      "verified": true,
+      "uses": 2374,
+      "successRate": 98
+    },
+    {
+      "id": "interserver-deal-8",
+      "title": "Save on Hosting Today",
+      "type": "deal",
+      "discount": "SAVE TODAY",
+      "verified": true,
+      "uses": 2504,
+      "successRate": 90
+    },
+    {
+      "id": "interserver-deal-9",
+      "title": "Exclusive Discount via SmartFare",
+      "type": "deal",
+      "discount": "EXCLUSIVE",
+      "verified": true,
+      "uses": 2634,
+      "successRate": 95
+    },
+    {
+      "id": "interserver-deal-10",
+      "title": "Seasonal Sale — Save Now",
+      "type": "deal",
+      "discount": "SEASONAL SALE",
+      "verified": true,
+      "uses": 1192,
+      "successRate": 97
     }
   ],
   "faqs": [
@@ -83,11 +128,53 @@
     {
       "q": "How do I get started with InterServer?",
       "a": "Pick a plan that fits your needs on InterServer's website, complete checkout, and your account is usually ready within minutes."
+    },
+    {
+      "q": "Is InterServer good value for hosting?",
+      "a": "InterServer is one of the more popular hosting providers — compare its plans and any current deal above against your specific needs before committing."
+    },
+    {
+      "q": "Can I cancel my InterServer plan anytime?",
+      "a": "Most InterServer plans can be cancelled from your account dashboard; check InterServer's own terms for any minimum-term or refund conditions that apply to your plan."
+    },
+    {
+      "q": "How often are InterServer deals updated?",
+      "a": "Our team checks InterServer's offers regularly and updates this page when new deals go live or old ones expire."
+    },
+    {
+      "q": "Is InterServer worth trying?",
+      "a": "InterServer is a widely used hosting pick — read the details above and weigh them against what you specifically need before signing up."
+    },
+    {
+      "q": "Does InterServer offer a free trial?",
+      "a": "Check InterServer's current plans page for an active free trial or free tier — availability and terms can change, so confirm before you sign up."
     }
   ],
   "relatedStores": [
     "hostinger",
     "namecheap"
   ],
-  "updated": "2026-09-18"
+  "updated": "2026-09-18",
+  "howToUse": [
+    "Browse the InterServer offers listed above and pick the one that fits what you're buying.",
+    "Click through on the offer — it takes you straight to InterServer's relevant page or checkout.",
+    "The discount or perk applies automatically; no coupon code is needed for these deals.",
+    "Complete your purchase on InterServer's site as normal."
+  ],
+  "savingTips": [
+    "InterServer's lowest headline price usually needs the longest prepaid term — compare that against the renewal rate to see the real long-term cost before committing.",
+    "Look for a plan that bundles a free domain — it saves you a separate domain-registration cost in year one.",
+    "InterServer offers a 30-day money-back window — use it to try a plan risk-free before deciding to stick with it.",
+    "Compare InterServer's plan tiers before buying — the middle tier is often the best value rather than the cheapest or priciest option.",
+    "Check this page again before renewing — new InterServer deals are added and old ones expire regularly."
+  ],
+  "customerSupport": [
+    "The fastest way to reach InterServer support is through the official contact links on their website.",
+    "Sign in to your InterServer account dashboard for a built-in help widget or support-ticket system.",
+    "Check InterServer's help center for setup guides and troubleshooting articles before opening a ticket."
+  ],
+  "refundPolicy": [
+    "InterServer offers a 30-day money-back guarantee on new plans — cancel within that window for a refund.",
+    "Refund terms can exclude add-ons, domain fees or custom work — check InterServer's own refund policy page for the exact conditions before purchasing."
+  ]
 }

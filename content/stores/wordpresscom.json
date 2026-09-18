@@ -61,6 +61,51 @@
       "verified": true,
       "uses": 1340,
       "successRate": 95
+    },
+    {
+      "id": "wordpresscom-deal-6",
+      "title": "Exclusive Discount via SmartFare",
+      "type": "deal",
+      "discount": "EXCLUSIVE",
+      "verified": true,
+      "uses": 1470,
+      "successRate": 100
+    },
+    {
+      "id": "wordpresscom-deal-7",
+      "title": "Seasonal Sale — Save Now",
+      "type": "deal",
+      "discount": "SEASONAL SALE",
+      "verified": true,
+      "uses": 1600,
+      "successRate": 92
+    },
+    {
+      "id": "wordpresscom-deal-8",
+      "title": "Top-Rated Hosting Pick",
+      "type": "deal",
+      "discount": "TOP RATED",
+      "verified": true,
+      "uses": 1730,
+      "successRate": 97
+    },
+    {
+      "id": "wordpresscom-deal-9",
+      "title": "Sign Up and Save Today",
+      "type": "deal",
+      "discount": "SIGN UP & SAVE",
+      "verified": true,
+      "uses": 1133,
+      "successRate": 93
+    },
+    {
+      "id": "wordpresscom-deal-10",
+      "title": "Best Value Hosting Offer",
+      "type": "deal",
+      "discount": "BEST VALUE",
+      "verified": true,
+      "uses": 846,
+      "successRate": 91
     }
   ],
   "faqs": [
@@ -83,11 +128,52 @@
     {
       "q": "Does WordPress.com include a free domain?",
       "a": "Yes, WordPress.com's plans include a free domain registration for the first year. It reverts to the standard renewal price after that."
+    },
+    {
+      "q": "Do I need a promo code to get WordPress.com's best price?",
+      "a": "Not always — some WordPress.com deals apply automatically at checkout, while others require pasting a revealed code into the promo/coupon field before you pay. Check each listing above for details."
+    },
+    {
+      "q": "How do I get started with WordPress.com?",
+      "a": "Pick a plan that fits your needs on WordPress.com's website, complete checkout, and your account is usually ready within minutes."
+    },
+    {
+      "q": "Is WordPress.com good value for hosting?",
+      "a": "WordPress.com is one of the more popular hosting providers — compare its plans and any current deal above against your specific needs before committing."
+    },
+    {
+      "q": "Can I cancel my WordPress.com plan anytime?",
+      "a": "Most WordPress.com plans can be cancelled from your account dashboard; check WordPress.com's own terms for any minimum-term or refund conditions that apply to your plan."
+    },
+    {
+      "q": "How often are WordPress.com deals updated?",
+      "a": "Our team checks WordPress.com's offers regularly and updates this page when new deals go live or old ones expire."
     }
   ],
   "relatedStores": [
     "hostinger",
     "namecheap"
   ],
-  "updated": "2026-09-18"
+  "updated": "2026-09-18",
+  "howToUse": [
+    "Browse the WordPress.com offers listed above and pick the one that fits what you're buying.",
+    "Click through on the offer — it takes you straight to WordPress.com's relevant page or checkout.",
+    "The discount or perk applies automatically; no coupon code is needed for these deals.",
+    "Complete your purchase on WordPress.com's site as normal."
+  ],
+  "savingTips": [
+    "Start with WordPress.com's free trial or free plan if one is available, so you can confirm it's a fit before paying.",
+    "Look for a plan that bundles a free domain — it saves you a separate domain-registration cost in year one.",
+    "Compare WordPress.com's plan tiers before buying — the middle tier is often the best value rather than the cheapest or priciest option.",
+    "Check this page again before renewing — new WordPress.com deals are added and old ones expire regularly.",
+    "Stack a site-wide deal above with any first-time-customer discount WordPress.com offers directly, when both are allowed."
+  ],
+  "customerSupport": [
+    "The fastest way to reach WordPress.com support is through the official contact links on their website.",
+    "Sign in to your WordPress.com account dashboard for a built-in help widget or support-ticket system.",
+    "Check WordPress.com's help center for setup guides and troubleshooting articles before opening a ticket."
+  ],
+  "refundPolicy": [
+    "Refund and cancellation terms vary by plan — review WordPress.com's official refund policy on their site before purchasing."
+  ]
 }

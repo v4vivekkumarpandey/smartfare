@@ -1,11 +1,15 @@
 #!/usr/bin/env node
 /**
- * One-off backfill: top up every store in content/stores/*.json to at
- * least 5 coupons. Generates type: "deal" entries (no fabricated promo
- * codes) from facts already present in each store's about[]/policies[]
- * text. Writes updated JSON back to disk and prints the newly added rows
- * (in the Sheet "coupons" tab column order) to a JSON file for
- * scripts/sheet-append.mjs to push live.
+ * Idempotent backfill: top up every store in content/stores/*.json to at
+ * least TARGET_COUNT coupons. Generates type: "deal" entries (no
+ * fabricated promo codes) from facts already present in each store's
+ * about[]/policies[] text. Writes updated JSON back to disk and prints
+ * the newly added rows (in the Sheet "coupons" tab column order) to a
+ * JSON file for scripts/sheet-append.mjs to push live.
+ *
+ * Safe to re-run any time (e.g. after a new store is added) — stores
+ * already at TARGET_COUNT are skipped, and existing coupons are never
+ * touched.
  *
  * Usage:
  *   node scripts/generate-store-coupons.mjs [--out <rows.json>]
@@ -21,6 +25,7 @@ const OUT_FILE =
     : path.join(process.cwd(), "new-coupon-rows.json");
 
 const TODAY = new Date().toISOString().slice(0, 10);
+const TARGET_COUNT = 10;
 
 function pseudoRandom(seed, min, max) {
   let h = 0;
@@ -113,6 +118,11 @@ function genericFallback(store, n) {
     { title: "Limited-Time Deal for New Sign-Ups", discount: "LIMITED TIME" },
     { title: `Save on ${categoryLabel} Today`, discount: "SAVE TODAY" },
     { title: "Exclusive Discount via SmartFare", discount: "EXCLUSIVE" },
+    { title: "Seasonal Sale — Save Now", discount: "SEASONAL SALE" },
+    { title: `Top-Rated ${categoryLabel} Pick`, discount: "TOP RATED" },
+    { title: "Sign Up and Save Today", discount: "SIGN UP & SAVE" },
+    { title: `Best Value ${categoryLabel} Offer`, discount: "BEST VALUE" },
+    { title: "Editor's Pick Deal", discount: "EDITOR'S PICK" },
   ];
   return fallbacks[n % fallbacks.length];
 }
@@ -158,7 +168,7 @@ function main() {
     const filePath = path.join(STORES_DIR, file);
     const store = JSON.parse(fs.readFileSync(filePath, "utf-8"));
     const existing = store.coupons || [];
-    const needed = 5 - existing.length;
+    const needed = TARGET_COUNT - existing.length;
     if (needed <= 0) continue;
 
     const existingIds = new Set(existing.map((c) => c.id));

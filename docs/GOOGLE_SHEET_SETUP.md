@@ -50,6 +50,14 @@ Optional extra columns (power the coupon-page sidebar — safe to leave blank):
 `policies` (shipping/returns paragraphs, Alt+Enter separated), `phone`,
 `facebook`, `instagram`, `youtube`, `twitter` (full URLs).
 
+Optional content-section columns (each Alt+Enter separated, same as `about`;
+safe to leave blank — see `scripts/generate-store-sections.mjs` to
+auto-generate them from `about`/`policies` text):
+- **howToUse**: step-by-step coupon/deal redemption instructions.
+- **savingTips**: generic money-saving tips & tricks for this store.
+- **customerSupport**: how to reach/get help from this store.
+- **refundPolicy**: refund/money-back terms, split out from `policies`.
+
 ### Tab `coupons`
 | storeSlug | id | title | type | code | discount | verified | expires | uses | successRate | dealUrl | featured |
 |-----------|----|-------|------|------|----------|----------|---------|------|-------------|---------|----------|

@@ -1,12 +1,17 @@
 #!/usr/bin/env node
 /**
- * One-off backfill: top up every store in content/stores/*.json to at
- * least 5 FAQs. Generates Q&A pairs from facts already present in each
- * store's about[]/policies[] text (mirrors scripts/generate-store-coupons.mjs),
- * skipping any fact whose topic is already covered by an existing
- * hand-written FAQ. Writes updated JSON back to disk and prints the newly
- * added rows (in the Sheet "faqs" tab column order: storeSlug | question |
- * answer) to a JSON file for scripts/sheet-append.mjs to push live.
+ * Idempotent backfill: top up every store in content/stores/*.json to at
+ * least TARGET_COUNT FAQs. Generates Q&A pairs from facts already present
+ * in each store's about[]/policies[] text (mirrors
+ * scripts/generate-store-coupons.mjs), skipping any fact whose topic is
+ * already covered by an existing hand-written FAQ. Writes updated JSON
+ * back to disk and prints the newly added rows (in the Sheet "faqs" tab
+ * column order: storeSlug | question | answer) to a JSON file for
+ * scripts/sheet-append.mjs to push live.
+ *
+ * Safe to re-run any time (e.g. after a new store is added) — stores
+ * already at TARGET_COUNT are skipped, and existing FAQs are never
+ * touched.
  *
  * Usage:
  *   node scripts/generate-store-faqs.mjs [--out <rows.json>]
@@ -22,6 +27,7 @@ const OUT_FILE =
     : path.join(process.cwd(), "new-faq-rows.json");
 
 const TODAY = new Date().toISOString().slice(0, 10);
+const TARGET_COUNT = 10;
 
 const TOPIC_KEYWORDS = {
   price: /pric|renew|cost|\$/i,
@@ -137,6 +143,30 @@ function genericFallback(store, n) {
       q: `Is ${name} worth trying?`,
       a: `${name} is a widely used ${categoryLabel.toLowerCase()} pick — read the details above and weigh them against what you specifically need before signing up.`,
     },
+    {
+      q: `Does ${name} offer a free trial?`,
+      a: `Check ${name}'s current plans page for an active free trial or free tier — availability and terms can change, so confirm before you sign up.`,
+    },
+    {
+      q: `What payment methods does ${name} accept?`,
+      a: `${name} typically accepts major credit/debit cards and other common online payment methods at checkout; confirm the exact options on ${name}'s own checkout page.`,
+    },
+    {
+      q: `Is ${name} beginner-friendly?`,
+      a: `${name}'s plans and dashboard are generally approachable for new users, though comfort level will depend on your own experience — see ${name}'s own guides for a walkthrough.`,
+    },
+    {
+      q: `Does ${name} offer discounts for annual billing?`,
+      a: `Many ${name} plans price lower per month when you pay annually or for a longer term upfront compared to paying month-to-month — compare both before choosing a term.`,
+    },
+    {
+      q: `How do I contact ${name} for help?`,
+      a: `Use the support links on ${name}'s official website, or sign in to your account dashboard for a help widget or ticket system.`,
+    },
+    {
+      q: `Can I upgrade or downgrade my ${name} plan later?`,
+      a: `Most ${name} plans let you change tiers from your account dashboard as your needs grow — check ${name}'s own terms for any proration or minimum-term rules.`,
+    },
   ];
   return fallbacks[n % fallbacks.length];
 }
@@ -156,7 +186,7 @@ function main() {
     const filePath = path.join(STORES_DIR, file);
     const store = JSON.parse(fs.readFileSync(filePath, "utf-8"));
     const existing = store.faqs || [];
-    const needed = 5 - existing.length;
+    const needed = TARGET_COUNT - existing.length;
     if (needed <= 0) continue;
 
     const existingQuestions = new Set(existing.map((f) => f.q));

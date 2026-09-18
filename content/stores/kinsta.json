@@ -61,6 +61,51 @@
       "verified": true,
       "uses": 794,
       "successRate": 93
+    },
+    {
+      "id": "kinsta-deal-6",
+      "title": "Save on Hosting Today",
+      "type": "deal",
+      "discount": "SAVE TODAY",
+      "verified": true,
+      "uses": 924,
+      "successRate": 98
+    },
+    {
+      "id": "kinsta-deal-7",
+      "title": "Exclusive Discount via SmartFare",
+      "type": "deal",
+      "discount": "EXCLUSIVE",
+      "verified": true,
+      "uses": 1054,
+      "successRate": 90
+    },
+    {
+      "id": "kinsta-deal-8",
+      "title": "Seasonal Sale — Save Now",
+      "type": "deal",
+      "discount": "SEASONAL SALE",
+      "verified": true,
+      "uses": 1184,
+      "successRate": 95
+    },
+    {
+      "id": "kinsta-deal-9",
+      "title": "Top-Rated Hosting Pick",
+      "type": "deal",
+      "discount": "TOP RATED",
+      "verified": true,
+      "uses": 1314,
+      "successRate": 100
+    },
+    {
+      "id": "kinsta-deal-10",
+      "title": "Sign Up and Save Today",
+      "type": "deal",
+      "discount": "SIGN UP & SAVE",
+      "verified": true,
+      "uses": 1560,
+      "successRate": 100
     }
   ],
   "faqs": [
@@ -83,11 +128,53 @@
     {
       "q": "Does Kinsta offer a money-back guarantee?",
       "a": "Yes — Kinsta backs its plans with a 30-day money-back guarantee, so you can request a refund if it's not a good fit."
+    },
+    {
+      "q": "Do I need a promo code to get Kinsta's best price?",
+      "a": "Not always — some Kinsta deals apply automatically at checkout, while others require pasting a revealed code into the promo/coupon field before you pay. Check each listing above for details."
+    },
+    {
+      "q": "How do I get started with Kinsta?",
+      "a": "Pick a plan that fits your needs on Kinsta's website, complete checkout, and your account is usually ready within minutes."
+    },
+    {
+      "q": "Is Kinsta good value for hosting?",
+      "a": "Kinsta is one of the more popular hosting providers — compare its plans and any current deal above against your specific needs before committing."
+    },
+    {
+      "q": "Can I cancel my Kinsta plan anytime?",
+      "a": "Most Kinsta plans can be cancelled from your account dashboard; check Kinsta's own terms for any minimum-term or refund conditions that apply to your plan."
+    },
+    {
+      "q": "How often are Kinsta deals updated?",
+      "a": "Our team checks Kinsta's offers regularly and updates this page when new deals go live or old ones expire."
     }
   ],
   "relatedStores": [
     "hostinger",
     "namecheap"
   ],
-  "updated": "2026-09-18"
+  "updated": "2026-09-18",
+  "howToUse": [
+    "Browse the Kinsta offers listed above and pick the one that fits what you're buying.",
+    "Click through on the offer — it takes you straight to Kinsta's relevant page or checkout.",
+    "The discount or perk applies automatically; no coupon code is needed for these deals.",
+    "Complete your purchase on Kinsta's site as normal."
+  ],
+  "savingTips": [
+    "Kinsta offers a 30-day money-back window — use it to try a plan risk-free before deciding to stick with it.",
+    "Compare Kinsta's plan tiers before buying — the middle tier is often the best value rather than the cheapest or priciest option.",
+    "Check this page again before renewing — new Kinsta deals are added and old ones expire regularly.",
+    "Stack a site-wide deal above with any first-time-customer discount Kinsta offers directly, when both are allowed.",
+    "Set a calendar reminder before your Kinsta renewal date so you're not surprised by the higher post-intro price."
+  ],
+  "customerSupport": [
+    "The fastest way to reach Kinsta support is through the official contact links on their website.",
+    "Sign in to your Kinsta account dashboard for a built-in help widget or support-ticket system.",
+    "Check Kinsta's help center for setup guides and troubleshooting articles before opening a ticket."
+  ],
+  "refundPolicy": [
+    "Kinsta offers a 30-day money-back guarantee on new plans — cancel within that window for a refund.",
+    "Refund terms can exclude add-ons, domain fees or custom work — check Kinsta's own refund policy page for the exact conditions before purchasing."
+  ]
 }

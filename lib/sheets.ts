@@ -19,7 +19,9 @@ import { autoLogoUrl } from "./logo";
  * Expected tabs (case-insensitive header row in row 1):
  *   categories : slug | name | icon | description
  *   stores     : slug | name | logo | url | affiliateBase | category | tagline |
- *                rating | reviewCount | description | about | relatedStores | updated
+ *                rating | reviewCount | description | about | relatedStores | updated |
+ *                policies | phone | facebook | instagram | youtube | twitter |
+ *                howToUse | savingTips | customerSupport | refundPolicy
  *   coupons    : storeSlug | id | title | type | code | discount | verified |
  *                expires | uses | successRate | dealUrl | featured
  *   faqs       : storeSlug | question | answer
@@ -236,6 +238,10 @@ export async function loadFromSheets(): Promise<{
         description: r.description || "",
         about: splitParagraphs(r.about),
         policies: splitParagraphs(r.policies),
+        howToUse: splitParagraphs(r.howtouse),
+        savingTips: splitParagraphs(r.savingtips),
+        customerSupport: splitParagraphs(r.customersupport),
+        refundPolicy: splitParagraphs(r.refundpolicy),
         contact: {
           phone: r.phone || undefined,
           facebook: r.facebook || undefined,

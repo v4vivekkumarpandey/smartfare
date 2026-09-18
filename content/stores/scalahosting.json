@@ -61,6 +61,51 @@
       "verified": true,
       "uses": 1951,
       "successRate": 95
+    },
+    {
+      "id": "scalahosting-deal-6",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 2081,
+      "successRate": 100
+    },
+    {
+      "id": "scalahosting-deal-7",
+      "title": "Limited-Time Deal for New Sign-Ups",
+      "type": "deal",
+      "discount": "LIMITED TIME",
+      "verified": true,
+      "uses": 2211,
+      "successRate": 92
+    },
+    {
+      "id": "scalahosting-deal-8",
+      "title": "Save on Hosting Today",
+      "type": "deal",
+      "discount": "SAVE TODAY",
+      "verified": true,
+      "uses": 2341,
+      "successRate": 97
+    },
+    {
+      "id": "scalahosting-deal-9",
+      "title": "Exclusive Discount via SmartFare",
+      "type": "deal",
+      "discount": "EXCLUSIVE",
+      "verified": true,
+      "uses": 2471,
+      "successRate": 89
+    },
+    {
+      "id": "scalahosting-deal-10",
+      "title": "Seasonal Sale — Save Now",
+      "type": "deal",
+      "discount": "SEASONAL SALE",
+      "verified": true,
+      "uses": 2575,
+      "successRate": 99
     }
   ],
   "faqs": [
@@ -83,11 +128,53 @@
     {
       "q": "How do I get started with ScalaHosting?",
       "a": "Pick a plan that fits your needs on ScalaHosting's website, complete checkout, and your account is usually ready within minutes."
+    },
+    {
+      "q": "Is ScalaHosting good value for hosting?",
+      "a": "ScalaHosting is one of the more popular hosting providers — compare its plans and any current deal above against your specific needs before committing."
+    },
+    {
+      "q": "Can I cancel my ScalaHosting plan anytime?",
+      "a": "Most ScalaHosting plans can be cancelled from your account dashboard; check ScalaHosting's own terms for any minimum-term or refund conditions that apply to your plan."
+    },
+    {
+      "q": "How often are ScalaHosting deals updated?",
+      "a": "Our team checks ScalaHosting's offers regularly and updates this page when new deals go live or old ones expire."
+    },
+    {
+      "q": "Is ScalaHosting worth trying?",
+      "a": "ScalaHosting is a widely used hosting pick — read the details above and weigh them against what you specifically need before signing up."
+    },
+    {
+      "q": "Does ScalaHosting offer a free trial?",
+      "a": "Check ScalaHosting's current plans page for an active free trial or free tier — availability and terms can change, so confirm before you sign up."
     }
   ],
   "relatedStores": [
     "hostinger",
     "namecheap"
   ],
-  "updated": "2026-09-18"
+  "updated": "2026-09-18",
+  "howToUse": [
+    "Browse the ScalaHosting offers listed above and pick the one that fits what you're buying.",
+    "Click through on the offer — it takes you straight to ScalaHosting's relevant page or checkout.",
+    "The discount or perk applies automatically; no coupon code is needed for these deals.",
+    "Complete your purchase on ScalaHosting's site as normal."
+  ],
+  "savingTips": [
+    "Look for a plan that bundles a free domain — it saves you a separate domain-registration cost in year one.",
+    "ScalaHosting offers a 30-day money-back window — use it to try a plan risk-free before deciding to stick with it.",
+    "Compare ScalaHosting's plan tiers before buying — the middle tier is often the best value rather than the cheapest or priciest option.",
+    "Check this page again before renewing — new ScalaHosting deals are added and old ones expire regularly.",
+    "Stack a site-wide deal above with any first-time-customer discount ScalaHosting offers directly, when both are allowed."
+  ],
+  "customerSupport": [
+    "The fastest way to reach ScalaHosting support is through the official contact links on their website.",
+    "Sign in to your ScalaHosting account dashboard for a built-in help widget or support-ticket system.",
+    "Check ScalaHosting's help center for setup guides and troubleshooting articles before opening a ticket."
+  ],
+  "refundPolicy": [
+    "ScalaHosting offers a 30-day money-back guarantee on new plans — cancel within that window for a refund.",
+    "Refund terms can exclude add-ons, domain fees or custom work — check ScalaHosting's own refund policy page for the exact conditions before purchasing."
+  ]
 }

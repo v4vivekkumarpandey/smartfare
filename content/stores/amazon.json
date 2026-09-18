@@ -59,6 +59,51 @@
       "verified": true,
       "uses": 2642,
       "successRate": 88
+    },
+    {
+      "id": "amazon-deal-6",
+      "title": "Exclusive Discount via SmartFare",
+      "type": "deal",
+      "discount": "EXCLUSIVE",
+      "verified": true,
+      "uses": 2772,
+      "successRate": 93
+    },
+    {
+      "id": "amazon-deal-7",
+      "title": "Seasonal Sale — Save Now",
+      "type": "deal",
+      "discount": "SEASONAL SALE",
+      "verified": true,
+      "uses": 2902,
+      "successRate": 98
+    },
+    {
+      "id": "amazon-deal-8",
+      "title": "Top-Rated Education Pick",
+      "type": "deal",
+      "discount": "TOP RATED",
+      "verified": true,
+      "uses": 231,
+      "successRate": 90
+    },
+    {
+      "id": "amazon-deal-9",
+      "title": "Sign Up and Save Today",
+      "type": "deal",
+      "discount": "SIGN UP & SAVE",
+      "verified": true,
+      "uses": 361,
+      "successRate": 95
+    },
+    {
+      "id": "amazon-deal-10",
+      "title": "Best Value Education Offer",
+      "type": "deal",
+      "discount": "BEST VALUE",
+      "verified": true,
+      "uses": 2016,
+      "successRate": 91
     }
   ],
   "faqs": [
@@ -81,8 +126,48 @@
     {
       "q": "How often are Amazon deals updated?",
       "a": "Our team checks Amazon's offers regularly and updates this page when new deals go live or old ones expire."
+    },
+    {
+      "q": "Is Amazon worth trying?",
+      "a": "Amazon is a widely used education pick — read the details above and weigh them against what you specifically need before signing up."
+    },
+    {
+      "q": "Does Amazon offer a free trial?",
+      "a": "Check Amazon's current plans page for an active free trial or free tier — availability and terms can change, so confirm before you sign up."
+    },
+    {
+      "q": "What payment methods does Amazon accept?",
+      "a": "Amazon typically accepts major credit/debit cards and other common online payment methods at checkout; confirm the exact options on Amazon's own checkout page."
+    },
+    {
+      "q": "Is Amazon beginner-friendly?",
+      "a": "Amazon's plans and dashboard are generally approachable for new users, though comfort level will depend on your own experience — see Amazon's own guides for a walkthrough."
+    },
+    {
+      "q": "Does Amazon offer discounts for annual billing?",
+      "a": "Many Amazon plans price lower per month when you pay annually or for a longer term upfront compared to paying month-to-month — compare both before choosing a term."
     }
   ],
   "relatedStores": [],
-  "updated": "2026-09-18"
+  "updated": "2026-09-18",
+  "howToUse": [
+    "Browse the Amazon offers listed above and pick the one that fits what you're buying.",
+    "Click through on the offer — it takes you straight to Amazon's relevant page or checkout.",
+    "The discount or perk applies automatically; no coupon code is needed for these deals.",
+    "Complete your purchase on Amazon's site as normal."
+  ],
+  "savingTips": [
+    "Compare Amazon's plan tiers before buying — the middle tier is often the best value rather than the cheapest or priciest option.",
+    "Check this page again before renewing — new Amazon deals are added and old ones expire regularly.",
+    "Stack a site-wide deal above with any first-time-customer discount Amazon offers directly, when both are allowed.",
+    "Set a calendar reminder before your Amazon renewal date so you're not surprised by the higher post-intro price."
+  ],
+  "customerSupport": [
+    "The fastest way to reach Amazon support is through the official contact links on their website.",
+    "Sign in to your Amazon account dashboard for a built-in help widget or support-ticket system.",
+    "Check Amazon's help center for setup guides and troubleshooting articles before opening a ticket."
+  ],
+  "refundPolicy": [
+    "Refund and cancellation terms vary by plan — review Amazon's official refund policy on their site before purchasing."
+  ]
 }

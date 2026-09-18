@@ -63,6 +63,8 @@ Full Sheets setup walkthrough (tab template, service-account steps, publish webh
 
 Content types: `stores`, `categories`, `menu`, `settings`, `posts` (blog — see below) — each is a sheet tab (see the tab list documented at the top of `lib/sheets.ts`) with a matching local JSON fallback file in `content/`.
 
+**To add a new store:** use `/new-store` (see `.claude/commands/new-store.md`) — it scaffolds `content/stores/<slug>.json` and auto-generates 10 coupons, 10 FAQs, and the `howToUse`/`savingTips`/`customerSupport`/`refundPolicy` sections via `scripts/generate-store-coupons.mjs` / `generate-store-faqs.mjs` / `generate-store-sections.mjs` (all three are idempotent — safe to re-run on any store, new or existing, to top it up without touching others).
+
 **Blog posts, sale-calendar entries, and gift guides are one content type** (`BlogPost` in `lib/types.ts`), all living at `/blog/[slug]` and stored together in `content/blog.json` (or the `blog` sheet tab). An optional `postType` field (`"post"` | `"sale-calendar"` | `"gift-guide"`, defaults to `"post"`) controls rendering:
 - `"sale-calendar"` posts additionally use `startDate`/`endDate` (ISO dates, rendered as a date range and used for `Event` JSON-LD) and `storeSlugs` (comma-separated store slugs, cross-linked as `StoreCard`s on the page).
 - `"gift-guide"` posts additionally use `occasion` (freeform label) and `storeSlugs` (same cross-linking as above).
