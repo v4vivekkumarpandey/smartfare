@@ -5,6 +5,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About Us",
   description: `Learn how ${site.name} finds, tests and verifies coupon codes so you always save.`,
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {

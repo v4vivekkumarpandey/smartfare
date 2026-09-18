@@ -4,7 +4,7 @@ import Image from "next/image";
 import { CalendarDays, User } from "lucide-react";
 import { getPost, getPostSlugs, getAllPosts, getStore } from "@/lib/content";
 import { site } from "@/lib/site";
-import { toAbsoluteUrl } from "@/lib/schema";
+import { toAbsoluteUrl, breadcrumbJsonLd } from "@/lib/schema";
 import { formatDate } from "@/lib/cn";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { PostBody } from "@/components/blog/PostBody";
@@ -55,9 +55,16 @@ export default async function BlogPostPage({
 
   const postType = post.postType ?? "post";
 
-  const related = (await getAllPosts())
-    .filter((p) => p.slug !== post.slug)
-    .slice(0, 3);
+  const otherPosts = (await getAllPosts()).filter((p) => p.slug !== post.slug);
+  const relatedByTopic = otherPosts.filter(
+    (p) =>
+      (post.category && p.category === post.category) ||
+      p.tags.some((t) => post.tags.includes(t))
+  );
+  const related = [
+    ...relatedByTopic,
+    ...otherPosts.filter((p) => !relatedByTopic.includes(p)),
+  ].slice(0, 3);
 
   const stores = post.storeSlugs
     ? (await Promise.all(post.storeSlugs.map((s) => getStore(s)))).filter(
@@ -89,7 +96,7 @@ export default async function BlogPostPage({
           headline: post.title,
           description: post.excerpt,
           datePublished: post.date,
-          dateModified: post.date,
+          dateModified: post.updatedDate ?? post.date,
           author: { "@type": "Organization", name: post.author },
           publisher: { "@type": "Organization", name: site.name },
           mainEntityOfPage: `${site.url}/blog/${post.slug}`,
@@ -99,6 +106,13 @@ export default async function BlogPostPage({
   return (
     <>
       <JsonLd data={jsonLd} />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { label: "Home", href: "/" },
+          { label: "Blog", href: "/blog" },
+          { label: post.title, href: `/blog/${post.slug}` },
+        ])}
+      />
       <article className="mx-auto max-w-3xl px-4 py-6">
         <Breadcrumbs
           items={[

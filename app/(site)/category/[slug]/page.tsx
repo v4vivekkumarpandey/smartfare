@@ -31,7 +31,7 @@ export async function generateMetadata({
   if (!category) return {};
   const stores = await getStoresByCategory(category.slug);
   return {
-    title: `${category.name} Coupons & Promo Codes — Verified Deals`,
+    title: `${category.name} Coupons — Verified Deals`,
     description: truncate(category.description, 158),
     alternates: { canonical: `/category/${category.slug}` },
     openGraph: {

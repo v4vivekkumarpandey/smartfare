@@ -56,7 +56,7 @@ export async function generateMetadata({
   const store = await getStore(slug);
   if (!store) return {};
   const count = activeCoupons(store).length;
-  const title = `${store.name} Promo Code & Discount Code — ${count} Verified Offers`;
+  const title = `${store.name} Promo Codes — ${count} Verified Offers & Deals`;
   const description = truncate(
     `${count} verified ${store.name} coupon codes and deals for ${new Date().getFullYear()}. ${store.description}`,
     158

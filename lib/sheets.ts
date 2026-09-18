@@ -29,7 +29,7 @@ import { autoLogoUrl } from "./logo";
  *   settings   : key | value   (site name/logo, hero copy, trust badges)
  *   blog       : slug | title | excerpt | cover | author | date | category |
  *                tags | body | published | postType | startDate | endDate |
- *                occasion | storeSlugs
+ *                occasion | storeSlugs | updatedDate
  *
  *   `postType` is one of "post" (default), "sale-calendar", or "gift-guide" —
  *   all three live together at /blog/[slug]. `startDate`/`endDate` are used
@@ -279,6 +279,7 @@ export async function loadFromSheets(): Promise<{
         endDate: r.enddate || undefined,
         occasion: r.occasion ? r.occasion.toLowerCase() : undefined,
         storeSlugs: r.storeslugs ? splitList(r.storeslugs) : undefined,
+        updatedDate: r.updateddate || undefined,
       };
     });
 

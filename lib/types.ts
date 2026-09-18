@@ -111,6 +111,8 @@ export interface BlogPost {
   occasion?: string;
   /** sale-calendar / gift-guide only — store slugs to cross-link as StoreCards */
   storeSlugs?: string[];
+  /** ISO date of the last real content edit; falls back to `date` when absent */
+  updatedDate?: string;
 }
 
 export type MenuLocation = "header" | "footer" | "both";
