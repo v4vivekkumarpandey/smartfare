@@ -75,6 +75,14 @@
     {
       "q": "Which infrastructure provider should I pick on Cloudways?",
       "a": "DigitalOcean is the cheapest entry point and the most common choice for small-to-mid sites. Vultr and Linode are similarly priced alternatives. AWS and Google Compute Engine cost more for comparable specs but suit teams that already standardize on those clouds or need their specific regions/compliance features."
+    },
+    {
+      "q": "Do I need a promo code to get Cloudways's best price?",
+      "a": "Not always — some Cloudways deals apply automatically at checkout, while others require pasting a revealed code into the promo/coupon field before you pay. Check each listing above for details."
+    },
+    {
+      "q": "How do I get started with Cloudways?",
+      "a": "Pick a plan that fits your needs on Cloudways's website, complete checkout, and your account is usually ready within minutes."
     }
   ],
   "relatedStores": [

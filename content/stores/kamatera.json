@@ -81,6 +81,10 @@
     {
       "q": "Is Kamatera billed monthly or hourly?",
       "a": "Both options are available. Monthly servers are prepaid with prorated charges for mid-month upgrades, while hourly servers bill by the minute and only charge while the server is powered on. Neither option requires a long-term contract."
+    },
+    {
+      "q": "Do I need a promo code to get Kamatera's best price?",
+      "a": "Not always — some Kamatera deals apply automatically at checkout, while others require pasting a revealed code into the promo/coupon field before you pay. Check each listing above for details."
     }
   ],
   "relatedStores": [

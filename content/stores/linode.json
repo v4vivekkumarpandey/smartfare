@@ -75,6 +75,14 @@
     {
       "q": "How is Linode billed?",
       "a": "Hourly, capped at a monthly rate — the entry Shared CPU plan starts at $5/month (1 GB RAM, 1 vCPU, 25 GB SSD). Run an instance for part of a month and you're charged only for the hours used, up to that plan's monthly cap."
+    },
+    {
+      "q": "Does Linode offer free credit for new accounts?",
+      "a": "Yes — Linode runs limited-time free credit offers for new accounts; check the current promotion before signing up."
+    },
+    {
+      "q": "Do I need a promo code to get Linode's best price?",
+      "a": "Not always — some Linode deals apply automatically at checkout, while others require pasting a revealed code into the promo/coupon field before you pay. Check each listing above for details."
     }
   ],
   "relatedStores": [

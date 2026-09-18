@@ -79,6 +79,10 @@
     {
       "q": "Is Kinsta a budget hosting option?",
       "a": "No. Kinsta is positioned as premium managed WordPress hosting starting around $35/month for a single low-traffic site, built on Google Cloud Platform — it's priced well above budget cPanel shared hosts like Hostinger or Namecheap in exchange for managed infrastructure, daily backups and WordPress-specialized support."
+    },
+    {
+      "q": "Does Kinsta offer a money-back guarantee?",
+      "a": "Yes — Kinsta backs its plans with a 30-day money-back guarantee, so you can request a refund if it's not a good fit."
     }
   ],
   "relatedStores": [

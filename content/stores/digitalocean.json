@@ -75,6 +75,14 @@
     {
       "q": "Is DigitalOcean good for beginners?",
       "a": "It's built for developers comfortable with a command line and basic server administration, not for someone who wants a plug-and-play shared-hosting dashboard. Non-technical beginners are usually better served by a managed shared host."
+    },
+    {
+      "q": "Do I need a promo code to get DigitalOcean's best price?",
+      "a": "Not always — some DigitalOcean deals apply automatically at checkout, while others require pasting a revealed code into the promo/coupon field before you pay. Check each listing above for details."
+    },
+    {
+      "q": "How do I get started with DigitalOcean?",
+      "a": "Pick a plan that fits your needs on DigitalOcean's website, complete checkout, and your account is usually ready within minutes."
     }
   ],
   "relatedStores": [

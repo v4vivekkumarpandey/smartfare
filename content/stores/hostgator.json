@@ -79,6 +79,10 @@
     {
       "q": "What is HostGator's money-back guarantee window?",
       "a": "30 days from purchase for hosting fees. Domain registration charges and other add-on services are non-refundable."
+    },
+    {
+      "q": "Does HostGator include a free SSL certificate?",
+      "a": "Yes — every HostGator plan includes a free SSL certificate so your site is secured over HTTPS from day one."
     }
   ],
   "relatedStores": [

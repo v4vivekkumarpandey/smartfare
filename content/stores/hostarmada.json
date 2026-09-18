@@ -75,6 +75,14 @@
     {
       "q": "Is HostArmada's lowest price locked in for renewal?",
       "a": "No. The cheapest advertised rates require paying for a full 3-year term upfront, and renew at a noticeably higher monthly rate afterward — check the renewal price for your specific plan before committing to the longest term."
+    },
+    {
+      "q": "Does HostArmada include a free domain?",
+      "a": "Yes, HostArmada's plans include a free domain registration for the first year. It reverts to the standard renewal price after that."
+    },
+    {
+      "q": "Does HostArmada include a free SSL certificate?",
+      "a": "Yes — every HostArmada plan includes a free SSL certificate so your site is secured over HTTPS from day one."
     }
   ],
   "relatedStores": [

@@ -80,6 +80,10 @@
     {
       "q": "Can I cancel a Hetzner Cloud server anytime?",
       "a": "Yes. Cloud servers can be deleted immediately from the Cloud Console and are billed hourly, so there's no long-term lock-in — you only pay for the time the server actually existed."
+    },
+    {
+      "q": "Do I need a promo code to get Hetzner's best price?",
+      "a": "Not always — some Hetzner deals apply automatically at checkout, while others require pasting a revealed code into the promo/coupon field before you pay. Check each listing above for details."
     }
   ],
   "relatedStores": [

@@ -61,7 +61,28 @@
       "successRate": 88
     }
   ],
-  "faqs": [],
+  "faqs": [
+    {
+      "q": "Do I need a promo code to get Amazon's best price?",
+      "a": "Not always — some Amazon deals apply automatically at checkout, while others require pasting a revealed code into the promo/coupon field before you pay. Check each listing above for details."
+    },
+    {
+      "q": "How do I get started with Amazon?",
+      "a": "Pick a plan that fits your needs on Amazon's website, complete checkout, and your account is usually ready within minutes."
+    },
+    {
+      "q": "Is Amazon good value for education?",
+      "a": "Amazon is one of the more popular education providers — compare its plans and any current deal above against your specific needs before committing."
+    },
+    {
+      "q": "Can I cancel my Amazon plan anytime?",
+      "a": "Most Amazon plans can be cancelled from your account dashboard; check Amazon's own terms for any minimum-term or refund conditions that apply to your plan."
+    },
+    {
+      "q": "How often are Amazon deals updated?",
+      "a": "Our team checks Amazon's offers regularly and updates this page when new deals go live or old ones expire."
+    }
+  ],
   "relatedStores": [],
   "updated": "2026-09-18"
 }

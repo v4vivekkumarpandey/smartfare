@@ -79,6 +79,10 @@
     {
       "q": "Is Hostwinds' advertised shared hosting price what renews?",
       "a": "No. The lowest advertised rates ($3.24-$5.84/month depending on tier) require the longest signup term and renew higher afterward ($6.99-$10.99/month) — check the renewal rate for your specific term before buying."
+    },
+    {
+      "q": "Does Hostwinds include a free domain?",
+      "a": "Yes, Hostwinds's plans include a free domain registration for the first year. It reverts to the standard renewal price after that."
     }
   ],
   "relatedStores": [

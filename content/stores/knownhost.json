@@ -79,6 +79,10 @@
     {
       "q": "Does KnownHost offer VPS hosting too?",
       "a": "Yes — beyond shared hosting, KnownHost sells both fully managed VPS (roughly from $43/month, with KnownHost handling server maintenance and security) and unmanaged VPS with root access (roughly from $5/month) for users who want to manage the server themselves."
+    },
+    {
+      "q": "Does KnownHost include a free SSL certificate?",
+      "a": "Yes — every KnownHost plan includes a free SSL certificate so your site is secured over HTTPS from day one."
     }
   ],
   "relatedStores": [

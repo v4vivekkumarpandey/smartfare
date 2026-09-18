@@ -72,6 +72,18 @@
     {
       "q": "Is Hostinger's promotional price the price I'll always pay?",
       "a": "No. Hostinger's lowest advertised prices require a long upfront term (often 24-48 months) and the plan renews at a higher rate afterward — check the renewal price before committing, not just the introductory offer."
+    },
+    {
+      "q": "Does Hostinger offer a money-back guarantee?",
+      "a": "Yes — Hostinger backs its plans with a 30-day money-back guarantee, so you can request a refund if it's not a good fit."
+    },
+    {
+      "q": "Does Hostinger include a free domain?",
+      "a": "Yes, Hostinger's plans include a free domain registration for the first year. It reverts to the standard renewal price after that."
+    },
+    {
+      "q": "Does Hostinger include a free SSL certificate?",
+      "a": "Yes — every Hostinger plan includes a free SSL certificate so your site is secured over HTTPS from day one."
     }
   ],
   "relatedStores": [

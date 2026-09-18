@@ -75,6 +75,14 @@
     {
       "q": "Does Nexcess include a free domain?",
       "a": "No — Nexcess doesn't bundle a free domain with any plan. You get a free subdomain to launch with, but a custom domain has to be registered or transferred in separately."
+    },
+    {
+      "q": "Does Nexcess offer a money-back guarantee?",
+      "a": "Yes — Nexcess backs its plans with a 30-day money-back guarantee, so you can request a refund if it's not a good fit."
+    },
+    {
+      "q": "Does Nexcess include a free SSL certificate?",
+      "a": "Yes — every Nexcess plan includes a free SSL certificate so your site is secured over HTTPS from day one."
     }
   ],
   "relatedStores": [

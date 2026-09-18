@@ -75,6 +75,14 @@
     {
       "q": "Is DreamHost's advertised price what I'll pay on renewal?",
       "a": "No. DreamHost's lowest prices are introductory for the first year only; shared hosting renews at $10.99-$25.99/month depending on the tier once that term ends — check the renewal rate for your specific plan before buying."
+    },
+    {
+      "q": "Does DreamHost include a free SSL certificate?",
+      "a": "Yes — every DreamHost plan includes a free SSL certificate so your site is secured over HTTPS from day one."
+    },
+    {
+      "q": "Do I need a promo code to get DreamHost's best price?",
+      "a": "Not always — some DreamHost deals apply automatically at checkout, while others require pasting a revealed code into the promo/coupon field before you pay. Check each listing above for details."
     }
   ],
   "relatedStores": [

@@ -79,6 +79,10 @@
     {
       "q": "Is Pantheon cheap hosting for a small personal site?",
       "a": "Not really. Pantheon's Basic plan starts around $41-55/month, and Performance plans for higher-traffic sites start around $200/month and scale into the thousands for the largest tiers — it's priced for agencies and businesses running WordPress or Drupal sites professionally, not budget shared hosting."
+    },
+    {
+      "q": "What uptime guarantee does Pantheon offer?",
+      "a": "Pantheon backs its hosting with a 99.9% uptime SLA."
     }
   ],
   "relatedStores": [

@@ -75,6 +75,14 @@
     {
       "q": "What hosting types does SiteGround offer?",
       "a": "SiteGround offers shared hosting (StartUp/GrowBig/GoGeek), managed WordPress and WooCommerce hosting, and cloud hosting, all running on Google Cloud infrastructure."
+    },
+    {
+      "q": "Does SiteGround offer a money-back guarantee?",
+      "a": "Yes — SiteGround backs its plans with a 30-day money-back guarantee, so you can request a refund if it's not a good fit."
+    },
+    {
+      "q": "Does SiteGround include a free SSL certificate?",
+      "a": "Yes — every SiteGround plan includes a free SSL certificate so your site is secured over HTTPS from day one."
     }
   ],
   "relatedStores": [

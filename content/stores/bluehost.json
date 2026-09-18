@@ -75,6 +75,14 @@
     {
       "q": "Does Bluehost include a free domain?",
       "a": "Yes, new hosting plans include a free domain registration for the first year. The domain reverts to Bluehost's standard renewal price after that."
+    },
+    {
+      "q": "Does Bluehost offer a money-back guarantee?",
+      "a": "Yes — Bluehost backs its plans with a 30-day money-back guarantee, so you can request a refund if it's not a good fit."
+    },
+    {
+      "q": "Does Bluehost include a free SSL certificate?",
+      "a": "Yes — every Bluehost plan includes a free SSL certificate so your site is secured over HTTPS from day one."
     }
   ],
   "relatedStores": [

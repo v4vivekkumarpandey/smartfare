@@ -75,6 +75,14 @@
     {
       "q": "Does Namecheap offer a free domain?",
       "a": "Yes, on longer-term (typically annual or longer) shared hosting plans — check the specific plan's terms for eligibility."
+    },
+    {
+      "q": "Does Namecheap offer a money-back guarantee?",
+      "a": "Yes — Namecheap backs its plans with a 30-day money-back guarantee, so you can request a refund if it's not a good fit."
+    },
+    {
+      "q": "Does Namecheap include a free SSL certificate?",
+      "a": "Yes — every Namecheap plan includes a free SSL certificate so your site is secured over HTTPS from day one."
     }
   ],
   "relatedStores": [

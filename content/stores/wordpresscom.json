@@ -79,6 +79,10 @@
     {
       "q": "Do I need the Commerce plan to sell products?",
       "a": "The Commerce plan is WordPress.com's dedicated ecommerce tier, bundling full WooCommerce integration with 0% WordPress.com transaction fees and support for selling in 60+ countries. The Premium plan only supports simple PayPal/Stripe payment buttons, not a full store."
+    },
+    {
+      "q": "Does WordPress.com include a free domain?",
+      "a": "Yes, WordPress.com's plans include a free domain registration for the first year. It reverts to the standard renewal price after that."
     }
   ],
   "relatedStores": [

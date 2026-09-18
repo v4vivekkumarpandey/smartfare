@@ -79,6 +79,10 @@
     {
       "q": "Is Pagely a good fit for small, low-budget sites?",
       "a": "Generally no — Pagely is positioned for enterprise and high-traffic sites, with pricing several times higher than mainstream shared hosts. Small sites with modest budgets are typically better served by a budget host and should only consider Pagely if they specifically need AWS-backed managed WordPress infrastructure at scale."
+    },
+    {
+      "q": "Do I need a promo code to get Pagely's best price?",
+      "a": "Not always — some Pagely deals apply automatically at checkout, while others require pasting a revealed code into the promo/coupon field before you pay. Check each listing above for details."
     }
   ],
   "relatedStores": [
