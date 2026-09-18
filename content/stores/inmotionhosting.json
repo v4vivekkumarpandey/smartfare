@@ -1,0 +1,36 @@
+{
+  "slug": "inmotionhosting",
+  "name": "InMotion Hosting",
+  "logo": "",
+  "url": "https://www.inmotionhosting.com",
+  "category": "hosting",
+  "tagline": "cPanel shared hosting with a 90-day money-back guarantee and free site migrations",
+  "rating": 4.6,
+  "reviewCount": 2974,
+  "description": "InMotion Hosting is a US-based web host offering cPanel-based shared, WordPress, VPS and dedicated hosting, known for a long 90-day money-back guarantee and free professional site migrations.",
+  "about": [
+    "InMotion Hosting's shared hosting comes in four tiers: Core (1 website, 100GB SSD storage), Launch (2 websites, unlimited NVMe SSD storage), Power (10 websites, unlimited NVMe SSD storage) and Pro (40 websites, unlimited NVMe SSD storage). All four run on the industry-standard cPanel control panel and include free SSL, and a free domain credit on 12-36 month terms.",
+    "InMotion's lowest advertised prices apply only to longer signup terms and jump sharply at renewal — Launch runs roughly $4.99/month to start but renews around $13.99/month, Power around $17.99/month, and Pro around $24.99/month once the introductory term ends. Confirm the exact current promo and renewal rate on InMotion's own pricing page before checkout, since it changes periodically and varies by term length."
+  ],
+  "policies": [
+    "InMotion Hosting backs shared hosting plans with a 90-day money-back guarantee — longer than the 30-day window most competitors offer."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does InMotion Hosting use cPanel?",
+      "a": "Yes — all of InMotion's shared, WordPress and VPS hosting plans run on the industry-standard cPanel control panel."
+    },
+    {
+      "q": "How long is InMotion Hosting's money-back guarantee?",
+      "a": "90 days on shared hosting plans, which is notably longer than the 30-day window offered by most other budget hosts."
+    },
+    {
+      "q": "Does InMotion Hosting offer free website migration?",
+      "a": "Yes — InMotion's migration team will transfer files, databases and email accounts from your current host at no charge on shared, WordPress and VPS plans, typically for up to a handful of sites depending on plan."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

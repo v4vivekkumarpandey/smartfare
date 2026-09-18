@@ -1,0 +1,36 @@
+{
+  "slug": "ionos",
+  "name": "IONOS",
+  "logo": "",
+  "url": "https://www.ionos.com",
+  "category": "hosting",
+  "tagline": "Web hosting with a custom control panel, NVMe storage, and a free domain",
+  "rating": 4.6,
+  "reviewCount": 44983,
+  "description": "IONOS is a web hosting and domain provider offering shared hosting plans built on its own \"My IONOS\" control panel rather than cPanel, with NVMe SSD storage and a free domain for the first year on every tier.",
+  "about": [
+    "IONOS shared hosting comes in four tiers: Essential (100GB NVMe SSD storage, 1 email account), Starter (200GB NVMe SSD storage, 2 email accounts, CDN included), Plus (350GB NVMe SSD storage, 4 email accounts, unlimited websites), and Ultimate (500GB NVMe SSD storage, 5 email accounts, higher PHP memory limits for resource-heavy sites). All tiers include unlimited websites, unmetered bandwidth, a free domain for the first year, a free SSL certificate, and one-click installs for WordPress and other apps.",
+    "Introductory pricing on the first term runs roughly $4/month (Essential), $6/month (Starter), and around $10/month (Ultimate), with Plus frequently discounted well below its list price as a limited-time offer — but each plan renews at a materially higher standard rate ($8, $10 and $18/month respectively for Essential, Starter and Ultimate) once the intro term ends. Check the live checkout price and renewal rate before buying, since IONOS runs frequent promotions and adjusted some renewal pricing in 2026."
+  ],
+  "policies": [
+    "IONOS backs its hosting plans with a 30-day money-back guarantee."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does IONOS use cPanel?",
+      "a": "No — IONOS built its own \"My IONOS\" control panel instead of licensing cPanel. It handles domains, email, databases, file transfers, SSL and WordPress installs, and is generally considered simpler for beginners, though power users who rely on cPanel-specific tools like Softaculous may find it more limited."
+    },
+    {
+      "q": "Is IONOS's advertised price what I'll pay on renewal?",
+      "a": "No. IONOS's lowest prices (including deals as low as $1/month on some tiers) are introductory for the first term only. Plans renew at standard rates — around $8/month for Essential and $10/month for Starter — once that term ends, so check the renewal price at checkout before committing."
+    },
+    {
+      "q": "Does IONOS include a free domain and SSL?",
+      "a": "Yes — every IONOS shared hosting plan includes a free domain for the first year and a free SSL certificate, along with unmetered bandwidth and unlimited websites."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

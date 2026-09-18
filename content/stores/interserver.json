@@ -1,0 +1,36 @@
+{
+  "slug": "interserver",
+  "name": "InterServer",
+  "logo": "",
+  "url": "https://www.interserver.net",
+  "category": "hosting",
+  "tagline": "Budget shared hosting with a $2.50 first month and a price-lock renewal rate",
+  "rating": 4.3,
+  "reviewCount": 2507,
+  "description": "InterServer is a New Jersey-based hosting provider known for its low-cost Standard Web Hosting plan, unmetered storage and bandwidth, and a renewal-rate policy that InterServer markets as a price-lock guarantee.",
+  "about": [
+    "InterServer's shared hosting lineup is built around a single tier, Standard Web Hosting, priced at $2.50 for the first month and renewing at $7/month afterward — that same $7 rate applies whether you pick monthly, 6-month, 12-month or 24-month billing (the longer terms just prepay that period upfront: $15/$30/$60 respectively, then renewing at $42/$84/$168 for the same term length). The plan includes unmetered storage, bandwidth, email and FTP accounts, weekly backups, CloudLinux, SSD caching and a free Cloudflare CDN. It runs on DirectAdmin by default rather than cPanel; cPanel is available as a paid add-on for customers who prefer it.",
+    "InterServer advertises a price-lock guarantee: unlike hosts that quietly raise renewal prices each cycle, the $7/month rate you renew into is designed to stay $7/month for as long as you keep the account, rather than climbing further at each subsequent renewal. Independent reviews consistently describe the policy this way, though InterServer's own pricing page doesn't spell out the promise in those exact words — so treat it as InterServer's standing practice rather than a contractual line item, and confirm the current rate at checkout. Also note there's no free domain bundled in; registering one during signup costs $7.99, and a free SSL certificate is included but cPanel is not."
+  ],
+  "policies": [
+    "InterServer backs its hosting plans with a 30-day money-back guarantee."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does InterServer's price really stay the same after renewal?",
+      "a": "The $2.50 first-month rate is introductory only. After that, InterServer's Standard Web Hosting renews at $7/month, and that $7 rate is what InterServer's price-lock guarantee is meant to hold steady going forward — it isn't designed to climb further at each subsequent renewal the way many budget hosts' rates do. Still, always confirm the current rate at checkout since promotions and policies can change."
+      },
+    {
+      "q": "Does InterServer use cPanel?",
+      "a": "Not by default. InterServer's Standard Web Hosting plan runs on DirectAdmin at no extra cost; cPanel is offered as a separate paid add-on for customers who specifically want it."
+    },
+    {
+      "q": "Does InterServer include a free domain?",
+      "a": "No. InterServer doesn't bundle a free domain with its shared hosting plan — registering a new domain during signup is a paid add-on (around $7.99). A free SSL certificate is included, however."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

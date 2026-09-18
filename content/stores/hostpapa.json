@@ -1,0 +1,40 @@
+{
+  "slug": "hostpapa",
+  "name": "HostPapa",
+  "logo": "",
+  "url": "https://www.hostpapa.com",
+  "category": "hosting",
+  "tagline": "cPanel shared hosting with a free website builder and 24/7 multilingual support",
+  "rating": 4.7,
+  "reviewCount": 3031,
+  "description": "HostPapa is a Canadian-founded web hosting provider offering cPanel-based shared hosting with a free website builder, free migration service, and 24/7 phone, chat and email support.",
+  "about": [
+    "HostPapa's shared hosting comes in four tiers, all built on the industry-standard cPanel control panel: Essentials (1 website, 25GB NVMe storage), Growth (5 websites, 100GB NVMe storage), Premium (unlimited websites, 200GB NVMe storage, marketed as its 'Best Deal') and Elite (unlimited websites, unmetered NVMe storage, marketed as 'Max Value'). All four include a free domain for the first year, a free SSL certificate (a premium single-domain certificate on Premium, a premium wildcard certificate on Elite), a free website builder, and a free managed migration service.",
+    "Introductory pricing on the longest available term runs $2.95/month (Essentials), $5.95/month (Growth), $6.95/month (Premium) or $9.95/month (Elite) — but renews at roughly $12.99, $17.99, $24.99 and $30.99 per month respectively once the initial term ends, more than tripling on the top tier. Budget from the renewal rate rather than the headline intro price if you plan to keep the site for the long term."
+  ],
+  "policies": [
+    "HostPapa backs its hosting plans with a 30-day money-back guarantee."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does HostPapa use cPanel?",
+      "a": "Yes — all of HostPapa's shared hosting plans, from Essentials through Elite, run on the industry-standard cPanel control panel."
+    },
+    {
+      "q": "Is HostPapa's advertised price what I'll pay on renewal?",
+      "a": "No. HostPapa's lowest prices are introductory rates tied to a long upfront term (commonly 36 months); each plan renews at a noticeably higher monthly rate afterward — for example Elite's intro rate of $9.95/month renews at roughly $30.99/month. Check HostPapa's renewal pricing page for the current rate before buying."
+    },
+    {
+      "q": "Does HostPapa offer free website migration?",
+      "a": "Yes — HostPapa includes a free, fully managed migration service on its hosting plans, where its team transfers files, databases and email accounts while trying to keep the old site live to avoid downtime."
+    },
+    {
+      "q": "What's the entry-level Essentials plan limited to?",
+      "a": "Essentials, HostPapa's cheapest tier, is capped at a single website and 25GB of NVMe storage — the Growth, Premium and Elite tiers step up to multiple or unlimited websites and more (or unmetered) storage."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

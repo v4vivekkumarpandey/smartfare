@@ -1,0 +1,36 @@
+{
+  "slug": "dreamhost",
+  "name": "DreamHost",
+  "logo": "",
+  "url": "https://www.dreamhost.com",
+  "category": "hosting",
+  "tagline": "Custom-panel web hosting with unmetered bandwidth and a free domain on annual plans",
+  "rating": 4.6,
+  "reviewCount": 8206,
+  "description": "DreamHost is a long-running web hosting provider offering shared, WordPress-optimized (DreamPress) and VPS hosting on its own custom control panel, with unmetered bandwidth and a free domain on annual plans.",
+  "about": [
+    "DreamHost's shared Web Hosting comes in three tiers: Launch (25 websites, 25GB NVMe SSD storage), Growth (50 websites, 50GB NVMe SSD storage) and Scale (100 websites, 100GB NVMe SSD storage). All three run on DreamHost's own custom control panel rather than cPanel, include unmetered bandwidth, a free domain for the first year, unlimited free SSL certificates, and daily automated backups.",
+    "Introductory first-year pricing runs $2.89/month (Launch), $3.99/month (Growth) or $9.99/month (Scale) — but renews at $10.99, $12.99 and $25.99 per month respectively once the first term ends. DreamHost also includes a complimentary professional email trial for three months, after which it's billed separately if kept — factor that add-on cost in alongside the renewal jump before committing."
+  ],
+  "policies": [
+    "DreamHost backs its shared hosting plans with a 30-day money-back guarantee (paid by credit card; domain registration fees are non-refundable). Note: DreamHost was long known for a longer 97-day guarantee, but its current pricing page states 30 days as of this writing — confirm at checkout."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does DreamHost use cPanel?",
+      "a": "No — DreamHost built its own custom control panel instead of the industry-standard cPanel. It handles domains, email, databases and one-click installs, but the layout and workflow differ from cPanel if you're switching hosts."
+    },
+    {
+      "q": "How long is DreamHost's money-back guarantee?",
+      "a": "30 days on shared hosting plans when paid by credit card, per DreamHost's current pricing page. DreamHost previously advertised a longer 97-day window, so it's worth confirming the exact terms at checkout."
+    },
+    {
+      "q": "Is DreamHost's advertised price what I'll pay on renewal?",
+      "a": "No. DreamHost's lowest prices are introductory for the first year only; shared hosting renews at $10.99-$25.99/month depending on the tier once that term ends — check the renewal rate for your specific plan before buying."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

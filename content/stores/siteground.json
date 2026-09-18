@@ -1,0 +1,36 @@
+{
+  "slug": "siteground",
+  "name": "SiteGround",
+  "logo": "",
+  "url": "https://www.siteground.com",
+  "category": "hosting",
+  "tagline": "Google Cloud-powered hosting with a custom Site Tools panel and 24/7 support",
+  "rating": 4.9,
+  "reviewCount": 30660,
+  "description": "SiteGround is a Bulgaria-founded web hosting provider running on Google Cloud infrastructure, known for its proprietary Site Tools dashboard, free daily backups on every plan, and consistently high customer-review scores.",
+  "about": [
+    "SiteGround's shared hosting comes in three tiers: StartUp (1 website, 10GB storage), GrowBig (unlimited websites, 50GB storage), and GoGeek (unlimited websites, 100GB storage, priority support and staging with Git integration). All three run on SiteGround's own Site Tools panel rather than cPanel, include a free SSL certificate, a free domain for the first year, free daily backups with a 30-day history, and a free CDN across 170+ locations.",
+    "Introductory pricing starts at $3.99/month (StartUp), $6.69/month (GrowBig) or $10.69/month (GoGeek) on the first term, but renews at $17.99, $29.99 and $44.99 per month respectively once that term ends — a steeper jump than most budget hosts. Check the current renewal rate for your term length before buying, since the increase applies regardless of whether you prepay for 12 or 24 months."
+  ],
+  "policies": [
+    "SiteGround backs its hosting plans with a 30-day money-back guarantee."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does SiteGround use cPanel?",
+      "a": "No — SiteGround built its own control panel called Site Tools instead of cPanel. It covers domains, email, backups and site management from one dashboard, but has a different layout if you're used to cPanel."
+    },
+    {
+      "q": "Is SiteGround's advertised price what I'll pay after the first term?",
+      "a": "No. SiteGround's low introductory prices only apply to the first billing term; renewal prices are significantly higher — $17.99/month (StartUp), $29.99/month (GrowBig) and $44.99/month (GoGeek) — so factor the renewal cost into your decision, not just the signup price."
+    },
+    {
+      "q": "What hosting types does SiteGround offer?",
+      "a": "SiteGround offers shared hosting (StartUp/GrowBig/GoGeek), managed WordPress and WooCommerce hosting, and cloud hosting, all running on Google Cloud infrastructure."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

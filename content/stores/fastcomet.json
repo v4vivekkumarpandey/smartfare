@@ -1,0 +1,36 @@
+{
+  "slug": "fastcomet",
+  "name": "FastComet",
+  "logo": "",
+  "url": "https://www.fastcomet.com",
+  "category": "hosting",
+  "tagline": "cPanel shared hosting with NVMe storage and a 30-day guarantee",
+  "rating": 4.7,
+  "reviewCount": 3909,
+  "description": "FastComet is a cPanel-based web host offering shared, WordPress, cloud VPS and dedicated hosting, with NVMe SSD storage across all shared tiers and a 30-day money-back guarantee.",
+  "about": [
+    "FastComet's shared hosting comes in four tiers: Starter (1 website, 10GB NVMe storage), Essential (1 website, 20GB NVMe storage), Plus (unlimited websites, 30GB NVMe storage) and Extra (unlimited websites, 40GB NVMe storage). All four run on standard cPanel, include a free domain, free SSL and a Cloudflare CDN, and are also sold as WordPress-optimized plans with LiteSpeed caching and the WordPress Toolkit.",
+    "Introductory pricing starts at $1.99/month (Starter), $2.99/month (Essential), $3.99/month (Plus) and $5.49/month (Extra) on the first term, but renews at $9.95, $12.95, $17.95 and $24.95 per month respectively — roughly a 4-5x jump. The Starter and Essential tiers are also capped at a single website, so anyone planning more than one site needs Plus or higher regardless of the lower entry price."
+  ],
+  "policies": [
+    "FastComet backs its hosting plans with a 30-day money-back guarantee."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does FastComet use cPanel?",
+      "a": "Yes — all FastComet shared, WordPress, cloud VPS and dedicated hosting plans run on standard cPanel, so existing cPanel users and migration tools work as expected."
+    },
+    {
+      "q": "What is FastComet's renewal price after the introductory term?",
+      "a": "Renewal rates run $9.95/month (Starter), $12.95/month (Essential), $17.95/month (Plus) and $24.95/month (Extra) — several times the advertised introductory price, so it's worth budgeting for the renewal rate rather than the first-term price alone."
+    },
+    {
+      "q": "Can I host more than one website on FastComet's cheapest plan?",
+      "a": "No. The Starter and Essential tiers are limited to a single website each; unlimited websites require stepping up to the Plus or Extra plan."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

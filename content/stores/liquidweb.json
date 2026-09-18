@@ -1,0 +1,40 @@
+{
+  "slug": "liquidweb",
+  "name": "Liquid Web",
+  "logo": "",
+  "url": "https://www.liquidweb.com",
+  "category": "hosting",
+  "tagline": "Fully managed VPS, cloud dedicated and WooCommerce hosting with 24/7 human support",
+  "rating": 3.8,
+  "reviewCount": 2788,
+  "description": "Liquid Web is a premium managed hosting provider focused on Cloud VPS, cloud dedicated servers and managed WooCommerce/WordPress hosting (the latter delivered through its Nexcess brand), built around 24/7 phone, chat and helpdesk support rather than budget shared hosting.",
+  "about": [
+    "Liquid Web's self-managed Cloud VPS plans start with a Starter tier at $5/month (1 GB RAM, 1 vCPU, 30 GB SSD), scaling through Standard (4 GB RAM, 2 vCPU, 80 GB SSD), Advanced (8 GB RAM, 4 vCPU, 240 GB SSD) and Premium (16 GB RAM, 6 vCPU, 440 GB SSD) tiers. cPanel, Plesk or InterWorx control panels are available as add-ons, and fully managed support tiers sit above the self-managed base price for customers who want Liquid Web's team handling server administration.",
+    "The Standard, Advanced and Premium VPS tiers carry a limited-time intro rate (roughly 50% off for the first two months) before renewing at the full listed price — for example Standard renews from $8.50/month up to $17/month. Liquid Web positions itself as a premium host rather than a cheap one, so its entry price is already closer to a mid-tier plan elsewhere; its 30-day money-back guarantee covers Cloud VPS, Cloud Dedicated and Private VPS Parent products, but does not apply to fully dedicated servers, Storm plans or colocation."
+  ],
+  "policies": [
+    "Liquid Web backs Cloud VPS, Cloud Dedicated and Private VPS Parent hosting with a 30-day money-back guarantee; fully dedicated servers, Storm plans and colocation are excluded from this guarantee."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Is Liquid Web good for beginners on a budget?",
+      "a": "Not really — Liquid Web is a premium managed hosting provider built around VPS, cloud dedicated servers and managed WooCommerce/WordPress, not cheap shared hosting. Its entry-level Cloud VPS plan starts at $5/month, but pricing and complexity climb quickly from there, so it suits site owners who need more control or performance than shared hosting offers rather than someone just starting a first small blog."
+    },
+    {
+      "q": "Does Liquid Web's advertised price stay the same after renewal?",
+      "a": "No. Several Cloud VPS tiers carry a limited-time introductory discount (around 50% off for the first two months) that expires and renews at the full listed price — for example, the Standard VPS plan renews from roughly $8.50/month up to $17/month. Check the current renewal rate for your specific plan before buying."
+    },
+    {
+      "q": "What control panel does Liquid Web use?",
+      "a": "Liquid Web's Cloud VPS plans don't come with a control panel by default, but cPanel, Plesk or InterWorx can be added. This differs from hosts that bundle a control panel into every plan by default."
+    },
+    {
+      "q": "Does Liquid Web offer a money-back guarantee?",
+      "a": "Yes, a 30-day money-back guarantee applies to Cloud VPS, Cloud Dedicated and Private VPS Parent hosting. It does not extend to fully dedicated servers, Storm server plans or colocation."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

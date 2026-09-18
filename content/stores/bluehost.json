@@ -1,0 +1,36 @@
+{
+  "slug": "bluehost",
+  "name": "Bluehost",
+  "logo": "",
+  "url": "https://www.bluehost.com",
+  "category": "hosting",
+  "tagline": "cPanel shared hosting with a free domain and official WordPress recommendation",
+  "rating": 4.5,
+  "reviewCount": 31654,
+  "description": "Bluehost is a widely used web hosting provider offering shared, WordPress, VPS and dedicated hosting on the industry-standard cPanel control panel, with a free domain for the first year and a 30-day money-back guarantee.",
+  "about": [
+    "Bluehost's shared hosting comes in three tiers: Starter (10 websites, 10GB NVMe storage), Business (50 websites, 50GB NVMe storage, free CDN) and eCommerce Essentials (100 websites, 100GB NVMe storage, free CDN, store tools). All three run on cPanel, include a free domain for the first year and a free SSL certificate, and are backed by a 99.99% uptime SLA.",
+    "Introductory pricing on the lowest 36-month term runs $3.99/month (Starter), $6.99/month (Business) or $14.99/month (eCommerce Essentials) — but renews at $9.99, $13.99 and $21.99 per month respectively once the initial term ends. The advertised rate only applies to new customers locking in the longest term, so check the renewal price for your plan before deciding how many years to prepay."
+  ],
+  "policies": [
+    "Bluehost backs its hosting plans with a 30-day money-back guarantee."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does Bluehost use cPanel?",
+      "a": "Yes — Bluehost's shared, WordPress and VPS hosting plans all run on the industry-standard cPanel control panel, pre-integrated into the Bluehost portal. Its newer Cloud hosting product does not use cPanel."
+    },
+    {
+      "q": "Is Bluehost's advertised price what I'll pay on renewal?",
+      "a": "No. Bluehost's lowest prices require prepaying a 36-month term and apply only to that first term. Shared hosting renews at $9.99/month (Starter), $13.99/month (Business) or $21.99/month (eCommerce Essentials) — more than double the introductory rate — so factor the renewal cost into the real long-term price before buying."
+    },
+    {
+      "q": "Does Bluehost include a free domain?",
+      "a": "Yes, new hosting plans include a free domain registration for the first year. The domain reverts to Bluehost's standard renewal price after that."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

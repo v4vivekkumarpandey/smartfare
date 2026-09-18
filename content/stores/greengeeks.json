@@ -1,0 +1,36 @@
+{
+  "slug": "greengeeks",
+  "name": "GreenGeeks",
+  "logo": "",
+  "url": "https://www.greengeeks.com",
+  "category": "hosting",
+  "tagline": "Renewable-energy-matched cPanel hosting with free nightly backups",
+  "rating": 4.6,
+  "reviewCount": 1707,
+  "description": "GreenGeeks is a cPanel-based web hosting provider known for matching its power use with renewable energy credits, running on LiteSpeed servers, and including free nightly backups on every shared hosting plan.",
+  "about": [
+    "GreenGeeks' shared hosting comes in three tiers: Lite (1 website, 25GB SSD storage), Pro (unlimited websites, 50GB SSD storage), and Premium (unlimited websites, 100GB SSD storage, dedicated IP). All three run on standard cPanel, include unmetered bandwidth, a free CDN, free Let's Encrypt SSL, free nightly backups, and a free domain for the first year on annual or longer terms.",
+    "Introductory pricing on the lowest term runs $2.95/month (Lite), $4.95/month (Pro) or $8.95/month (Premium) — but renews at $13.95, $18.95 and $30.95 per month respectively once the initial term ends. That's roughly a 3-4x jump at renewal, among the steeper increases in budget shared hosting, so it's worth budgeting for the renewal rate rather than the headline price before signing up for a long initial term."
+  ],
+  "policies": [
+    "GreenGeeks backs its hosting plans with a 30-day money-back guarantee."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Is GreenGeeks actually a green/renewable-energy host?",
+      "a": "GreenGeeks says it purchases renewable energy credits equal to 300% of the power its platform draws from the grid, through the Bonneville Environmental Foundation, and has partnered with One Tree Planted on tree-planting initiatives. The hosting itself still runs on standard grid electricity — the environmental claim is about offsetting via credits, not off-grid power."
+    },
+    {
+      "q": "Does GreenGeeks use cPanel?",
+      "a": "Yes — all GreenGeeks shared hosting plans run on the industry-standard cPanel control panel, so the interface will be familiar if you've used other cPanel-based hosts."
+    },
+    {
+      "q": "Is GreenGeeks' advertised price what I'll pay on renewal?",
+      "a": "No. GreenGeeks' lowest prices are introductory for the first term only. Shared hosting renews at $13.95/month (Lite), $18.95/month (Pro) or $30.95/month (Premium) — noticeably higher than the sign-up price, so factor the renewal cost into your decision rather than just the discounted rate."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

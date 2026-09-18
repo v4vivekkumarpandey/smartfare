@@ -1,0 +1,36 @@
+{
+  "slug": "a2hosting",
+  "name": "A2 Hosting",
+  "logo": "",
+  "url": "https://hosting.com",
+  "category": "hosting",
+  "tagline": "The A2 Hosting name now lives on as hosting.com, with NVMe speed on every tier",
+  "rating": 4.8,
+  "reviewCount": 7146,
+  "description": "A2 Hosting was acquired by World Host Group in January 2025 and rebranded as hosting.com in April 2025 — the same infrastructure and account systems continue under the new name, with shared, WordPress, VPS and dedicated hosting plans built on NVMe storage and cPanel.",
+  "about": [
+    "hosting.com's shared plans (the former Startup, Drive, Turbo Boost and Turbo Max tiers) are now called Starter, Plus, Pro and Max. Starter starts at $3.99/month (15GB storage, 1 website), Plus at $3.99/month (30GB, 2 websites), Pro at $6.99/month (50GB, 10 websites) and Max at $8.99/month (100GB, 100 websites), all billed on a 1-year introductory term with cPanel, NVMe storage and unlimited bandwidth included. Unlike the old A2 lineup, LiteSpeed caching and NVMe SSDs are now standard across every tier rather than reserved for the pricier \"Turbo\" plans.",
+    "The 1-year intro price is not the ongoing rate — hosting.com does not publish an exact renewal figure on its pricing page, but independent reviews consistently report steep renewal increases (commonly cited in the $11-$28/month range depending on tier), so check the actual renewal cost shown at checkout before buying rather than budgeting off the first-year price alone. A free domain (first year, on annual terms) and free SSL are included, backed by a 30-day money-back guarantee."
+  ],
+  "policies": [
+    "hosting.com backs shared hosting plans with a 30-day money-back guarantee (refunds don't cover domain registrations/renewals or add-on services)."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Is A2 Hosting still a separate company?",
+      "a": "No. A2 Hosting was acquired by World Host Group in January 2025 and rebranded as hosting.com in April 2025. Existing A2 features and infrastructure carried over — the old Startup/Drive/Turbo Boost/Turbo Max plans were renamed Starter/Plus/Pro/Max — but new signups now go through hosting.com."
+    },
+    {
+      "q": "Does A2 Hosting (hosting.com) use cPanel?",
+      "a": "Yes, shared hosting plans use the industry-standard cPanel control panel."
+    },
+    {
+      "q": "What happened to A2's Turbo performance tiers?",
+      "a": "Under A2, faster NVMe storage and LiteSpeed caching were limited to the pricier Turbo Boost and Turbo Max plans. Under hosting.com's rebranded lineup, NVMe storage and LiteSpeed caching are included on every shared hosting tier, including the entry-level Starter plan."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

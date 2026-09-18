@@ -1,0 +1,36 @@
+{
+  "slug": "stablehost",
+  "name": "StableHost",
+  "logo": "",
+  "url": "https://www.stablehost.com",
+  "category": "hosting",
+  "tagline": "Budget cPanel shared hosting with a 45-day money-back guarantee",
+  "rating": 4.8,
+  "reviewCount": 2444,
+  "description": "StableHost is a budget web hosting provider offering shared, reseller and VPS hosting on the industry-standard cPanel control panel, with a 45-day money-back guarantee and a free domain for the first year.",
+  "about": [
+    "StableHost's shared hosting comes in four tiers: Mini (1 website, 5GB disk space, no database support, built for static sites and email), Starter (1 website, unlimited disk space, unlimited databases), Pro (unlimited websites, unlimited disk space, unlimited databases), and Platinum (unlimited websites, higher-tier resources for larger or busier sites). All run on cPanel rather than a custom panel, and shared/reseller plans include a free domain for the first year plus free SSL.",
+    "Introductory pricing on a 12-month term runs $1.58/month (Mini), $6.35/month (Starter) and $10.06/month (Pro) — but renews at $2.11, $12.71 and $20.13 per month respectively once that first term ends, roughly doubling the bill. The free first-year domain also renews at around $13/year afterward. Factor both renewals into the real ongoing cost before signing up on the lowest headline price."
+  ],
+  "policies": [
+    "StableHost backs shared and reseller hosting plans with a 45-day money-back guarantee for first-time accounts."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does StableHost use cPanel?",
+      "a": "Yes — StableHost's shared and reseller hosting plans run on the industry-standard cPanel control panel. VPS plans need a separate managed-hosting add-on to include cPanel."
+    },
+    {
+      "q": "Is StableHost's advertised price what I'll pay on renewal?",
+      "a": "No. StableHost's listed prices are introductory rates for the first 12-month term — Mini, Starter and Pro plans all renew at roughly double the intro rate ($2.11, $12.71 and $20.13/month respectively), and the free first-year domain renews at about $13/year afterward."
+    },
+    {
+      "q": "What is StableHost's money-back guarantee?",
+      "a": "StableHost offers a 45-day money-back guarantee on shared and reseller hosting plans for first-time accounts, longer than the 30-day window most budget hosts offer."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

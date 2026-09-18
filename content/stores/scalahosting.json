@@ -1,0 +1,36 @@
+{
+  "slug": "scalahosting",
+  "name": "ScalaHosting",
+  "logo": "",
+  "url": "https://www.scalahosting.com",
+  "category": "hosting",
+  "tagline": "Managed cloud VPS and shared hosting with a free in-house SPanel control panel",
+  "rating": 4.9,
+  "reviewCount": 2208,
+  "description": "ScalaHosting is a managed cloud VPS and shared hosting provider best known for SPanel, its own free control panel alternative to cPanel, alongside standard cPanel-based shared hosting plans.",
+  "about": [
+    "ScalaHosting's shared hosting comes in three tiers: Mini (1 website, 10GB NVMe storage), Start (unlimited websites, 50GB storage, free domain) and Advanced (unlimited websites, 100GB storage). These shared plans run on standard cPanel. Its managed cloud VPS and cloud hosting plans, by contrast, ship with SPanel, ScalaHosting's own custom control panel — built to avoid the per-account cPanel licensing fees that add to the bill on many VPS providers. All plans include free SSL, unmetered bandwidth and free daily backups.",
+    "Shared hosting introductory pricing runs $2.95/month (Mini), $5.95/month (Start) and $9.95/month (Advanced), but renews at $11.95, $14.95 and $19.95 per month respectively — a jump of roughly 3-4x once the first term ends. ScalaHosting backs its web, reseller and VPS hosting with a 30-day money-back guarantee, though this applies to new customers only and excludes domains, SSL, dedicated servers and license fees; canceling within that window also means paying the normal price for any free domain that was included."
+  ],
+  "policies": [
+    "ScalaHosting offers a 30-day money-back guarantee on web, reseller and VPS hosting for new customers (domains, SSL, dedicated servers and licenses are excluded from the guarantee)."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does ScalaHosting use cPanel or SPanel?",
+      "a": "Both, depending on the plan. Shared hosting (Mini, Start, Advanced) runs on standard cPanel, while ScalaHosting's managed cloud VPS and cloud hosting plans ship with SPanel, its own free in-house control panel built as a cPanel alternative."
+    },
+    {
+      "q": "Is ScalaHosting's advertised price what I'll pay on renewal?",
+      "a": "No. Shared hosting plans start at $2.95-$9.95/month as an introductory rate, then renew at $11.95-$19.95/month depending on the tier — check the renewal price for your specific plan before buying on the lowest-term price alone."
+    },
+    {
+      "q": "Does ScalaHosting have a money-back guarantee?",
+      "a": "Yes — a 30-day money-back guarantee covers web, reseller and VPS hosting for new customers. It doesn't cover domains, SSL, dedicated servers or license fees, and if you cancel within the window you'll still be charged the standard rate for any free domain that came with the plan."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

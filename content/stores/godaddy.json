@@ -1,0 +1,36 @@
+{
+  "slug": "godaddy",
+  "name": "GoDaddy",
+  "logo": "",
+  "url": "https://www.godaddy.com",
+  "category": "hosting",
+  "tagline": "The world's largest domain registrar, with cPanel shared hosting bundled in",
+  "rating": 4.4,
+  "reviewCount": 143052,
+  "description": "GoDaddy is a large domain registrar and web host offering cPanel-based shared hosting across four main tiers, plus separate WordPress and Plus hosting lines, alongside its domain, website-builder and email products.",
+  "about": [
+    "GoDaddy's core shared hosting comes in three main tiers built on standard cPanel: Economy (1 website, 25GB NVMe storage), Deluxe (10 websites, 50GB NVMe storage), and Ultimate (25 websites, 75GB NVMe storage) — with a higher-end Web Hosting Plus line above that for larger sites. All tiers include a free domain for the first year, free SSL, free email, unmetered bandwidth and daily backups, and are backed by a 99.9% uptime guarantee.",
+    "Introductory pricing on a 36-month term starts around $5.99/month for Economy, $7.99/month for Deluxe and $12.99/month for Ultimate, but renews at roughly $11.99, $16.99 and $21.99 per month respectively once that term ends — close to double the intro rate. Since GoDaddy bills the full term upfront, check the total checkout price and renewal rate before choosing the longest term just to see the lowest per-month number."
+  ],
+  "policies": [
+    "GoDaddy backs its web hosting plans with a 30-day money-back guarantee."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does GoDaddy use cPanel?",
+      "a": "Yes — GoDaddy's Economy, Deluxe, Ultimate and Web Hosting Plus tiers all run on the industry-standard cPanel control panel."
+    },
+    {
+      "q": "Will I keep paying GoDaddy's advertised intro price?",
+      "a": "No. GoDaddy's lowest prices are introductory rates tied to a long upfront term (commonly 36 months); the plan renews at close to double the intro rate afterward, so check the renewal price for your specific plan and term before buying."
+    },
+    {
+      "q": "Does GoDaddy offer a money-back guarantee?",
+      "a": "Yes, GoDaddy offers a 30-day money-back guarantee on its web hosting plans."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

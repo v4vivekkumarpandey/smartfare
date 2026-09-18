@@ -1,0 +1,36 @@
+{
+  "slug": "nexcess",
+  "name": "Nexcess",
+  "logo": "",
+  "url": "https://www.nexcess.net",
+  "category": "hosting",
+  "tagline": "Managed WordPress, WooCommerce and Magento hosting from Liquid Web",
+  "rating": 3.8,
+  "reviewCount": 2788,
+  "description": "Nexcess is a managed hosting provider — owned by Liquid Web — built specifically for WordPress, WooCommerce and Magento sites, with auto-scaling PHP workers, built-in CDN and staging environments rather than a bare-bones shared hosting stack.",
+  "about": [
+    "Nexcess's managed WordPress lineup starts with the Spark plan (1 website, 15GB SSD storage, 2TB bandwidth, 250GB CDN bandwidth) and scales up through higher tiers such as Maker and Designer that add more sites, storage, bandwidth and auto-scaling PHP workers for busier stores and agencies. Every tier — including the entry plan — includes free SSL, a free CDN, unlimited email accounts and mailboxes, unlimited MySQL databases, one-click staging, and automated daily backups with one-click restore. Sites run on Nexcess's own proprietary control panel rather than cPanel or Plesk.",
+    "Spark's introductory rate runs $5.25/month for the first three months before renewing at $21/month — a roughly 4x jump once the promo ends, so budget for the renewal price rather than the headline offer. Nexcess doesn't include a free domain with any plan (only a free subdomain to start), and pricing on the higher tiers (Maker, Designer and above) varies by billing term and current promotion, so check Nexcess's own pricing page for the live rate on those plans before committing."
+  ],
+  "policies": [
+    "Nexcess backs its hosting plans with a 30-day money-back guarantee."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does Nexcess use cPanel?",
+      "a": "No — Nexcess's managed WordPress, WooCommerce and Magento plans run on its own proprietary control panel rather than cPanel or Plesk, built around one-click staging, backups and site management for those specific platforms."
+    },
+    {
+      "q": "Is Nexcess's advertised Spark price what I'll pay long-term?",
+      "a": "No. The Spark plan's $5.25/month rate is an introductory price for the first three months; it renews at $21/month afterward. Factor the renewal rate into the real cost before signing up on the lowest headline price."
+    },
+    {
+      "q": "Does Nexcess include a free domain?",
+      "a": "No — Nexcess doesn't bundle a free domain with any plan. You get a free subdomain to launch with, but a custom domain has to be registered or transferred in separately."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "hostgator",
+  "name": "HostGator",
+  "logo": "",
+  "url": "https://www.hostgator.com",
+  "category": "hosting",
+  "tagline": "cPanel shared hosting with unmetered bandwidth and a 30-day guarantee",
+  "rating": 4.6,
+  "reviewCount": 17807,
+  "description": "HostGator is a long-running web host offering cPanel-based shared, WordPress, VPS and dedicated hosting, with unmetered bandwidth, a free first-year domain, and a 30-day money-back guarantee.",
+  "about": [
+    "HostGator's shared hosting lineup has three main tiers: Hatchling (10GB SSD storage, up to 10 websites), Baby (20GB SSD storage, up to 20 websites) and Business (50GB SSD storage, up to 50 websites), with a higher Pro tier (100GB SSD storage, up to 100 websites) above that. All plans run on cPanel, include unmetered bandwidth, a free SSL certificate via Let's Encrypt, and a free domain for the first year when purchased on a 12, 24 or 36-month term.",
+    "The lowest advertised prices require the longest (36-month) upfront term and only apply to the first invoice. On that term, Hatchling starts at $3.75/month but renews at $10.99/month, Baby starts at $4.50/month and renews at $16.49/month, and Business starts at $6.25/month and renews at $21.99/month — increases of roughly 150-190%. Shorter terms and month-to-month billing carry higher rates throughout. Check the live renewal price for your exact term length before buying on the lowest headline number alone."
+  ],
+  "policies": [
+    "HostGator backs its hosting plans with a 30-day money-back guarantee; domain registration fees and other add-ons are excluded from the refund."
+  ],
+  "contact": {},
+  "coupons": [],
+  "faqs": [
+    {
+      "q": "Does HostGator use cPanel?",
+      "a": "Yes — every HostGator shared, WordPress, VPS and dedicated plan runs on the industry-standard cPanel control panel."
+    },
+    {
+      "q": "What does HostGator's shared hosting renew at after the intro term?",
+      "a": "On a 36-month term, Hatchling renews at $10.99/month (up from a $3.75/month intro rate), Baby renews at $16.49/month (from $4.50), and Business renews at $21.99/month (from $6.25). The promotional rate only applies to your first invoice."
+    },
+    {
+      "q": "Does HostGator include a free domain?",
+      "a": "Yes, HostGator includes a free domain for the first year on 12-month, 24-month or 36-month shared hosting terms."
+    },
+    {
+      "q": "What is HostGator's money-back guarantee window?",
+      "a": "30 days from purchase for hosting fees. Domain registration charges and other add-on services are non-refundable."
+    }
+  ],
+  "relatedStores": ["hostinger", "namecheap"],
+  "updated": "2026-09-18"
+}
