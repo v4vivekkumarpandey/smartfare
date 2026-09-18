@@ -69,11 +69,36 @@ async function main() {
   const promptIdx = args.indexOf("--prompt");
   const customPrompt = promptIdx !== -1 ? args[promptIdx + 1] : undefined;
 
+  const failed = [];
+  let succeeded = 0;
   for (const post of targets) {
     console.log(`Generating cover for "${post.slug}"...`);
-    post.cover = await generateCover(post, customPrompt);
-    fs.writeFileSync(BLOG_JSON, JSON.stringify(posts, null, 2) + "\n");
-    console.log(`  saved ${post.cover}`);
+    try {
+      post.cover = await generateCover(post, customPrompt);
+      fs.writeFileSync(BLOG_JSON, JSON.stringify(posts, null, 2) + "\n");
+      console.log(`  saved ${post.cover}`);
+      succeeded++;
+    } catch (err) {
+      const message = err?.message || String(err);
+      console.error(`  failed: ${message}`);
+      failed.push(post.slug);
+      // A rate limit means every remaining request will fail the same way —
+      // stop burning time/requests instead of retrying it once per post.
+      if (/rate.?limit/i.test(message)) {
+        const remaining = targets.slice(targets.indexOf(post) + 1).map((p) => p.slug);
+        console.error(
+          `Rate-limited by the AI Gateway — stopping early. Re-run with --all later to pick up the remaining posts (their cover is still empty, so they'll be retried): ${remaining.join(", ") || "(none left)"}`
+        );
+        break;
+      }
+    }
+  }
+
+  if (targets.length > 1) {
+    console.log(`\n${succeeded}/${targets.length} cover(s) generated this run.`);
+    if (failed.length) {
+      console.log(`Failed this run: ${failed.join(", ")}`);
+    }
   }
 }
 
