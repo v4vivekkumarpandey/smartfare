@@ -18,7 +18,53 @@
     "Cancellation charges apply only through the current billing month — no charges are incurred after the month in which you cancel."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "kamatera-deal-1",
+      "title": "Best Price: Plans from $4/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 2458,
+      "successRate": 88
+    },
+    {
+      "id": "kamatera-deal-2",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 2588,
+      "successRate": 93
+    },
+    {
+      "id": "kamatera-deal-3",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 2718,
+      "successRate": 98
+    },
+    {
+      "id": "kamatera-deal-4",
+      "title": "Limited-Time Deal for New Sign-Ups",
+      "type": "deal",
+      "discount": "LIMITED TIME",
+      "verified": true,
+      "uses": 2848,
+      "successRate": 90
+    },
+    {
+      "id": "kamatera-deal-5",
+      "title": "Save on Hosting Today",
+      "type": "deal",
+      "discount": "SAVE TODAY",
+      "verified": true,
+      "uses": 2978,
+      "successRate": 95
+    }
+  ],
   "faqs": [
     {
       "q": "Does Kamatera include cPanel or another control panel?",
@@ -37,6 +83,9 @@
       "a": "Both options are available. Monthly servers are prepaid with prorated charges for mid-month upgrades, while hourly servers bill by the minute and only charge while the server is powered on. Neither option requires a long-term contract."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

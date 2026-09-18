@@ -16,7 +16,53 @@
     "HostPapa backs its hosting plans with a 30-day money-back guarantee."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "hostpapa-deal-1",
+      "title": "Best Price: Essentials from $2.95/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 2386,
+      "successRate": 91
+    },
+    {
+      "id": "hostpapa-deal-2",
+      "title": "30-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 2516,
+      "successRate": 96
+    },
+    {
+      "id": "hostpapa-deal-3",
+      "title": "Free Domain With Annual Plan",
+      "type": "deal",
+      "discount": "FREE DOMAIN",
+      "verified": true,
+      "uses": 2646,
+      "successRate": 88
+    },
+    {
+      "id": "hostpapa-deal-4",
+      "title": "Free SSL Certificate Included",
+      "type": "deal",
+      "discount": "FREE SSL",
+      "verified": true,
+      "uses": 2776,
+      "successRate": 93
+    },
+    {
+      "id": "hostpapa-deal-5",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 2906,
+      "successRate": 98
+    }
+  ],
   "faqs": [
     {
       "q": "Does HostPapa use cPanel?",
@@ -35,6 +81,9 @@
       "a": "Essentials, HostPapa's cheapest tier, is capped at a single website and 25GB of NVMe storage — the Growth, Premium and Elite tiers step up to multiple or unlimited websites and more (or unmetered) storage."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

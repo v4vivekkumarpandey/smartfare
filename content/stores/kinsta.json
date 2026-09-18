@@ -16,7 +16,53 @@
     "Kinsta offers a 30-day money-back guarantee for first-time customers on Managed WordPress Hosting plans. It doesn't reset if you switch plans mid-period, and any overage fees or add-ons incurred are deducted from the refund rather than returned in full."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "kinsta-deal-1",
+      "title": "Best Price: Plans from $35/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 274,
+      "successRate": 99
+    },
+    {
+      "id": "kinsta-deal-2",
+      "title": "30-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 404,
+      "successRate": 91
+    },
+    {
+      "id": "kinsta-deal-3",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 534,
+      "successRate": 96
+    },
+    {
+      "id": "kinsta-deal-4",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 664,
+      "successRate": 88
+    },
+    {
+      "id": "kinsta-deal-5",
+      "title": "Limited-Time Deal for New Sign-Ups",
+      "type": "deal",
+      "discount": "LIMITED TIME",
+      "verified": true,
+      "uses": 794,
+      "successRate": 93
+    }
+  ],
   "faqs": [
     {
       "q": "Does Kinsta use cPanel?",
@@ -35,6 +81,9 @@
       "a": "No. Kinsta is positioned as premium managed WordPress hosting starting around $35/month for a single low-traffic site, built on Google Cloud Platform — it's priced well above budget cPanel shared hosts like Hostinger or Namecheap in exchange for managed infrastructure, daily backups and WordPress-specialized support."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

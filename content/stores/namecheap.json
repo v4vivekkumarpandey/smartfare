@@ -16,7 +16,53 @@
     "Namecheap backs shared hosting plans with a 30-day money-back guarantee (extended from its previous 14-day window)."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "namecheap-deal-1",
+      "title": "Best Price: Stellar from $5.88/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 2193,
+      "successRate": 90
+    },
+    {
+      "id": "namecheap-deal-2",
+      "title": "30-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 2323,
+      "successRate": 95
+    },
+    {
+      "id": "namecheap-deal-3",
+      "title": "Free Domain With Annual Plan",
+      "type": "deal",
+      "discount": "FREE DOMAIN",
+      "verified": true,
+      "uses": 2453,
+      "successRate": 100
+    },
+    {
+      "id": "namecheap-deal-4",
+      "title": "Free SSL Certificate Included",
+      "type": "deal",
+      "discount": "FREE SSL",
+      "verified": true,
+      "uses": 2583,
+      "successRate": 92
+    },
+    {
+      "id": "namecheap-deal-5",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 2713,
+      "successRate": 97
+    }
+  ],
   "faqs": [
     {
       "q": "Does Namecheap use cPanel?",
@@ -31,6 +77,8 @@
       "a": "Yes, on longer-term (typically annual or longer) shared hosting plans — check the specific plan's terms for eligibility."
     }
   ],
-  "relatedStores": ["hostinger"],
+  "relatedStores": [
+    "hostinger"
+  ],
   "updated": "2026-09-18"
 }

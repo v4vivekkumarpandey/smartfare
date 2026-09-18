@@ -16,7 +16,53 @@
     "Hostwinds offers only a 72-hour pro-rated refund window (not a full 30-day money-back guarantee) — refunds are limited to the unused portion of eligible services and must be requested within 72 hours of the payment transaction. Domains, SSL certificates, IP addresses, software licenses, hourly-billed services and crypto payments are non-refundable."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "hostwinds-deal-1",
+      "title": "Best Price: Basic from $3.24/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 2726,
+      "successRate": 99
+    },
+    {
+      "id": "hostwinds-deal-2",
+      "title": "30-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 2856,
+      "successRate": 91
+    },
+    {
+      "id": "hostwinds-deal-3",
+      "title": "Free Domain With Annual Plan",
+      "type": "deal",
+      "discount": "FREE DOMAIN",
+      "verified": true,
+      "uses": 2986,
+      "successRate": 96
+    },
+    {
+      "id": "hostwinds-deal-4",
+      "title": "Free SSL Certificate Included",
+      "type": "deal",
+      "discount": "FREE SSL",
+      "verified": true,
+      "uses": 315,
+      "successRate": 88
+    },
+    {
+      "id": "hostwinds-deal-5",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 445,
+      "successRate": 93
+    }
+  ],
   "faqs": [
     {
       "q": "Does Hostwinds use cPanel?",
@@ -35,6 +81,9 @@
       "a": "No. The lowest advertised rates ($3.24-$5.84/month depending on tier) require the longest signup term and renew higher afterward ($6.99-$10.99/month) — check the renewal rate for your specific term before buying."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

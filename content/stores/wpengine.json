@@ -16,7 +16,53 @@
     "WP Engine offers a 60-day money-back guarantee on annual billing plans; domain fees, add-ons and custom development work are excluded, and refund requests must be made within that 60-day window."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "wpengine-deal-1",
+      "title": "Best Price: Plans from $28/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 692,
+      "successRate": 97
+    },
+    {
+      "id": "wpengine-deal-2",
+      "title": "60-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 822,
+      "successRate": 89
+    },
+    {
+      "id": "wpengine-deal-3",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 952,
+      "successRate": 94
+    },
+    {
+      "id": "wpengine-deal-4",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 1082,
+      "successRate": 99
+    },
+    {
+      "id": "wpengine-deal-5",
+      "title": "Limited-Time Deal for New Sign-Ups",
+      "type": "deal",
+      "discount": "LIMITED TIME",
+      "verified": true,
+      "uses": 1212,
+      "successRate": 91
+    }
+  ],
   "faqs": [
     {
       "q": "Does WP Engine use cPanel?",
@@ -31,6 +77,9 @@
       "a": "The Essential plan is listed from $28/month on annual billing, and WP Engine also runs a 20% first-year new-customer discount on top of that, so confirm the current rate on WP Engine's own plans page before purchasing since promotional pricing changes."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

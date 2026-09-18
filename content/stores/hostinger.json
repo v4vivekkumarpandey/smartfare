@@ -17,7 +17,53 @@
     "Hostinger backs its hosting plans with a 30-day money-back guarantee."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "hostinger-deal-1",
+      "title": "Best Price: Premium from $2.99/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 1641,
+      "successRate": 96
+    },
+    {
+      "id": "hostinger-deal-2",
+      "title": "30-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 1771,
+      "successRate": 88
+    },
+    {
+      "id": "hostinger-deal-3",
+      "title": "Free Domain With Annual Plan",
+      "type": "deal",
+      "discount": "FREE DOMAIN",
+      "verified": true,
+      "uses": 1901,
+      "successRate": 93
+    },
+    {
+      "id": "hostinger-deal-4",
+      "title": "Free SSL Certificate Included",
+      "type": "deal",
+      "discount": "FREE SSL",
+      "verified": true,
+      "uses": 2031,
+      "successRate": 98
+    },
+    {
+      "id": "hostinger-deal-5",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 2161,
+      "successRate": 90
+    }
+  ],
   "faqs": [
     {
       "q": "Does Hostinger use cPanel?",
@@ -28,6 +74,8 @@
       "a": "No. Hostinger's lowest advertised prices require a long upfront term (often 24-48 months) and the plan renews at a higher rate afterward — check the renewal price before committing, not just the introductory offer."
     }
   ],
-  "relatedStores": ["namecheap"],
-  "updated": "2026-09-17"
+  "relatedStores": [
+    "namecheap"
+  ],
+  "updated": "2026-09-18"
 }

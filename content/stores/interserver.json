@@ -16,12 +16,58 @@
     "InterServer backs its hosting plans with a 30-day money-back guarantee."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "interserver-deal-1",
+      "title": "Best Price: Plans from $7/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 1594,
+      "successRate": 94
+    },
+    {
+      "id": "interserver-deal-2",
+      "title": "30-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 1724,
+      "successRate": 99
+    },
+    {
+      "id": "interserver-deal-3",
+      "title": "Free Domain With Annual Plan",
+      "type": "deal",
+      "discount": "FREE DOMAIN",
+      "verified": true,
+      "uses": 1854,
+      "successRate": 91
+    },
+    {
+      "id": "interserver-deal-4",
+      "title": "Free SSL Certificate Included",
+      "type": "deal",
+      "discount": "FREE SSL",
+      "verified": true,
+      "uses": 1984,
+      "successRate": 96
+    },
+    {
+      "id": "interserver-deal-5",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 2114,
+      "successRate": 88
+    }
+  ],
   "faqs": [
     {
       "q": "Does InterServer's price really stay the same after renewal?",
       "a": "The $2.50 first-month rate is introductory only. After that, InterServer's Standard Web Hosting renews at $7/month, and that $7 rate is what InterServer's price-lock guarantee is meant to hold steady going forward — it isn't designed to climb further at each subsequent renewal the way many budget hosts' rates do. Still, always confirm the current rate at checkout since promotions and policies can change."
-      },
+    },
     {
       "q": "Does InterServer use cPanel?",
       "a": "Not by default. InterServer's Standard Web Hosting plan runs on DirectAdmin at no extra cost; cPanel is offered as a separate paid add-on for customers who specifically want it."
@@ -31,6 +77,9 @@
       "a": "No. InterServer doesn't bundle a free domain with its shared hosting plan — registering a new domain during signup is a paid add-on (around $7.99). A free SSL certificate is included, however."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

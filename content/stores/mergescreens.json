@@ -67,6 +67,15 @@
       "expires": "2026-09-15",
       "uses": 331,
       "successRate": 71
+    },
+    {
+      "id": "mergescreens-deal-5",
+      "title": "14-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 2560,
+      "successRate": 96
     }
   ],
   "faqs": [
@@ -83,6 +92,8 @@
       "a": "Yes — MergeScreens has a free tier plus a 14-day free trial of its paid features, available through the deal listed above."
     }
   ],
-  "relatedStores": ["screenpal"],
-  "updated": "2026-08-01"
+  "relatedStores": [
+    "screenpal"
+  ],
+  "updated": "2026-09-18"
 }

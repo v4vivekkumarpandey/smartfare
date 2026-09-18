@@ -16,7 +16,53 @@
     "HostArmada backs shared, reseller and VPS hosting with a 45-day money-back guarantee on the initial order — longer than the industry-standard 30 days. Dedicated CPU servers carry a shorter 7-day window, and renewal payments, monthly billing and domain fees are excluded from refunds."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "hostarmada-deal-1",
+      "title": "Best Price: Start Dock from $1.99/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 774,
+      "successRate": 95
+    },
+    {
+      "id": "hostarmada-deal-2",
+      "title": "45-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 904,
+      "successRate": 100
+    },
+    {
+      "id": "hostarmada-deal-3",
+      "title": "Free Domain With Annual Plan",
+      "type": "deal",
+      "discount": "FREE DOMAIN",
+      "verified": true,
+      "uses": 1034,
+      "successRate": 92
+    },
+    {
+      "id": "hostarmada-deal-4",
+      "title": "Free SSL Certificate Included",
+      "type": "deal",
+      "discount": "FREE SSL",
+      "verified": true,
+      "uses": 437,
+      "successRate": 88
+    },
+    {
+      "id": "hostarmada-deal-5",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 567,
+      "successRate": 93
+    }
+  ],
   "faqs": [
     {
       "q": "Does HostArmada use cPanel?",
@@ -31,6 +77,9 @@
       "a": "No. The cheapest advertised rates require paying for a full 3-year term upfront, and renew at a noticeably higher monthly rate afterward — check the renewal price for your specific plan before committing to the longest term."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

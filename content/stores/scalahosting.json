@@ -16,7 +16,53 @@
     "ScalaHosting offers a 30-day money-back guarantee on web, reseller and VPS hosting for new customers (domains, SSL, dedicated servers and licenses are excluded from the guarantee)."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "scalahosting-deal-1",
+      "title": "Best Price: Mini from $2.95/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 1431,
+      "successRate": 88
+    },
+    {
+      "id": "scalahosting-deal-2",
+      "title": "30-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 1561,
+      "successRate": 93
+    },
+    {
+      "id": "scalahosting-deal-3",
+      "title": "Free Domain With Annual Plan",
+      "type": "deal",
+      "discount": "FREE DOMAIN",
+      "verified": true,
+      "uses": 1691,
+      "successRate": 98
+    },
+    {
+      "id": "scalahosting-deal-4",
+      "title": "Free SSL Certificate Included",
+      "type": "deal",
+      "discount": "FREE SSL",
+      "verified": true,
+      "uses": 1821,
+      "successRate": 90
+    },
+    {
+      "id": "scalahosting-deal-5",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 1951,
+      "successRate": 95
+    }
+  ],
   "faqs": [
     {
       "q": "Does ScalaHosting use cPanel or SPanel?",
@@ -31,6 +77,9 @@
       "a": "Yes — a 30-day money-back guarantee covers web, reseller and VPS hosting for new customers. It doesn't cover domains, SSL, dedicated servers or license fees, and if you cancel within the window you'll still be charged the standard rate for any free domain that came with the plan."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

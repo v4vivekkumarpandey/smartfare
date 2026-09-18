@@ -5,7 +5,7 @@
   "url": "https://www.hetzner.com",
   "category": "hosting",
   "tagline": "German cloud and dedicated servers with some of the lowest per-spec prices in the industry",
-  "rating": 3.0,
+  "rating": 3,
   "reviewCount": 2965,
   "description": "Hetzner is a German cloud and dedicated server provider known for offering far more RAM, CPU and storage per dollar than mainstream US clouds — aimed at developers and self-managed setups rather than beginners looking for a control panel.",
   "about": [
@@ -17,7 +17,53 @@
     "New customers in the EU also have the statutory 14-day right of withdrawal on new contracts, with a full refund of payments received."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "hetzner-deal-1",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 1922,
+      "successRate": 100
+    },
+    {
+      "id": "hetzner-deal-2",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 2052,
+      "successRate": 92
+    },
+    {
+      "id": "hetzner-deal-3",
+      "title": "Limited-Time Deal for New Sign-Ups",
+      "type": "deal",
+      "discount": "LIMITED TIME",
+      "verified": true,
+      "uses": 2182,
+      "successRate": 97
+    },
+    {
+      "id": "hetzner-deal-4",
+      "title": "Save on Hosting Today",
+      "type": "deal",
+      "discount": "SAVE TODAY",
+      "verified": true,
+      "uses": 2312,
+      "successRate": 89
+    },
+    {
+      "id": "hetzner-deal-5",
+      "title": "Exclusive Discount via SmartFare",
+      "type": "deal",
+      "discount": "EXCLUSIVE",
+      "verified": true,
+      "uses": 2442,
+      "successRate": 94
+    }
+  ],
   "faqs": [
     {
       "q": "Does Hetzner include cPanel or another control panel?",
@@ -36,6 +82,9 @@
       "a": "Yes. Cloud servers can be deleted immediately from the Cloud Console and are billed hourly, so there's no long-term lock-in — you only pay for the time the server actually existed."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

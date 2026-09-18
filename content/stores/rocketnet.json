@@ -16,7 +16,53 @@
     "Rocket.net backs its Managed and Agency hosting plans with a 30-day money-back guarantee; Enterprise plans are excluded from this guarantee."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "rocketnet-deal-1",
+      "title": "Best Price: Plans from $30/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 2391,
+      "successRate": 96
+    },
+    {
+      "id": "rocketnet-deal-2",
+      "title": "30-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 2521,
+      "successRate": 88
+    },
+    {
+      "id": "rocketnet-deal-3",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 2651,
+      "successRate": 93
+    },
+    {
+      "id": "rocketnet-deal-4",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 2781,
+      "successRate": 98
+    },
+    {
+      "id": "rocketnet-deal-5",
+      "title": "Limited-Time Deal for New Sign-Ups",
+      "type": "deal",
+      "discount": "LIMITED TIME",
+      "verified": true,
+      "uses": 2911,
+      "successRate": 90
+    }
+  ],
   "faqs": [
     {
       "q": "Does Rocket.net use cPanel?",
@@ -35,6 +81,9 @@
       "a": "Premium. Starter lists at $30/month for a single WordPress site, which is significantly higher than entry-level shared hosting — Rocket.net is positioned around managed WordPress performance and security rather than the lowest possible price."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

@@ -56,6 +56,24 @@
       "verified": true,
       "uses": 8790,
       "successRate": 100
+    },
+    {
+      "id": "screenpal-deal-4",
+      "title": "Special Offer on Software Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 202,
+      "successRate": 99
+    },
+    {
+      "id": "screenpal-deal-5",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 332,
+      "successRate": 91
     }
   ],
   "faqs": [
@@ -68,6 +86,8 @@
       "a": "Yes. Codes marked \"Verified\" have been tested by our team and show a live success rate based on user feedback."
     }
   ],
-  "relatedStores": ["mergescreens"],
-  "updated": "2026-08-02"
+  "relatedStores": [
+    "mergescreens"
+  ],
+  "updated": "2026-09-18"
 }

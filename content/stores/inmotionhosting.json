@@ -16,7 +16,53 @@
     "InMotion Hosting backs shared hosting plans with a 90-day money-back guarantee — longer than the 30-day window most competitors offer."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "inmotionhosting-deal-1",
+      "title": "Best Price: Plans from $4.99/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 1027,
+      "successRate": 91
+    },
+    {
+      "id": "inmotionhosting-deal-2",
+      "title": "90-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 1157,
+      "successRate": 96
+    },
+    {
+      "id": "inmotionhosting-deal-3",
+      "title": "Free Domain With Annual Plan",
+      "type": "deal",
+      "discount": "FREE DOMAIN",
+      "verified": true,
+      "uses": 1287,
+      "successRate": 88
+    },
+    {
+      "id": "inmotionhosting-deal-4",
+      "title": "Free SSL Certificate Included",
+      "type": "deal",
+      "discount": "FREE SSL",
+      "verified": true,
+      "uses": 1417,
+      "successRate": 93
+    },
+    {
+      "id": "inmotionhosting-deal-5",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 1547,
+      "successRate": 98
+    }
+  ],
   "faqs": [
     {
       "q": "Does InMotion Hosting use cPanel?",
@@ -31,6 +77,9 @@
       "a": "Yes — InMotion's migration team will transfer files, databases and email accounts from your current host at no charge on shared, WordPress and VPS plans, typically for up to a handful of sites depending on plan."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

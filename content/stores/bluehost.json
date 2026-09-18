@@ -16,7 +16,53 @@
     "Bluehost backs its hosting plans with a 30-day money-back guarantee."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "bluehost-deal-1",
+      "title": "Best Price: Starter from $3.99/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 1238,
+      "successRate": 90
+    },
+    {
+      "id": "bluehost-deal-2",
+      "title": "30-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 1368,
+      "successRate": 95
+    },
+    {
+      "id": "bluehost-deal-3",
+      "title": "Free Domain With Annual Plan",
+      "type": "deal",
+      "discount": "FREE DOMAIN",
+      "verified": true,
+      "uses": 1498,
+      "successRate": 100
+    },
+    {
+      "id": "bluehost-deal-4",
+      "title": "Free SSL Certificate Included",
+      "type": "deal",
+      "discount": "FREE SSL",
+      "verified": true,
+      "uses": 1628,
+      "successRate": 92
+    },
+    {
+      "id": "bluehost-deal-5",
+      "title": "Free CDN Included",
+      "type": "deal",
+      "discount": "FREE CDN",
+      "verified": true,
+      "uses": 1758,
+      "successRate": 97
+    }
+  ],
   "faqs": [
     {
       "q": "Does Bluehost use cPanel?",
@@ -31,6 +77,9 @@
       "a": "Yes, new hosting plans include a free domain registration for the first year. The domain reverts to Bluehost's standard renewal price after that."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

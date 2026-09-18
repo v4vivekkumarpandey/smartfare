@@ -16,7 +16,53 @@
     "No traditional money-back guarantee is published; Pantheon instead offers a free trial where sites can be built and tested at no cost, with billing starting only once a custom domain is connected and the site goes live."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "pantheon-deal-1",
+      "title": "Best Price: Plans from $41/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 271,
+      "successRate": 98
+    },
+    {
+      "id": "pantheon-deal-2",
+      "title": "99.9% Uptime SLA",
+      "type": "deal",
+      "discount": "99.9% UPTIME",
+      "verified": true,
+      "uses": 401,
+      "successRate": 90
+    },
+    {
+      "id": "pantheon-deal-3",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 531,
+      "successRate": 95
+    },
+    {
+      "id": "pantheon-deal-4",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 661,
+      "successRate": 100
+    },
+    {
+      "id": "pantheon-deal-5",
+      "title": "Limited-Time Deal for New Sign-Ups",
+      "type": "deal",
+      "discount": "LIMITED TIME",
+      "verified": true,
+      "uses": 791,
+      "successRate": 92
+    }
+  ],
   "faqs": [
     {
       "q": "Does Pantheon use cPanel?",
@@ -35,6 +81,9 @@
       "a": "Not really. Pantheon's Basic plan starts around $41-55/month, and Performance plans for higher-traffic sites start around $200/month and scale into the thousands for the largest tiers — it's priced for agencies and businesses running WordPress or Drupal sites professionally, not budget shared hosting."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

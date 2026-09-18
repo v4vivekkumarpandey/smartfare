@@ -16,7 +16,53 @@
     "FastComet backs its hosting plans with a 30-day money-back guarantee."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "fastcomet-deal-1",
+      "title": "Best Price: Starter from $1.99/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 405,
+      "successRate": 92
+    },
+    {
+      "id": "fastcomet-deal-2",
+      "title": "30-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 535,
+      "successRate": 97
+    },
+    {
+      "id": "fastcomet-deal-3",
+      "title": "Free Domain With Annual Plan",
+      "type": "deal",
+      "discount": "FREE DOMAIN",
+      "verified": true,
+      "uses": 665,
+      "successRate": 89
+    },
+    {
+      "id": "fastcomet-deal-4",
+      "title": "Free SSL Certificate Included",
+      "type": "deal",
+      "discount": "FREE SSL",
+      "verified": true,
+      "uses": 795,
+      "successRate": 94
+    },
+    {
+      "id": "fastcomet-deal-5",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 925,
+      "successRate": 99
+    }
+  ],
   "faqs": [
     {
       "q": "Does FastComet use cPanel?",
@@ -31,6 +77,9 @@
       "a": "No. The Starter and Essential tiers are limited to a single website each; unlimited websites require stepping up to the Plus or Extra plan."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

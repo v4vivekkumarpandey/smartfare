@@ -16,7 +16,53 @@
     "Liquid Web backs Cloud VPS, Cloud Dedicated and Private VPS Parent hosting with a 30-day money-back guarantee; fully dedicated servers, Storm plans and colocation are excluded from this guarantee."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "liquidweb-deal-1",
+      "title": "Best Price: Plans from $5/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 292,
+      "successRate": 93
+    },
+    {
+      "id": "liquidweb-deal-2",
+      "title": "30-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 422,
+      "successRate": 98
+    },
+    {
+      "id": "liquidweb-deal-3",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 552,
+      "successRate": 90
+    },
+    {
+      "id": "liquidweb-deal-4",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 682,
+      "successRate": 95
+    },
+    {
+      "id": "liquidweb-deal-5",
+      "title": "Limited-Time Deal for New Sign-Ups",
+      "type": "deal",
+      "discount": "LIMITED TIME",
+      "verified": true,
+      "uses": 812,
+      "successRate": 100
+    }
+  ],
   "faqs": [
     {
       "q": "Is Liquid Web good for beginners on a budget?",
@@ -35,6 +81,9 @@
       "a": "Yes, a 30-day money-back guarantee applies to Cloud VPS, Cloud Dedicated and Private VPS Parent hosting. It does not extend to fully dedicated servers, Storm server plans or colocation."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

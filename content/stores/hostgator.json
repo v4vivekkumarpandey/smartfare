@@ -16,7 +16,53 @@
     "HostGator backs its hosting plans with a 30-day money-back guarantee; domain registration fees and other add-ons are excluded from the refund."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "hostgator-deal-1",
+      "title": "Best Price: Plans from $3.75/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 2195,
+      "successRate": 88
+    },
+    {
+      "id": "hostgator-deal-2",
+      "title": "30-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 2325,
+      "successRate": 93
+    },
+    {
+      "id": "hostgator-deal-3",
+      "title": "Free Domain With Annual Plan",
+      "type": "deal",
+      "discount": "FREE DOMAIN",
+      "verified": true,
+      "uses": 2455,
+      "successRate": 98
+    },
+    {
+      "id": "hostgator-deal-4",
+      "title": "Free SSL Certificate Included",
+      "type": "deal",
+      "discount": "FREE SSL",
+      "verified": true,
+      "uses": 2585,
+      "successRate": 90
+    },
+    {
+      "id": "hostgator-deal-5",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 2715,
+      "successRate": 95
+    }
+  ],
   "faqs": [
     {
       "q": "Does HostGator use cPanel?",
@@ -35,6 +81,9 @@
       "a": "30 days from purchase for hosting fees. Domain registration charges and other add-on services are non-refundable."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

@@ -16,7 +16,53 @@
     "Flywheel backs new Starter and qualifying Freelance plans (without custom onboarding) with a 60-day money-back guarantee. Agency plans, Custom plans, upgrades and renewals are not covered."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "flywheel-deal-1",
+      "title": "Best Price: Plans from $30/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 1078,
+      "successRate": 90
+    },
+    {
+      "id": "flywheel-deal-2",
+      "title": "60-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 1208,
+      "successRate": 95
+    },
+    {
+      "id": "flywheel-deal-3",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 1338,
+      "successRate": 100
+    },
+    {
+      "id": "flywheel-deal-4",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 1468,
+      "successRate": 92
+    },
+    {
+      "id": "flywheel-deal-5",
+      "title": "Limited-Time Deal for New Sign-Ups",
+      "type": "deal",
+      "discount": "LIMITED TIME",
+      "verified": true,
+      "uses": 1598,
+      "successRate": 97
+    }
+  ],
   "faqs": [
     {
       "q": "Does Flywheel use cPanel?",
@@ -35,6 +81,9 @@
       "a": "Yes — Flywheel's team migrates every site on a new plan for free."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

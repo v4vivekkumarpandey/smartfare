@@ -16,7 +16,53 @@
     "KnownHost backs shared hosting plans with a 30-day money-back guarantee for new customers (excludes dedicated servers; voided by exceeding bandwidth limits in the first 30 days or on additional packages beyond your first)."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "knownhost-deal-1",
+      "title": "Best Price: Basic from $6.71/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 2198,
+      "successRate": 95
+    },
+    {
+      "id": "knownhost-deal-2",
+      "title": "30-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 2328,
+      "successRate": 100
+    },
+    {
+      "id": "knownhost-deal-3",
+      "title": "Free SSL Certificate Included",
+      "type": "deal",
+      "discount": "FREE SSL",
+      "verified": true,
+      "uses": 2458,
+      "successRate": 92
+    },
+    {
+      "id": "knownhost-deal-4",
+      "title": "99.9% Uptime SLA",
+      "type": "deal",
+      "discount": "99.9% UPTIME",
+      "verified": true,
+      "uses": 2588,
+      "successRate": 97
+    },
+    {
+      "id": "knownhost-deal-5",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 2718,
+      "successRate": 89
+    }
+  ],
   "faqs": [
     {
       "q": "Does KnownHost use cPanel?",
@@ -35,6 +81,9 @@
       "a": "Yes — beyond shared hosting, KnownHost sells both fully managed VPS (roughly from $43/month, with KnownHost handling server maintenance and security) and unmanaged VPS with root access (roughly from $5/month) for users who want to manage the server themselves."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

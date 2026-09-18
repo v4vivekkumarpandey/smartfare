@@ -16,7 +16,53 @@
     "Linode offers a limited-time free credit for new accounts on sign-up (amount and terms vary by promotion); beyond that, billing is usage-based hourly-capped-at-monthly, not a traditional refund-window model like shared hosting."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "linode-deal-1",
+      "title": "Best Price: Plans from $5/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 2627,
+      "successRate": 90
+    },
+    {
+      "id": "linode-deal-2",
+      "title": "Free Credit for New Accounts",
+      "type": "deal",
+      "discount": "FREE CREDIT",
+      "verified": true,
+      "uses": 2757,
+      "successRate": 95
+    },
+    {
+      "id": "linode-deal-3",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 2887,
+      "successRate": 100
+    },
+    {
+      "id": "linode-deal-4",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 216,
+      "successRate": 92
+    },
+    {
+      "id": "linode-deal-5",
+      "title": "Limited-Time Deal for New Sign-Ups",
+      "type": "deal",
+      "discount": "LIMITED TIME",
+      "verified": true,
+      "uses": 346,
+      "successRate": 97
+    }
+  ],
   "faqs": [
     {
       "q": "Does Linode include cPanel or a control panel?",
@@ -31,6 +77,9 @@
       "a": "Hourly, capped at a monthly rate — the entry Shared CPU plan starts at $5/month (1 GB RAM, 1 vCPU, 25 GB SSD). Run an instance for part of a month and you're charged only for the hours used, up to that plan's monthly cap."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

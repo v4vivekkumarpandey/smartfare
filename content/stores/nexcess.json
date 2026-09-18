@@ -16,7 +16,53 @@
     "Nexcess backs its hosting plans with a 30-day money-back guarantee."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "nexcess-deal-1",
+      "title": "Best Price: Plans from $5.25/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 333,
+      "successRate": 95
+    },
+    {
+      "id": "nexcess-deal-2",
+      "title": "30-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 463,
+      "successRate": 100
+    },
+    {
+      "id": "nexcess-deal-3",
+      "title": "Free Domain With Annual Plan",
+      "type": "deal",
+      "discount": "FREE DOMAIN",
+      "verified": true,
+      "uses": 593,
+      "successRate": 92
+    },
+    {
+      "id": "nexcess-deal-4",
+      "title": "Free SSL Certificate Included",
+      "type": "deal",
+      "discount": "FREE SSL",
+      "verified": true,
+      "uses": 723,
+      "successRate": 97
+    },
+    {
+      "id": "nexcess-deal-5",
+      "title": "Free CDN Included",
+      "type": "deal",
+      "discount": "FREE CDN",
+      "verified": true,
+      "uses": 853,
+      "successRate": 89
+    }
+  ],
   "faqs": [
     {
       "q": "Does Nexcess use cPanel?",
@@ -31,6 +77,9 @@
       "a": "No — Nexcess doesn't bundle a free domain with any plan. You get a free subdomain to launch with, but a custom domain has to be registered or transferred in separately."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

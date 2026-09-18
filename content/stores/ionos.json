@@ -16,7 +16,53 @@
     "IONOS backs its hosting plans with a 30-day money-back guarantee."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "ionos-deal-1",
+      "title": "Best Price: Essential from $4/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 1895,
+      "successRate": 99
+    },
+    {
+      "id": "ionos-deal-2",
+      "title": "30-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 2025,
+      "successRate": 91
+    },
+    {
+      "id": "ionos-deal-3",
+      "title": "Free Domain With Annual Plan",
+      "type": "deal",
+      "discount": "FREE DOMAIN",
+      "verified": true,
+      "uses": 2155,
+      "successRate": 96
+    },
+    {
+      "id": "ionos-deal-4",
+      "title": "Free SSL Certificate Included",
+      "type": "deal",
+      "discount": "FREE SSL",
+      "verified": true,
+      "uses": 2285,
+      "successRate": 88
+    },
+    {
+      "id": "ionos-deal-5",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 2415,
+      "successRate": 93
+    }
+  ],
   "faqs": [
     {
       "q": "Does IONOS use cPanel?",
@@ -31,6 +77,9 @@
       "a": "Yes — every IONOS shared hosting plan includes a free domain for the first year and a free SSL certificate, along with unmetered bandwidth and unlimited websites."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

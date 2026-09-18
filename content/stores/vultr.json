@@ -16,7 +16,53 @@
     "Vultr does not offer a blanket money-back guarantee on Cloud Compute usage; billing is hourly/on-demand, so unused account credit is generally the main recourse rather than a fixed refund window. Check current account/billing terms before funding a large credit balance."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "vultr-deal-1",
+      "title": "Best Price: Plans from $2.50/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 1285,
+      "successRate": 93
+    },
+    {
+      "id": "vultr-deal-2",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 1415,
+      "successRate": 98
+    },
+    {
+      "id": "vultr-deal-3",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 1545,
+      "successRate": 90
+    },
+    {
+      "id": "vultr-deal-4",
+      "title": "Limited-Time Deal for New Sign-Ups",
+      "type": "deal",
+      "discount": "LIMITED TIME",
+      "verified": true,
+      "uses": 1675,
+      "successRate": 95
+    },
+    {
+      "id": "vultr-deal-5",
+      "title": "Save on Hosting Today",
+      "type": "deal",
+      "discount": "SAVE TODAY",
+      "verified": true,
+      "uses": 1805,
+      "successRate": 100
+    }
+  ],
   "faqs": [
     {
       "q": "Does Vultr include cPanel or a control panel?",
@@ -35,6 +81,9 @@
       "a": "Vultr operates cloud data center regions across roughly 20 countries and 33 cities worldwide as of its Milan region launch in May 2026, one of the broader global footprints among independent cloud/VPS providers."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

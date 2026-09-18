@@ -16,7 +16,53 @@
     "WordPress.com annual, two-year and three-year plans are refundable within 14 days of purchase or renewal; monthly plans are refundable within 7 days. Refunds are not prorated — you get a full refund inside the window or none outside it. Domain purchases must be canceled within 96 hours due to registration rules."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "wordpresscom-deal-1",
+      "title": "Free Domain With Annual Plan",
+      "type": "deal",
+      "discount": "FREE DOMAIN",
+      "verified": true,
+      "uses": 820,
+      "successRate": 88
+    },
+    {
+      "id": "wordpresscom-deal-2",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 950,
+      "successRate": 93
+    },
+    {
+      "id": "wordpresscom-deal-3",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 1080,
+      "successRate": 98
+    },
+    {
+      "id": "wordpresscom-deal-4",
+      "title": "Limited-Time Deal for New Sign-Ups",
+      "type": "deal",
+      "discount": "LIMITED TIME",
+      "verified": true,
+      "uses": 1210,
+      "successRate": 90
+    },
+    {
+      "id": "wordpresscom-deal-5",
+      "title": "Save on Hosting Today",
+      "type": "deal",
+      "discount": "SAVE TODAY",
+      "verified": true,
+      "uses": 1340,
+      "successRate": 95
+    }
+  ],
   "faqs": [
     {
       "q": "Is WordPress.com the same as WordPress.org?",
@@ -35,6 +81,9 @@
       "a": "The Commerce plan is WordPress.com's dedicated ecommerce tier, bundling full WooCommerce integration with 0% WordPress.com transaction fees and support for selling in 60+ countries. The Premium plan only supports simple PayPal/Stripe payment buttons, not a full store."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

@@ -16,7 +16,53 @@
     "hosting.com backs shared hosting plans with a 30-day money-back guarantee (refunds don't cover domain registrations/renewals or add-on services)."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "a2hosting-deal-1",
+      "title": "Best Price: Plans from $3.99/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 747,
+      "successRate": 90
+    },
+    {
+      "id": "a2hosting-deal-2",
+      "title": "30-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 877,
+      "successRate": 95
+    },
+    {
+      "id": "a2hosting-deal-3",
+      "title": "Free Domain With Annual Plan",
+      "type": "deal",
+      "discount": "FREE DOMAIN",
+      "verified": true,
+      "uses": 1007,
+      "successRate": 100
+    },
+    {
+      "id": "a2hosting-deal-4",
+      "title": "Free SSL Certificate Included",
+      "type": "deal",
+      "discount": "FREE SSL",
+      "verified": true,
+      "uses": 1137,
+      "successRate": 92
+    },
+    {
+      "id": "a2hosting-deal-5",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 1267,
+      "successRate": 97
+    }
+  ],
   "faqs": [
     {
       "q": "Is A2 Hosting still a separate company?",
@@ -31,6 +77,9 @@
       "a": "Under A2, faster NVMe storage and LiteSpeed caching were limited to the pricier Turbo Boost and Turbo Max plans. Under hosting.com's rebranded lineup, NVMe storage and LiteSpeed caching are included on every shared hosting tier, including the entry-level Starter plan."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

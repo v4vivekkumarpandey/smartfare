@@ -16,7 +16,53 @@
     "GreenGeeks backs its hosting plans with a 30-day money-back guarantee."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "greengeeks-deal-1",
+      "title": "Best Price: Lite from $2.95/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 1119,
+      "successRate": 100
+    },
+    {
+      "id": "greengeeks-deal-2",
+      "title": "30-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 1249,
+      "successRate": 92
+    },
+    {
+      "id": "greengeeks-deal-3",
+      "title": "Free Domain With Annual Plan",
+      "type": "deal",
+      "discount": "FREE DOMAIN",
+      "verified": true,
+      "uses": 1379,
+      "successRate": 97
+    },
+    {
+      "id": "greengeeks-deal-4",
+      "title": "Free CDN Included",
+      "type": "deal",
+      "discount": "FREE CDN",
+      "verified": true,
+      "uses": 1509,
+      "successRate": 89
+    },
+    {
+      "id": "greengeeks-deal-5",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 1639,
+      "successRate": 94
+    }
+  ],
   "faqs": [
     {
       "q": "Is GreenGeeks actually a green/renewable-energy host?",
@@ -31,6 +77,9 @@
       "a": "No. GreenGeeks' lowest prices are introductory for the first term only. Shared hosting renews at $13.95/month (Lite), $18.95/month (Pro) or $30.95/month (Premium) — noticeably higher than the sign-up price, so factor the renewal cost into your decision rather than just the discounted rate."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

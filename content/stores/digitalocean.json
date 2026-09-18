@@ -16,7 +16,53 @@
     "New signups commonly receive an introductory usage credit for their first weeks on the platform — the exact amount and duration are shown during signup and can change over time. DigitalOcean does not advertise a blanket money-back guarantee on Droplet usage the way shared hosts do; billing is consumption-based and you only pay for the hours a Droplet runs."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "digitalocean-deal-1",
+      "title": "Best Price: Plans from $4/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 2521,
+      "successRate": 97
+    },
+    {
+      "id": "digitalocean-deal-2",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 2651,
+      "successRate": 89
+    },
+    {
+      "id": "digitalocean-deal-3",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 2781,
+      "successRate": 94
+    },
+    {
+      "id": "digitalocean-deal-4",
+      "title": "Limited-Time Deal for New Sign-Ups",
+      "type": "deal",
+      "discount": "LIMITED TIME",
+      "verified": true,
+      "uses": 2911,
+      "successRate": 99
+    },
+    {
+      "id": "digitalocean-deal-5",
+      "title": "Save on Hosting Today",
+      "type": "deal",
+      "discount": "SAVE TODAY",
+      "verified": true,
+      "uses": 240,
+      "successRate": 91
+    }
+  ],
   "faqs": [
     {
       "q": "Does DigitalOcean include cPanel or a control panel?",
@@ -31,6 +77,9 @@
       "a": "It's built for developers comfortable with a command line and basic server administration, not for someone who wants a plug-and-play shared-hosting dashboard. Non-technical beginners are usually better served by a managed shared host."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

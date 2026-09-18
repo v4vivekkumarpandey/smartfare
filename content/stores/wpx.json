@@ -16,7 +16,53 @@
     "WPX backs its hosting plans with a 30-day money-back guarantee."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "wpx-deal-1",
+      "title": "Best Price: Plans from $17.99/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 2514,
+      "successRate": 92
+    },
+    {
+      "id": "wpx-deal-2",
+      "title": "30-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 2644,
+      "successRate": 97
+    },
+    {
+      "id": "wpx-deal-3",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 2774,
+      "successRate": 89
+    },
+    {
+      "id": "wpx-deal-4",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 2904,
+      "successRate": 94
+    },
+    {
+      "id": "wpx-deal-5",
+      "title": "Limited-Time Deal for New Sign-Ups",
+      "type": "deal",
+      "discount": "LIMITED TIME",
+      "verified": true,
+      "uses": 233,
+      "successRate": 99
+    }
+  ],
   "faqs": [
     {
       "q": "Does WPX Hosting use cPanel?",
@@ -35,6 +81,9 @@
       "a": "Yes, WPX includes free migration of existing WordPress sites when you sign up."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

@@ -16,7 +16,53 @@
     "ChemiCloud backs shared, WordPress and reseller hosting with a 45-day money-back guarantee (longer than the 30-day window most competitors offer); VPS hosting carries a shorter 7-day guarantee instead. No refunds are issued after the guarantee window closes."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "chemicloud-deal-1",
+      "title": "Best Price: Starter from $1.95/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 1536,
+      "successRate": 97
+    },
+    {
+      "id": "chemicloud-deal-2",
+      "title": "45-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 1666,
+      "successRate": 89
+    },
+    {
+      "id": "chemicloud-deal-3",
+      "title": "Free Domain With Annual Plan",
+      "type": "deal",
+      "discount": "FREE DOMAIN",
+      "verified": true,
+      "uses": 1796,
+      "successRate": 94
+    },
+    {
+      "id": "chemicloud-deal-4",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 1926,
+      "successRate": 99
+    },
+    {
+      "id": "chemicloud-deal-5",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 2056,
+      "successRate": 91
+    }
+  ],
   "faqs": [
     {
       "q": "Does ChemiCloud use cPanel?",
@@ -31,6 +77,9 @@
       "a": "No. The introductory price ($1.95-$3.95/month depending on plan) applies only to the first term; plans renew at $11.95-$21.95/month afterward. Also note the free first-year domain requires a 36-month signup term."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

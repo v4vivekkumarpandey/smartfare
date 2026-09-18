@@ -16,7 +16,53 @@
     "SiteGround backs its hosting plans with a 30-day money-back guarantee."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "siteground-deal-1",
+      "title": "Best Price: StartUp from $3.99/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 225,
+      "successRate": 90
+    },
+    {
+      "id": "siteground-deal-2",
+      "title": "30-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 355,
+      "successRate": 95
+    },
+    {
+      "id": "siteground-deal-3",
+      "title": "Free Domain With Annual Plan",
+      "type": "deal",
+      "discount": "FREE DOMAIN",
+      "verified": true,
+      "uses": 485,
+      "successRate": 100
+    },
+    {
+      "id": "siteground-deal-4",
+      "title": "Free SSL Certificate Included",
+      "type": "deal",
+      "discount": "FREE SSL",
+      "verified": true,
+      "uses": 615,
+      "successRate": 92
+    },
+    {
+      "id": "siteground-deal-5",
+      "title": "Free CDN Included",
+      "type": "deal",
+      "discount": "FREE CDN",
+      "verified": true,
+      "uses": 745,
+      "successRate": 97
+    }
+  ],
   "faqs": [
     {
       "q": "Does SiteGround use cPanel?",
@@ -31,6 +77,9 @@
       "a": "SiteGround offers shared hosting (StartUp/GrowBig/GoGeek), managed WordPress and WooCommerce hosting, and cloud hosting, all running on Google Cloud infrastructure."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

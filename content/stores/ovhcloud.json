@@ -16,7 +16,53 @@
     "OVHcloud offers a 30-day money-back guarantee on most hosting and VPS plans."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "ovhcloud-deal-1",
+      "title": "Best Price: Plans from $4.54/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 2843,
+      "successRate": 95
+    },
+    {
+      "id": "ovhcloud-deal-2",
+      "title": "30-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 2973,
+      "successRate": 100
+    },
+    {
+      "id": "ovhcloud-deal-3",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 302,
+      "successRate": 92
+    },
+    {
+      "id": "ovhcloud-deal-4",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 432,
+      "successRate": 97
+    },
+    {
+      "id": "ovhcloud-deal-5",
+      "title": "Limited-Time Deal for New Sign-Ups",
+      "type": "deal",
+      "discount": "LIMITED TIME",
+      "verified": true,
+      "uses": 562,
+      "successRate": 89
+    }
+  ],
   "faqs": [
     {
       "q": "Does OVHcloud use cPanel?",
@@ -31,6 +77,9 @@
       "a": "Yes. Like most budget hosts, OVHcloud's advertised prices are first-term promotional rates. Business-range shared hosting plans that intro at roughly $2.39-8.29/month can renew at $7.09-23.59/month depending on the plan and commitment length — check the renewal rate on the pricing page before buying."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

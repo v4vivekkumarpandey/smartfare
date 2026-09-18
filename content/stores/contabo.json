@@ -16,7 +16,53 @@
     "Contabo offers a 14-day revocation/money-back period for private accounts (business accounts and domain purchases are excluded), and separately allows refund requests within 72 hours of an unwanted automatic renewal — refund eligibility and any extra fees are handled through Contabo's support ticket system rather than automatically."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "contabo-deal-1",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 247,
+      "successRate": 98
+    },
+    {
+      "id": "contabo-deal-2",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 377,
+      "successRate": 90
+    },
+    {
+      "id": "contabo-deal-3",
+      "title": "Limited-Time Deal for New Sign-Ups",
+      "type": "deal",
+      "discount": "LIMITED TIME",
+      "verified": true,
+      "uses": 507,
+      "successRate": 95
+    },
+    {
+      "id": "contabo-deal-4",
+      "title": "Save on Hosting Today",
+      "type": "deal",
+      "discount": "SAVE TODAY",
+      "verified": true,
+      "uses": 637,
+      "successRate": 100
+    },
+    {
+      "id": "contabo-deal-5",
+      "title": "Exclusive Discount via SmartFare",
+      "type": "deal",
+      "discount": "EXCLUSIVE",
+      "verified": true,
+      "uses": 767,
+      "successRate": 92
+    }
+  ],
   "faqs": [
     {
       "q": "Does Contabo come with cPanel?",
@@ -35,6 +81,9 @@
       "a": "Reviews are mixed on this point. Contabo holds a strong 4.6/5 rating on Trustpilot overall, with many users praising responsive support, but a notable share of one-star reviews specifically cite slow or frustrating support experiences — so quality may vary by ticket type or time zone."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

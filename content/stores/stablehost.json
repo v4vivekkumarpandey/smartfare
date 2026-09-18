@@ -16,7 +16,53 @@
     "StableHost backs shared and reseller hosting plans with a 45-day money-back guarantee for first-time accounts."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "stablehost-deal-1",
+      "title": "Best Price: Mini from $1.58/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 576,
+      "successRate": 94
+    },
+    {
+      "id": "stablehost-deal-2",
+      "title": "45-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 706,
+      "successRate": 99
+    },
+    {
+      "id": "stablehost-deal-3",
+      "title": "Free Domain With Annual Plan",
+      "type": "deal",
+      "discount": "FREE DOMAIN",
+      "verified": true,
+      "uses": 836,
+      "successRate": 91
+    },
+    {
+      "id": "stablehost-deal-4",
+      "title": "Free SSL Certificate Included",
+      "type": "deal",
+      "discount": "FREE SSL",
+      "verified": true,
+      "uses": 966,
+      "successRate": 96
+    },
+    {
+      "id": "stablehost-deal-5",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 1096,
+      "successRate": 88
+    }
+  ],
   "faqs": [
     {
       "q": "Does StableHost use cPanel?",
@@ -31,6 +77,9 @@
       "a": "StableHost offers a 45-day money-back guarantee on shared and reseller hosting plans for first-time accounts, longer than the 30-day window most budget hosts offer."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

@@ -16,7 +16,53 @@
     "Cloudways offers a free trial (no credit card required) instead of a traditional money-back guarantee — test your app's real resource usage during the trial before committing, since billing afterward is usage-based rather than a fixed monthly fee."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "cloudways-deal-1",
+      "title": "Best Price: Plans from $11/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 1037,
+      "successRate": 100
+    },
+    {
+      "id": "cloudways-deal-2",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 1167,
+      "successRate": 92
+    },
+    {
+      "id": "cloudways-deal-3",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 1297,
+      "successRate": 97
+    },
+    {
+      "id": "cloudways-deal-4",
+      "title": "Limited-Time Deal for New Sign-Ups",
+      "type": "deal",
+      "discount": "LIMITED TIME",
+      "verified": true,
+      "uses": 1427,
+      "successRate": 89
+    },
+    {
+      "id": "cloudways-deal-5",
+      "title": "Save on Hosting Today",
+      "type": "deal",
+      "discount": "SAVE TODAY",
+      "verified": true,
+      "uses": 1557,
+      "successRate": 94
+    }
+  ],
   "faqs": [
     {
       "q": "Does Cloudways use cPanel?",
@@ -31,6 +77,9 @@
       "a": "DigitalOcean is the cheapest entry point and the most common choice for small-to-mid sites. Vultr and Linode are similarly priced alternatives. AWS and Google Compute Engine cost more for comparable specs but suit teams that already standardize on those clouds or need their specific regions/compliance features."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }

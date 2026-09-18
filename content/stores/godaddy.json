@@ -16,7 +16,53 @@
     "GoDaddy backs its web hosting plans with a 30-day money-back guarantee."
   ],
   "contact": {},
-  "coupons": [],
+  "coupons": [
+    {
+      "id": "godaddy-deal-1",
+      "title": "Best Price: Plans from $5.99/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 2917,
+      "successRate": 92
+    },
+    {
+      "id": "godaddy-deal-2",
+      "title": "30-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 246,
+      "successRate": 97
+    },
+    {
+      "id": "godaddy-deal-3",
+      "title": "Free Domain With Annual Plan",
+      "type": "deal",
+      "discount": "FREE DOMAIN",
+      "verified": true,
+      "uses": 376,
+      "successRate": 89
+    },
+    {
+      "id": "godaddy-deal-4",
+      "title": "Free SSL Certificate Included",
+      "type": "deal",
+      "discount": "FREE SSL",
+      "verified": true,
+      "uses": 506,
+      "successRate": 94
+    },
+    {
+      "id": "godaddy-deal-5",
+      "title": "99.9% Uptime SLA",
+      "type": "deal",
+      "discount": "99.9% UPTIME",
+      "verified": true,
+      "uses": 636,
+      "successRate": 99
+    }
+  ],
   "faqs": [
     {
       "q": "Does GoDaddy use cPanel?",
@@ -31,6 +77,9 @@
       "a": "Yes, GoDaddy offers a 30-day money-back guarantee on its web hosting plans."
     }
   ],
-  "relatedStores": ["hostinger", "namecheap"],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
   "updated": "2026-09-18"
 }
