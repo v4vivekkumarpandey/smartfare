@@ -14,10 +14,10 @@ export function StoreOfMonthCard({ store }: { store: Store }) {
       className="group flex flex-col overflow-hidden rounded-card bg-ink-900 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
     >
       <div className="p-5 pb-0">
-        <span className="text-xs font-extrabold uppercase tracking-wide text-accent-500">
+        <span className="inline-block rounded-full bg-[#d7ff3d] px-2.5 py-1 text-xs font-extrabold uppercase tracking-wide text-ink-900">
           Most Popular
         </span>
-        <h3 className="mt-1 text-xl font-extrabold text-white">
+        <h3 className="mt-2 text-xl font-extrabold text-white">
           Store Of The Month
         </h3>
       </div>
