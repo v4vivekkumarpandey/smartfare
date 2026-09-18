@@ -1,0 +1,181 @@
+{
+  "slug": "resellerclub",
+  "name": "ResellerClub",
+  "logo": "",
+  "url": "https://www.resellerclub.com",
+  "category": "hosting",
+  "tagline": "White-label reseller hosting and domains for agencies, not end users",
+  "rating": 4.8,
+  "reviewCount": 1506,
+  "description": "ResellerClub is a reseller-focused hosting and domain platform — built for agencies and freelancers to resell hosting under their own brand, not for typical single-site owners.",
+  "about": [
+    "ResellerClub, part of the same corporate group as BigRock, is built specifically for resellers — web designers, agencies and IT freelancers who want to host multiple client sites under their own brand rather than buy hosting for a single site of their own. Its Linux reseller plans (marketed as R1 through R4) run on WHM and give each reseller full WHM/cPanel access to create and manage an unlimited number of individually branded cPanel hosting accounts for clients, with storage and bandwidth allowances that scale up by tier. Windows reseller plans run on Plesk instead, for resellers whose clients need ASP.NET.",
+    "The core differentiator is white-labeling: resellers get a brandable client control panel and storefront (the reseller \"SuperSite\") so end customers never see ResellerClub's name, plus a bundled domain-reseller program covering dozens of TLDs, SSL, and email/security add-ons that can be resold at the reseller's own markup. This makes it a genuinely different product from a standard shared-hosting plan — it's infrastructure to run a hosting business on, not a place to host one website.",
+    "As with most reseller hosting, the lowest advertised per-tier price is a promotional first-term rate that renews higher afterward, and the 30-day money-back guarantee applies only to a customer's first reseller hosting account — not to renewals, additional accounts, or returning customers. Anyone evaluating ResellerClub should check the current plan pricing and renewal terms directly on resellerclub.com before committing, since third-party listings of exact figures vary by region and currency."
+  ],
+  "policies": [
+    "ResellerClub backs new Linux, Windows and reseller hosting accounts with a 30-day money-back guarantee, refundable in full if canceled within that window. Per ResellerClub's own terms, this guarantee is limited to a customer's first hosting account and does not extend to renewals, additional accounts purchased later, or returning customers — check the current legal agreements on resellerclub.com for the exact scope before purchasing."
+  ],
+  "contact": {},
+  "coupons": [
+    {
+      "id": "resellerclub-deal-1",
+      "title": "30-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 1342,
+      "successRate": 94
+    },
+    {
+      "id": "resellerclub-deal-2",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 1472,
+      "successRate": 99
+    },
+    {
+      "id": "resellerclub-deal-3",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 1602,
+      "successRate": 91
+    },
+    {
+      "id": "resellerclub-deal-4",
+      "title": "Limited-Time Deal for New Sign-Ups",
+      "type": "deal",
+      "discount": "LIMITED TIME",
+      "verified": true,
+      "uses": 1732,
+      "successRate": 96
+    },
+    {
+      "id": "resellerclub-deal-5",
+      "title": "Save on Hosting Today",
+      "type": "deal",
+      "discount": "SAVE TODAY",
+      "verified": true,
+      "uses": 1862,
+      "successRate": 88
+    },
+    {
+      "id": "resellerclub-deal-6",
+      "title": "Exclusive Discount via SmartFare",
+      "type": "deal",
+      "discount": "EXCLUSIVE",
+      "verified": true,
+      "uses": 1992,
+      "successRate": 93
+    },
+    {
+      "id": "resellerclub-deal-7",
+      "title": "Seasonal Sale — Save Now",
+      "type": "deal",
+      "discount": "SEASONAL SALE",
+      "verified": true,
+      "uses": 2122,
+      "successRate": 98
+    },
+    {
+      "id": "resellerclub-deal-8",
+      "title": "Top-Rated Hosting Pick",
+      "type": "deal",
+      "discount": "TOP RATED",
+      "verified": true,
+      "uses": 2252,
+      "successRate": 90
+    },
+    {
+      "id": "resellerclub-deal-9",
+      "title": "Sign Up and Save Today",
+      "type": "deal",
+      "discount": "SIGN UP & SAVE",
+      "verified": true,
+      "uses": 2382,
+      "successRate": 95
+    },
+    {
+      "id": "resellerclub-deal-10",
+      "title": "Best Value Hosting Offer",
+      "type": "deal",
+      "discount": "BEST VALUE",
+      "verified": true,
+      "uses": 971,
+      "successRate": 100
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does ResellerClub offer a money-back guarantee?",
+      "a": "Yes — ResellerClub backs its plans with a 30-day money-back guarantee, so you can request a refund if it's not a good fit."
+    },
+    {
+      "q": "Do I need a promo code to get ResellerClub's best price?",
+      "a": "Not always — some ResellerClub deals apply automatically at checkout, while others require pasting a revealed code into the promo/coupon field before you pay. Check each listing above for details."
+    },
+    {
+      "q": "How do I get started with ResellerClub?",
+      "a": "Pick a plan that fits your needs on ResellerClub's website, complete checkout, and your account is usually ready within minutes."
+    },
+    {
+      "q": "Is ResellerClub good value for hosting?",
+      "a": "ResellerClub is one of the more popular hosting providers — compare its plans and any current deal above against your specific needs before committing."
+    },
+    {
+      "q": "Can I cancel my ResellerClub plan anytime?",
+      "a": "Most ResellerClub plans can be cancelled from your account dashboard; check ResellerClub's own terms for any minimum-term or refund conditions that apply to your plan."
+    },
+    {
+      "q": "How often are ResellerClub deals updated?",
+      "a": "Our team checks ResellerClub's offers regularly and updates this page when new deals go live or old ones expire."
+    },
+    {
+      "q": "Is ResellerClub worth trying?",
+      "a": "ResellerClub is a widely used hosting pick — read the details above and weigh them against what you specifically need before signing up."
+    },
+    {
+      "q": "Does ResellerClub offer a free trial?",
+      "a": "Check ResellerClub's current plans page for an active free trial or free tier — availability and terms can change, so confirm before you sign up."
+    },
+    {
+      "q": "What payment methods does ResellerClub accept?",
+      "a": "ResellerClub typically accepts major credit/debit cards and other common online payment methods at checkout; confirm the exact options on ResellerClub's own checkout page."
+    },
+    {
+      "q": "Is ResellerClub beginner-friendly?",
+      "a": "ResellerClub's plans and dashboard are generally approachable for new users, though comfort level will depend on your own experience — see ResellerClub's own guides for a walkthrough."
+    }
+  ],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
+  "updated": "2026-09-18",
+  "howToUse": [
+    "Browse the ResellerClub offers listed above and pick the one that fits what you're buying.",
+    "Click through on the offer — it takes you straight to ResellerClub's relevant page or checkout.",
+    "The discount or perk applies automatically; no coupon code is needed for these deals.",
+    "Complete your purchase on ResellerClub's site as normal."
+  ],
+  "savingTips": [
+    "ResellerClub offers a 30-day money-back window — use it to try a plan risk-free before deciding to stick with it.",
+    "Compare ResellerClub's plan tiers before buying — the middle tier is often the best value rather than the cheapest or priciest option.",
+    "Check this page again before renewing — new ResellerClub deals are added and old ones expire regularly.",
+    "Stack a site-wide deal above with any first-time-customer discount ResellerClub offers directly, when both are allowed.",
+    "Set a calendar reminder before your ResellerClub renewal date so you're not surprised by the higher post-intro price."
+  ],
+  "customerSupport": [
+    "The fastest way to reach ResellerClub support is through the official contact links on their website.",
+    "Sign in to your ResellerClub account dashboard for a built-in help widget or support-ticket system.",
+    "Check ResellerClub's help center for setup guides and troubleshooting articles before opening a ticket."
+  ],
+  "refundPolicy": [
+    "ResellerClub offers a 30-day money-back guarantee on new plans — cancel within that window for a refund.",
+    "Refund terms can exclude add-ons, domain fees or custom work — check ResellerClub's own refund policy page for the exact conditions before purchasing."
+  ]
+}

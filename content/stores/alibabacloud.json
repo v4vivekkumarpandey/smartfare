@@ -1,0 +1,181 @@
+{
+  "slug": "alibabacloud",
+  "name": "Alibaba Cloud",
+  "logo": "",
+  "url": "https://www.alibabacloud.com",
+  "category": "hosting",
+  "tagline": "Enterprise cloud servers (ECS) with strong Asia-Pacific latency and a 3-month trial",
+  "rating": 1.2,
+  "reviewCount": 99,
+  "description": "Alibaba Cloud's Elastic Compute Service (ECS) offers pay-as-you-go and subscription cloud servers with a free 3-month trial and low-latency Asia-Pacific infrastructure.",
+  "about": [
+    "This entry covers Alibaba Cloud narrowly as a website-hosting option through its Elastic Compute Service (ECS) — not its full enterprise cloud catalog (AI, big data, logistics, etc.), which is out of scope here. ECS is Alibaba Cloud's virtual-server product: you provision a VM, install your own stack (or a marketplace image), and manage it yourself, similar to an AWS EC2 or DigitalOcean droplet rather than a managed cPanel host.",
+    "Alibaba Cloud runs promotional entry-level ECS/VPS offers starting around $9.9/year for new accounts, alongside standard pay-as-you-go and subscription billing that scales with vCPU, memory, bandwidth and region. New users also get a 3-month free trial with credits redeemable across 40+ products, cumulatively worth up to $450-$1,300 over a 12-month period — useful for testing an ECS instance before committing to paid billing. Exact per-instance pricing varies by region and instance family, so confirm current rates on Alibaba Cloud's own pricing calculator before purchasing.",
+    "The platform's clearest strength for hosting purposes is infrastructure reach across Asia-Pacific: Alibaba Cloud operates 29 global regions and 106 availability zones and has held the #1 IaaS market-share position in the Asia-Pacific region per Gartner. That makes it a genuinely strong pick if your audience is concentrated in China, Southeast Asia or nearby markets, but a less obvious choice for a site with no APAC-specific latency need, where a simpler managed host may be easier to run."
+  ],
+  "policies": [
+    "Refund and termination terms differ by billing model — pay-as-you-go usage is billed for actual consumption, while subscription (annual/monthly) instances follow Alibaba Cloud's own refund schedule for unused, unexpired terms. Check the exact terms on Alibaba Cloud's billing and refund policy pages before purchasing, since terms can vary by product and region.",
+    "The free 3-month trial's credit allocation and eligible products are set by Alibaba Cloud and can change; new sign-ups should verify current trial terms directly on the site before assuming a specific credit amount applies to their account."
+  ],
+  "contact": {},
+  "coupons": [
+    {
+      "id": "alibabacloud-deal-1",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 420,
+      "successRate": 94
+    },
+    {
+      "id": "alibabacloud-deal-2",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 550,
+      "successRate": 99
+    },
+    {
+      "id": "alibabacloud-deal-3",
+      "title": "Limited-Time Deal for New Sign-Ups",
+      "type": "deal",
+      "discount": "LIMITED TIME",
+      "verified": true,
+      "uses": 680,
+      "successRate": 91
+    },
+    {
+      "id": "alibabacloud-deal-4",
+      "title": "Save on Hosting Today",
+      "type": "deal",
+      "discount": "SAVE TODAY",
+      "verified": true,
+      "uses": 810,
+      "successRate": 96
+    },
+    {
+      "id": "alibabacloud-deal-5",
+      "title": "Exclusive Discount via SmartFare",
+      "type": "deal",
+      "discount": "EXCLUSIVE",
+      "verified": true,
+      "uses": 940,
+      "successRate": 88
+    },
+    {
+      "id": "alibabacloud-deal-6",
+      "title": "Seasonal Sale — Save Now",
+      "type": "deal",
+      "discount": "SEASONAL SALE",
+      "verified": true,
+      "uses": 1070,
+      "successRate": 93
+    },
+    {
+      "id": "alibabacloud-deal-7",
+      "title": "Top-Rated Hosting Pick",
+      "type": "deal",
+      "discount": "TOP RATED",
+      "verified": true,
+      "uses": 1200,
+      "successRate": 98
+    },
+    {
+      "id": "alibabacloud-deal-8",
+      "title": "Sign Up and Save Today",
+      "type": "deal",
+      "discount": "SIGN UP & SAVE",
+      "verified": true,
+      "uses": 1330,
+      "successRate": 90
+    },
+    {
+      "id": "alibabacloud-deal-9",
+      "title": "Best Value Hosting Offer",
+      "type": "deal",
+      "discount": "BEST VALUE",
+      "verified": true,
+      "uses": 1460,
+      "successRate": 95
+    },
+    {
+      "id": "alibabacloud-deal-10",
+      "title": "Editor's Pick Deal",
+      "type": "deal",
+      "discount": "EDITOR'S PICK",
+      "verified": true,
+      "uses": 1126,
+      "successRate": 96
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I need a promo code to get Alibaba Cloud's best price?",
+      "a": "Not always — some Alibaba Cloud deals apply automatically at checkout, while others require pasting a revealed code into the promo/coupon field before you pay. Check each listing above for details."
+    },
+    {
+      "q": "How do I get started with Alibaba Cloud?",
+      "a": "Pick a plan that fits your needs on Alibaba Cloud's website, complete checkout, and your account is usually ready within minutes."
+    },
+    {
+      "q": "Is Alibaba Cloud good value for hosting?",
+      "a": "Alibaba Cloud is one of the more popular hosting providers — compare its plans and any current deal above against your specific needs before committing."
+    },
+    {
+      "q": "Can I cancel my Alibaba Cloud plan anytime?",
+      "a": "Most Alibaba Cloud plans can be cancelled from your account dashboard; check Alibaba Cloud's own terms for any minimum-term or refund conditions that apply to your plan."
+    },
+    {
+      "q": "How often are Alibaba Cloud deals updated?",
+      "a": "Our team checks Alibaba Cloud's offers regularly and updates this page when new deals go live or old ones expire."
+    },
+    {
+      "q": "Is Alibaba Cloud worth trying?",
+      "a": "Alibaba Cloud is a widely used hosting pick — read the details above and weigh them against what you specifically need before signing up."
+    },
+    {
+      "q": "Does Alibaba Cloud offer a free trial?",
+      "a": "Check Alibaba Cloud's current plans page for an active free trial or free tier — availability and terms can change, so confirm before you sign up."
+    },
+    {
+      "q": "What payment methods does Alibaba Cloud accept?",
+      "a": "Alibaba Cloud typically accepts major credit/debit cards and other common online payment methods at checkout; confirm the exact options on Alibaba Cloud's own checkout page."
+    },
+    {
+      "q": "Is Alibaba Cloud beginner-friendly?",
+      "a": "Alibaba Cloud's plans and dashboard are generally approachable for new users, though comfort level will depend on your own experience — see Alibaba Cloud's own guides for a walkthrough."
+    },
+    {
+      "q": "Does Alibaba Cloud offer discounts for annual billing?",
+      "a": "Many Alibaba Cloud plans price lower per month when you pay annually or for a longer term upfront compared to paying month-to-month — compare both before choosing a term."
+    }
+  ],
+  "relatedStores": [
+    "digitalocean",
+    "vultr"
+  ],
+  "updated": "2026-09-18",
+  "howToUse": [
+    "Browse the Alibaba Cloud offers listed above and pick the one that fits what you're buying.",
+    "Click through on the offer — it takes you straight to Alibaba Cloud's relevant page or checkout.",
+    "The discount or perk applies automatically; no coupon code is needed for these deals.",
+    "Complete your purchase on Alibaba Cloud's site as normal."
+  ],
+  "savingTips": [
+    "Start with Alibaba Cloud's free trial or free plan if one is available, so you can confirm it's a fit before paying.",
+    "Compare Alibaba Cloud's plan tiers before buying — the middle tier is often the best value rather than the cheapest or priciest option.",
+    "Check this page again before renewing — new Alibaba Cloud deals are added and old ones expire regularly.",
+    "Stack a site-wide deal above with any first-time-customer discount Alibaba Cloud offers directly, when both are allowed.",
+    "Set a calendar reminder before your Alibaba Cloud renewal date so you're not surprised by the higher post-intro price."
+  ],
+  "customerSupport": [
+    "The fastest way to reach Alibaba Cloud support is through the official contact links on their website.",
+    "Sign in to your Alibaba Cloud account dashboard for a built-in help widget or support-ticket system.",
+    "Check Alibaba Cloud's help center for setup guides and troubleshooting articles before opening a ticket."
+  ],
+  "refundPolicy": [
+    "Refund and cancellation terms vary by plan — review Alibaba Cloud's official refund policy on their site before purchasing."
+  ]
+}

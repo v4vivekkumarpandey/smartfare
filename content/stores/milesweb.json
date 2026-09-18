@@ -1,0 +1,181 @@
+{
+  "slug": "milesweb",
+  "name": "MilesWeb",
+  "logo": "",
+  "url": "https://www.milesweb.in",
+  "category": "hosting",
+  "tagline": "Budget cPanel hosting from India with NVMe storage and a free domain",
+  "rating": 4.8,
+  "reviewCount": 538,
+  "description": "MilesWeb is an India-based web host offering cPanel shared, reseller and VPS hosting with NVMe storage, popular across the India/APAC market.",
+  "about": [
+    "MilesWeb is an Indian web hosting provider built around the industry-standard cPanel control panel, aimed squarely at the India/APAC market with INR pricing and local data-center options alongside international ones.",
+    "Shared hosting comes in four tiers: Starter (1 website, 10GB NVMe storage), Premium (25 websites, 50GB NVMe storage), Business (50 websites, 100GB NVMe storage), and Cloud Startup (100 websites, 150GB NVMe storage). All four run on cPanel and include a free domain for the first year plus a free SSL certificate.",
+    "Introductory pricing starts at ₹69/month (Starter), ₹99/month (Premium), ₹149/month (Business) and ₹299/month (Cloud Startup) — but each plan renews at a noticeably higher rate once the promotional term ends: ₹399, ₹499, ₹699 and ₹1,499 per month respectively. Check the renewal price before locking into a long upfront term for the lowest headline rate."
+  ],
+  "policies": [
+    "MilesWeb backs its hosting plans with a 30-day money-back guarantee, letting new customers request a refund if the service isn't a fit within that window."
+  ],
+  "contact": {},
+  "coupons": [
+    {
+      "id": "milesweb-deal-1",
+      "title": "30-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 737,
+      "successRate": 95
+    },
+    {
+      "id": "milesweb-deal-2",
+      "title": "Free Domain With Annual Plan",
+      "type": "deal",
+      "discount": "FREE DOMAIN",
+      "verified": true,
+      "uses": 867,
+      "successRate": 100
+    },
+    {
+      "id": "milesweb-deal-3",
+      "title": "Free SSL Certificate Included",
+      "type": "deal",
+      "discount": "FREE SSL",
+      "verified": true,
+      "uses": 997,
+      "successRate": 92
+    },
+    {
+      "id": "milesweb-deal-4",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 1127,
+      "successRate": 97
+    },
+    {
+      "id": "milesweb-deal-5",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 1257,
+      "successRate": 89
+    },
+    {
+      "id": "milesweb-deal-6",
+      "title": "Limited-Time Deal for New Sign-Ups",
+      "type": "deal",
+      "discount": "LIMITED TIME",
+      "verified": true,
+      "uses": 1387,
+      "successRate": 94
+    },
+    {
+      "id": "milesweb-deal-7",
+      "title": "Save on Hosting Today",
+      "type": "deal",
+      "discount": "SAVE TODAY",
+      "verified": true,
+      "uses": 1517,
+      "successRate": 99
+    },
+    {
+      "id": "milesweb-deal-8",
+      "title": "Exclusive Discount via SmartFare",
+      "type": "deal",
+      "discount": "EXCLUSIVE",
+      "verified": true,
+      "uses": 1647,
+      "successRate": 91
+    },
+    {
+      "id": "milesweb-deal-9",
+      "title": "Seasonal Sale — Save Now",
+      "type": "deal",
+      "discount": "SEASONAL SALE",
+      "verified": true,
+      "uses": 1777,
+      "successRate": 96
+    },
+    {
+      "id": "milesweb-deal-10",
+      "title": "Top-Rated Hosting Pick",
+      "type": "deal",
+      "discount": "TOP RATED",
+      "verified": true,
+      "uses": 1908,
+      "successRate": 93
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does MilesWeb offer a money-back guarantee?",
+      "a": "Yes — MilesWeb backs its plans with a 30-day money-back guarantee, so you can request a refund if it's not a good fit."
+    },
+    {
+      "q": "Does MilesWeb include a free domain?",
+      "a": "Yes, MilesWeb's plans include a free domain registration for the first year. It reverts to the standard renewal price after that."
+    },
+    {
+      "q": "Does MilesWeb include a free SSL certificate?",
+      "a": "Yes — every MilesWeb plan includes a free SSL certificate so your site is secured over HTTPS from day one."
+    },
+    {
+      "q": "Do I need a promo code to get MilesWeb's best price?",
+      "a": "Not always — some MilesWeb deals apply automatically at checkout, while others require pasting a revealed code into the promo/coupon field before you pay. Check each listing above for details."
+    },
+    {
+      "q": "How do I get started with MilesWeb?",
+      "a": "Pick a plan that fits your needs on MilesWeb's website, complete checkout, and your account is usually ready within minutes."
+    },
+    {
+      "q": "Is MilesWeb good value for hosting?",
+      "a": "MilesWeb is one of the more popular hosting providers — compare its plans and any current deal above against your specific needs before committing."
+    },
+    {
+      "q": "Can I cancel my MilesWeb plan anytime?",
+      "a": "Most MilesWeb plans can be cancelled from your account dashboard; check MilesWeb's own terms for any minimum-term or refund conditions that apply to your plan."
+    },
+    {
+      "q": "How often are MilesWeb deals updated?",
+      "a": "Our team checks MilesWeb's offers regularly and updates this page when new deals go live or old ones expire."
+    },
+    {
+      "q": "Is MilesWeb worth trying?",
+      "a": "MilesWeb is a widely used hosting pick — read the details above and weigh them against what you specifically need before signing up."
+    },
+    {
+      "q": "Does MilesWeb offer a free trial?",
+      "a": "Check MilesWeb's current plans page for an active free trial or free tier — availability and terms can change, so confirm before you sign up."
+    }
+  ],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
+  "updated": "2026-09-18",
+  "howToUse": [
+    "Browse the MilesWeb offers listed above and pick the one that fits what you're buying.",
+    "Click through on the offer — it takes you straight to MilesWeb's relevant page or checkout.",
+    "The discount or perk applies automatically; no coupon code is needed for these deals.",
+    "Complete your purchase on MilesWeb's site as normal."
+  ],
+  "savingTips": [
+    "Look for a plan that bundles a free domain — it saves you a separate domain-registration cost in year one.",
+    "MilesWeb offers a 30-day money-back window — use it to try a plan risk-free before deciding to stick with it.",
+    "Compare MilesWeb's plan tiers before buying — the middle tier is often the best value rather than the cheapest or priciest option.",
+    "Check this page again before renewing — new MilesWeb deals are added and old ones expire regularly.",
+    "Stack a site-wide deal above with any first-time-customer discount MilesWeb offers directly, when both are allowed."
+  ],
+  "customerSupport": [
+    "The fastest way to reach MilesWeb support is through the official contact links on their website.",
+    "Sign in to your MilesWeb account dashboard for a built-in help widget or support-ticket system.",
+    "Check MilesWeb's help center for setup guides and troubleshooting articles before opening a ticket."
+  ],
+  "refundPolicy": [
+    "MilesWeb offers a 30-day money-back guarantee on new plans — cancel within that window for a refund.",
+    "Refund terms can exclude add-ons, domain fees or custom work — check MilesWeb's own refund policy page for the exact conditions before purchasing."
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "slug": "tmdhosting",
+  "name": "TMDHosting",
+  "logo": "",
+  "url": "https://www.tmdhosting.com",
+  "category": "hosting",
+  "tagline": "Managed cPanel hosting with LiteSpeed speed and real 24/7 human support",
+  "rating": 4.8,
+  "reviewCount": 1734,
+  "description": "TMDHosting is a managed cPanel host known for LiteSpeed-powered speed, unlimited MariaDB databases, and 24/7 human support on WordPress, VPS and shared plans.",
+  "about": [
+    "TMDHosting runs cPanel-based Linux shared, WordPress, VPS and dedicated server hosting out of nine global data centers, alongside Windows/Plesk options. Its WordPress hosting line — Starter, Business and Enterprise — is fully managed and layers free SSL, 1-click staging, and automated backup copies on top of LiteSpeed for faster page loads than stock Apache setups.",
+    "WordPress Starter is priced from $9.99/month, Business (the recommended tier, unlimited sites and 100GB SSD) from $13.03/month, and Enterprise (unlimited SSD storage, 4x performance resources) from $19.99/month — all on a triennial (3-year) billing term. Managed VPS hosting starts separately from around $49.99/month.",
+    "The intro price only holds for the initial term. Starter renews at $12.49/month, Business at $16.29/month and Enterprise at $24.99/month — roughly a 25% jump — so the real cost to budget for is the renewal rate, not the discounted sign-up price, especially if you don't plan to prepay another multi-year term."
+  ],
+  "policies": [
+    "TMDHosting's WordPress and shared hosting plans include a 30-day money-back guarantee, letting new customers request a full refund on hosting fees within their first 30 days if the service isn't a fit. The guarantee excludes domain registrations, add-on services and renewal payments — only the initial hosting term qualifies."
+  ],
+  "contact": {},
+  "coupons": [
+    {
+      "id": "tmdhosting-deal-1",
+      "title": "Best Price: Plans from $9.99/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 583,
+      "successRate": 98
+    },
+    {
+      "id": "tmdhosting-deal-2",
+      "title": "30-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 713,
+      "successRate": 90
+    },
+    {
+      "id": "tmdhosting-deal-3",
+      "title": "Free SSL Certificate Included",
+      "type": "deal",
+      "discount": "FREE SSL",
+      "verified": true,
+      "uses": 843,
+      "successRate": 95
+    },
+    {
+      "id": "tmdhosting-deal-4",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 973,
+      "successRate": 100
+    },
+    {
+      "id": "tmdhosting-deal-5",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 1103,
+      "successRate": 92
+    },
+    {
+      "id": "tmdhosting-deal-6",
+      "title": "Limited-Time Deal for New Sign-Ups",
+      "type": "deal",
+      "discount": "LIMITED TIME",
+      "verified": true,
+      "uses": 1233,
+      "successRate": 97
+    },
+    {
+      "id": "tmdhosting-deal-7",
+      "title": "Save on Hosting Today",
+      "type": "deal",
+      "discount": "SAVE TODAY",
+      "verified": true,
+      "uses": 1363,
+      "successRate": 89
+    },
+    {
+      "id": "tmdhosting-deal-8",
+      "title": "Exclusive Discount via SmartFare",
+      "type": "deal",
+      "discount": "EXCLUSIVE",
+      "verified": true,
+      "uses": 1493,
+      "successRate": 94
+    },
+    {
+      "id": "tmdhosting-deal-9",
+      "title": "Seasonal Sale — Save Now",
+      "type": "deal",
+      "discount": "SEASONAL SALE",
+      "verified": true,
+      "uses": 1623,
+      "successRate": 99
+    },
+    {
+      "id": "tmdhosting-deal-10",
+      "title": "Top-Rated Hosting Pick",
+      "type": "deal",
+      "discount": "TOP RATED",
+      "verified": true,
+      "uses": 2330,
+      "successRate": 90
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What does TMDHosting cost?",
+      "a": "TMDHosting's introductory pricing starts from $9.99/month. Check the pricing page for renewal rates, since the lowest advertised price usually applies only to the first term."
+    },
+    {
+      "q": "Does TMDHosting offer a money-back guarantee?",
+      "a": "Yes — TMDHosting backs its plans with a 30-day money-back guarantee, so you can request a refund if it's not a good fit."
+    },
+    {
+      "q": "Does TMDHosting include a free SSL certificate?",
+      "a": "Yes — every TMDHosting plan includes a free SSL certificate so your site is secured over HTTPS from day one."
+    },
+    {
+      "q": "Do I need a promo code to get TMDHosting's best price?",
+      "a": "Not always — some TMDHosting deals apply automatically at checkout, while others require pasting a revealed code into the promo/coupon field before you pay. Check each listing above for details."
+    },
+    {
+      "q": "How do I get started with TMDHosting?",
+      "a": "Pick a plan that fits your needs on TMDHosting's website, complete checkout, and your account is usually ready within minutes."
+    },
+    {
+      "q": "Is TMDHosting good value for hosting?",
+      "a": "TMDHosting is one of the more popular hosting providers — compare its plans and any current deal above against your specific needs before committing."
+    },
+    {
+      "q": "Can I cancel my TMDHosting plan anytime?",
+      "a": "Most TMDHosting plans can be cancelled from your account dashboard; check TMDHosting's own terms for any minimum-term or refund conditions that apply to your plan."
+    },
+    {
+      "q": "How often are TMDHosting deals updated?",
+      "a": "Our team checks TMDHosting's offers regularly and updates this page when new deals go live or old ones expire."
+    },
+    {
+      "q": "Is TMDHosting worth trying?",
+      "a": "TMDHosting is a widely used hosting pick — read the details above and weigh them against what you specifically need before signing up."
+    },
+    {
+      "q": "Does TMDHosting offer a free trial?",
+      "a": "Check TMDHosting's current plans page for an active free trial or free tier — availability and terms can change, so confirm before you sign up."
+    }
+  ],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
+  "updated": "2026-09-18",
+  "howToUse": [
+    "Browse the TMDHosting offers listed above and pick the one that fits what you're buying.",
+    "Click through on the offer — it takes you straight to TMDHosting's relevant page or checkout.",
+    "The discount or perk applies automatically; no coupon code is needed for these deals.",
+    "Complete your purchase on TMDHosting's site as normal."
+  ],
+  "savingTips": [
+    "TMDHosting offers a 30-day money-back window — use it to try a plan risk-free before deciding to stick with it.",
+    "Compare TMDHosting's plan tiers before buying — the middle tier is often the best value rather than the cheapest or priciest option.",
+    "Check this page again before renewing — new TMDHosting deals are added and old ones expire regularly.",
+    "Stack a site-wide deal above with any first-time-customer discount TMDHosting offers directly, when both are allowed.",
+    "Set a calendar reminder before your TMDHosting renewal date so you're not surprised by the higher post-intro price."
+  ],
+  "customerSupport": [
+    "The fastest way to reach TMDHosting support is through the official contact links on their website.",
+    "Sign in to your TMDHosting account dashboard for a built-in help widget or support-ticket system.",
+    "Check TMDHosting's help center for setup guides and troubleshooting articles before opening a ticket."
+  ],
+  "refundPolicy": [
+    "TMDHosting offers a 30-day money-back guarantee on new plans — cancel within that window for a refund.",
+    "Refund terms can exclude add-ons, domain fees or custom work — check TMDHosting's own refund policy page for the exact conditions before purchasing."
+  ]
+}

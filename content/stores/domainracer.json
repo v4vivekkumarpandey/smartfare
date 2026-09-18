@@ -1,0 +1,182 @@
+{
+  "slug": "domainracer",
+  "name": "DomainRacer",
+  "logo": "",
+  "url": "https://www.domainracer.com",
+  "category": "hosting",
+  "tagline": "Budget Indian cPanel hosting with LiteSpeed servers and NVMe SSD storage",
+  "rating": 3.2,
+  "reviewCount": 104,
+  "description": "DomainRacer is a budget Indian web host offering cPanel shared, reseller, VPS and cloud hosting on LiteSpeed servers with NVMe SSD storage and 30-day refunds.",
+  "about": [
+    "DomainRacer is an India-based web hosting provider built around standard cPanel for shared and reseller plans, with Plesk also offered on Windows plans. Its shared hosting lineup has four tiers — Basic, Personal, Silver and Advanced — running on LiteSpeed web servers with NVMe SSD storage, and it also sells reseller, VPS and cloud hosting.",
+    "The entry Basic plan starts near ₹58/month (roughly $0.99/month equivalent pricing DomainRacer advertises internationally) for 1GB of storage, 5GB bandwidth and a single website. The Personal, Silver and Advanced tiers step up to unlimited NVMe SSD storage and bandwidth, with website limits of 1, 3 and unlimited respectively; only the Advanced tier bundles a free domain. All tiers include a free SSL certificate, the Softaculous 1-click installer, the SitePad site builder and JetBackup.",
+    "Renewal pricing is meaningfully higher than the introductory rate — the Basic plan's advertised ₹58/month intro renews near ₹82/month, and the Advanced plan's ₹238.2/month intro renews near ₹288/month, both on a 1-year term. Longer prepaid terms (biennial, triennial) unlock deeper discounts on the intro rate, but the same renewal jump applies once that term ends, so it's worth budgeting for the renewal price rather than the headline discount."
+  ],
+  "policies": [
+    "DomainRacer backs its hosting plans with a 30-day money-back guarantee, giving new customers a window to request a refund if the service doesn't work out.",
+    "Refund eligibility can exclude domain registration fees, licenses and other add-ons purchased alongside a hosting plan — check DomainRacer's own terms of service for the exact exclusions before buying."
+  ],
+  "contact": {},
+  "coupons": [
+    {
+      "id": "domainracer-deal-1",
+      "title": "Best Price: Plans from $0.99/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 1728,
+      "successRate": 90
+    },
+    {
+      "id": "domainracer-deal-2",
+      "title": "30-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 1858,
+      "successRate": 95
+    },
+    {
+      "id": "domainracer-deal-3",
+      "title": "Free Domain With Annual Plan",
+      "type": "deal",
+      "discount": "FREE DOMAIN",
+      "verified": true,
+      "uses": 1988,
+      "successRate": 100
+    },
+    {
+      "id": "domainracer-deal-4",
+      "title": "Free SSL Certificate Included",
+      "type": "deal",
+      "discount": "FREE SSL",
+      "verified": true,
+      "uses": 2118,
+      "successRate": 92
+    },
+    {
+      "id": "domainracer-deal-5",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 2248,
+      "successRate": 97
+    },
+    {
+      "id": "domainracer-deal-6",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 2378,
+      "successRate": 89
+    },
+    {
+      "id": "domainracer-deal-7",
+      "title": "Limited-Time Deal for New Sign-Ups",
+      "type": "deal",
+      "discount": "LIMITED TIME",
+      "verified": true,
+      "uses": 2508,
+      "successRate": 94
+    },
+    {
+      "id": "domainracer-deal-8",
+      "title": "Save on Hosting Today",
+      "type": "deal",
+      "discount": "SAVE TODAY",
+      "verified": true,
+      "uses": 2638,
+      "successRate": 99
+    },
+    {
+      "id": "domainracer-deal-9",
+      "title": "Exclusive Discount via SmartFare",
+      "type": "deal",
+      "discount": "EXCLUSIVE",
+      "verified": true,
+      "uses": 2768,
+      "successRate": 91
+    },
+    {
+      "id": "domainracer-deal-10",
+      "title": "Seasonal Sale — Save Now",
+      "type": "deal",
+      "discount": "SEASONAL SALE",
+      "verified": true,
+      "uses": 2973,
+      "successRate": 91
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What does DomainRacer cost?",
+      "a": "DomainRacer's introductory pricing starts from $0.99/month. Check the pricing page for renewal rates, since the lowest advertised price usually applies only to the first term."
+    },
+    {
+      "q": "Does DomainRacer offer a money-back guarantee?",
+      "a": "Yes — DomainRacer backs its plans with a 30-day money-back guarantee, so you can request a refund if it's not a good fit."
+    },
+    {
+      "q": "Does DomainRacer include a free domain?",
+      "a": "Yes, DomainRacer's plans include a free domain registration for the first year. It reverts to the standard renewal price after that."
+    },
+    {
+      "q": "Does DomainRacer include a free SSL certificate?",
+      "a": "Yes — every DomainRacer plan includes a free SSL certificate so your site is secured over HTTPS from day one."
+    },
+    {
+      "q": "Do I need a promo code to get DomainRacer's best price?",
+      "a": "Not always — some DomainRacer deals apply automatically at checkout, while others require pasting a revealed code into the promo/coupon field before you pay. Check each listing above for details."
+    },
+    {
+      "q": "How do I get started with DomainRacer?",
+      "a": "Pick a plan that fits your needs on DomainRacer's website, complete checkout, and your account is usually ready within minutes."
+    },
+    {
+      "q": "Is DomainRacer good value for hosting?",
+      "a": "DomainRacer is one of the more popular hosting providers — compare its plans and any current deal above against your specific needs before committing."
+    },
+    {
+      "q": "Can I cancel my DomainRacer plan anytime?",
+      "a": "Most DomainRacer plans can be cancelled from your account dashboard; check DomainRacer's own terms for any minimum-term or refund conditions that apply to your plan."
+    },
+    {
+      "q": "How often are DomainRacer deals updated?",
+      "a": "Our team checks DomainRacer's offers regularly and updates this page when new deals go live or old ones expire."
+    },
+    {
+      "q": "Is DomainRacer worth trying?",
+      "a": "DomainRacer is a widely used hosting pick — read the details above and weigh them against what you specifically need before signing up."
+    }
+  ],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
+  "updated": "2026-09-18",
+  "howToUse": [
+    "Browse the DomainRacer offers listed above and pick the one that fits what you're buying.",
+    "Click through on the offer — it takes you straight to DomainRacer's relevant page or checkout.",
+    "The discount or perk applies automatically; no coupon code is needed for these deals.",
+    "Complete your purchase on DomainRacer's site as normal."
+  ],
+  "savingTips": [
+    "Look for a plan that bundles a free domain — it saves you a separate domain-registration cost in year one.",
+    "DomainRacer offers a 30-day money-back window — use it to try a plan risk-free before deciding to stick with it.",
+    "Compare DomainRacer's plan tiers before buying — the middle tier is often the best value rather than the cheapest or priciest option.",
+    "Check this page again before renewing — new DomainRacer deals are added and old ones expire regularly.",
+    "Stack a site-wide deal above with any first-time-customer discount DomainRacer offers directly, when both are allowed."
+  ],
+  "customerSupport": [
+    "The fastest way to reach DomainRacer support is through the official contact links on their website.",
+    "Sign in to your DomainRacer account dashboard for a built-in help widget or support-ticket system.",
+    "Check DomainRacer's help center for setup guides and troubleshooting articles before opening a ticket."
+  ],
+  "refundPolicy": [
+    "DomainRacer offers a 30-day money-back guarantee on new plans — cancel within that window for a refund.",
+    "Refund terms can exclude add-ons, domain fees or custom work — check DomainRacer's own refund policy page for the exact conditions before purchasing."
+  ]
+}

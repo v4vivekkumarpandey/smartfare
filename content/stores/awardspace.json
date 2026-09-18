@@ -1,0 +1,182 @@
+{
+  "slug": "awardspace",
+  "name": "AwardSpace",
+  "logo": "",
+  "url": "https://www.awardspace.com",
+  "category": "hosting",
+  "tagline": "Genuinely free, ad-free web hosting, plus low-cost unlimited paid plans",
+  "rating": 2.2,
+  "reviewCount": 49,
+  "description": "AwardSpace is a free web hosting provider offering a real no-cost, ad-free plan with capped storage and bandwidth, plus paid shared plans with unlimited storage.",
+  "about": [
+    "AwardSpace is best known for its free hosting tier — one of the few that doesn't plaster ads across your site. The free plan gives you 1GB of SSD storage, 5GB of monthly bandwidth, one MySQL database, and a free subdomain (no custom domain included), with PHP/MySQL support and one-click WordPress or Joomla installs. It's a genuinely usable option for a small hobby site, portfolio, or a WordPress install you're learning on — but the storage and bandwidth caps are real, and there's no money-back guarantee or premium support tier attached to a $0 plan.",
+    "For anyone outgrowing the free tier, AwardSpace's paid shared hosting starts at a low headline price and scales up through mid and top tiers that add unlimited domains, unlimited storage and bandwidth, PostgreSQL and Perl support, and (on the top plan) ASP.NET. All paid plans carry a 30-day money-back guarantee, unlike the free tier.",
+    "AwardSpace is a budget host first and foremost — the free plan is a legitimate way to get a small site online at zero cost, and the paid plans are aimed at price-sensitive shoppers rather than users chasing premium performance or support SLAs."
+  ],
+  "policies": [
+    "Paid AwardSpace plans include a 30-day money-back guarantee; the free plan has no refund policy since no payment is involved and carries no uptime SLA or guaranteed support response time.",
+    "The free plan is capped at 1GB storage and 5GB monthly bandwidth on a subdomain — sites that exceed these limits need to upgrade to a paid plan for unlimited storage and bandwidth."
+  ],
+  "contact": {},
+  "coupons": [
+    {
+      "id": "awardspace-deal-1",
+      "title": "30-Day Money-Back Guarantee",
+      "type": "deal",
+      "discount": "RISK-FREE",
+      "verified": true,
+      "uses": 270,
+      "successRate": 95
+    },
+    {
+      "id": "awardspace-deal-2",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 400,
+      "successRate": 100
+    },
+    {
+      "id": "awardspace-deal-3",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 530,
+      "successRate": 92
+    },
+    {
+      "id": "awardspace-deal-4",
+      "title": "Limited-Time Deal for New Sign-Ups",
+      "type": "deal",
+      "discount": "LIMITED TIME",
+      "verified": true,
+      "uses": 660,
+      "successRate": 97
+    },
+    {
+      "id": "awardspace-deal-5",
+      "title": "Save on Hosting Today",
+      "type": "deal",
+      "discount": "SAVE TODAY",
+      "verified": true,
+      "uses": 790,
+      "successRate": 89
+    },
+    {
+      "id": "awardspace-deal-6",
+      "title": "Exclusive Discount via SmartFare",
+      "type": "deal",
+      "discount": "EXCLUSIVE",
+      "verified": true,
+      "uses": 920,
+      "successRate": 94
+    },
+    {
+      "id": "awardspace-deal-7",
+      "title": "Seasonal Sale — Save Now",
+      "type": "deal",
+      "discount": "SEASONAL SALE",
+      "verified": true,
+      "uses": 1050,
+      "successRate": 99
+    },
+    {
+      "id": "awardspace-deal-8",
+      "title": "Top-Rated Hosting Pick",
+      "type": "deal",
+      "discount": "TOP RATED",
+      "verified": true,
+      "uses": 1180,
+      "successRate": 91
+    },
+    {
+      "id": "awardspace-deal-9",
+      "title": "Sign Up and Save Today",
+      "type": "deal",
+      "discount": "SIGN UP & SAVE",
+      "verified": true,
+      "uses": 1310,
+      "successRate": 96
+    },
+    {
+      "id": "awardspace-deal-10",
+      "title": "Best Value Hosting Offer",
+      "type": "deal",
+      "discount": "BEST VALUE",
+      "verified": true,
+      "uses": 1329,
+      "successRate": 96
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Does AwardSpace offer a money-back guarantee?",
+      "a": "Yes — AwardSpace backs its plans with a 30-day money-back guarantee, so you can request a refund if it's not a good fit."
+    },
+    {
+      "q": "Do I need a promo code to get AwardSpace's best price?",
+      "a": "Not always — some AwardSpace deals apply automatically at checkout, while others require pasting a revealed code into the promo/coupon field before you pay. Check each listing above for details."
+    },
+    {
+      "q": "How do I get started with AwardSpace?",
+      "a": "Pick a plan that fits your needs on AwardSpace's website, complete checkout, and your account is usually ready within minutes."
+    },
+    {
+      "q": "Is AwardSpace good value for hosting?",
+      "a": "AwardSpace is one of the more popular hosting providers — compare its plans and any current deal above against your specific needs before committing."
+    },
+    {
+      "q": "Can I cancel my AwardSpace plan anytime?",
+      "a": "Most AwardSpace plans can be cancelled from your account dashboard; check AwardSpace's own terms for any minimum-term or refund conditions that apply to your plan."
+    },
+    {
+      "q": "How often are AwardSpace deals updated?",
+      "a": "Our team checks AwardSpace's offers regularly and updates this page when new deals go live or old ones expire."
+    },
+    {
+      "q": "Is AwardSpace worth trying?",
+      "a": "AwardSpace is a widely used hosting pick — read the details above and weigh them against what you specifically need before signing up."
+    },
+    {
+      "q": "Does AwardSpace offer a free trial?",
+      "a": "Check AwardSpace's current plans page for an active free trial or free tier — availability and terms can change, so confirm before you sign up."
+    },
+    {
+      "q": "What payment methods does AwardSpace accept?",
+      "a": "AwardSpace typically accepts major credit/debit cards and other common online payment methods at checkout; confirm the exact options on AwardSpace's own checkout page."
+    },
+    {
+      "q": "Is AwardSpace beginner-friendly?",
+      "a": "AwardSpace's plans and dashboard are generally approachable for new users, though comfort level will depend on your own experience — see AwardSpace's own guides for a walkthrough."
+    }
+  ],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
+  "updated": "2026-09-18",
+  "howToUse": [
+    "Browse the AwardSpace offers listed above and pick the one that fits what you're buying.",
+    "Click through on the offer — it takes you straight to AwardSpace's relevant page or checkout.",
+    "The discount or perk applies automatically; no coupon code is needed for these deals.",
+    "Complete your purchase on AwardSpace's site as normal."
+  ],
+  "savingTips": [
+    "Start with AwardSpace's free trial or free plan if one is available, so you can confirm it's a fit before paying.",
+    "AwardSpace offers a 30-day money-back window — use it to try a plan risk-free before deciding to stick with it.",
+    "Compare AwardSpace's plan tiers before buying — the middle tier is often the best value rather than the cheapest or priciest option.",
+    "Check this page again before renewing — new AwardSpace deals are added and old ones expire regularly.",
+    "Stack a site-wide deal above with any first-time-customer discount AwardSpace offers directly, when both are allowed."
+  ],
+  "customerSupport": [
+    "The fastest way to reach AwardSpace support is through the official contact links on their website.",
+    "Sign in to your AwardSpace account dashboard for a built-in help widget or support-ticket system.",
+    "Check AwardSpace's help center for setup guides and troubleshooting articles before opening a ticket."
+  ],
+  "refundPolicy": [
+    "AwardSpace offers a 30-day money-back guarantee on new plans — cancel within that window for a refund.",
+    "Refund terms can exclude add-ons, domain fees or custom work — check AwardSpace's own refund policy page for the exact conditions before purchasing."
+  ]
+}

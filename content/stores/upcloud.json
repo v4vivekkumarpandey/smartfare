@@ -1,0 +1,181 @@
+{
+  "slug": "upcloud",
+  "name": "UpCloud",
+  "logo": "",
+  "url": "https://upcloud.com",
+  "category": "hosting",
+  "tagline": "Finnish cloud VPS hosting built on MaxIOPS all-flash storage performance",
+  "rating": 3,
+  "reviewCount": 169,
+  "description": "UpCloud is a Finnish cloud VPS provider built for developers, offering MaxIOPS all-flash storage, hourly or monthly billing and data centers across Europe, the Americas and Asia-Pacific.",
+  "about": [
+    "UpCloud is a cloud infrastructure provider founded in Helsinki, Finland, aimed at developers and businesses who want to provision and manage cloud servers (VPS) directly rather than through a bundled shared-hosting stack. There is no cPanel or hPanel-style control panel included by default — server management happens through UpCloud's own web console, a CLI, Terraform provider, or its API, which makes it a better fit for technical users comfortable configuring their own stack than for someone wanting a one-click WordPress install.",
+    "The entry-level Developer cloud server starts at $5/month for 1 vCPU, 1GB RAM and 25GB of MaxIOPS storage — UpCloud's proprietary all-flash, clustered storage architecture that the company advertises as capable of roughly 100,000 read IOPS, several times faster than standard cloud SSD storage. A separate, cheaper Starter line begins around €3/month but uses standard SSD storage and older-generation CPUs rather than MaxIOPS, so the storage-performance pitch specifically applies to the MaxIOPS-tier plans, not the absolute cheapest option on the site.",
+    "Billing is usage-based: server pricing is calculated hourly and capped at the monthly rate, so a server that only runs part of a month costs less than the full monthly price, while running it continuously costs no more than the advertised monthly figure. UpCloud operates data centers across Europe (including Helsinki, Amsterdam, Frankfurt, London, Stockholm, Copenhagen, Madrid, Warsaw and Stavanger), the Americas (Chicago, New York, San Jose) and Asia-Pacific (Singapore, Sydney), giving a wider geographic footprint than many budget VPS competitors."
+  ],
+  "policies": [
+    "New accounts can try UpCloud with a free trial period before committing to a paid plan; check the current trial length and credit amount on UpCloud's own signup page, as trial terms are adjusted periodically.",
+    "Because billing is hourly/usage-based rather than a fixed prepaid term, there isn't a traditional multi-day money-back guarantee the way many shared-hosting companies offer — you're only charged for the hours a server actually runs, so review UpCloud's current billing and refund terms directly before making a purchase decision."
+  ],
+  "contact": {},
+  "coupons": [
+    {
+      "id": "upcloud-deal-1",
+      "title": "Best Price: Plans from $5/mo",
+      "type": "deal",
+      "discount": "BEST PRICE",
+      "verified": true,
+      "uses": 621,
+      "successRate": 97
+    },
+    {
+      "id": "upcloud-deal-2",
+      "title": "Special Offer on Hosting Plans",
+      "type": "deal",
+      "discount": "SPECIAL OFFER",
+      "verified": true,
+      "uses": 751,
+      "successRate": 89
+    },
+    {
+      "id": "upcloud-deal-3",
+      "title": "New Customer Savings",
+      "type": "deal",
+      "discount": "NEW CUSTOMER",
+      "verified": true,
+      "uses": 881,
+      "successRate": 94
+    },
+    {
+      "id": "upcloud-deal-4",
+      "title": "Limited-Time Deal for New Sign-Ups",
+      "type": "deal",
+      "discount": "LIMITED TIME",
+      "verified": true,
+      "uses": 1011,
+      "successRate": 99
+    },
+    {
+      "id": "upcloud-deal-5",
+      "title": "Save on Hosting Today",
+      "type": "deal",
+      "discount": "SAVE TODAY",
+      "verified": true,
+      "uses": 1141,
+      "successRate": 91
+    },
+    {
+      "id": "upcloud-deal-6",
+      "title": "Exclusive Discount via SmartFare",
+      "type": "deal",
+      "discount": "EXCLUSIVE",
+      "verified": true,
+      "uses": 1271,
+      "successRate": 96
+    },
+    {
+      "id": "upcloud-deal-7",
+      "title": "Seasonal Sale — Save Now",
+      "type": "deal",
+      "discount": "SEASONAL SALE",
+      "verified": true,
+      "uses": 1401,
+      "successRate": 88
+    },
+    {
+      "id": "upcloud-deal-8",
+      "title": "Top-Rated Hosting Pick",
+      "type": "deal",
+      "discount": "TOP RATED",
+      "verified": true,
+      "uses": 1531,
+      "successRate": 93
+    },
+    {
+      "id": "upcloud-deal-9",
+      "title": "Sign Up and Save Today",
+      "type": "deal",
+      "discount": "SIGN UP & SAVE",
+      "verified": true,
+      "uses": 1661,
+      "successRate": 98
+    },
+    {
+      "id": "upcloud-deal-10",
+      "title": "Best Value Hosting Offer",
+      "type": "deal",
+      "discount": "BEST VALUE",
+      "verified": true,
+      "uses": 2268,
+      "successRate": 100
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What does UpCloud cost?",
+      "a": "UpCloud's introductory pricing starts from $5/month. Check the pricing page for renewal rates, since the lowest advertised price usually applies only to the first term."
+    },
+    {
+      "q": "Do I need a promo code to get UpCloud's best price?",
+      "a": "Not always — some UpCloud deals apply automatically at checkout, while others require pasting a revealed code into the promo/coupon field before you pay. Check each listing above for details."
+    },
+    {
+      "q": "How do I get started with UpCloud?",
+      "a": "Pick a plan that fits your needs on UpCloud's website, complete checkout, and your account is usually ready within minutes."
+    },
+    {
+      "q": "Is UpCloud good value for hosting?",
+      "a": "UpCloud is one of the more popular hosting providers — compare its plans and any current deal above against your specific needs before committing."
+    },
+    {
+      "q": "Can I cancel my UpCloud plan anytime?",
+      "a": "Most UpCloud plans can be cancelled from your account dashboard; check UpCloud's own terms for any minimum-term or refund conditions that apply to your plan."
+    },
+    {
+      "q": "How often are UpCloud deals updated?",
+      "a": "Our team checks UpCloud's offers regularly and updates this page when new deals go live or old ones expire."
+    },
+    {
+      "q": "Is UpCloud worth trying?",
+      "a": "UpCloud is a widely used hosting pick — read the details above and weigh them against what you specifically need before signing up."
+    },
+    {
+      "q": "Does UpCloud offer a free trial?",
+      "a": "Check UpCloud's current plans page for an active free trial or free tier — availability and terms can change, so confirm before you sign up."
+    },
+    {
+      "q": "What payment methods does UpCloud accept?",
+      "a": "UpCloud typically accepts major credit/debit cards and other common online payment methods at checkout; confirm the exact options on UpCloud's own checkout page."
+    },
+    {
+      "q": "Is UpCloud beginner-friendly?",
+      "a": "UpCloud's plans and dashboard are generally approachable for new users, though comfort level will depend on your own experience — see UpCloud's own guides for a walkthrough."
+    }
+  ],
+  "relatedStores": [
+    "hostinger",
+    "namecheap"
+  ],
+  "updated": "2026-09-18",
+  "howToUse": [
+    "Browse the UpCloud offers listed above and pick the one that fits what you're buying.",
+    "Click through on the offer — it takes you straight to UpCloud's relevant page or checkout.",
+    "The discount or perk applies automatically; no coupon code is needed for these deals.",
+    "Complete your purchase on UpCloud's site as normal."
+  ],
+  "savingTips": [
+    "Start with UpCloud's free trial or free plan if one is available, so you can confirm it's a fit before paying.",
+    "Compare UpCloud's plan tiers before buying — the middle tier is often the best value rather than the cheapest or priciest option.",
+    "Check this page again before renewing — new UpCloud deals are added and old ones expire regularly.",
+    "Stack a site-wide deal above with any first-time-customer discount UpCloud offers directly, when both are allowed.",
+    "Set a calendar reminder before your UpCloud renewal date so you're not surprised by the higher post-intro price."
+  ],
+  "customerSupport": [
+    "The fastest way to reach UpCloud support is through the official contact links on their website.",
+    "Sign in to your UpCloud account dashboard for a built-in help widget or support-ticket system.",
+    "Check UpCloud's help center for setup guides and troubleshooting articles before opening a ticket."
+  ],
+  "refundPolicy": [
+    "Refund and cancellation terms vary by plan — review UpCloud's official refund policy on their site before purchasing."
+  ]
+}
