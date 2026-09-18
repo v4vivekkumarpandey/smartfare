@@ -6,13 +6,15 @@ import {
   getTopCoupons,
   getSettings,
   getAllPosts,
+  activeCoupons,
 } from "@/lib/content";
 import { outboundHref } from "@/lib/affiliate";
 import { toPublicCoupon } from "@/lib/coupon";
 import { formatNumber } from "@/lib/cn";
 import { SearchBox, type SearchItem } from "@/components/layout/SearchBox";
 import { CategoryIcon } from "@/components/ui/CategoryIcon";
-import { StoreCard } from "@/components/store/StoreCard";
+import { StoreOfMonthCard } from "@/components/store/StoreOfMonthCard";
+import { StoreLogoCard } from "@/components/store/StoreLogoCard";
 import { CouponRow } from "@/components/coupon/CouponRow";
 import { LatestPostCard } from "@/components/blog/LatestPostCard";
 import { JsonLd } from "@/components/JsonLd";
@@ -29,6 +31,14 @@ export default async function HomePage() {
     getAllPosts(),
   ]);
   const latestPosts = posts.slice(0, 6);
+  const storeOfMonth = stores.reduce<(typeof stores)[number] | null>(
+    (best, s) =>
+      !best || activeCoupons(s).length > activeCoupons(best).length ? s : best,
+    null
+  );
+  const gridStores = stores
+    .filter((s) => s.slug !== storeOfMonth?.slug)
+    .slice(0, 12);
   const index: SearchItem[] = stores.map((s) => ({
     slug: s.slug,
     name: s.name,
@@ -134,10 +144,13 @@ export default async function HomePage() {
         {/* Featured stores */}
         <section className="py-10">
           <h2 className="text-xl font-bold text-ink-900">Popular Stores</h2>
-          <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {stores.slice(0, 9).map((s) => (
-              <StoreCard key={s.slug} store={s} />
-            ))}
+          <div className="mt-5 grid gap-5 lg:grid-cols-[280px_1fr]">
+            {storeOfMonth && <StoreOfMonthCard store={storeOfMonth} />}
+            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+              {gridStores.map((s) => (
+                <StoreLogoCard key={s.slug} store={s} />
+              ))}
+            </div>
           </div>
         </section>
 
