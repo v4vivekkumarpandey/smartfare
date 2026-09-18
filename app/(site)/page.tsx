@@ -135,7 +135,7 @@ export default async function HomePage() {
         <section className="py-10">
           <h2 className="text-xl font-bold text-ink-900">Popular Stores</h2>
           <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {stores.map((s) => (
+            {stores.slice(0, 9).map((s) => (
               <StoreCard key={s.slug} store={s} />
             ))}
           </div>
