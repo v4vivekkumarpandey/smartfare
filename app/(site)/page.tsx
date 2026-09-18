@@ -30,7 +30,7 @@ export default async function HomePage() {
     getSettings(),
     getAllPosts(),
   ]);
-  const latestPosts = posts.slice(0, 6);
+  const latestPosts = posts.slice(0, 9);
   const storeOfMonth = stores.reduce<(typeof stores)[number] | null>(
     (best, s) =>
       !best || activeCoupons(s).length > activeCoupons(best).length ? s : best,
