@@ -138,7 +138,7 @@ export async function getPostSlugs(): Promise<string[]> {
   return posts.map((p) => p.slug);
 }
 
-export const BLOG_PAGE_SIZE = 24;
+export const BLOG_PAGE_SIZE = 30;
 
 /** Paginated slice of getAllPosts() for the /blog index (24 posts per page). */
 export async function getPostsPage(
